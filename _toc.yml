@@ -1,0 +1,40 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+# - file: Preface
+- file: Defining-DS-4+1
+- file: Design/Design
+  sections:
+  - file: Design/Design_SDS
+  - file: Design/Design_Labs
+  - file: Design/Design_External
+  - file: Design/Design_Case
+- file: Value/Value
+  sections:
+  - file: Value/Value_SDS
+  - file: Value/Value_Labs
+  - file: Value/Value_External
+  - file: Value/Value_Case
+- file: Systems/Systems
+  sections:
+  - file: Systems/Systems_SDS
+  - file: Systems/Systems_Labs
+  - file: Systems/Systems_External
+  - file: Systems/Systems_Case
+- file: Analytics/Analytics
+  sections:
+  - file: Analytics/Analytics_SDS
+  - file: Analytics/Analytics_Labs
+  - file: Analytics/Analytics_External
+  - file: Analytics/Analytics_Case
+# - file: Appendix
+#   sections:
+#   - file: Primary Sources
+#   - file: Summary Table
+#   - file: References
+#     sections: List of Sources
+# - file: BSDS Course Info
+# - file: Refernces #diff than sources?
