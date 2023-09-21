@@ -28,7 +28,7 @@ A review of the literature of data science definitions, from sources attempting 
 
 
 
-```{sidebar}
+```{note}
 The idea that this pipeline is fundamental to data science is not new &mdash; in the 1990s, data mining was conceptualized as a pipeline with the SEMMA and CRISP-DM models that are widely adopted by data scientists today in one form or another, such as Mason and Wiggins' OSEMI model (Azevedo and Santos 2008; Mason and Wiggins 2010). In fact, the image goes back at least to the early 1960s, when the Data Sciences Laboratory of the U.S. Air Force was created to address the fact that \"\\[m\\]odern data processing and computing machinery, together with improved communications, has made it possible to *ask for*, *collect, process and use* astronomical amounts of detailed data\" (AFCRL 1963: 187; emphasis added). More recently, Donoho's \"50 Years of Data Science\" proposes a framework for the field based on a sequence of six divisions that follow the structure of a pipeline (Donoho 2017).
 ```
 
@@ -73,12 +73,18 @@ The CRISP-DM model is the most comprehensive, with seven phases defined (if we i
 
 This twelve-part composite pipeline can be simplified by combining functions that naturally go together, by virtue of the expertise required to carry them out. This reduction yields about seven phases: 
 
-&nbsp;&nbsp;&nbsp;&nbsp;$A$ understand and plan\\
-&nbsp;&nbsp;&nbsp;&nbsp;$B$ collect and store\\
-&nbsp;&nbsp;&nbsp;&nbsp;$C$ clean, prepare, and explore\\
-&nbsp;&nbsp;&nbsp;&nbsp;$D$ model and interpret\\
-&nbsp;&nbsp;&nbsp;&nbsp;$E$ communicate\\
-&nbsp;&nbsp;&nbsp;&nbsp;$F$ deploy\\
+&nbsp;&nbsp;&nbsp;&nbsp;$A$ understand and plan
+
+&nbsp;&nbsp;&nbsp;&nbsp;$B$ collect and store
+
+&nbsp;&nbsp;&nbsp;&nbsp;$C$ clean, prepare, and explore
+
+&nbsp;&nbsp;&nbsp;&nbsp;$D$ model and interpret
+
+&nbsp;&nbsp;&nbsp;&nbsp;$E$ communicate
+
+&nbsp;&nbsp;&nbsp;&nbsp;$F$ deploy
+
 &nbsp;&nbsp;&nbsp;&nbsp;$G$ reflect 
 
 Each of these may be considered a \"chapter\" in the story. Note that the number of verbs in each chapter title does not necessarily predict the length of its content. For example, the chapter on \"model and interpret\" covers a wide range of activities from a variety of perspectives, including classical statistics, machine learning, and computational simulation. It's a big and complicated chapter, but it is just one chapter among seven, even though many may consider it to be the most important chapter.
