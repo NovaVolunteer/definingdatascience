@@ -9,7 +9,7 @@ This essay proposes a model of data science that is intended to go beyond the la
 
 
 
-```{sidebar}
+```{note}
 It is increasingly the case that hiring managers in industry understand the role of data scientist differently than the academic programs that produce data scientists. One result of this is the proliferation of terms such as data engineer, machine learning engineer, and applied AI to define areas of work that have historically belonged to data science. Another result is the confusion of data scientist with the roles of data analyst and statistician. 
 ```
 
