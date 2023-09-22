@@ -81,7 +81,7 @@ Each of these thematic groups may be considered a "chapter" in the story. Note t
 
 ## An Arc with Four Zones
 
-```{figure, fig-align="center"} images/image1.png
+```{figure} images/image1.png
 The Standard Sequence as a Narrative Arc
 ```
 
