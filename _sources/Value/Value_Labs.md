@@ -34,8 +34,8 @@ How will I know I have succeeded
 
 | Specs Category | Specs Details                                                                                                                                |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Formatting     | - Submit via Canvas - Text answers to questions                                                                                              |
-| Text           | - Goal: The questions are designed to be answered during or right after the lab period - Use few sentences to answer each question in Canvas |
+| Formatting     | - Submit via Canvas <br /> - Text answers to questions                                                                                              |
+| Text           | - Goal: The questions are designed to be answered during or right after the lab period <br /> - Use few sentences to answer each question in Canvas |
 
 Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer & Palmer (2020).
 
