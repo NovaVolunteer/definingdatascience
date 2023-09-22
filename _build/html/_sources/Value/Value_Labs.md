@@ -32,15 +32,10 @@ Tips for success:
 
 How will I know I have succeeded
 
-+-------------------+-----------------------------------------------------------------------------------------+
-| Specs Category    | Specs Details                                                                           |
-+:=================:+:========================================================================================+
-| Formatting        | -   Submit Via Canvas                                                                   |
-|                   | -   Text answers to questions                                                           |
-+-------------------+-----------------------------------------------------------------------------------------+
-| Text              | -   Goal: The questions are designed to be answer during or right after the lab period. |
-|                   | -   Use a few sentences to answer each question in Canvas                               |
-+-------------------+-----------------------------------------------------------------------------------------+
+| Specs Category | Specs Details                                                                                                                                |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Formatting     | - Submit via Canvas - Text answers to questions                                                                                              |
+| Text           | - Goal: The questions are designed to be answered during or right after the lab period - Use few sentences to answer each question in Canvas |
 
 Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer & Palmer (2020).
 
