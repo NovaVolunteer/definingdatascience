@@ -85,12 +85,11 @@ Each of these thematic groups may be considered a "chapter" in the story. Note t
 The Standard Sequence as a Narrative Arc
 ```
 
-
-```[The Standard Sequence as a Narrative Arc](images/image1.png){fig-align="center"}```
-
 To be sure, the middle chapter plays a central role in our story. If we think of the story as following a classical "there and back again" structure --- a chiasmus pattern like $X_1, Y_1, Z, Y_2, X_2$ --- then chapter $D$ is the pivot, while chapters $A,$ $B,$ and $C$ mirror $E,$ $F,$ and $G$. Thinking of the story in this way allows us to identify a parallel structure in the pipeline, connecting phases that are usually seen as separate. Specifically, we may visualize the pipeline as an arc, a **U**-shaped process in which chapters in the first half of the pipeline mirror the those of the second half. We may then group chapters by the pairs formed in this way, yielding four zones --- $A$ and $G$ belong to zone $I$, $B$ and $F$ to $II$, $C$ and $E$ to $III$, and $D$ to $IV$ --- as in the following diagram:
 
-![The Arc Transposed](images/image2.png){fig-align="center"}
+```{figure} images/image2.png
+The Arc Transposed
+```
 
 With this visualization, we can discern some interesting properties about the data science pipeline that are not obvious in the original sequential image. For one, the arc structure suggests that the two ends of the pipe are not separate; both make direct contact with the external world (relative to the internal world of the pipeline considered as a system). The external world --- natural or social --- from which data are pulled is the same world into which data products are inserted. This insight echoes the CRISP-DM model, which connects $A$ and $G$ (actually $F$), except that the two ends of the arc model are not directly connected. Instead, they come into contact with --- and are separated by --- the world in all of its complexity and unpredictability. The relationship between the effects caused by our data products $G$ and the data we pull from the world $A$ is not given but a matter of discovery --- and often surprise. This is an important distinction between the model being proposed here and the simple idea that the pipeline forms a closed circle.
 
@@ -138,7 +137,10 @@ The area of analytics is defined by the practice of mathematical modeling based 
 
 The preceding four areas each represent areas of foundational knowledge, forms of expertise that can be taught as more or less separate subjects. In practice, however, these areas represent the interlocking parts of a division of labor that are integrated in the pipeline. This area consists of actual activities that brings people together to combine expertise from each of the four areas. It is characterized by data science teams working together and with external parties to develop solutions and projects that are responsible, authentic, efficient, and effective. Practice is also where the core areas of data science come into contact with a broad spectrum of domain knowledge and real world problems. The following diagram shows the central, integrative role played by practice:
 
-![The Integrative Role of Practice](images/image3.png){fig-align="center"}
+
+```{figure} images/image3.png
+The Integrative Role of Practice
+```
 
 ## Two Principal Components
 
@@ -178,7 +180,9 @@ The abstract-concrete axis accounts for the difference between two forms of know
 
 The result of the preceding may be represented by the following graphic.
 
-![The 4+1 Model of Data Science](images/image5.png){fig-align="center"}
+```{figure} images/image5.png
+The 4+1 Model of Data Science
+```
 
 This visualization represents data science as composed of specific and complementary forms of knowledge. The vertical axis defines the dominant polarity between analysis --- the *how* of data science, often identified entirely with it, contrasted with the *why* of data science, from which data science derives its meaning and value as a profession. The horizontal access defines the polarity of methods that are often obscured in academic definitions of data science --- the supporting practices that make the Analytics component work in the first place.
 
