@@ -280,7 +280,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/Analytics/Analytics_Labs.md" target="_blank"
+      <li><a href="../_sources/Analytics/Analytics_Labs.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +290,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.rst</span>
 </a>
 </li>
       
@@ -444,6 +444,30 @@ document.write(`
 <section id="lab-2-old-faithful">
 <h2>Lab 2 - Old Faithful<a class="headerlink" href="#lab-2-old-faithful" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-II.qmd"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pip install statsmodels</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="what-we-are-going-to-do-is-add-guassian-noise-itertatively-to-a-dataset-and-then-pass-the-new-noisy-dataset-to-a-pretrained-machine-linear-model-and-track-the-ability-of-the-model-to-learn-the-target-as-noise-increases">
 <h2>What we are going to do is add guassian noise itertatively to a dataset and then pass the new noisy dataset to a pretrained machine linear model and track the ability of the model to learn the target as noise increases.<a class="headerlink" href="#what-we-are-going-to-do-is-add-guassian-noise-itertatively-to-a-dataset-and-then-pass-the-new-noisy-dataset-to-a-pretrained-machine-linear-model-and-track-the-ability-of-the-model-to-learn-the-target-as-noise-increases" title="Permalink to this heading">#</a></h2>
@@ -451,21 +475,101 @@ document.write(`
 <li><p>Read this brief article on garbage in garbage out and this brief article on guassian noise.</p></li>
 <li><p>Answer the questions below as they relate to model output and the articles.</p></li>
 </ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is the dataset we will be using: classic eruption times for old faithful. </span>
+<span class="c1"># Take a look at the documentation </span>
+<span class="c1"># here: https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/faithful</span>
+
+
+<span class="c1"># This is our data source</span>
+<span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://gist.githubusercontent.com/curran/4b59d1046d9e66f2787780ad51a1cd87/raw/9ec906b78a98cf300947a37b56cfe70d01183200/data.tsv&quot;</span>
+
+
+<span class="c1"># Reading in the data, and use the &quot;tab&quot; as a separator so the data will be loaded </span>
+<span class="c1"># in correctly.  pd stands for pandas and &quot;pd.read_csv&quot; is the function we are </span>
+<span class="c1"># using to read in the data from the url.</span>
+<span class="n">old_faith</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="let-s-take-a-quick-look-at-a-plot-to-get-an-idea-of-the-distribution-of-the-data">
 <h2>Let’s take a quick look at a plot to get an idea of the distribution of the data.<a class="headerlink" href="#let-s-take-a-quick-look-at-a-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">old_faith</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eruption Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Waiting Time&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Note the patterns that you see, (you&#39;ll need this for your submission) </span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="next-lets-build-a-simple-model-to-predict-eruption-length-based-on-waiting-time">
 <h2>Next lets build a simple model to predict Eruption Length based on Waiting Time<a class="headerlink" href="#next-lets-build-a-simple-model-to-predict-eruption-length-based-on-waiting-time" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;waiting&#39;</span><span class="p">],</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;eruptions&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="n">lm</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+
+<span class="c1">#Using the R2 measure, how well does the model predict (scale of 0 to 1,</span>
+<span class="c1">#  where 1 is perfect, again needed for your submission)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="now-what-we-are-going-to-do-is-add-noise-to-the-dataset-and-then-rerun-the-model-and-see-what-happens">
 <h2>Now what we are going to do is add “noise” to the dataset and then rerun the model and see what happens.<a class="headerlink" href="#now-what-we-are-going-to-do-is-add-noise-to-the-dataset-and-then-rerun-the-model-and-see-what-happens" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mu= mean and sigma =standard deviation</span>
+<span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">.5</span> 
+<span class="c1"># creating a noise with the same dimension as the dataset (2,2) </span>
+<span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="p">[</span><span class="mi">272</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">noise</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="really-a-small-change-let-s-see-what-happens-to-the-model-quality">
 <h2>Really a small change, let’s see what happens to the model quality<a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-the-model-quality" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are adding the noise to the dataset</span>
+<span class="n">old_faith_1</span><span class="o">=</span><span class="n">old_faith</span> <span class="o">+</span> <span class="n">noise</span>
+
+<span class="c1">#Create a new model</span>
+<span class="n">lm_1</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">old_faith_1</span><span class="p">[</span><span class="s1">&#39;waiting&#39;</span><span class="p">],</span><span class="n">old_faith_1</span><span class="p">[</span><span class="s1">&#39;eruptions&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="c1">#Checking the R2 number</span>
+<span class="n">lm_1</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">
 <h2>Now let’s take a look at that same scatter plot but with the new data<a class="headerlink" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">old_faith_1</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eruption Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Waiting Time&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
 <section id="task-1-slowly-change-the-standard-deviation-increases-of-25-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model">
 <h3>Task 1: Slowly change the standard deviation (increases of .25) and see what happens with the R2 number, note the pace of change of the model.<a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increases-of-25-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model" title="Permalink to this heading">#</a></h3>
 </section>
