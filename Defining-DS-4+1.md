@@ -148,13 +148,12 @@ Is there a way to understand how the four primary areas are related to each othe
 
 Regarding the concrete and the abstract, it's clear that the arc model has a metric quality to it: as one moves toward the pivot point of analysis, one moves away from the concrete messiness of reality as experienced to the "tidy" and abstract world of mathematics; similarly, as one moves from the pivot back to the world, there is a requirement to convert esoteric results into more humanly intelligible forms, often through a process of concretization; visualizations succeed by employing concrete metaphors that flesh out mathematical ideas that are notoriously detached from the imagination --- no one can imagine, for example, n-dimensional spaces beyond a handful of dimensions. The arc describes a dialectic of abstraction and concretization that defines the ebb and flow and data science work.
 
-::: .table
 
-| &nbsp;         | Concrete        | Abstract        |
+|                | Concrete        | Abstract        |
 |----------------|-----------------|-----------------|
-| <b>Human</b>   | I<br>VALUE      | II'<br>DESIGN   |
-| <b>Machine</b> | III'<br>SYSTEMS | IV<br>ANALYTICS |
-:::
+| **Human**   | I <br /> VALUE      | II'<br /> DESIGN   |
+| **Machine** | III'<br /> SYSTEMS | IV<br /> ANALYTICS |
+ 
 
 The Four Areas in Two Dimensions
 
