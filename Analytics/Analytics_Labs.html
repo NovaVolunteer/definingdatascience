@@ -567,7 +567,7 @@ document.write(`
   <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>14:05:55</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
+  <th>Time:</th>                 <td>14:36:58</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
@@ -621,11 +621,11 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.06898056 -0.69732288]
- [-0.68393346  0.49833662]
- [-0.24929248 -0.03904148]
- [-0.42660103  0.58102229]
- [-0.01630289  0.23547087]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.5586004  -0.15007564]
+ [-0.04720992  0.33031301]
+ [-0.43846803  0.08118045]
+ [ 0.79586276 -0.10938029]
+ [-0.19213682  0.0702079 ]]
 </pre></div>
 </div>
 </div>
@@ -650,25 +650,25 @@ document.write(`
 <div class="output text_html"><table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.953</td> 
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.952</td> 
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.953</td> 
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.951</td> 
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5555.</td> 
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5327.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>1.41e-182</td>
+  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>3.19e-180</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>14:05:55</td>     <th>  Log-Likelihood:    </th>          <td> -1132.7</td> 
+  <th>Time:</th>                 <td>14:36:58</td>     <th>  Log-Likelihood:    </th>          <td> -1137.9</td> 
 </tr>
 <tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2267.</td> 
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2278.</td> 
 </tr>
 <tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2271.</td> 
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2281.</td> 
 </tr>
 <tr>
   <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
@@ -682,21 +682,21 @@ document.write(`
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>eruptions</th> <td>   18.8835</td> <td>    0.253</td> <td>   74.535</td> <td> 0.000</td> <td>   18.385</td> <td>   19.382</td>
+  <th>eruptions</th> <td>   19.3457</td> <td>    0.265</td> <td>   72.987</td> <td> 0.000</td> <td>   18.824</td> <td>   19.868</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td> 6.851</td> <th>  Durbin-Watson:     </th> <td>   2.309</td>
+  <th>Omnibus:</th>       <td> 0.713</td> <th>  Durbin-Watson:     </th> <td>   2.193</td>
 </tr>
 <tr>
-  <th>Prob(Omnibus):</th> <td> 0.033</td> <th>  Jarque-Bera (JB):  </th> <td>   4.129</td>
+  <th>Prob(Omnibus):</th> <td> 0.700</td> <th>  Jarque-Bera (JB):  </th> <td>   0.642</td>
 </tr>
 <tr>
-  <th>Skew:</th>          <td> 0.102</td> <th>  Prob(JB):          </th> <td>   0.127</td>
+  <th>Skew:</th>          <td>-0.119</td> <th>  Prob(JB):          </th> <td>   0.725</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>      <td> 2.432</td> <th>  Cond. No.          </th> <td>    1.00</td>
+  <th>Kurtosis:</th>      <td> 2.998</td> <th>  Cond. No.          </th> <td>    1.00</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
@@ -714,7 +714,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/12930c63395600145b8ece1bd7ad4a5846f301824ac76f3a5924ffa5bda3efca.png" src="../_images/12930c63395600145b8ece1bd7ad4a5846f301824ac76f3a5924ffa5bda3efca.png" />
+<img alt="../_images/eeeac4d528c4a05c5e121835d6436704aa0b2158f5392f09dffdeebf169c4404.png" src="../_images/eeeac4d528c4a05c5e121835d6436704aa0b2158f5392f09dffdeebf169c4404.png" />
 </div>
 </div>
 </section>
