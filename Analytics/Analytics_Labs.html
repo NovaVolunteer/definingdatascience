@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Analytics/Analytics_Labs';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -280,7 +282,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/Analytics/Analytics_Labs.rst" target="_blank"
+      <li><a href="../_sources/Analytics/Analytics_Labs.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +292,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.rst</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -454,19 +456,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="what-we-are-going-to-do-is-add-guassian-noise-itertatively-to-a-dataset-and-then-pass-the-new-noisy-dataset-to-a-pretrained-machine-linear-model-and-track-the-ability-of-the-model-to-learn-the-target-as-noise-increases">
@@ -509,6 +498,9 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/330cf4c2d0f5ca2c024c0cda2352503cee95471dd6d6d56fab0490e6b93ba360.png" src="../_images/330cf4c2d0f5ca2c024c0cda2352503cee95471dd6d6d56fab0490e6b93ba360.png" />
+</div>
 </div>
 </section>
 <section id="next-lets-build-a-simple-model-to-predict-eruption-length-based-on-waiting-time">
@@ -524,6 +516,59 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.973</td> 
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.973</td> 
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   9621.</td> 
+</tr>
+<tr>
+  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
+</tr>
+<tr>
+  <th>Time:</th>                 <td>10:42:19</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2127.</td> 
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>    
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>eruptions</th> <td>   19.4019</td> <td>    0.198</td> <td>   98.086</td> <td> 0.000</td> <td>   19.013</td> <td>   19.791</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+  <th>Omnibus:</th>       <td>31.065</td> <th>  Durbin-Watson:     </th> <td>   2.646</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.000</td> <th>  Jarque-Bera (JB):  </th> <td>  10.019</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td> 0.148</td> <th>  Prob(JB):          </th> <td> 0.00667</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 2.108</td> <th>  Cond. No.          </th> <td>    1.00</td>
+</tr>
+</table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
 </section>
 <section id="now-what-we-are-going-to-do-is-add-noise-to-the-dataset-and-then-rerun-the-model-and-see-what-happens">
@@ -535,6 +580,15 @@ document.write(`
 <span class="c1"># creating a noise with the same dimension as the dataset (2,2) </span>
 <span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="p">[</span><span class="mi">272</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">noise</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.31467065  1.2970115 ]
+ [ 0.13937883 -0.06590349]
+ [-0.26212278  0.70764204]
+ [ 0.47666111 -0.21095673]
+ [ 0.04656941 -1.29571631]]
 </pre></div>
 </div>
 </div>
@@ -555,6 +609,59 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.950</td> 
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.950</td> 
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5193.</td> 
+</tr>
+<tr>
+  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>8.63e-179</td>
+</tr>
+<tr>
+  <th>Time:</th>                 <td>10:42:19</td>     <th>  Log-Likelihood:    </th>          <td> -1141.3</td> 
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2285.</td> 
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2288.</td> 
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>    
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>eruptions</th> <td>   18.9506</td> <td>    0.263</td> <td>   72.059</td> <td> 0.000</td> <td>   18.433</td> <td>   19.468</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+  <th>Omnibus:</th>       <td> 3.673</td> <th>  Durbin-Watson:     </th> <td>   2.334</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.159</td> <th>  Jarque-Bera (JB):  </th> <td>   3.373</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td> 0.204</td> <th>  Prob(JB):          </th> <td>   0.185</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 2.638</td> <th>  Cond. No.          </th> <td>    1.00</td>
+</tr>
+</table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
 </section>
 <section id="now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">
@@ -568,6 +675,9 @@ document.write(`
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/c9351c085b48e1f6934d0d24b2a01dd3018d0e8e525fe098f5a282518cfffd2b.png" src="../_images/c9351c085b48e1f6934d0d24b2a01dd3018d0e8e525fe098f5a282518cfffd2b.png" />
 </div>
 </div>
 <section id="task-1-slowly-change-the-standard-deviation-increases-of-25-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model">
