@@ -1,9 +1,9 @@
 ---
-title: "Defining Data Science - 4 + 1 Overview" 
+# title: "Defining Data Science - 4 + 1 Overview" 
 format: html
 editor: visual
 link-citations: true
-bibliography: references2.bib
+bibliography: references.bib
 ---
 
 # The 4 + 1 Model of Data Science
