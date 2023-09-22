@@ -36,8 +36,9 @@ How will I know I have succeeded:
 
 | Specs Category |                                                                 Specs Detail                                                                  |
 |:----------------------------------:|:----------------------------------:|
-|   Submission   |                                                   Submit via Canvas a PDF or Word Document                                                    |
-|      Text      | \* Answer the above questions<br> \* When you were the code-maker submit the Entropy<br> \* When you were the code-breaker submit the results |
+|Submission   |                                                   
+- Submit via Canvas a PDF or Word Document                                                    |
+|Text      | - Answer the above questions<br> - When you were the code-maker submit the Entropy<br> - When you were the code-breaker submit the results |
 
 Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer & Palmer (2020).
 
@@ -58,7 +59,7 @@ import statsmodels.api as sm
 
 ```
 
-## What we are going to do is add guassian noise itertatively to a dataset and then pass the new noisy dataset to a pretrained machine linear model and track the ability of the model to learn the target as noise increases. 
+**What we are going to do is add guassian noise itertatively to a dataset and then pass the new noisy dataset to a pretrained machine linear model and track the ability of the model to learn the target as noise increases.**
 
 1. Read this brief article on garbage in garbage out and this brief article on guassian noise. 
 
@@ -82,7 +83,7 @@ old_faith = pd.read_csv(url, sep='\t')
 
 ```
 
-## Let's take a quick look at a plot to get an idea of the distribution of the data. 
+**Let's take a quick look at a plot to get an idea of the distribution of the data.**
 
 ```{python}
 
@@ -95,7 +96,7 @@ plt.show()
 # Note the patterns that you see, (you'll need this for your submission) 
 ```
 
-## Next lets build a simple model to predict Eruption Length based on Waiting Time 
+**Next lets build a simple model to predict Eruption Length based on Waiting Time**
 
 ```{python}
 lm = sm.OLS(old_faith['waiting'],old_faith['eruptions']).fit()
@@ -107,7 +108,7 @@ lm.summary()
 ```
 
 
-## Now what we are going to do is add "noise" to the dataset and then rerun the model and see what happens.
+**Now what we are going to do is add "noise" to the dataset and then rerun the model and see what happens.**
 ```{python}
 # mu= mean and sigma =standard deviation
 mu, sigma = 0, .5 
@@ -117,7 +118,7 @@ print(noise[0:5])
 
 ```
 
-## Really a small change, let's see what happens to the model quality
+**Really a small change, let's see what happens to the model quality**
 ```{python}
 # Here we are adding the noise to the dataset
 old_faith_1=old_faith + noise
@@ -130,7 +131,7 @@ lm_1.summary()
 
 ```
 
-## Now let's take a look at that same scatter plot but with the new data
+**Now let's take a look at that same scatter plot but with the new data**
 ```{python}
 plt.scatter(old_faith_1.eruptions, old_faith_1.waiting, alpha=0.5)
 plt.xlabel("Eruption Time")
@@ -140,11 +141,11 @@ plt.show()
 
 ```
 
-### Task 1: Slowly change the standard deviation (increases of .25) and see what happens with the R2 number, note the pace of change of the model.  
+#### Task 1: Slowly change the standard deviation (increases of .25) and see what happens with the R2 number, note the pace of change of the model.  
 
-### Task 2: Adjust the mean but leave the standard dev low, note how this effects the model.  
+#### Task 2: Adjust the mean but leave the standard dev low, note how this effects the model.  
 
-## Questions for submission: 
+### Questions for submission: 
 
 1. What patterns do you see in the data?
 
