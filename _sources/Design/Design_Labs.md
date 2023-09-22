@@ -57,9 +57,9 @@ Submission format: pdf
 
 **Tip on story writing:** You have a constraint of fitting two stories onto one side of a piece of paper. First figure out the core idea/point/message and then think about what are the key elements to tell that story. Be economical. or ... put another way .. Think carefully about what to leave in and what to leave out.
 
-```{figure} media/ds-1001-collage.png
-The Standard Sequence as a Narrative Arc
+```{figure} design/ds-1001-collage.png
 ```
+
 
 ## Lab 2 - Set
 DS 1001 
@@ -108,15 +108,15 @@ Submission format: pdf
 
 5. Write up your answers and submit your 2-page pdf to canvas.
 
-    To complete this assignment you will upload to canvas, a maximum 2-page pdf, single sided.
+    **To complete this assignment you will upload to canvas, a maximum 2-page pdf, single sided.**
 
-        1. Put your name and the assignment at the top along with today's date
+    1. Put your name and the assignment at the top along with today's date
 
-        2. Answer the following questions
+    2. Answer the following questions
 
-        3. Format the answers in an enumerated list.
+    3. Format the answers in an enumerated list.
 
-### Questions:
+### Questions
 
 1. How many different cards are possible in Set? (answer with an integer)
 
@@ -175,7 +175,7 @@ Submission format: pdf
 
 5. Write up your answers and submit your 2-page pdf to canvas.
 
-To complete this assignment you will upload to canvas, a maximum 2-page pdf, single sided.
+    **To complete this assignment you will upload to canvas, a maximum 2-page pdf, single sided.**
 
     1. Put your name and the assignment at the top along with today's date
 
@@ -183,7 +183,7 @@ To complete this assignment you will upload to canvas, a maximum 2-page pdf, sin
 
     3. Format the answers in an enumerated list.
 
-### Questions:
+### Questions
 
 1. What was your goal?
 
