@@ -34,8 +34,8 @@ How will I know I have succeeded
 
 | Specs Category | Specs Details                                                                                                                                |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Formatting     | - Submit via Canvas - Text answers to questions                                                                                              |
-| Text           | - Goal: The questions are designed to be answered during or right after the lab period - Use few sentences to answer each question in Canvas |
+| Formatting     | - Submit via Canvas <br /> - Text answers to questions                                                                                              |
+| Text           | - Goal: The questions are designed to be answered during or right after the lab period <br /> - Use few sentences to answer each question in Canvas |
 
 Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer & Palmer (2020).
 
@@ -67,15 +67,10 @@ Tips for success:
 
 How will I know I have succeeded:
 
-+----------------+------------------------------------------------------------------------------------------+
-| Specs Category | Specs Details                                                                            |
-+:==============:+:=========================================================================================+
-| Formatting     | -   Submit Via Canvas                                                                    |
-|                | -   Text answers to questions                                                            |
-+----------------+------------------------------------------------------------------------------------------+
-| Text           | -   Goal: The questions are designed to be answer during or right after the lab period.  |
-|                | -   Bullett points are fine for the first three questions, paragraph from for the fourth |
-+----------------+------------------------------------------------------------------------------------------+
+| Specs Category | Specs Details                                                                                                                                                                  |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Formatting     | - Submit via Canvas <br /> - Text answers to questions                                                                                                                                |
+| Text           | - Goal: the questions are designed to be answered during or right after the lab period. <br /> - Bullet points are fine for the first three questions, paragraph form for the fourth. |
 
 Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer & Palmer (2020).
 
@@ -108,14 +103,9 @@ Tips for success:
 
 How will I know I have succeeded:
 
-+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| Specs Category | Specs Details                                                                                                                                       |
-+:==============:+:====================================================================================================================================================+
-| Formatting     | -   Submit Via Canvas                                                                                                                               |
-|                | -   Summary of your three interviews in one document                                                                                                |
-|                | -   A reflection on any patterns you noticed in the answers                                                                                         |
-+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| Text           | -   Goal: The interview is designed to be fairly quick, 10 minutes or so for each. All together the assignment should take approximately one hour.  |
-+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Specs Category | Specs Details                                                                                                                                    |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Formatting     | - Submit via Canvas  <br /> - Summary of your three interviews in one document  <br />- A reflection on any patterns you noticed in the answers                 |
+| Text           | - Goal: the interview is designed to be fairly quick, 10 minutes or so for each. All together the assignment should take approximately one hour. |
 
 Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer & Palmer (2020).
