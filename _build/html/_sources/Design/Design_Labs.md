@@ -57,7 +57,7 @@ Submission format: pdf
 
 **Tip on story writing:** You have a constraint of fitting two stories onto one side of a piece of paper. First figure out the core idea/point/message and then think about what are the key elements to tell that story. Be economical. or ... put another way .. Think carefully about what to leave in and what to leave out.
 
-```{figure} design/ds-1001-collage.png
+```{figure} ds-1001-collage.png
 ```
 
 
