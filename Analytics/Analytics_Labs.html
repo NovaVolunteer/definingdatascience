@@ -375,15 +375,14 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">Lab 1 - Mastermind entropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-old-faithful">Lab 2 - Old Faithful</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-are-going-to-do-is-add-guassian-noise-itertatively-to-a-dataset-and-then-pass-the-new-noisy-dataset-to-a-pretrained-machine-linear-model-and-track-the-ability-of-the-model-to-learn-the-target-as-noise-increases">What we are going to do is add guassian noise itertatively to a dataset and then pass the new noisy dataset to a pretrained machine linear model and track the ability of the model to learn the target as noise increases.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a plot to get an idea of the distribution of the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-simple-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a simple model to predict Eruption Length based on Waiting Time</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-what-we-are-going-to-do-is-add-noise-to-the-dataset-and-then-rerun-the-model-and-see-what-happens">Now what we are going to do is add “noise” to the dataset and then rerun the model and see what happens.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-the-model-quality">Really a small change, let’s see what happens to the model quality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">Really a small change, let’s see what happens to model quality</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">Now let’s take a look at that same scatter plot but with the new data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increases-of-25-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model">Task 1: Slowly change the standard deviation (increases of .25) and see what happens with the R2 number, note the pace of change of the model.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-adjust-the-mean-but-leave-the-standard-dev-low-note-how-this-effects-the-model">Task 2: Adjust the mean but leave the standard dev low, note how this effects the model.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">Questions for submission:</a></li>
 </ul>
 </li>
@@ -401,17 +400,17 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
 </li>
 </ul>
@@ -472,9 +471,9 @@ document.write(`
 </table>
 <p>Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer &amp; Palmer (2020).</p>
 </section>
-<section id="lab-2-old-faithful">
-<h2>Lab 2 - Old Faithful<a class="headerlink" href="#lab-2-old-faithful" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-II.qmd"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<section id="lab-2-garbage-in-garbage-out">
+<h2>Lab 2 - Garbage In Garbage Out<a class="headerlink" href="#lab-2-garbage-in-garbage-out" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-IIa.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pip install statsmodels</span>
@@ -486,24 +485,25 @@ document.write(`
 </div>
 </div>
 </div>
-<section id="what-we-are-going-to-do-is-add-guassian-noise-itertatively-to-a-dataset-and-then-pass-the-new-noisy-dataset-to-a-pretrained-machine-linear-model-and-track-the-ability-of-the-model-to-learn-the-target-as-noise-increases">
-<h3>What we are going to do is add guassian noise itertatively to a dataset and then pass the new noisy dataset to a pretrained machine linear model and track the ability of the model to learn the target as noise increases.<a class="headerlink" href="#what-we-are-going-to-do-is-add-guassian-noise-itertatively-to-a-dataset-and-then-pass-the-new-noisy-dataset-to-a-pretrained-machine-linear-model-and-track-the-ability-of-the-model-to-learn-the-target-as-noise-increases" title="Permalink to this heading">#</a></h3>
+<p><strong>What we are going to do is create a linear model using old faithful data. Then we are going to add Gaussian noise iteratively to a dataset and pass the new noisy dataset to a the same linear regression model and track the ability of the model to learn the target as noise increases.</strong></p>
 <ol class="arabic simple">
-<li><p>Read this brief article on garbage in garbage out and this brief article on guassian noise.</p></li>
-<li><p>Answer the questions below as they relate to model output and the articles.</p></li>
+<li><p>Read this brief wiki on garbage in garbage out: <a class="reference external" href="https://en.wikipedia.org/wiki/Garbage_in,_garbage_out">article</a></p></li>
+<li><p>Work through the below notebook, paying close attention to the comments and the outputs of the code.</p></li>
+<li><p>Answer the questions at the end as they relate to the process of adding noise to a dataset and then passing it to a linear regression model.</p></li>
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is the dataset we will be using: classic eruption times for old faithful. </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The dataset we will be using is a well known measure of eruption and wait times for old faithful. </span>
 <span class="c1"># Take a look at the documentation </span>
 <span class="c1"># here: https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/faithful</span>
 
 
-<span class="c1"># This is our data source</span>
+<span class="c1"># This is our data source (.tsv == tab separated), here we are creating a variable that holds the url to the data.</span>
+<span class="c1"># If you click the {x} in the ribbon to the left you will see the variables you have created.</span>
 <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://gist.githubusercontent.com/curran/4b59d1046d9e66f2787780ad51a1cd87/raw/9ec906b78a98cf300947a37b56cfe70d01183200/data.tsv&quot;</span>
 
 
-<span class="c1"># Reading in the data, and use the &quot;tab&quot; as a separator so the data will be loaded </span>
+<span class="c1"># Here we are reading in the data, and use the &quot;tab&quot; as a separator so the data will be loaded </span>
 <span class="c1"># in correctly.  pd stands for pandas and &quot;pd.read_csv&quot; is the function we are </span>
 <span class="c1"># using to read in the data from the url.</span>
 <span class="n">old_faith</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -511,15 +511,18 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-<section id="let-s-take-a-quick-look-at-a-plot-to-get-an-idea-of-the-distribution-of-the-data">
-<h3>Let’s take a quick look at a plot to get an idea of the distribution of the data.<a class="headerlink" href="#let-s-take-a-quick-look-at-a-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Permalink to this heading">#</a></h3>
+<section id="let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">
+<h3>Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.<a class="headerlink" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">old_faith</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eruption Time&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Waiting Time&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plt (matplotlib.pyplot) is the library we are using to create our scatter plot.  We are using the &quot;scatter&quot; function, </span>
+<span class="c1"># and the alpha is the transparency of the dots.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span><span class="n">old_faith</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="c1"># here we are adding the labels to the x and y axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eruption Seconds&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Waiting Minutes&quot;</span><span class="p">)</span>
 
+<span class="c1">#this is the function that renders the plot</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Note the patterns that you see, (you&#39;ll need this for your submission) </span>
@@ -527,20 +530,24 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/330cf4c2d0f5ca2c024c0cda2352503cee95471dd6d6d56fab0490e6b93ba360.png" src="../_images/330cf4c2d0f5ca2c024c0cda2352503cee95471dd6d6d56fab0490e6b93ba360.png" />
+<img alt="../_images/4ce7bdb58543ab936746648350cd003149699bb89902e54cf7bb6eeb718f4d12.png" src="../_images/4ce7bdb58543ab936746648350cd003149699bb89902e54cf7bb6eeb718f4d12.png" />
 </div>
 </div>
 </section>
-<section id="next-lets-build-a-simple-model-to-predict-eruption-length-based-on-waiting-time">
-<h3>Next lets build a simple model to predict Eruption Length based on Waiting Time<a class="headerlink" href="#next-lets-build-a-simple-model-to-predict-eruption-length-based-on-waiting-time" title="Permalink to this heading">#</a></h3>
+<section id="next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">
+<h3>Next lets build a linear regression model to predict Eruption Length based on Waiting Time<a class="headerlink" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;waiting&#39;</span><span class="p">],</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;eruptions&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Here we are using the statsmodels library to create a linear regression model. sm stands for statsmodels and OLS </span>
+<span class="c1"># stands for Ordinary Least Squares.  We are using the &quot;fit&quot; function to fit the model to the data.</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;waiting&#39;</span><span class="p">],</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;eruptions&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 
+<span class="c1"># Now we are printing out the summary of the model (lm). The summary function will give you the R2 measure, along with </span>
+<span class="c1"># other measures of model fit. </span>
 <span class="n">lm</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 
-<span class="c1">#Using the R2 measure, how well does the model predict (scale of 0 to 1,</span>
-<span class="c1">#  where 1 is perfect, again needed for your submission)</span>
+<span class="c1">#Using the R2 measure, how well does the model predict eruption length (scale of 0 to 1,</span>
+<span class="c1">#  where 1 is perfect, again needed for your submission)?</span>
 </pre></div>
 </div>
 </div>
@@ -560,7 +567,7 @@ document.write(`
   <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>12:57:44</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
+  <th>Time:</th>                 <td>13:13:41</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
@@ -599,40 +606,42 @@ document.write(`
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
 </section>
-<section id="now-what-we-are-going-to-do-is-add-noise-to-the-dataset-and-then-rerun-the-model-and-see-what-happens">
-<h3>Now what we are going to do is add “noise” to the dataset and then rerun the model and see what happens.<a class="headerlink" href="#now-what-we-are-going-to-do-is-add-noise-to-the-dataset-and-then-rerun-the-model-and-see-what-happens" title="Permalink to this heading">#</a></h3>
+<section id="now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">
+<h3>Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.<a class="headerlink" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mu= mean and sigma =standard deviation</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mu= mean and sigma = standard deviation, these are the inputs you will be changing</span>
 <span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">.5</span> 
-<span class="c1"># creating a noise with the same dimension as the dataset (2,2) </span>
-<span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="p">[</span><span class="mi">272</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span> 
+<span class="c1"># We need to create noise with the same dimensions as the dataset (272,2), this will allow us </span>
+<span class="c1"># to combine them easily</span>
+<span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="p">[</span><span class="mi">272</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1"># The print function will print the first 5 rows of the noise array </span>
 <span class="nb">print</span><span class="p">(</span><span class="n">noise</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 0.32902765 -0.1078413 ]
- [ 0.12562627  0.10626711]
- [ 0.29773852 -0.29944637]
- [-0.18247754 -0.36845475]
- [-0.04022244  0.50626885]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.37356637 -0.38980294]
+ [-0.09240853  0.0460963 ]
+ [-0.42826926 -0.06641671]
+ [-0.87934993  0.78203116]
+ [ 0.39689501 -0.14170274]]
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="really-a-small-change-let-s-see-what-happens-to-the-model-quality">
-<h3>Really a small change, let’s see what happens to the model quality<a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-the-model-quality" title="Permalink to this heading">#</a></h3>
+<section id="really-a-small-change-let-s-see-what-happens-to-model-quality">
+<h3>Really a small change, let’s see what happens to model quality<a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-model-quality" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are adding the noise to the dataset</span>
 <span class="n">old_faith_1</span><span class="o">=</span><span class="n">old_faith</span> <span class="o">+</span> <span class="n">noise</span>
 
-<span class="c1">#Create a new model</span>
+<span class="c1">#Create a new model with the noise added to the data</span>
 <span class="n">lm_1</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">old_faith_1</span><span class="p">[</span><span class="s1">&#39;waiting&#39;</span><span class="p">],</span><span class="n">old_faith_1</span><span class="p">[</span><span class="s1">&#39;eruptions&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 
-<span class="c1">#Checking the R2 number</span>
+<span class="c1">#Checking the R2 number, note what happens.</span>
 <span class="n">lm_1</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -641,25 +650,25 @@ document.write(`
 <div class="output text_html"><table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.954</td> 
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.959</td> 
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.954</td> 
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.959</td> 
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5626.</td> 
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   6364.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>2.75e-183</td>
+  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>3.18e-190</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>12:57:44</td>     <th>  Log-Likelihood:    </th>          <td> -1131.1</td> 
+  <th>Time:</th>                 <td>13:13:41</td>     <th>  Log-Likelihood:    </th>          <td> -1115.0</td> 
 </tr>
 <tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2264.</td> 
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2232.</td> 
 </tr>
 <tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2268.</td> 
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2236.</td> 
 </tr>
 <tr>
   <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
@@ -673,21 +682,21 @@ document.write(`
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>eruptions</th> <td>   19.1777</td> <td>    0.256</td> <td>   75.008</td> <td> 0.000</td> <td>   18.674</td> <td>   19.681</td>
+  <th>eruptions</th> <td>   18.9860</td> <td>    0.238</td> <td>   79.775</td> <td> 0.000</td> <td>   18.517</td> <td>   19.455</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td> 1.053</td> <th>  Durbin-Watson:     </th> <td>   2.254</td>
+  <th>Omnibus:</th>       <td> 1.254</td> <th>  Durbin-Watson:     </th> <td>   2.387</td>
 </tr>
 <tr>
-  <th>Prob(Omnibus):</th> <td> 0.591</td> <th>  Jarque-Bera (JB):  </th> <td>   1.078</td>
+  <th>Prob(Omnibus):</th> <td> 0.534</td> <th>  Jarque-Bera (JB):  </th> <td>   1.313</td>
 </tr>
 <tr>
-  <th>Skew:</th>          <td>-0.052</td> <th>  Prob(JB):          </th> <td>   0.583</td>
+  <th>Skew:</th>          <td> 0.160</td> <th>  Prob(JB):          </th> <td>   0.519</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>      <td> 2.710</td> <th>  Cond. No.          </th> <td>    1.00</td>
+  <th>Kurtosis:</th>      <td> 2.884</td> <th>  Cond. No.          </th> <td>    1.00</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
@@ -696,32 +705,34 @@ document.write(`
 <h3>Now let’s take a look at that same scatter plot but with the new data<a class="headerlink" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">old_faith_1</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Eruption Time&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Waiting Time&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eruption Seconds&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Waiting Minutes&quot;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b5fd32a89c6880b28772614f25236df7f09a9c0a887926142799b21dc52d7556.png" src="../_images/b5fd32a89c6880b28772614f25236df7f09a9c0a887926142799b21dc52d7556.png" />
+<img alt="../_images/ee586da1beef9309a607af4ff887ad38e7841177d734eff23a13e4949b43a9f7.png" src="../_images/ee586da1beef9309a607af4ff887ad38e7841177d734eff23a13e4949b43a9f7.png" />
 </div>
 </div>
 </section>
-<section id="task-1-slowly-change-the-standard-deviation-increases-of-25-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model">
-<h3>Task 1: Slowly change the standard deviation (increases of .25) and see what happens with the R2 number, note the pace of change of the model.<a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increases-of-25-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model" title="Permalink to this heading">#</a></h3>
+<section id="task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">
+<h3>Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).<a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="task-2-adjust-the-mean-but-leave-the-standard-dev-low-note-how-this-effects-the-model">
-<h3>Task 2: Adjust the mean but leave the standard dev low, note how this effects the model.<a class="headerlink" href="#task-2-adjust-the-mean-but-leave-the-standard-dev-low-note-how-this-effects-the-model" title="Permalink to this heading">#</a></h3>
+<section id="task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">
+<h3>Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.<a class="headerlink" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="questions-for-submission">
 <h3>Questions for submission:<a class="headerlink" href="#questions-for-submission" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>What patterns do you see in the data?</p></li>
-<li><p>How well did the first model fit the data?</p></li>
-<li><p>Explain the concept behind noise versus signal as it relates to example today on the old faithful dataset.</p></li>
-<li><p>Define the term gaussian noise and explain the observations you noted as it relates to</p></li>
+<li><p>What patterns do you see in the original data (from the scatter plot)?</p></li>
+<li><p>How well did the first model fit the original data (from the model output)?</p></li>
+<li><p>What happens when you add the standard deviation oriented noise to the data, at what level does the model appear to degrade significantly?</p></li>
+<li><p>What happens when you add the mean noise to the data while holding the standard dev constant, does the model degrade at the same level as the standard deviation noise? Why or why not?</p></li>
+<li><p>Explain the concept behind noise versus signal as it relates to the old faithful dataset, how does this relate to garbage in garbage out?</p></li>
+<li><p>Explain what the linear regression model is doing.</p></li>
 </ol>
 </section>
 </section>
@@ -2188,14 +2199,14 @@ Name: mfr, dtype: int64
 </div>
 </div>
 </section>
+</section>
 <section id="task-1">
-<h4>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h4>
+<h3>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</p></li>
 <li><p>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</p></li>
 <li><p>Lastly recommend a value for k and explain why you recommend that value.</p></li>
 </ol>
-</section>
 </section>
 <section id="part-2-probabilities-of-the-model">
 <h3>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h3>
@@ -2651,15 +2662,16 @@ Name: mfr, dtype: int64
 </div>
 </div>
 </section>
+</section>
 <section id="task-2-determine-how-the-probabilities-are-calculated">
-<h4>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h4>
+<h3>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</p></li>
 <li><p>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</p></li>
 <li><p>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</p></li>
 </ol>
 <section id="second-model-building-cell">
-<h5>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h5>
+<h4>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>   <span class="c1"># kNN is a random algorithm, so we use `random.seed(x)` to make results repeatable</span>
@@ -2677,7 +2689,7 @@ Name: mfr, dtype: int64
 </div>
 </section>
 <section id="graph-cell">
-<h5>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h5>
+<h4>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_probs_1</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -2697,7 +2709,6 @@ Name: mfr, dtype: int64
 <img alt="../_images/5686506ed1877cd43e889efae9d87060bbaa9bf15aa6f6f095f740c6dbbd1941.png" src="../_images/5686506ed1877cd43e889efae9d87060bbaa9bf15aa6f6f095f740c6dbbd1941.png" />
 </div>
 </div>
-</section>
 </section>
 </section>
 </section>
@@ -2771,15 +2782,14 @@ Name: mfr, dtype: int64
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">Lab 1 - Mastermind entropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-old-faithful">Lab 2 - Old Faithful</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-are-going-to-do-is-add-guassian-noise-itertatively-to-a-dataset-and-then-pass-the-new-noisy-dataset-to-a-pretrained-machine-linear-model-and-track-the-ability-of-the-model-to-learn-the-target-as-noise-increases">What we are going to do is add guassian noise itertatively to a dataset and then pass the new noisy dataset to a pretrained machine linear model and track the ability of the model to learn the target as noise increases.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a plot to get an idea of the distribution of the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-simple-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a simple model to predict Eruption Length based on Waiting Time</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-what-we-are-going-to-do-is-add-noise-to-the-dataset-and-then-rerun-the-model-and-see-what-happens">Now what we are going to do is add “noise” to the dataset and then rerun the model and see what happens.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-the-model-quality">Really a small change, let’s see what happens to the model quality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">Really a small change, let’s see what happens to model quality</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">Now let’s take a look at that same scatter plot but with the new data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increases-of-25-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model">Task 1: Slowly change the standard deviation (increases of .25) and see what happens with the R2 number, note the pace of change of the model.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-adjust-the-mean-but-leave-the-standard-dev-low-note-how-this-effects-the-model">Task 2: Adjust the mean but leave the standard dev low, note how this effects the model.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">Questions for submission:</a></li>
 </ul>
 </li>
@@ -2797,17 +2807,17 @@ Name: mfr, dtype: int64
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
 </li>
 </ul>
