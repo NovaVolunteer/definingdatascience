@@ -574,7 +574,7 @@ document.write(`
   <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>16:02:57</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
+  <th>Time:</th>                 <td>16:16:00</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
@@ -628,11 +628,11 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 0.29344828  0.25478554]
- [ 0.23088527 -0.16487414]
- [-0.56360154  0.35719275]
- [ 0.36290985 -0.20352676]
- [ 0.24062282 -0.31930137]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.70722665  0.39526871]
+ [-0.25774613  0.65653235]
+ [-1.20972061  0.42466139]
+ [-0.78286247 -0.7742819 ]
+ [ 0.1950832  -0.00297224]]
 </pre></div>
 </div>
 </div>
@@ -657,25 +657,25 @@ document.write(`
 <div class="output text_html"><table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.948</td> 
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.957</td> 
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.948</td> 
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.957</td> 
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   4935.</td> 
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5986.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>6.02e-176</td>
+  <th>Date:</th>             <td>Fri, 22 Sep 2023</td> <th>  Prob (F-statistic):</th>          <td>9.06e-187</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>16:02:57</td>     <th>  Log-Likelihood:    </th>          <td> -1148.1</td> 
+  <th>Time:</th>                 <td>16:16:00</td>     <th>  Log-Likelihood:    </th>          <td> -1123.1</td> 
 </tr>
 <tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2298.</td> 
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2248.</td> 
 </tr>
 <tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2302.</td> 
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2252.</td> 
 </tr>
 <tr>
   <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
@@ -689,21 +689,21 @@ document.write(`
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>eruptions</th> <td>   18.7791</td> <td>    0.267</td> <td>   70.248</td> <td> 0.000</td> <td>   18.253</td> <td>   19.305</td>
+  <th>eruptions</th> <td>   18.9882</td> <td>    0.245</td> <td>   77.367</td> <td> 0.000</td> <td>   18.505</td> <td>   19.471</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td> 5.655</td> <th>  Durbin-Watson:     </th> <td>   2.320</td>
+  <th>Omnibus:</th>       <td> 2.712</td> <th>  Durbin-Watson:     </th> <td>   2.007</td>
 </tr>
 <tr>
-  <th>Prob(Omnibus):</th> <td> 0.059</td> <th>  Jarque-Bera (JB):  </th> <td>   3.691</td>
+  <th>Prob(Omnibus):</th> <td> 0.258</td> <th>  Jarque-Bera (JB):  </th> <td>   2.692</td>
 </tr>
 <tr>
-  <th>Skew:</th>          <td> 0.109</td> <th>  Prob(JB):          </th> <td>   0.158</td>
+  <th>Skew:</th>          <td> 0.197</td> <th>  Prob(JB):          </th> <td>   0.260</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>      <td> 2.472</td> <th>  Cond. No.          </th> <td>    1.00</td>
+  <th>Kurtosis:</th>      <td> 2.714</td> <th>  Cond. No.          </th> <td>    1.00</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
@@ -721,7 +721,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1d27dbed7b4875709f18f74fe871251f6642c02aa7b5c9e1edbdfc3d68f1b51d.png" src="../_images/1d27dbed7b4875709f18f74fe871251f6642c02aa7b5c9e1edbdfc3d68f1b51d.png" />
+<img alt="../_images/1100d6497e734dea9314f9a612416e3a840601ef60593ef120544219109c48f9.png" src="../_images/1100d6497e734dea9314f9a612416e3a840601ef60593ef120544219109c48f9.png" />
 </div>
 </div>
 </section>
@@ -2189,7 +2189,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7727272727272727
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7272727272727273
 </pre></div>
 </div>
 </div>
@@ -2251,8 +2251,8 @@ Name: count, dtype: int64
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>1</th>
@@ -2266,8 +2266,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>3</th>
-      <td>1.000000</td>
       <td>0.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2281,58 +2281,58 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>6</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>0.666667</td>
       <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
-    </tr>
-    <tr>
-      <th>14</th>
       <td>1.000000</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>14</th>
       <td>0.666667</td>
       <td>0.333333</td>
     </tr>
     <tr>
+      <th>15</th>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
       <th>16</th>
-      <td>0.666667</td>
       <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>17</th>
@@ -2341,23 +2341,23 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>18</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
   </tbody>
 </table>
@@ -2404,7 +2404,7 @@ Name: count, dtype: int64
       <th>0</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>1</th>
@@ -2421,12 +2421,12 @@ Name: count, dtype: int64
     <tr>
       <th>3</th>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>1.000000</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1</td>
+      <td>0</td>
       <td>0</td>
       <td>0.666667</td>
     </tr>
@@ -2475,8 +2475,8 @@ Name: count, dtype: int64
       <th>0</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>1</th>
@@ -2495,100 +2495,100 @@ Name: count, dtype: int64
     <tr>
       <th>3</th>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1</td>
+      <td>0</td>
       <td>0</td>
       <td>0.666667</td>
       <td>0.333333</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0.666667</td>
       <td>0.333333</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1</td>
-      <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
-    </tr>
-    <tr>
-      <th>7</th>
       <td>0</td>
       <td>0</td>
       <td>1.000000</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>7</th>
       <td>1</td>
       <td>0</td>
       <td>0.666667</td>
       <td>0.333333</td>
     </tr>
     <tr>
+      <th>8</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
       <th>9</th>
       <td>0</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>1</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>11</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
       <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>13</th>
       <td>0</td>
       <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0</td>
+      <td>0</td>
       <td>0.666667</td>
       <td>0.333333</td>
     </tr>
     <tr>
-      <th>14</th>
+      <th>15</th>
       <td>0</td>
       <td>0</td>
       <td>1.000000</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
-    </tr>
-    <tr>
       <th>16</th>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>17</th>
@@ -2599,31 +2599,31 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>18</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>20</th>
       <td>1</td>
       <td>0</td>
       <td>1.000000</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>19</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
-    </tr>
-    <tr>
       <th>21</th>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
   </tbody>
 </table>
@@ -2654,7 +2654,7 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;pos_pred&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/b12bd2bbe1289d43bf76f9973884312cc88481a1eb8283f7c01e5680e639ffdc.png" src="../_images/b12bd2bbe1289d43bf76f9973884312cc88481a1eb8283f7c01e5680e639ffdc.png" />
+<img alt="../_images/a426576a9099383840e8db206f18b38070ed76e429b277d7d536d016af60caa6.png" src="../_images/a426576a9099383840e8db206f18b38070ed76e429b277d7d536d016af60caa6.png" />
 </div>
 </div>
 </section>
@@ -2702,7 +2702,7 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;good_cereal_prob&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/90b3e7d3ddad5f4c7becadee0de688a52febe2be79341f272be80999e81c019a.png" src="../_images/90b3e7d3ddad5f4c7becadee0de688a52febe2be79341f272be80999e81c019a.png" />
+<img alt="../_images/69dbbc43435946c54618ae7bd8a2ef7d7b50713c8e7f1c20ff54e820149e7627.png" src="../_images/69dbbc43435946c54618ae7bd8a2ef7d7b50713c8e7f1c20ff54e820149e7627.png" />
 </div>
 </div>
 </section>
