@@ -38,18 +38,18 @@ By thinking of the pipeline as a story we can analyze it with techniques develop
 
 An analysis of a representative sample of essays that define a data processing pipeline shows that the various pipeline stories consist of elements drawn from a primary standard sequence of about twelve elements, give or take a few depending on how one might expand or contract terms. These are listed and defined below by a core set of event types, with the understanding that many synonyms are employed in the examples.
 
-1.  [Understand]{.underline}. The work of developing a question that the acquisition and analysis of data can answer. Questions may range from the status of a scientific hypothesis the merit of a business value proposition. More broadly, this is the stage of framing and scoping the work that follows.
-2.  [Plan]{.underline}. The work of designing an experiment to produce data or of devising a strategy to acquire existing data relevant to the goals specified by the Understand phase.
-3.  [Collect]{.underline}. The work of producing or acquiring data. This covers a broad range of activities from taking surveys to generating signal data to harvesting data from databases to scraping websites.
-4.  [Store]{.underline}. The work of moving data from its collected state to a persistent store to house the data. This may be a file system or a database.
-5.  [Clean]{.underline}. The work of fixing problems with data as collected and stored. This covers a wide range of activities, including the normalizing the data formats (such as dates) to the handling of missing data to the transformation of tables into some level of normal form.
-6.  [Explore]{.underline}. The work of investigating cleaned data for general patterns, distributions, simple clusters, outliers, sanity, etc. Exploratory data analysis provides a useful set of tools and perspectives for this work. In some models, this activity is expanded into more sophisticated forms of pattern discovery and becomes associated more directly with the Model phase. Visualization using tools such as box plots, scatter plots, histograms, etc. play a large role here.
-7.  [Prepare]{.underline}. The work of transforming data into a form suitable for the particular methods planned in the Model phase. This may mean generating tidy tables for statistical analysis, wide-format data for matrix operations, one-hot encoded feature spaces for input into deep learning systems, or graph structured data for network analysis. Also included here is feature engineering and dimensionality reduction.
-8.  [Model]{.underline}. The work of using data to train models or estimate parameters for the tasks of prediction, inference, etc. Internally, this phase comprises a sub-pipeline that operates closely with the previous and following steps and involves model selection, parameter tuning, validation, and testing. Additionally, this area is characterized by general approach, which may be based in classification (predictive modeling), inference, or simulation.
-9.  [Interpret]{.underline}. The work of making sense of the results of modeling the data, in terms of the terms set out by the Understand phase. This may mean making claims about causality, assigning real-world correlates to discovered patterns, or assessing the generalizability of a classifier.
-10. [Communicate]{.underline}. The work of representing data, model, and results to stakeholders as defined or implied by the Understand phase. The includes the work of visualization broadly conceived, from the creation on interactive visualizations to static infographics. It also includes story-telling and essay writing for both specialized and generalized audiences.
-11. [Deploy]{.underline}. If the work results in a data product, such as real-time classifier to support a business process, this means standing up and maintaining the software product in a performant and scalable hardware environment.
-12. [Reflect]{.underline}. Between iterations of the pipeline, this is the work of reflecting on the strategic or philosophical significance of the work conducted. It also includes the ethical dimension of the work conducted.
+1.  <u>Understand</u>. The work of developing a question that the acquisition and analysis of data can answer. Questions may range from the status of a scientific hypothesis the merit of a business value proposition. More broadly, this is the stage of framing and scoping the work that follows.
+2.  <u>Plan</u>. The work of designing an experiment to produce data or of devising a strategy to acquire existing data relevant to the goals specified by the Understand phase.
+3.  <u>Collect</u>. The work of producing or acquiring data. This covers a broad range of activities from taking surveys to generating signal data to harvesting data from databases to scraping websites.
+4.  <u>Store</u>. The work of moving data from its collected state to a persistent store to house the data. This may be a file system or a database.
+5.  <u>Clean</u>. The work of fixing problems with data as collected and stored. This covers a wide range of activities, including the normalizing the data formats (such as dates) to the handling of missing data to the transformation of tables into some level of normal form.
+6.  <u>Explore</u>. The work of investigating cleaned data for general patterns, distributions, simple clusters, outliers, sanity, etc. Exploratory data analysis provides a useful set of tools and perspectives for this work. In some models, this activity is expanded into more sophisticated forms of pattern discovery and becomes associated more directly with the Model phase. Visualization using tools such as box plots, scatter plots, histograms, etc. play a large role here.
+7.  <u>Prepare</u>. The work of transforming data into a form suitable for the particular methods planned in the Model phase. This may mean generating tidy tables for statistical analysis, wide-format data for matrix operations, one-hot encoded feature spaces for input into deep learning systems, or graph structured data for network analysis. Also included here is feature engineering and dimensionality reduction.
+8.  <u>Model</u>. The work of using data to train models or estimate parameters for the tasks of prediction, inference, etc. Internally, this phase comprises a sub-pipeline that operates closely with the previous and following steps and involves model selection, parameter tuning, validation, and testing. Additionally, this area is characterized by general approach, which may be based in classification (predictive modeling), inference, or simulation.
+9.  <u>Interpret</u>. The work of making sense of the results of modeling the data, in terms of the terms set out by the Understand phase. This may mean making claims about causality, assigning real-world correlates to discovered patterns, or assessing the generalizability of a classifier.
+10. <u>Communicate</u>. The work of representing data, model, and results to stakeholders as defined or implied by the Understand phase. The includes the work of visualization broadly conceived, from the creation on interactive visualizations to static infographics. It also includes story-telling and essay writing for both specialized and generalized audiences.
+11. <u>Deploy</u>. If the work results in a data product, such as real-time classifier to support a business process, this means standing up and maintaining the software product in a performant and scalable hardware environment.
+12. <u>Reflect</u>. Between iterations of the pipeline, this is the work of reflecting on the strategic or philosophical significance of the work conducted. It also includes the ethical dimension of the work conducted.
 
 Note that the descriptions are not meant to be prescriptive; they are attempts at summarizing the descriptions found in the literature. With this composite view in place, it will be easier to address limitations and fill gaps in our effort to create an authentic definition of data science.
 
@@ -67,7 +67,7 @@ As the CRISP-DM model shows, in some cases the pipeline is described as a circul
 
 A close look at the twelve phases listed above shows that a given phase may be more closely related to some phases than to others --- in other words, the phases can be grouped thematically. For example, it seems clear that the Understand and Plan phases go together, just as Clean, Explore, and Prepare do. They belong together because we can imagine performing their associated activities together, and separately from the other phases. Also, in some cases the order of the phases within the group may change --- for example, explore might precede cleaning in the event, as the two are often performed simultaneously --- while the sequential order of the groups is less likely to vary. Finally, we can imagine assigning different teams to perform the labor in each thematic grouping, by virtue of the expertise required to carry them out.
 
-Given this, the twelve-part composite pipeline can be reduced to seven groups:
+Given this, the twelve-part composite pipeline can be reduced to seven groups:<br>
 
     $A$ understand and plan\
     $B$ collect and store\
@@ -81,7 +81,12 @@ Each of these thematic groups may be considered a "chapter" in the story. Note t
 
 ## An Arc with Four Zones
 
-![The Standard Sequence as a Narrative Arc](images/image1.png){fig-align="center"}
+```{figure, fig-align="center"} images/image1.png
+The Standard Sequence as a Narrative Arc
+```
+
+
+```[The Standard Sequence as a Narrative Arc](images/image1.png){fig-align="center"}```
 
 To be sure, the middle chapter plays a central role in our story. If we think of the story as following a classical "there and back again" structure --- a chiasmus pattern like $X_1, Y_1, Z, Y_2, X_2$ --- then chapter $D$ is the pivot, while chapters $A,$ $B,$ and $C$ mirror $E,$ $F,$ and $G$. Thinking of the story in this way allows us to identify a parallel structure in the pipeline, connecting phases that are usually seen as separate. Specifically, we may visualize the pipeline as an arc, a **U**-shaped process in which chapters in the first half of the pipeline mirror the those of the second half. We may then group chapters by the pairs formed in this way, yielding four zones --- $A$ and $G$ belong to zone $I$, $B$ and $F$ to $II$, $C$ and $E$ to $III$, and $D$ to $IV$ --- as in the following diagram:
 
