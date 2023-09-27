@@ -32,7 +32,7 @@ chapters:
   - file: Analytics/Analytics_Case
 - file: Appendix/Appendix
   sections:
-  - file: Appendix/test
+  - file: Appendix/appendix-sources
 #   - file: Summary Table
 #   - file: References
 #     sections: List of Sources

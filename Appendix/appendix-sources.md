@@ -1,4 +1,14 @@
 ---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+
 title: "Primary Sources"
 format: html
 editor: visual
@@ -37,7 +47,7 @@ A final feature added to each entry is a two-value indicator of bias --- statist
 
 
 ## List of Sources
-```{python}
+```{code-cell} python3
 phases = "Understand Plan Collect Store Clean Explore Prepare Model Interpret Communicate Deploy Reflect".split()
 sources = "Tukey KDD SEMMA Hayashi CRISPDM OSEMI Ojeda+ Caffo+ Donoho Géron Das Dataman Porter".split()
 pipes = {source:'' for source in sources}
@@ -57,7 +67,7 @@ In this classic essay, Tukey introduces the concept of data analysis, which he d
 3.  **Analyzing**: This is where data are analyzed with "all the machinery and results of (mathematical) statistics." $\rightarrow [Explore, Model]$
 4.  **Interpreting**: "techniques for interpreting the results of" analysis. $\rightarrow [Interpret]$
 
-```{python}
+```{code-cell} python3
 pipes['Tukey'] = """
 Understand | 
 Plan | planning
@@ -89,7 +99,7 @@ KDD, or Knowledge Discovery in Databases, emerged in the late 1980s as both data
 4.  **Data Mining**: Searching for patterns of interest in a particular representational form, depending on the DM objective (usually, prediction). $\rightarrow [Model]$
 5.  **Interpretation/Evaluation**: Interpretation and evaluation of the mined patterns. $\rightarrow [Interpret]$
 
-```{python}
+```{code-cell} python3
 pipes['KDD'] = """
 Understand | 
 Plan | 
@@ -121,7 +131,7 @@ The SEMMA model was developed the by SAS institute in 1996 as part of the docume
 4.  **Model**: Modeling the data by allowing the software to search automatically for a combination of data that reliably predicts a desired outcome. $\rightarrow [Model]$
 5.  **Assess**: Assessing the data by evaluating the usefulness and reliability of the findings from the DM process and estimate how well it performs. $\rightarrow [Interpret]$
 
-```{python}
+```{code-cell} python3
 pipes['SEMMA'] = """
 Understand | 
 Plan | 
@@ -151,7 +161,7 @@ The Japanese statistician Chikio Hayashi adopted the term "data science" in the 
 2.  **Collection**: Phenomena are expressed as multidimensional or time-series data; properties of the data are made clear. At this stage, data are too complicated to draw clear conclusions. (Representation) $\rightarrow [Collect, Explore, Prepare]$
 3.  **Analysis**: By methods of classification, multidimensional data analysis, and statistics, data structure is revealed. Simplification and conceptualization. Also yields understanding of deviations of the model, which begins the cycle anew. (Revelation) $\rightarrow [Model, Interpet]$
 
-```{python}
+```{code-cell} python3
 
 pipes['Hayashi'] = """
 Understand | design
@@ -187,7 +197,7 @@ By the late 1990s, the practice of data mining had become widespread in industry
 5.  **Evaluation**: Evaluation of model performance by both intrinsic and extrinsic measures. Regarding the latter, a key objective is to determine if an important business issue has not been sufficiently considered. $\rightarrow [Interpret]$
 6.  **Deployment**: The knowledge gained by the model is presented in a way that the customer can use it. This may be something as simple as a report or as complex as a repeatable data mining process. In many cases the user, not the data analyst, will carry out the deployment. $\rightarrow [Deploy]$
 
-```{python}
+```{code-cell} python3
 pipes['CRISPDM'] = """
 Understand | Business understanding
 Plan | Business Understanding
@@ -219,7 +229,7 @@ After the phrase "data science" went viral (circa 2009), there were many efforts
 4.  **Model**: Construct methods to predict and forecast. These methods include those of inferential statistics and predictive machine learning. $\rightarrow [Model]$
 5.  **Interpret**: Making sense of the results as well as evaluating the performance of models. May involve domain experts. Also includes methods such as regularization that make models interpretable to those who use them, e.g. scientists or business people. $\rightarrow [Interpret]$
 
-```{python}
+```{code-cell} python3
 pipes['OSEMI'] = """
 Understand | 
 Plan | 
@@ -251,7 +261,7 @@ By 2014, data science had become a widespread practice in industry and the acade
 4.  **Analysis and modeling**: Apply statistical and machine learning methods, including clustering, categorization, and classification. One presumes that the standard step of $Explore$ is included here. $\rightarrow [Explore, Model]$
 5.  **Communicating and operationalizing**: At the end of the pipeline, we need to give the data back in a compelling form and structure, sometimes to ourselves to inform the next iteration, and sometimes to a completely different audience. The data products produced can be a simple one-off report or a scalable web product that will be used interactively by millions. $\rightarrow [Communicate, Deploy]$
 
-```{python}
+```{code-cell} python3
 pipes['Ojeda+'] = """
 Understand | Exploration and understanding*
 Plan | 
@@ -288,7 +298,7 @@ $\rightarrow [Interpret]$
 5. **Communication**: Communicate findings to various audiences, either internal to the organization or external. Includes translating findings into action by virtue of effectively communicating results to decision-makers. 
 $\rightarrow [Communicate]$
  
-```{python}
+```{code-cell} python3
 pipes['Caffo+'] = """
 Understand | Question
 Plan | Question
@@ -333,7 +343,7 @@ $\rightarrow [Communicate]$
 8. **Science about Data Science**: In the spirit of Tukey's “science of data analysis,” this is the evaluation of what data scientists actually do and produce. Includes the identificatin and study of commonly occurring analytical and processing workflows.
 $\rightarrow [Reflect]$
 
-```{python}
+```{code-cell} python3
 pipes['Donoho'] = """
 Understand | 
 Plan | Gathering
@@ -377,7 +387,7 @@ $\rightarrow [Communicate]$
 8. **Launch, monitor, and maintain your system**: This step includes converting your model into a production-ready component that can become a functioning piece of the overall pipeline. This may mean creating a web service.
 $\rightarrow [Deploy]$
 
-```{python}
+```{code-cell} python3
 pipes['Géron'] = """
 Understand | Big Picture
 Plan | 
@@ -419,7 +429,7 @@ $\rightarrow [Model]$
 7.  **Data Visualization**: This step combines expertise from the fields of communication, psychology, statistics, and art, with an ultimate goal of communicating the insightw from the model in a simple yet effective and visually pleasing way. 
 $\rightarrow [Communicate]$
 
-```{python}
+```{code-cell} python3
 pipes['Das'] = """
 Understand | Business Understanding
 Plan | 
@@ -461,7 +471,7 @@ $\rightarrow [Model]$
 $\rightarrow [Deploy]$
 8. **Re-build the model**: This step involves revisiting the pipeline as models lose their predictability due to a variety of causes. Effectively, this step asserts the cyclic and interative nature of the pipeline and therefore belongs to no step in particular.
 
-```{python}
+```{code-cell} python3
 pipes['Dataman'] = """
 Understand | Set objectives, Communicate with stakeholders
 Plan | 
@@ -508,7 +518,7 @@ $\rightarrow [Reflect]$
 $\rightarrow [Understand]$
 
 
-```{python}
+```{code-cell} python3
 pipes['Porter'] = """
 Understand | Disciplinary
 Plan | 
@@ -563,12 +573,12 @@ Reflect | Practicing
 
 ## Summary Table
 
-```{python}
+```{code-cell} python3
 import pandas as pd
 import re
 ```
 
-```{python}
+```{code-cell} python3
 data = []
 cols = ['Source', 'Std Phase', 'Src Phase']
 for source in pipes:
@@ -600,7 +610,7 @@ df.columns.name = ''
 df.index.name = ''
 ```
 
-```{python}
+```{code-cell} python3
 #| output: true
 
 styles = [
