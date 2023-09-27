@@ -464,15 +464,6 @@ echo: false<a class="headerlink" href="#title-primary-sources-format-html-editor
 <p>Mappings are indicated by an arrow pointing to the subset of terms from the standard sequence, e.g. … <span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span> These mappings are also aggregated into a composite pipeline and displayed the table below; each model row is referenced by its key as defined in the entries.</p>
 <p>Note that in most cases these phases are explicitly described as a process and often as a pipeline. When they are not, the implication is strong. In some cases, the process is likened to a cycle, emphasizing the connection between the endpoints of the pipeline, which is also emphasized by the 4+1 model.</p>
 <p>A final feature added to each entry is a two-value indicator of bias — statistics and data mining. This is meant to capture the intellectual origin of the model, given that statistics and data mining define the poles of one of main axes of variance that defines the field of data science. This difference roughly corresponds to the “two cultures” described by Breiman &#64;breimanStatisticalModelingTwo2001.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">phases</span> <span class="o">=</span> <span class="s2">&quot;Understand Plan Collect Store Clean Explore Prepare Model Interpret Communicate Deploy Reflect&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="n">sources</span> <span class="o">=</span> <span class="s2">&quot;Tukey KDD SEMMA Hayashi CRISPDM OSEMI Ojeda+ Caffo+ Donoho Géron Das Dataman Porter&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="n">pipes</span> <span class="o">=</span> <span class="p">{</span><span class="n">source</span><span class="p">:</span><span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">sources</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
 <section id="tukey-on-data-analysis">
 <h2>Tukey on Data Analysis<a class="headerlink" href="#tukey-on-data-analysis" title="Permalink to this heading">#</a></h2>
 <p>Key: <code class="docutils literal notranslate"><span class="pre">Tukey</span></code><br />
@@ -486,26 +477,6 @@ Bias: Statistics</p>
 <li><p><strong>Analyzing</strong>: This is where data are analyzed with “all the machinery and results of (mathematical) statistics.” <span class="math notranslate nohighlight">\(\rightarrow [Explore, Model]\)</span></p></li>
 <li><p><strong>Interpreting</strong>: “techniques for interpreting the results of” analysis. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Tukey&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | </span>
-<span class="s2">Plan | planning</span>
-<span class="s2">Collect | gathering</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | </span>
-<span class="s2">Explore | analyzing</span>
-<span class="s2">Prepare | gathering</span>
-<span class="s2">Model | analyzing</span>
-<span class="s2">Interpret | interpret</span>
-<span class="s2">Communicate | </span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="fayyad-on-kdd">
 <h2>Fayyad on KDD<a class="headerlink" href="#fayyad-on-kdd" title="Permalink to this heading">#</a></h2>
@@ -1104,40 +1075,40 @@ file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Ou
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
-#T_0ca09 th {
+#T_4bc21 th {
   font-weight: normal;
 }
-#T_0ca09 th.col_heading {
+#T_4bc21 th.col_heading {
   width: 40px;
   writing-mode: vertical-rl;
   transform: rotateZ(210deg);
   vertical-align: bottom;
 }
-#T_0ca09 th.row_heading {
+#T_4bc21 th.row_heading {
   width: 100px;
   text-align: right;
   padding-right: 1rem;
 }
-#T_0ca09 td.data {
+#T_4bc21 td.data {
   color: darkgray;
 }
 </style>
-<table id="T_0ca09">
+<table id="T_4bc21">
   <thead>
     <tr>
       <th class="index_name level0" ></th>
-      <th id="T_0ca09_level0_col0" class="col_heading level0 col0" >understand</th>
-      <th id="T_0ca09_level0_col1" class="col_heading level0 col1" >plan</th>
-      <th id="T_0ca09_level0_col2" class="col_heading level0 col2" >collect</th>
-      <th id="T_0ca09_level0_col3" class="col_heading level0 col3" >store</th>
-      <th id="T_0ca09_level0_col4" class="col_heading level0 col4" >clean</th>
-      <th id="T_0ca09_level0_col5" class="col_heading level0 col5" >explore</th>
-      <th id="T_0ca09_level0_col6" class="col_heading level0 col6" >prepare</th>
-      <th id="T_0ca09_level0_col7" class="col_heading level0 col7" >model</th>
-      <th id="T_0ca09_level0_col8" class="col_heading level0 col8" >interpret</th>
-      <th id="T_0ca09_level0_col9" class="col_heading level0 col9" >communicate</th>
-      <th id="T_0ca09_level0_col10" class="col_heading level0 col10" >deploy</th>
-      <th id="T_0ca09_level0_col11" class="col_heading level0 col11" >reflect</th>
+      <th id="T_4bc21_level0_col0" class="col_heading level0 col0" >understand</th>
+      <th id="T_4bc21_level0_col1" class="col_heading level0 col1" >plan</th>
+      <th id="T_4bc21_level0_col2" class="col_heading level0 col2" >collect</th>
+      <th id="T_4bc21_level0_col3" class="col_heading level0 col3" >store</th>
+      <th id="T_4bc21_level0_col4" class="col_heading level0 col4" >clean</th>
+      <th id="T_4bc21_level0_col5" class="col_heading level0 col5" >explore</th>
+      <th id="T_4bc21_level0_col6" class="col_heading level0 col6" >prepare</th>
+      <th id="T_4bc21_level0_col7" class="col_heading level0 col7" >model</th>
+      <th id="T_4bc21_level0_col8" class="col_heading level0 col8" >interpret</th>
+      <th id="T_4bc21_level0_col9" class="col_heading level0 col9" >communicate</th>
+      <th id="T_4bc21_level0_col10" class="col_heading level0 col10" >deploy</th>
+      <th id="T_4bc21_level0_col11" class="col_heading level0 col11" >reflect</th>
     </tr>
     <tr>
       <th class="index_name level0" ></th>
@@ -1157,199 +1128,199 @@ file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Ou
   </thead>
   <tbody>
     <tr>
-      <th id="T_0ca09_level0_row0" class="row_heading level0 row0" >Tukey</th>
-      <td id="T_0ca09_row0_col0" class="data row0 col0" ></td>
-      <td id="T_0ca09_row0_col1" class="data row0 col1" >■</td>
-      <td id="T_0ca09_row0_col2" class="data row0 col2" >■</td>
-      <td id="T_0ca09_row0_col3" class="data row0 col3" ></td>
-      <td id="T_0ca09_row0_col4" class="data row0 col4" ></td>
-      <td id="T_0ca09_row0_col5" class="data row0 col5" >■</td>
-      <td id="T_0ca09_row0_col6" class="data row0 col6" >■</td>
-      <td id="T_0ca09_row0_col7" class="data row0 col7" >■</td>
-      <td id="T_0ca09_row0_col8" class="data row0 col8" >■</td>
-      <td id="T_0ca09_row0_col9" class="data row0 col9" ></td>
-      <td id="T_0ca09_row0_col10" class="data row0 col10" ></td>
-      <td id="T_0ca09_row0_col11" class="data row0 col11" ></td>
+      <th id="T_4bc21_level0_row0" class="row_heading level0 row0" >Tukey</th>
+      <td id="T_4bc21_row0_col0" class="data row0 col0" ></td>
+      <td id="T_4bc21_row0_col1" class="data row0 col1" >■</td>
+      <td id="T_4bc21_row0_col2" class="data row0 col2" >■</td>
+      <td id="T_4bc21_row0_col3" class="data row0 col3" ></td>
+      <td id="T_4bc21_row0_col4" class="data row0 col4" ></td>
+      <td id="T_4bc21_row0_col5" class="data row0 col5" >■</td>
+      <td id="T_4bc21_row0_col6" class="data row0 col6" >■</td>
+      <td id="T_4bc21_row0_col7" class="data row0 col7" >■</td>
+      <td id="T_4bc21_row0_col8" class="data row0 col8" >■</td>
+      <td id="T_4bc21_row0_col9" class="data row0 col9" ></td>
+      <td id="T_4bc21_row0_col10" class="data row0 col10" ></td>
+      <td id="T_4bc21_row0_col11" class="data row0 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row1" class="row_heading level0 row1" >KDD</th>
-      <td id="T_0ca09_row1_col0" class="data row1 col0" ></td>
-      <td id="T_0ca09_row1_col1" class="data row1 col1" ></td>
-      <td id="T_0ca09_row1_col2" class="data row1 col2" >■</td>
-      <td id="T_0ca09_row1_col3" class="data row1 col3" ></td>
-      <td id="T_0ca09_row1_col4" class="data row1 col4" >■</td>
-      <td id="T_0ca09_row1_col5" class="data row1 col5" ></td>
-      <td id="T_0ca09_row1_col6" class="data row1 col6" >■</td>
-      <td id="T_0ca09_row1_col7" class="data row1 col7" >■</td>
-      <td id="T_0ca09_row1_col8" class="data row1 col8" >■</td>
-      <td id="T_0ca09_row1_col9" class="data row1 col9" ></td>
-      <td id="T_0ca09_row1_col10" class="data row1 col10" ></td>
-      <td id="T_0ca09_row1_col11" class="data row1 col11" ></td>
+      <th id="T_4bc21_level0_row1" class="row_heading level0 row1" >KDD</th>
+      <td id="T_4bc21_row1_col0" class="data row1 col0" ></td>
+      <td id="T_4bc21_row1_col1" class="data row1 col1" ></td>
+      <td id="T_4bc21_row1_col2" class="data row1 col2" >■</td>
+      <td id="T_4bc21_row1_col3" class="data row1 col3" ></td>
+      <td id="T_4bc21_row1_col4" class="data row1 col4" >■</td>
+      <td id="T_4bc21_row1_col5" class="data row1 col5" ></td>
+      <td id="T_4bc21_row1_col6" class="data row1 col6" >■</td>
+      <td id="T_4bc21_row1_col7" class="data row1 col7" >■</td>
+      <td id="T_4bc21_row1_col8" class="data row1 col8" >■</td>
+      <td id="T_4bc21_row1_col9" class="data row1 col9" ></td>
+      <td id="T_4bc21_row1_col10" class="data row1 col10" ></td>
+      <td id="T_4bc21_row1_col11" class="data row1 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row2" class="row_heading level0 row2" >SEMMA</th>
-      <td id="T_0ca09_row2_col0" class="data row2 col0" ></td>
-      <td id="T_0ca09_row2_col1" class="data row2 col1" ></td>
-      <td id="T_0ca09_row2_col2" class="data row2 col2" >■</td>
-      <td id="T_0ca09_row2_col3" class="data row2 col3" ></td>
-      <td id="T_0ca09_row2_col4" class="data row2 col4" ></td>
-      <td id="T_0ca09_row2_col5" class="data row2 col5" >■</td>
-      <td id="T_0ca09_row2_col6" class="data row2 col6" >■</td>
-      <td id="T_0ca09_row2_col7" class="data row2 col7" >■</td>
-      <td id="T_0ca09_row2_col8" class="data row2 col8" >■</td>
-      <td id="T_0ca09_row2_col9" class="data row2 col9" ></td>
-      <td id="T_0ca09_row2_col10" class="data row2 col10" ></td>
-      <td id="T_0ca09_row2_col11" class="data row2 col11" ></td>
+      <th id="T_4bc21_level0_row2" class="row_heading level0 row2" >SEMMA</th>
+      <td id="T_4bc21_row2_col0" class="data row2 col0" ></td>
+      <td id="T_4bc21_row2_col1" class="data row2 col1" ></td>
+      <td id="T_4bc21_row2_col2" class="data row2 col2" >■</td>
+      <td id="T_4bc21_row2_col3" class="data row2 col3" ></td>
+      <td id="T_4bc21_row2_col4" class="data row2 col4" ></td>
+      <td id="T_4bc21_row2_col5" class="data row2 col5" >■</td>
+      <td id="T_4bc21_row2_col6" class="data row2 col6" >■</td>
+      <td id="T_4bc21_row2_col7" class="data row2 col7" >■</td>
+      <td id="T_4bc21_row2_col8" class="data row2 col8" >■</td>
+      <td id="T_4bc21_row2_col9" class="data row2 col9" ></td>
+      <td id="T_4bc21_row2_col10" class="data row2 col10" ></td>
+      <td id="T_4bc21_row2_col11" class="data row2 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row3" class="row_heading level0 row3" >Hayashi</th>
-      <td id="T_0ca09_row3_col0" class="data row3 col0" >■</td>
-      <td id="T_0ca09_row3_col1" class="data row3 col1" >■</td>
-      <td id="T_0ca09_row3_col2" class="data row3 col2" >■</td>
-      <td id="T_0ca09_row3_col3" class="data row3 col3" >■</td>
-      <td id="T_0ca09_row3_col4" class="data row3 col4" ></td>
-      <td id="T_0ca09_row3_col5" class="data row3 col5" >■</td>
-      <td id="T_0ca09_row3_col6" class="data row3 col6" >■</td>
-      <td id="T_0ca09_row3_col7" class="data row3 col7" >■</td>
-      <td id="T_0ca09_row3_col8" class="data row3 col8" >■</td>
-      <td id="T_0ca09_row3_col9" class="data row3 col9" ></td>
-      <td id="T_0ca09_row3_col10" class="data row3 col10" ></td>
-      <td id="T_0ca09_row3_col11" class="data row3 col11" ></td>
+      <th id="T_4bc21_level0_row3" class="row_heading level0 row3" >Hayashi</th>
+      <td id="T_4bc21_row3_col0" class="data row3 col0" >■</td>
+      <td id="T_4bc21_row3_col1" class="data row3 col1" >■</td>
+      <td id="T_4bc21_row3_col2" class="data row3 col2" >■</td>
+      <td id="T_4bc21_row3_col3" class="data row3 col3" >■</td>
+      <td id="T_4bc21_row3_col4" class="data row3 col4" ></td>
+      <td id="T_4bc21_row3_col5" class="data row3 col5" >■</td>
+      <td id="T_4bc21_row3_col6" class="data row3 col6" >■</td>
+      <td id="T_4bc21_row3_col7" class="data row3 col7" >■</td>
+      <td id="T_4bc21_row3_col8" class="data row3 col8" >■</td>
+      <td id="T_4bc21_row3_col9" class="data row3 col9" ></td>
+      <td id="T_4bc21_row3_col10" class="data row3 col10" ></td>
+      <td id="T_4bc21_row3_col11" class="data row3 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row4" class="row_heading level0 row4" >CRISPDM</th>
-      <td id="T_0ca09_row4_col0" class="data row4 col0" >■</td>
-      <td id="T_0ca09_row4_col1" class="data row4 col1" >■</td>
-      <td id="T_0ca09_row4_col2" class="data row4 col2" >■</td>
-      <td id="T_0ca09_row4_col3" class="data row4 col3" >■</td>
-      <td id="T_0ca09_row4_col4" class="data row4 col4" >■</td>
-      <td id="T_0ca09_row4_col5" class="data row4 col5" >■</td>
-      <td id="T_0ca09_row4_col6" class="data row4 col6" >■</td>
-      <td id="T_0ca09_row4_col7" class="data row4 col7" >■</td>
-      <td id="T_0ca09_row4_col8" class="data row4 col8" >■</td>
-      <td id="T_0ca09_row4_col9" class="data row4 col9" >■</td>
-      <td id="T_0ca09_row4_col10" class="data row4 col10" >■</td>
-      <td id="T_0ca09_row4_col11" class="data row4 col11" ></td>
+      <th id="T_4bc21_level0_row4" class="row_heading level0 row4" >CRISPDM</th>
+      <td id="T_4bc21_row4_col0" class="data row4 col0" >■</td>
+      <td id="T_4bc21_row4_col1" class="data row4 col1" >■</td>
+      <td id="T_4bc21_row4_col2" class="data row4 col2" >■</td>
+      <td id="T_4bc21_row4_col3" class="data row4 col3" >■</td>
+      <td id="T_4bc21_row4_col4" class="data row4 col4" >■</td>
+      <td id="T_4bc21_row4_col5" class="data row4 col5" >■</td>
+      <td id="T_4bc21_row4_col6" class="data row4 col6" >■</td>
+      <td id="T_4bc21_row4_col7" class="data row4 col7" >■</td>
+      <td id="T_4bc21_row4_col8" class="data row4 col8" >■</td>
+      <td id="T_4bc21_row4_col9" class="data row4 col9" >■</td>
+      <td id="T_4bc21_row4_col10" class="data row4 col10" >■</td>
+      <td id="T_4bc21_row4_col11" class="data row4 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row5" class="row_heading level0 row5" >OSEMI</th>
-      <td id="T_0ca09_row5_col0" class="data row5 col0" ></td>
-      <td id="T_0ca09_row5_col1" class="data row5 col1" ></td>
-      <td id="T_0ca09_row5_col2" class="data row5 col2" >■</td>
-      <td id="T_0ca09_row5_col3" class="data row5 col3" ></td>
-      <td id="T_0ca09_row5_col4" class="data row5 col4" >■</td>
-      <td id="T_0ca09_row5_col5" class="data row5 col5" >■</td>
-      <td id="T_0ca09_row5_col6" class="data row5 col6" >■</td>
-      <td id="T_0ca09_row5_col7" class="data row5 col7" >■</td>
-      <td id="T_0ca09_row5_col8" class="data row5 col8" >■</td>
-      <td id="T_0ca09_row5_col9" class="data row5 col9" ></td>
-      <td id="T_0ca09_row5_col10" class="data row5 col10" ></td>
-      <td id="T_0ca09_row5_col11" class="data row5 col11" ></td>
+      <th id="T_4bc21_level0_row5" class="row_heading level0 row5" >OSEMI</th>
+      <td id="T_4bc21_row5_col0" class="data row5 col0" ></td>
+      <td id="T_4bc21_row5_col1" class="data row5 col1" ></td>
+      <td id="T_4bc21_row5_col2" class="data row5 col2" >■</td>
+      <td id="T_4bc21_row5_col3" class="data row5 col3" ></td>
+      <td id="T_4bc21_row5_col4" class="data row5 col4" >■</td>
+      <td id="T_4bc21_row5_col5" class="data row5 col5" >■</td>
+      <td id="T_4bc21_row5_col6" class="data row5 col6" >■</td>
+      <td id="T_4bc21_row5_col7" class="data row5 col7" >■</td>
+      <td id="T_4bc21_row5_col8" class="data row5 col8" >■</td>
+      <td id="T_4bc21_row5_col9" class="data row5 col9" ></td>
+      <td id="T_4bc21_row5_col10" class="data row5 col10" ></td>
+      <td id="T_4bc21_row5_col11" class="data row5 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row6" class="row_heading level0 row6" >Ojeda+</th>
-      <td id="T_0ca09_row6_col0" class="data row6 col0" >■</td>
-      <td id="T_0ca09_row6_col1" class="data row6 col1" ></td>
-      <td id="T_0ca09_row6_col2" class="data row6 col2" >■</td>
-      <td id="T_0ca09_row6_col3" class="data row6 col3" >■</td>
-      <td id="T_0ca09_row6_col4" class="data row6 col4" >■</td>
-      <td id="T_0ca09_row6_col5" class="data row6 col5" ></td>
-      <td id="T_0ca09_row6_col6" class="data row6 col6" >■</td>
-      <td id="T_0ca09_row6_col7" class="data row6 col7" >■</td>
-      <td id="T_0ca09_row6_col8" class="data row6 col8" ></td>
-      <td id="T_0ca09_row6_col9" class="data row6 col9" >■</td>
-      <td id="T_0ca09_row6_col10" class="data row6 col10" >■</td>
-      <td id="T_0ca09_row6_col11" class="data row6 col11" ></td>
+      <th id="T_4bc21_level0_row6" class="row_heading level0 row6" >Ojeda+</th>
+      <td id="T_4bc21_row6_col0" class="data row6 col0" >■</td>
+      <td id="T_4bc21_row6_col1" class="data row6 col1" ></td>
+      <td id="T_4bc21_row6_col2" class="data row6 col2" >■</td>
+      <td id="T_4bc21_row6_col3" class="data row6 col3" >■</td>
+      <td id="T_4bc21_row6_col4" class="data row6 col4" >■</td>
+      <td id="T_4bc21_row6_col5" class="data row6 col5" ></td>
+      <td id="T_4bc21_row6_col6" class="data row6 col6" >■</td>
+      <td id="T_4bc21_row6_col7" class="data row6 col7" >■</td>
+      <td id="T_4bc21_row6_col8" class="data row6 col8" ></td>
+      <td id="T_4bc21_row6_col9" class="data row6 col9" >■</td>
+      <td id="T_4bc21_row6_col10" class="data row6 col10" >■</td>
+      <td id="T_4bc21_row6_col11" class="data row6 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row7" class="row_heading level0 row7" >Caffo+</th>
-      <td id="T_0ca09_row7_col0" class="data row7 col0" >■</td>
-      <td id="T_0ca09_row7_col1" class="data row7 col1" >■</td>
-      <td id="T_0ca09_row7_col2" class="data row7 col2" >■</td>
-      <td id="T_0ca09_row7_col3" class="data row7 col3" ></td>
-      <td id="T_0ca09_row7_col4" class="data row7 col4" ></td>
-      <td id="T_0ca09_row7_col5" class="data row7 col5" >■</td>
-      <td id="T_0ca09_row7_col6" class="data row7 col6" ></td>
-      <td id="T_0ca09_row7_col7" class="data row7 col7" >■</td>
-      <td id="T_0ca09_row7_col8" class="data row7 col8" >■</td>
-      <td id="T_0ca09_row7_col9" class="data row7 col9" >■</td>
-      <td id="T_0ca09_row7_col10" class="data row7 col10" ></td>
-      <td id="T_0ca09_row7_col11" class="data row7 col11" ></td>
+      <th id="T_4bc21_level0_row7" class="row_heading level0 row7" >Caffo+</th>
+      <td id="T_4bc21_row7_col0" class="data row7 col0" >■</td>
+      <td id="T_4bc21_row7_col1" class="data row7 col1" >■</td>
+      <td id="T_4bc21_row7_col2" class="data row7 col2" >■</td>
+      <td id="T_4bc21_row7_col3" class="data row7 col3" ></td>
+      <td id="T_4bc21_row7_col4" class="data row7 col4" ></td>
+      <td id="T_4bc21_row7_col5" class="data row7 col5" >■</td>
+      <td id="T_4bc21_row7_col6" class="data row7 col6" ></td>
+      <td id="T_4bc21_row7_col7" class="data row7 col7" >■</td>
+      <td id="T_4bc21_row7_col8" class="data row7 col8" >■</td>
+      <td id="T_4bc21_row7_col9" class="data row7 col9" >■</td>
+      <td id="T_4bc21_row7_col10" class="data row7 col10" ></td>
+      <td id="T_4bc21_row7_col11" class="data row7 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row8" class="row_heading level0 row8" >Donoho</th>
-      <td id="T_0ca09_row8_col0" class="data row8 col0" ></td>
-      <td id="T_0ca09_row8_col1" class="data row8 col1" >■</td>
-      <td id="T_0ca09_row8_col2" class="data row8 col2" >■</td>
-      <td id="T_0ca09_row8_col3" class="data row8 col3" ></td>
-      <td id="T_0ca09_row8_col4" class="data row8 col4" >■</td>
-      <td id="T_0ca09_row8_col5" class="data row8 col5" >■</td>
-      <td id="T_0ca09_row8_col6" class="data row8 col6" >■</td>
-      <td id="T_0ca09_row8_col7" class="data row8 col7" >■</td>
-      <td id="T_0ca09_row8_col8" class="data row8 col8" ></td>
-      <td id="T_0ca09_row8_col9" class="data row8 col9" >■</td>
-      <td id="T_0ca09_row8_col10" class="data row8 col10" ></td>
-      <td id="T_0ca09_row8_col11" class="data row8 col11" >■</td>
+      <th id="T_4bc21_level0_row8" class="row_heading level0 row8" >Donoho</th>
+      <td id="T_4bc21_row8_col0" class="data row8 col0" ></td>
+      <td id="T_4bc21_row8_col1" class="data row8 col1" >■</td>
+      <td id="T_4bc21_row8_col2" class="data row8 col2" >■</td>
+      <td id="T_4bc21_row8_col3" class="data row8 col3" ></td>
+      <td id="T_4bc21_row8_col4" class="data row8 col4" >■</td>
+      <td id="T_4bc21_row8_col5" class="data row8 col5" >■</td>
+      <td id="T_4bc21_row8_col6" class="data row8 col6" >■</td>
+      <td id="T_4bc21_row8_col7" class="data row8 col7" >■</td>
+      <td id="T_4bc21_row8_col8" class="data row8 col8" ></td>
+      <td id="T_4bc21_row8_col9" class="data row8 col9" >■</td>
+      <td id="T_4bc21_row8_col10" class="data row8 col10" ></td>
+      <td id="T_4bc21_row8_col11" class="data row8 col11" >■</td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row9" class="row_heading level0 row9" >Géron</th>
-      <td id="T_0ca09_row9_col0" class="data row9 col0" >■</td>
-      <td id="T_0ca09_row9_col1" class="data row9 col1" ></td>
-      <td id="T_0ca09_row9_col2" class="data row9 col2" >■</td>
-      <td id="T_0ca09_row9_col3" class="data row9 col3" ></td>
-      <td id="T_0ca09_row9_col4" class="data row9 col4" >■</td>
-      <td id="T_0ca09_row9_col5" class="data row9 col5" >■</td>
-      <td id="T_0ca09_row9_col6" class="data row9 col6" >■</td>
-      <td id="T_0ca09_row9_col7" class="data row9 col7" >■</td>
-      <td id="T_0ca09_row9_col8" class="data row9 col8" ></td>
-      <td id="T_0ca09_row9_col9" class="data row9 col9" >■</td>
-      <td id="T_0ca09_row9_col10" class="data row9 col10" >■</td>
-      <td id="T_0ca09_row9_col11" class="data row9 col11" ></td>
+      <th id="T_4bc21_level0_row9" class="row_heading level0 row9" >Géron</th>
+      <td id="T_4bc21_row9_col0" class="data row9 col0" >■</td>
+      <td id="T_4bc21_row9_col1" class="data row9 col1" ></td>
+      <td id="T_4bc21_row9_col2" class="data row9 col2" >■</td>
+      <td id="T_4bc21_row9_col3" class="data row9 col3" ></td>
+      <td id="T_4bc21_row9_col4" class="data row9 col4" >■</td>
+      <td id="T_4bc21_row9_col5" class="data row9 col5" >■</td>
+      <td id="T_4bc21_row9_col6" class="data row9 col6" >■</td>
+      <td id="T_4bc21_row9_col7" class="data row9 col7" >■</td>
+      <td id="T_4bc21_row9_col8" class="data row9 col8" ></td>
+      <td id="T_4bc21_row9_col9" class="data row9 col9" >■</td>
+      <td id="T_4bc21_row9_col10" class="data row9 col10" >■</td>
+      <td id="T_4bc21_row9_col11" class="data row9 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row10" class="row_heading level0 row10" >Das</th>
-      <td id="T_0ca09_row10_col0" class="data row10 col0" >■</td>
-      <td id="T_0ca09_row10_col1" class="data row10 col1" ></td>
-      <td id="T_0ca09_row10_col2" class="data row10 col2" >■</td>
-      <td id="T_0ca09_row10_col3" class="data row10 col3" ></td>
-      <td id="T_0ca09_row10_col4" class="data row10 col4" >■</td>
-      <td id="T_0ca09_row10_col5" class="data row10 col5" >■</td>
-      <td id="T_0ca09_row10_col6" class="data row10 col6" >■</td>
-      <td id="T_0ca09_row10_col7" class="data row10 col7" >■</td>
-      <td id="T_0ca09_row10_col8" class="data row10 col8" ></td>
-      <td id="T_0ca09_row10_col9" class="data row10 col9" >■</td>
-      <td id="T_0ca09_row10_col10" class="data row10 col10" ></td>
-      <td id="T_0ca09_row10_col11" class="data row10 col11" ></td>
+      <th id="T_4bc21_level0_row10" class="row_heading level0 row10" >Das</th>
+      <td id="T_4bc21_row10_col0" class="data row10 col0" >■</td>
+      <td id="T_4bc21_row10_col1" class="data row10 col1" ></td>
+      <td id="T_4bc21_row10_col2" class="data row10 col2" >■</td>
+      <td id="T_4bc21_row10_col3" class="data row10 col3" ></td>
+      <td id="T_4bc21_row10_col4" class="data row10 col4" >■</td>
+      <td id="T_4bc21_row10_col5" class="data row10 col5" >■</td>
+      <td id="T_4bc21_row10_col6" class="data row10 col6" >■</td>
+      <td id="T_4bc21_row10_col7" class="data row10 col7" >■</td>
+      <td id="T_4bc21_row10_col8" class="data row10 col8" ></td>
+      <td id="T_4bc21_row10_col9" class="data row10 col9" >■</td>
+      <td id="T_4bc21_row10_col10" class="data row10 col10" ></td>
+      <td id="T_4bc21_row10_col11" class="data row10 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row11" class="row_heading level0 row11" >Dataman</th>
-      <td id="T_0ca09_row11_col0" class="data row11 col0" >■</td>
-      <td id="T_0ca09_row11_col1" class="data row11 col1" ></td>
-      <td id="T_0ca09_row11_col2" class="data row11 col2" >■</td>
-      <td id="T_0ca09_row11_col3" class="data row11 col3" ></td>
-      <td id="T_0ca09_row11_col4" class="data row11 col4" >■</td>
-      <td id="T_0ca09_row11_col5" class="data row11 col5" >■</td>
-      <td id="T_0ca09_row11_col6" class="data row11 col6" >■</td>
-      <td id="T_0ca09_row11_col7" class="data row11 col7" >■</td>
-      <td id="T_0ca09_row11_col8" class="data row11 col8" ></td>
-      <td id="T_0ca09_row11_col9" class="data row11 col9" ></td>
-      <td id="T_0ca09_row11_col10" class="data row11 col10" >■</td>
-      <td id="T_0ca09_row11_col11" class="data row11 col11" ></td>
+      <th id="T_4bc21_level0_row11" class="row_heading level0 row11" >Dataman</th>
+      <td id="T_4bc21_row11_col0" class="data row11 col0" >■</td>
+      <td id="T_4bc21_row11_col1" class="data row11 col1" ></td>
+      <td id="T_4bc21_row11_col2" class="data row11 col2" >■</td>
+      <td id="T_4bc21_row11_col3" class="data row11 col3" ></td>
+      <td id="T_4bc21_row11_col4" class="data row11 col4" >■</td>
+      <td id="T_4bc21_row11_col5" class="data row11 col5" >■</td>
+      <td id="T_4bc21_row11_col6" class="data row11 col6" >■</td>
+      <td id="T_4bc21_row11_col7" class="data row11 col7" >■</td>
+      <td id="T_4bc21_row11_col8" class="data row11 col8" ></td>
+      <td id="T_4bc21_row11_col9" class="data row11 col9" ></td>
+      <td id="T_4bc21_row11_col10" class="data row11 col10" >■</td>
+      <td id="T_4bc21_row11_col11" class="data row11 col11" ></td>
     </tr>
     <tr>
-      <th id="T_0ca09_level0_row12" class="row_heading level0 row12" >Porter</th>
-      <td id="T_0ca09_row12_col0" class="data row12 col0" >■</td>
-      <td id="T_0ca09_row12_col1" class="data row12 col1" ></td>
-      <td id="T_0ca09_row12_col2" class="data row12 col2" >■</td>
-      <td id="T_0ca09_row12_col3" class="data row12 col3" >■</td>
-      <td id="T_0ca09_row12_col4" class="data row12 col4" >■</td>
-      <td id="T_0ca09_row12_col5" class="data row12 col5" ></td>
-      <td id="T_0ca09_row12_col6" class="data row12 col6" >■</td>
-      <td id="T_0ca09_row12_col7" class="data row12 col7" >■</td>
-      <td id="T_0ca09_row12_col8" class="data row12 col8" >■</td>
-      <td id="T_0ca09_row12_col9" class="data row12 col9" >■</td>
-      <td id="T_0ca09_row12_col10" class="data row12 col10" ></td>
-      <td id="T_0ca09_row12_col11" class="data row12 col11" >■</td>
+      <th id="T_4bc21_level0_row12" class="row_heading level0 row12" >Porter</th>
+      <td id="T_4bc21_row12_col0" class="data row12 col0" >■</td>
+      <td id="T_4bc21_row12_col1" class="data row12 col1" ></td>
+      <td id="T_4bc21_row12_col2" class="data row12 col2" >■</td>
+      <td id="T_4bc21_row12_col3" class="data row12 col3" >■</td>
+      <td id="T_4bc21_row12_col4" class="data row12 col4" >■</td>
+      <td id="T_4bc21_row12_col5" class="data row12 col5" ></td>
+      <td id="T_4bc21_row12_col6" class="data row12 col6" >■</td>
+      <td id="T_4bc21_row12_col7" class="data row12 col7" >■</td>
+      <td id="T_4bc21_row12_col8" class="data row12 col8" >■</td>
+      <td id="T_4bc21_row12_col9" class="data row12 col9" >■</td>
+      <td id="T_4bc21_row12_col10" class="data row12 col10" ></td>
+      <td id="T_4bc21_row12_col11" class="data row12 col11" >■</td>
     </tr>
   </tbody>
 </table>
