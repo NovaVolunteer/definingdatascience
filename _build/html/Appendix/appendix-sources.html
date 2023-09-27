@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>About the Sources {.unnumbered} &#8212; Defining Data Science</title>
+    <title>About the Sources &#8212; Defining Data Science</title>
   
   
   
@@ -188,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="Appendix.html">Appendix</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">About the Sources {.unnumbered}</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">About the Sources</a></li>
 </ul>
 </li>
 </ul>
@@ -374,7 +374,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>About the Sources {.unnumbered}</h1>
+    <h1>About the Sources</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -421,8 +421,8 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="about-the-sources-unnumbered">
-<h1>About the Sources {.unnumbered}<a class="headerlink" href="#about-the-sources-unnumbered" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="about-the-sources">
+<h1>About the Sources<a class="headerlink" href="#about-the-sources" title="Permalink to this heading">#</a></h1>
 <p>The primary sources on which the conclusions of this essay are based comprise a variety of documents, from technical journals to blog posts to internal reports. They come from a range of viewpoints, from data analysis and statistics to data mining and data science <em>per se</em>. For the purposes of the essay, we select a more or less representative subset across these axes of variation. With respect to representativeness, in some cases a document was chosen for its influence, in others, such as the post by Dataman, because it is considered more or less typical of a common genre.</p>
 <p>The documents chosen are listed below in chronological order, beginning with Tukey’s seminal essay on data analysis and ending with contempory explainers. Included also are the definitions of the CRISP-DM and KDD processes which are the most developed pipeline models.</p>
 <p>Each source entry below contains a short description of the source and its context, and then a list of the phases cited by the authors as fundamental to data processing. These phases are also mapped onto the standard sequence described in the main part of this essay, listed here for convenience.</p>
@@ -445,15 +445,6 @@ document.write(`
 <p>A final feature added to each entry is a two-value indicator of bias — statistics and data mining. This is meant to capture the intellectual origin of the model, given that statistics and data mining define the poles of one of main axes of variance that defines the field of data science. This difference roughly corresponds to the “two cultures” described by Breiman &#64;breimanStatisticalModelingTwo2001.</p>
 <section id="list-of-sources">
 <h2>List of Sources<a class="headerlink" href="#list-of-sources" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">phases</span> <span class="o">=</span> <span class="s2">&quot;Understand Plan Collect Store Clean Explore Prepare Model Interpret Communicate Deploy Reflect&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="n">sources</span> <span class="o">=</span> <span class="s2">&quot;Tukey KDD SEMMA Hayashi CRISPDM OSEMI Ojeda+ Caffo+ Donoho Géron Das Dataman Porter&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="n">pipes</span> <span class="o">=</span> <span class="p">{</span><span class="n">source</span><span class="p">:</span><span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">sources</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
 <section id="tukey-on-data-analysis">
 <h3>Tukey on Data Analysis<a class="headerlink" href="#tukey-on-data-analysis" title="Permalink to this heading">#</a></h3>
 <p>Key: <code class="docutils literal notranslate"><span class="pre">Tukey</span></code><br />
@@ -467,26 +458,6 @@ Bias: Statistics</p>
 <li><p><strong>Analyzing</strong>: This is where data are analyzed with “all the machinery and results of (mathematical) statistics.” <span class="math notranslate nohighlight">\(\rightarrow [Explore, Model]\)</span></p></li>
 <li><p><strong>Interpreting</strong>: “techniques for interpreting the results of” analysis. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Tukey&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | </span>
-<span class="s2">Plan | planning</span>
-<span class="s2">Collect | gathering</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | </span>
-<span class="s2">Explore | analyzing</span>
-<span class="s2">Prepare | gathering</span>
-<span class="s2">Model | analyzing</span>
-<span class="s2">Interpret | interpret</span>
-<span class="s2">Communicate | </span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="fayyad-on-kdd">
 <h3>Fayyad on KDD<a class="headerlink" href="#fayyad-on-kdd" title="Permalink to this heading">#</a></h3>
@@ -502,26 +473,6 @@ Bias: Data Mining \</p>
 <li><p><strong>Data Mining</strong>: Searching for patterns of interest in a particular representational form, depending on the DM objective (usually, prediction). <span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
 <li><p><strong>Interpretation/Evaluation</strong>: Interpretation and evaluation of the mined patterns. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;KDD&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | </span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | selection </span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | pre-processing</span>
-<span class="s2">Explore | </span>
-<span class="s2">Prepare | transformation</span>
-<span class="s2">Model | data mining</span>
-<span class="s2">Interpret | interpretation and evaluation</span>
-<span class="s2">Communicate | </span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="azevedo-on-semma">
 <h3>Azevedo on SEMMA<a class="headerlink" href="#azevedo-on-semma" title="Permalink to this heading">#</a></h3>
@@ -537,26 +488,6 @@ Bias: Statistics</p>
 <li><p><strong>Model</strong>: Modeling the data by allowing the software to search automatically for a combination of data that reliably predicts a desired outcome. <span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
 <li><p><strong>Assess</strong>: Assessing the data by evaluating the usefulness and reliability of the findings from the DM process and estimate how well it performs. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;SEMMA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | </span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | sample </span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | </span>
-<span class="s2">Explore | explore</span>
-<span class="s2">Prepare | modify</span>
-<span class="s2">Model | model</span>
-<span class="s2">Interpret | assess</span>
-<span class="s2">Communicate | </span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="hayashi-on-data-science">
 <h3>Hayashi on Data Science<a class="headerlink" href="#hayashi-on-data-science" title="Permalink to this heading">#</a></h3>
@@ -570,26 +501,6 @@ Bias: Statistics</p>
 <li><p><strong>Collection</strong>: Phenomena are expressed as multidimensional or time-series data; properties of the data are made clear. At this stage, data are too complicated to draw clear conclusions. (Representation) <span class="math notranslate nohighlight">\(\rightarrow [Collect, Explore, Prepare]\)</span></p></li>
 <li><p><strong>Analysis</strong>: By methods of classification, multidimensional data analysis, and statistics, data structure is revealed. Simplification and conceptualization. Also yields understanding of deviations of the model, which begins the cycle anew. (Revelation) <span class="math notranslate nohighlight">\(\rightarrow [Model, Interpet]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Hayashi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | design</span>
-<span class="s2">Plan | design</span>
-<span class="s2">Collect | collection</span>
-<span class="s2">Store | collection</span>
-<span class="s2">Clean | </span>
-<span class="s2">Explore | collection</span>
-<span class="s2">Prepare | collection</span>
-<span class="s2">Model | analysis</span>
-<span class="s2">Interpret | analysis </span>
-<span class="s2">Communicate | </span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="wirth-and-hipp-on-crisp-dm">
 <h3>Wirth and Hipp on CRISP-DM<a class="headerlink" href="#wirth-and-hipp-on-crisp-dm" title="Permalink to this heading">#</a></h3>
@@ -607,26 +518,6 @@ Bias: Data Mining</p>
 <li><p><strong>Evaluation</strong>: Evaluation of model performance by both intrinsic and extrinsic measures. Regarding the latter, a key objective is to determine if an important business issue has not been sufficiently considered. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
 <li><p><strong>Deployment</strong>: The knowledge gained by the model is presented in a way that the customer can use it. This may be something as simple as a report or as complex as a repeatable data mining process. In many cases the user, not the data analyst, will carry out the deployment. <span class="math notranslate nohighlight">\(\rightarrow [Deploy]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;CRISPDM&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | Business understanding</span>
-<span class="s2">Plan | Business Understanding</span>
-<span class="s2">Collect | Data Understanding</span>
-<span class="s2">Store | Data Preparation</span>
-<span class="s2">Clean | Data Preparation</span>
-<span class="s2">Explore | Data Understanding*</span>
-<span class="s2">Prepare | Data Preparation</span>
-<span class="s2">Model | Modeling</span>
-<span class="s2">Interpret | Evaluation</span>
-<span class="s2">Communicate | Deployment</span>
-<span class="s2">Deploy | Deployment</span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="mason-and-wiggins-on-osemi">
 <h3>Mason and Wiggins on OSEMI<a class="headerlink" href="#mason-and-wiggins-on-osemi" title="Permalink to this heading">#</a></h3>
@@ -642,26 +533,6 @@ Bias: Data Mining</p>
 <li><p><strong>Model</strong>: Construct methods to predict and forecast. These methods include those of inferential statistics and predictive machine learning. <span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
 <li><p><strong>Interpret</strong>: Making sense of the results as well as evaluating the performance of models. May involve domain experts. Also includes methods such as regularization that make models interpretable to those who use them, e.g. scientists or business people. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;OSEMI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | </span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | Obtain</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | Scrub</span>
-<span class="s2">Explore | Explore</span>
-<span class="s2">Prepare | Scrub</span>
-<span class="s2">Model | Model</span>
-<span class="s2">Interpret | Interpret</span>
-<span class="s2">Communicate | </span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="ojeda-et-al-on-data-science">
 <h3>Ojeda, et al. on Data Science<a class="headerlink" href="#ojeda-et-al-on-data-science" title="Permalink to this heading">#</a></h3>
@@ -677,26 +548,6 @@ Bias: Data Mining</p>
 <li><p><strong>Analysis and modeling</strong>: Apply statistical and machine learning methods, including clustering, categorization, and classification. One presumes that the standard step of <span class="math notranslate nohighlight">\(Explore\)</span> is included here. <span class="math notranslate nohighlight">\(\rightarrow [Explore, Model]\)</span></p></li>
 <li><p><strong>Communicating and operationalizing</strong>: At the end of the pipeline, we need to give the data back in a compelling form and structure, sometimes to ourselves to inform the next iteration, and sometimes to a completely different audience. The data products produced can be a simple one-off report or a scalable web product that will be used interactively by millions. <span class="math notranslate nohighlight">\(\rightarrow [Communicate, Deploy]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Ojeda+&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | Exploration and understanding*</span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | Acquisition</span>
-<span class="s2">Store | Acquisition</span>
-<span class="s2">Clean | Munging, wrangling, and manipulation</span>
-<span class="s2">Explore | </span>
-<span class="s2">Prepare | Munging, wrangling, and manipulatiom</span>
-<span class="s2">Model | Analysis and modeling</span>
-<span class="s2">Interpret | </span>
-<span class="s2">Communicate | Communicating</span>
-<span class="s2">Deploy | Operationalizing</span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="caffo-et-al-on-data-science">
 <h3>Caffo, et al. on Data Science<a class="headerlink" href="#caffo-et-al-on-data-science" title="Permalink to this heading">#</a></h3>
@@ -717,26 +568,6 @@ Bias: Statistics</p>
 <li><p><strong>Communication</strong>: Communicate findings to various audiences, either internal to the organization or external. Includes translating findings into action by virtue of effectively communicating results to decision-makers.
 <span class="math notranslate nohighlight">\(\rightarrow [Communicate]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Caffo+&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | Question</span>
-<span class="s2">Plan | Question</span>
-<span class="s2">Collect | Question</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | </span>
-<span class="s2">Explore | Exploratory data analysis</span>
-<span class="s2">Prepare | </span>
-<span class="s2">Model | Formal modeling</span>
-<span class="s2">Interpret | Interpretation</span>
-<span class="s2">Communicate | Communication</span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="donaho-on-data-science">
 <h3>Donaho on Data Science<a class="headerlink" href="#donaho-on-data-science" title="Permalink to this heading">#</a></h3>
@@ -764,26 +595,6 @@ Bias: Statistics</p>
 <li><p><strong>Science about Data Science</strong>: In the spirit of Tukey’s “science of data analysis,” this is the evaluation of what data scientists actually do and produce. Includes the identificatin and study of commonly occurring analytical and processing workflows.
 <span class="math notranslate nohighlight">\(\rightarrow [Reflect]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Donoho&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | </span>
-<span class="s2">Plan | Gathering</span>
-<span class="s2">Collect | Gathering</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | Preparation</span>
-<span class="s2">Explore | Exploration</span>
-<span class="s2">Prepare | Modern Databases, Mathematical Representation</span>
-<span class="s2">Model | Data Modeling</span>
-<span class="s2">Interpret | </span>
-<span class="s2">Communicate | Presentation</span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | Science about Data Science</span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="geron-on-machine-learning">
 <h3>Géron on Machine Learning<a class="headerlink" href="#geron-on-machine-learning" title="Permalink to this heading">#</a></h3>
@@ -811,26 +622,6 @@ Bias: Data Mining</p>
 <li><p><strong>Launch, monitor, and maintain your system</strong>: This step includes converting your model into a production-ready component that can become a functioning piece of the overall pipeline. This may mean creating a web service.
 <span class="math notranslate nohighlight">\(\rightarrow [Deploy]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Géron&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | Big Picture</span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | Get</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | Prepare</span>
-<span class="s2">Explore | Discover</span>
-<span class="s2">Prepare | Get, Prepare</span>
-<span class="s2">Model | Select and train model, fine tune</span>
-<span class="s2">Interpret | </span>
-<span class="s2">Communicate | Present</span>
-<span class="s2">Deploy | Launch, monitor, maintain</span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="das-on-data-science">
 <h3>Das on Data Science<a class="headerlink" href="#das-on-data-science" title="Permalink to this heading">#</a></h3>
@@ -855,26 +646,6 @@ Bias: Data Mining</p>
 <li><p><strong>Data Visualization</strong>: This step combines expertise from the fields of communication, psychology, statistics, and art, with an ultimate goal of communicating the insightw from the model in a simple yet effective and visually pleasing way.
 <span class="math notranslate nohighlight">\(\rightarrow [Communicate]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Das&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | Business Understanding</span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | Data Mining</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | Data Cleaning</span>
-<span class="s2">Explore | Data Exploration</span>
-<span class="s2">Prepare | Feature Engineering</span>
-<span class="s2">Model | Predictive Modeling</span>
-<span class="s2">Interpret | </span>
-<span class="s2">Communicate | Data Visualization</span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="dataman-on-data-science">
 <h3>Dataman on Data Science<a class="headerlink" href="#dataman-on-data-science" title="Permalink to this heading">#</a></h3>
@@ -900,26 +671,6 @@ Bias: Data Mining</p>
 <span class="math notranslate nohighlight">\(\rightarrow [Deploy]\)</span></p></li>
 <li><p><strong>Re-build the model</strong>: This step involves revisiting the pipeline as models lose their predictability due to a variety of causes. Effectively, this step asserts the cyclic and interative nature of the pipeline and therefore belongs to no step in particular.</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Dataman&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | Set objectives, Communicate with stakeholders</span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | Collect for EDA</span>
-<span class="s2">Store | </span>
-<span class="s2">Clean | Collect for EDA</span>
-<span class="s2">Explore | Collect for EDA</span>
-<span class="s2">Prepare | Determine functional form, split data</span>
-<span class="s2">Model | Determine functional form, split data, Assess performance</span>
-<span class="s2">Interpret | </span>
-<span class="s2">Communicate | </span>
-<span class="s2">Deploy | Deploy</span>
-<span class="s2">Reflect | </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="porter-on-data-science">
 <h3>Porter on Data Science<a class="headerlink" href="#porter-on-data-science" title="Permalink to this heading">#</a></h3>
@@ -949,26 +700,6 @@ file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Ou
 <li><p><strong>Disciplinary Data Science</strong>: The science of applying data science to specific disciplines. This involves a consideration of how the pipeline operates in different contexts, including how domain knowledge informs each of the steps of the pipeline, from mode of data acquisition to model selection and analytic appraoch, to the interpretation and communication of results. Although placed at the end of the list, it properly belongs to the initial <span class="math notranslate nohighlight">\(Understand\)</span> step.
 <span class="math notranslate nohighlight">\(\rightarrow [Understand]\)</span></p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipes</span><span class="p">[</span><span class="s1">&#39;Porter&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Understand | Disciplinary</span>
-<span class="s2">Plan | </span>
-<span class="s2">Collect | Collection and Acquisition</span>
-<span class="s2">Store | Storage and Representation</span>
-<span class="s2">Clean | Manipulation and Transformation</span>
-<span class="s2">Explore | </span>
-<span class="s2">Prepare | Manipulation and Transformation</span>
-<span class="s2">Model | Computing, Analytics</span>
-<span class="s2">Interpret | Summarizing</span>
-<span class="s2">Communicate | Communicating</span>
-<span class="s2">Deploy | </span>
-<span class="s2">Reflect | Practicing </span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
 <!--
 ## Variations 
 
@@ -1007,50 +738,12 @@ file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Ou
 </section>
 <section id="summary-table">
 <h2>Summary Table<a class="headerlink" href="#summary-table" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">re</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Source&#39;</span><span class="p">,</span> <span class="s1">&#39;Std Phase&#39;</span><span class="p">,</span> <span class="s1">&#39;Src Phase&#39;</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">pipes</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">pipes</span><span class="p">[</span><span class="n">source</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">source</span><span class="p">]</span> <span class="o">+</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;\s*\|\s*&#39;</span><span class="p">,</span> <span class="n">row</span><span class="p">))</span>
-
-<span class="c1"># Convert CSV to wide table (using Xes)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">cols</span><span class="p">)</span>\
-  <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>\
-  <span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">cols</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
-<span class="c1"># df[&#39;Src Phase&#39;] = df[&#39;Src Phase&#39;].astype(&#39;bool&#39;).astype(&#39;int&#39;) </span>
-<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Src Phase&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Src Phase&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;■&#39;</span> <span class="c1"># &#39;▪︎&#39; &#39;●&#39; </span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span>
-<span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">droplevel</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1"># Convert CSV to wide table using names as values</span>
-<span class="c1"># df = pd.DataFrame(data, columns=cols)\</span>
-<span class="c1">#   .reset_index(drop=True)\</span>
-<span class="c1">#   .set_index(cols[:2]).unstack() </span>
-<span class="c1"># df.columns = df.columns.droplevel(0)</span>
-
-<span class="c1"># Preserve sorting</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="n">phase</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">phase</span> <span class="ow">in</span> <span class="n">phases</span><span class="p">]]</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">sources</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>
-<span class="c1"># df.columns = [col[:3] for col in df.columns]</span>
-<span class="c1"># df.columns = [str(i+1).zfill(2) for i in range(len(phases))]</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#| output: true</span>
 
@@ -1090,42 +783,43 @@ file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Ou
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
-#T_34eb6 th {
+#T_2eb5a th {
   font-weight: normal;
 }
-#T_34eb6 th.col_heading {
+#T_2eb5a th.col_heading {
   width: 40px;
   writing-mode: vertical-rl;
   transform: rotateZ(210deg);
   vertical-align: bottom;
 }
-#T_34eb6 th.row_heading {
+#T_2eb5a th.row_heading {
   width: 100px;
   text-align: right;
   padding-right: 1rem;
 }
-#T_34eb6 td.data {
+#T_2eb5a td.data {
   color: darkgray;
 }
 </style>
-<table id="T_34eb6">
+<table id="T_2eb5a">
   <thead>
     <tr>
       <th class="index_name level0" ></th>
-      <th id="T_34eb6_level0_col0" class="col_heading level0 col0" >understand</th>
-      <th id="T_34eb6_level0_col1" class="col_heading level0 col1" >plan</th>
-      <th id="T_34eb6_level0_col2" class="col_heading level0 col2" >collect</th>
-      <th id="T_34eb6_level0_col3" class="col_heading level0 col3" >store</th>
-      <th id="T_34eb6_level0_col4" class="col_heading level0 col4" >clean</th>
-      <th id="T_34eb6_level0_col5" class="col_heading level0 col5" >explore</th>
-      <th id="T_34eb6_level0_col6" class="col_heading level0 col6" >prepare</th>
-      <th id="T_34eb6_level0_col7" class="col_heading level0 col7" >model</th>
-      <th id="T_34eb6_level0_col8" class="col_heading level0 col8" >interpret</th>
-      <th id="T_34eb6_level0_col9" class="col_heading level0 col9" >communicate</th>
-      <th id="T_34eb6_level0_col10" class="col_heading level0 col10" >deploy</th>
-      <th id="T_34eb6_level0_col11" class="col_heading level0 col11" >reflect</th>
+      <th id="T_2eb5a_level0_col0" class="col_heading level0 col0" >understand</th>
+      <th id="T_2eb5a_level0_col1" class="col_heading level0 col1" >plan</th>
+      <th id="T_2eb5a_level0_col2" class="col_heading level0 col2" >collect</th>
+      <th id="T_2eb5a_level0_col3" class="col_heading level0 col3" >store</th>
+      <th id="T_2eb5a_level0_col4" class="col_heading level0 col4" >clean</th>
+      <th id="T_2eb5a_level0_col5" class="col_heading level0 col5" >explore</th>
+      <th id="T_2eb5a_level0_col6" class="col_heading level0 col6" >prepare</th>
+      <th id="T_2eb5a_level0_col7" class="col_heading level0 col7" >model</th>
+      <th id="T_2eb5a_level0_col8" class="col_heading level0 col8" >interpret</th>
+      <th id="T_2eb5a_level0_col9" class="col_heading level0 col9" >communicate</th>
+      <th id="T_2eb5a_level0_col10" class="col_heading level0 col10" >deploy</th>
+      <th id="T_2eb5a_level0_col11" class="col_heading level0 col11" >reflect</th>
     </tr>
     <tr>
       <th class="index_name level0" ></th>
@@ -1145,199 +839,199 @@ file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Ou
   </thead>
   <tbody>
     <tr>
-      <th id="T_34eb6_level0_row0" class="row_heading level0 row0" >Tukey</th>
-      <td id="T_34eb6_row0_col0" class="data row0 col0" ></td>
-      <td id="T_34eb6_row0_col1" class="data row0 col1" >■</td>
-      <td id="T_34eb6_row0_col2" class="data row0 col2" >■</td>
-      <td id="T_34eb6_row0_col3" class="data row0 col3" ></td>
-      <td id="T_34eb6_row0_col4" class="data row0 col4" ></td>
-      <td id="T_34eb6_row0_col5" class="data row0 col5" >■</td>
-      <td id="T_34eb6_row0_col6" class="data row0 col6" >■</td>
-      <td id="T_34eb6_row0_col7" class="data row0 col7" >■</td>
-      <td id="T_34eb6_row0_col8" class="data row0 col8" >■</td>
-      <td id="T_34eb6_row0_col9" class="data row0 col9" ></td>
-      <td id="T_34eb6_row0_col10" class="data row0 col10" ></td>
-      <td id="T_34eb6_row0_col11" class="data row0 col11" ></td>
+      <th id="T_2eb5a_level0_row0" class="row_heading level0 row0" >Tukey</th>
+      <td id="T_2eb5a_row0_col0" class="data row0 col0" ></td>
+      <td id="T_2eb5a_row0_col1" class="data row0 col1" >■</td>
+      <td id="T_2eb5a_row0_col2" class="data row0 col2" >■</td>
+      <td id="T_2eb5a_row0_col3" class="data row0 col3" ></td>
+      <td id="T_2eb5a_row0_col4" class="data row0 col4" ></td>
+      <td id="T_2eb5a_row0_col5" class="data row0 col5" >■</td>
+      <td id="T_2eb5a_row0_col6" class="data row0 col6" >■</td>
+      <td id="T_2eb5a_row0_col7" class="data row0 col7" >■</td>
+      <td id="T_2eb5a_row0_col8" class="data row0 col8" >■</td>
+      <td id="T_2eb5a_row0_col9" class="data row0 col9" ></td>
+      <td id="T_2eb5a_row0_col10" class="data row0 col10" ></td>
+      <td id="T_2eb5a_row0_col11" class="data row0 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row1" class="row_heading level0 row1" >KDD</th>
-      <td id="T_34eb6_row1_col0" class="data row1 col0" ></td>
-      <td id="T_34eb6_row1_col1" class="data row1 col1" ></td>
-      <td id="T_34eb6_row1_col2" class="data row1 col2" >■</td>
-      <td id="T_34eb6_row1_col3" class="data row1 col3" ></td>
-      <td id="T_34eb6_row1_col4" class="data row1 col4" >■</td>
-      <td id="T_34eb6_row1_col5" class="data row1 col5" ></td>
-      <td id="T_34eb6_row1_col6" class="data row1 col6" >■</td>
-      <td id="T_34eb6_row1_col7" class="data row1 col7" >■</td>
-      <td id="T_34eb6_row1_col8" class="data row1 col8" >■</td>
-      <td id="T_34eb6_row1_col9" class="data row1 col9" ></td>
-      <td id="T_34eb6_row1_col10" class="data row1 col10" ></td>
-      <td id="T_34eb6_row1_col11" class="data row1 col11" ></td>
+      <th id="T_2eb5a_level0_row1" class="row_heading level0 row1" >KDD</th>
+      <td id="T_2eb5a_row1_col0" class="data row1 col0" ></td>
+      <td id="T_2eb5a_row1_col1" class="data row1 col1" ></td>
+      <td id="T_2eb5a_row1_col2" class="data row1 col2" >■</td>
+      <td id="T_2eb5a_row1_col3" class="data row1 col3" ></td>
+      <td id="T_2eb5a_row1_col4" class="data row1 col4" >■</td>
+      <td id="T_2eb5a_row1_col5" class="data row1 col5" ></td>
+      <td id="T_2eb5a_row1_col6" class="data row1 col6" >■</td>
+      <td id="T_2eb5a_row1_col7" class="data row1 col7" >■</td>
+      <td id="T_2eb5a_row1_col8" class="data row1 col8" >■</td>
+      <td id="T_2eb5a_row1_col9" class="data row1 col9" ></td>
+      <td id="T_2eb5a_row1_col10" class="data row1 col10" ></td>
+      <td id="T_2eb5a_row1_col11" class="data row1 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row2" class="row_heading level0 row2" >SEMMA</th>
-      <td id="T_34eb6_row2_col0" class="data row2 col0" ></td>
-      <td id="T_34eb6_row2_col1" class="data row2 col1" ></td>
-      <td id="T_34eb6_row2_col2" class="data row2 col2" >■</td>
-      <td id="T_34eb6_row2_col3" class="data row2 col3" ></td>
-      <td id="T_34eb6_row2_col4" class="data row2 col4" ></td>
-      <td id="T_34eb6_row2_col5" class="data row2 col5" >■</td>
-      <td id="T_34eb6_row2_col6" class="data row2 col6" >■</td>
-      <td id="T_34eb6_row2_col7" class="data row2 col7" >■</td>
-      <td id="T_34eb6_row2_col8" class="data row2 col8" >■</td>
-      <td id="T_34eb6_row2_col9" class="data row2 col9" ></td>
-      <td id="T_34eb6_row2_col10" class="data row2 col10" ></td>
-      <td id="T_34eb6_row2_col11" class="data row2 col11" ></td>
+      <th id="T_2eb5a_level0_row2" class="row_heading level0 row2" >SEMMA</th>
+      <td id="T_2eb5a_row2_col0" class="data row2 col0" ></td>
+      <td id="T_2eb5a_row2_col1" class="data row2 col1" ></td>
+      <td id="T_2eb5a_row2_col2" class="data row2 col2" >■</td>
+      <td id="T_2eb5a_row2_col3" class="data row2 col3" ></td>
+      <td id="T_2eb5a_row2_col4" class="data row2 col4" ></td>
+      <td id="T_2eb5a_row2_col5" class="data row2 col5" >■</td>
+      <td id="T_2eb5a_row2_col6" class="data row2 col6" >■</td>
+      <td id="T_2eb5a_row2_col7" class="data row2 col7" >■</td>
+      <td id="T_2eb5a_row2_col8" class="data row2 col8" >■</td>
+      <td id="T_2eb5a_row2_col9" class="data row2 col9" ></td>
+      <td id="T_2eb5a_row2_col10" class="data row2 col10" ></td>
+      <td id="T_2eb5a_row2_col11" class="data row2 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row3" class="row_heading level0 row3" >Hayashi</th>
-      <td id="T_34eb6_row3_col0" class="data row3 col0" >■</td>
-      <td id="T_34eb6_row3_col1" class="data row3 col1" >■</td>
-      <td id="T_34eb6_row3_col2" class="data row3 col2" >■</td>
-      <td id="T_34eb6_row3_col3" class="data row3 col3" >■</td>
-      <td id="T_34eb6_row3_col4" class="data row3 col4" ></td>
-      <td id="T_34eb6_row3_col5" class="data row3 col5" >■</td>
-      <td id="T_34eb6_row3_col6" class="data row3 col6" >■</td>
-      <td id="T_34eb6_row3_col7" class="data row3 col7" >■</td>
-      <td id="T_34eb6_row3_col8" class="data row3 col8" >■</td>
-      <td id="T_34eb6_row3_col9" class="data row3 col9" ></td>
-      <td id="T_34eb6_row3_col10" class="data row3 col10" ></td>
-      <td id="T_34eb6_row3_col11" class="data row3 col11" ></td>
+      <th id="T_2eb5a_level0_row3" class="row_heading level0 row3" >Hayashi</th>
+      <td id="T_2eb5a_row3_col0" class="data row3 col0" >■</td>
+      <td id="T_2eb5a_row3_col1" class="data row3 col1" >■</td>
+      <td id="T_2eb5a_row3_col2" class="data row3 col2" >■</td>
+      <td id="T_2eb5a_row3_col3" class="data row3 col3" >■</td>
+      <td id="T_2eb5a_row3_col4" class="data row3 col4" ></td>
+      <td id="T_2eb5a_row3_col5" class="data row3 col5" >■</td>
+      <td id="T_2eb5a_row3_col6" class="data row3 col6" >■</td>
+      <td id="T_2eb5a_row3_col7" class="data row3 col7" >■</td>
+      <td id="T_2eb5a_row3_col8" class="data row3 col8" >■</td>
+      <td id="T_2eb5a_row3_col9" class="data row3 col9" ></td>
+      <td id="T_2eb5a_row3_col10" class="data row3 col10" ></td>
+      <td id="T_2eb5a_row3_col11" class="data row3 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row4" class="row_heading level0 row4" >CRISPDM</th>
-      <td id="T_34eb6_row4_col0" class="data row4 col0" >■</td>
-      <td id="T_34eb6_row4_col1" class="data row4 col1" >■</td>
-      <td id="T_34eb6_row4_col2" class="data row4 col2" >■</td>
-      <td id="T_34eb6_row4_col3" class="data row4 col3" >■</td>
-      <td id="T_34eb6_row4_col4" class="data row4 col4" >■</td>
-      <td id="T_34eb6_row4_col5" class="data row4 col5" >■</td>
-      <td id="T_34eb6_row4_col6" class="data row4 col6" >■</td>
-      <td id="T_34eb6_row4_col7" class="data row4 col7" >■</td>
-      <td id="T_34eb6_row4_col8" class="data row4 col8" >■</td>
-      <td id="T_34eb6_row4_col9" class="data row4 col9" >■</td>
-      <td id="T_34eb6_row4_col10" class="data row4 col10" >■</td>
-      <td id="T_34eb6_row4_col11" class="data row4 col11" ></td>
+      <th id="T_2eb5a_level0_row4" class="row_heading level0 row4" >CRISPDM</th>
+      <td id="T_2eb5a_row4_col0" class="data row4 col0" >■</td>
+      <td id="T_2eb5a_row4_col1" class="data row4 col1" >■</td>
+      <td id="T_2eb5a_row4_col2" class="data row4 col2" >■</td>
+      <td id="T_2eb5a_row4_col3" class="data row4 col3" >■</td>
+      <td id="T_2eb5a_row4_col4" class="data row4 col4" >■</td>
+      <td id="T_2eb5a_row4_col5" class="data row4 col5" >■</td>
+      <td id="T_2eb5a_row4_col6" class="data row4 col6" >■</td>
+      <td id="T_2eb5a_row4_col7" class="data row4 col7" >■</td>
+      <td id="T_2eb5a_row4_col8" class="data row4 col8" >■</td>
+      <td id="T_2eb5a_row4_col9" class="data row4 col9" >■</td>
+      <td id="T_2eb5a_row4_col10" class="data row4 col10" >■</td>
+      <td id="T_2eb5a_row4_col11" class="data row4 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row5" class="row_heading level0 row5" >OSEMI</th>
-      <td id="T_34eb6_row5_col0" class="data row5 col0" ></td>
-      <td id="T_34eb6_row5_col1" class="data row5 col1" ></td>
-      <td id="T_34eb6_row5_col2" class="data row5 col2" >■</td>
-      <td id="T_34eb6_row5_col3" class="data row5 col3" ></td>
-      <td id="T_34eb6_row5_col4" class="data row5 col4" >■</td>
-      <td id="T_34eb6_row5_col5" class="data row5 col5" >■</td>
-      <td id="T_34eb6_row5_col6" class="data row5 col6" >■</td>
-      <td id="T_34eb6_row5_col7" class="data row5 col7" >■</td>
-      <td id="T_34eb6_row5_col8" class="data row5 col8" >■</td>
-      <td id="T_34eb6_row5_col9" class="data row5 col9" ></td>
-      <td id="T_34eb6_row5_col10" class="data row5 col10" ></td>
-      <td id="T_34eb6_row5_col11" class="data row5 col11" ></td>
+      <th id="T_2eb5a_level0_row5" class="row_heading level0 row5" >OSEMI</th>
+      <td id="T_2eb5a_row5_col0" class="data row5 col0" ></td>
+      <td id="T_2eb5a_row5_col1" class="data row5 col1" ></td>
+      <td id="T_2eb5a_row5_col2" class="data row5 col2" >■</td>
+      <td id="T_2eb5a_row5_col3" class="data row5 col3" ></td>
+      <td id="T_2eb5a_row5_col4" class="data row5 col4" >■</td>
+      <td id="T_2eb5a_row5_col5" class="data row5 col5" >■</td>
+      <td id="T_2eb5a_row5_col6" class="data row5 col6" >■</td>
+      <td id="T_2eb5a_row5_col7" class="data row5 col7" >■</td>
+      <td id="T_2eb5a_row5_col8" class="data row5 col8" >■</td>
+      <td id="T_2eb5a_row5_col9" class="data row5 col9" ></td>
+      <td id="T_2eb5a_row5_col10" class="data row5 col10" ></td>
+      <td id="T_2eb5a_row5_col11" class="data row5 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row6" class="row_heading level0 row6" >Ojeda+</th>
-      <td id="T_34eb6_row6_col0" class="data row6 col0" >■</td>
-      <td id="T_34eb6_row6_col1" class="data row6 col1" ></td>
-      <td id="T_34eb6_row6_col2" class="data row6 col2" >■</td>
-      <td id="T_34eb6_row6_col3" class="data row6 col3" >■</td>
-      <td id="T_34eb6_row6_col4" class="data row6 col4" >■</td>
-      <td id="T_34eb6_row6_col5" class="data row6 col5" ></td>
-      <td id="T_34eb6_row6_col6" class="data row6 col6" >■</td>
-      <td id="T_34eb6_row6_col7" class="data row6 col7" >■</td>
-      <td id="T_34eb6_row6_col8" class="data row6 col8" ></td>
-      <td id="T_34eb6_row6_col9" class="data row6 col9" >■</td>
-      <td id="T_34eb6_row6_col10" class="data row6 col10" >■</td>
-      <td id="T_34eb6_row6_col11" class="data row6 col11" ></td>
+      <th id="T_2eb5a_level0_row6" class="row_heading level0 row6" >Ojeda+</th>
+      <td id="T_2eb5a_row6_col0" class="data row6 col0" >■</td>
+      <td id="T_2eb5a_row6_col1" class="data row6 col1" ></td>
+      <td id="T_2eb5a_row6_col2" class="data row6 col2" >■</td>
+      <td id="T_2eb5a_row6_col3" class="data row6 col3" >■</td>
+      <td id="T_2eb5a_row6_col4" class="data row6 col4" >■</td>
+      <td id="T_2eb5a_row6_col5" class="data row6 col5" ></td>
+      <td id="T_2eb5a_row6_col6" class="data row6 col6" >■</td>
+      <td id="T_2eb5a_row6_col7" class="data row6 col7" >■</td>
+      <td id="T_2eb5a_row6_col8" class="data row6 col8" ></td>
+      <td id="T_2eb5a_row6_col9" class="data row6 col9" >■</td>
+      <td id="T_2eb5a_row6_col10" class="data row6 col10" >■</td>
+      <td id="T_2eb5a_row6_col11" class="data row6 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row7" class="row_heading level0 row7" >Caffo+</th>
-      <td id="T_34eb6_row7_col0" class="data row7 col0" >■</td>
-      <td id="T_34eb6_row7_col1" class="data row7 col1" >■</td>
-      <td id="T_34eb6_row7_col2" class="data row7 col2" >■</td>
-      <td id="T_34eb6_row7_col3" class="data row7 col3" ></td>
-      <td id="T_34eb6_row7_col4" class="data row7 col4" ></td>
-      <td id="T_34eb6_row7_col5" class="data row7 col5" >■</td>
-      <td id="T_34eb6_row7_col6" class="data row7 col6" ></td>
-      <td id="T_34eb6_row7_col7" class="data row7 col7" >■</td>
-      <td id="T_34eb6_row7_col8" class="data row7 col8" >■</td>
-      <td id="T_34eb6_row7_col9" class="data row7 col9" >■</td>
-      <td id="T_34eb6_row7_col10" class="data row7 col10" ></td>
-      <td id="T_34eb6_row7_col11" class="data row7 col11" ></td>
+      <th id="T_2eb5a_level0_row7" class="row_heading level0 row7" >Caffo+</th>
+      <td id="T_2eb5a_row7_col0" class="data row7 col0" >■</td>
+      <td id="T_2eb5a_row7_col1" class="data row7 col1" >■</td>
+      <td id="T_2eb5a_row7_col2" class="data row7 col2" >■</td>
+      <td id="T_2eb5a_row7_col3" class="data row7 col3" ></td>
+      <td id="T_2eb5a_row7_col4" class="data row7 col4" ></td>
+      <td id="T_2eb5a_row7_col5" class="data row7 col5" >■</td>
+      <td id="T_2eb5a_row7_col6" class="data row7 col6" ></td>
+      <td id="T_2eb5a_row7_col7" class="data row7 col7" >■</td>
+      <td id="T_2eb5a_row7_col8" class="data row7 col8" >■</td>
+      <td id="T_2eb5a_row7_col9" class="data row7 col9" >■</td>
+      <td id="T_2eb5a_row7_col10" class="data row7 col10" ></td>
+      <td id="T_2eb5a_row7_col11" class="data row7 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row8" class="row_heading level0 row8" >Donoho</th>
-      <td id="T_34eb6_row8_col0" class="data row8 col0" ></td>
-      <td id="T_34eb6_row8_col1" class="data row8 col1" >■</td>
-      <td id="T_34eb6_row8_col2" class="data row8 col2" >■</td>
-      <td id="T_34eb6_row8_col3" class="data row8 col3" ></td>
-      <td id="T_34eb6_row8_col4" class="data row8 col4" >■</td>
-      <td id="T_34eb6_row8_col5" class="data row8 col5" >■</td>
-      <td id="T_34eb6_row8_col6" class="data row8 col6" >■</td>
-      <td id="T_34eb6_row8_col7" class="data row8 col7" >■</td>
-      <td id="T_34eb6_row8_col8" class="data row8 col8" ></td>
-      <td id="T_34eb6_row8_col9" class="data row8 col9" >■</td>
-      <td id="T_34eb6_row8_col10" class="data row8 col10" ></td>
-      <td id="T_34eb6_row8_col11" class="data row8 col11" >■</td>
+      <th id="T_2eb5a_level0_row8" class="row_heading level0 row8" >Donoho</th>
+      <td id="T_2eb5a_row8_col0" class="data row8 col0" ></td>
+      <td id="T_2eb5a_row8_col1" class="data row8 col1" >■</td>
+      <td id="T_2eb5a_row8_col2" class="data row8 col2" >■</td>
+      <td id="T_2eb5a_row8_col3" class="data row8 col3" ></td>
+      <td id="T_2eb5a_row8_col4" class="data row8 col4" >■</td>
+      <td id="T_2eb5a_row8_col5" class="data row8 col5" >■</td>
+      <td id="T_2eb5a_row8_col6" class="data row8 col6" >■</td>
+      <td id="T_2eb5a_row8_col7" class="data row8 col7" >■</td>
+      <td id="T_2eb5a_row8_col8" class="data row8 col8" ></td>
+      <td id="T_2eb5a_row8_col9" class="data row8 col9" >■</td>
+      <td id="T_2eb5a_row8_col10" class="data row8 col10" ></td>
+      <td id="T_2eb5a_row8_col11" class="data row8 col11" >■</td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row9" class="row_heading level0 row9" >Géron</th>
-      <td id="T_34eb6_row9_col0" class="data row9 col0" >■</td>
-      <td id="T_34eb6_row9_col1" class="data row9 col1" ></td>
-      <td id="T_34eb6_row9_col2" class="data row9 col2" >■</td>
-      <td id="T_34eb6_row9_col3" class="data row9 col3" ></td>
-      <td id="T_34eb6_row9_col4" class="data row9 col4" >■</td>
-      <td id="T_34eb6_row9_col5" class="data row9 col5" >■</td>
-      <td id="T_34eb6_row9_col6" class="data row9 col6" >■</td>
-      <td id="T_34eb6_row9_col7" class="data row9 col7" >■</td>
-      <td id="T_34eb6_row9_col8" class="data row9 col8" ></td>
-      <td id="T_34eb6_row9_col9" class="data row9 col9" >■</td>
-      <td id="T_34eb6_row9_col10" class="data row9 col10" >■</td>
-      <td id="T_34eb6_row9_col11" class="data row9 col11" ></td>
+      <th id="T_2eb5a_level0_row9" class="row_heading level0 row9" >Géron</th>
+      <td id="T_2eb5a_row9_col0" class="data row9 col0" >■</td>
+      <td id="T_2eb5a_row9_col1" class="data row9 col1" ></td>
+      <td id="T_2eb5a_row9_col2" class="data row9 col2" >■</td>
+      <td id="T_2eb5a_row9_col3" class="data row9 col3" ></td>
+      <td id="T_2eb5a_row9_col4" class="data row9 col4" >■</td>
+      <td id="T_2eb5a_row9_col5" class="data row9 col5" >■</td>
+      <td id="T_2eb5a_row9_col6" class="data row9 col6" >■</td>
+      <td id="T_2eb5a_row9_col7" class="data row9 col7" >■</td>
+      <td id="T_2eb5a_row9_col8" class="data row9 col8" ></td>
+      <td id="T_2eb5a_row9_col9" class="data row9 col9" >■</td>
+      <td id="T_2eb5a_row9_col10" class="data row9 col10" >■</td>
+      <td id="T_2eb5a_row9_col11" class="data row9 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row10" class="row_heading level0 row10" >Das</th>
-      <td id="T_34eb6_row10_col0" class="data row10 col0" >■</td>
-      <td id="T_34eb6_row10_col1" class="data row10 col1" ></td>
-      <td id="T_34eb6_row10_col2" class="data row10 col2" >■</td>
-      <td id="T_34eb6_row10_col3" class="data row10 col3" ></td>
-      <td id="T_34eb6_row10_col4" class="data row10 col4" >■</td>
-      <td id="T_34eb6_row10_col5" class="data row10 col5" >■</td>
-      <td id="T_34eb6_row10_col6" class="data row10 col6" >■</td>
-      <td id="T_34eb6_row10_col7" class="data row10 col7" >■</td>
-      <td id="T_34eb6_row10_col8" class="data row10 col8" ></td>
-      <td id="T_34eb6_row10_col9" class="data row10 col9" >■</td>
-      <td id="T_34eb6_row10_col10" class="data row10 col10" ></td>
-      <td id="T_34eb6_row10_col11" class="data row10 col11" ></td>
+      <th id="T_2eb5a_level0_row10" class="row_heading level0 row10" >Das</th>
+      <td id="T_2eb5a_row10_col0" class="data row10 col0" >■</td>
+      <td id="T_2eb5a_row10_col1" class="data row10 col1" ></td>
+      <td id="T_2eb5a_row10_col2" class="data row10 col2" >■</td>
+      <td id="T_2eb5a_row10_col3" class="data row10 col3" ></td>
+      <td id="T_2eb5a_row10_col4" class="data row10 col4" >■</td>
+      <td id="T_2eb5a_row10_col5" class="data row10 col5" >■</td>
+      <td id="T_2eb5a_row10_col6" class="data row10 col6" >■</td>
+      <td id="T_2eb5a_row10_col7" class="data row10 col7" >■</td>
+      <td id="T_2eb5a_row10_col8" class="data row10 col8" ></td>
+      <td id="T_2eb5a_row10_col9" class="data row10 col9" >■</td>
+      <td id="T_2eb5a_row10_col10" class="data row10 col10" ></td>
+      <td id="T_2eb5a_row10_col11" class="data row10 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row11" class="row_heading level0 row11" >Dataman</th>
-      <td id="T_34eb6_row11_col0" class="data row11 col0" >■</td>
-      <td id="T_34eb6_row11_col1" class="data row11 col1" ></td>
-      <td id="T_34eb6_row11_col2" class="data row11 col2" >■</td>
-      <td id="T_34eb6_row11_col3" class="data row11 col3" ></td>
-      <td id="T_34eb6_row11_col4" class="data row11 col4" >■</td>
-      <td id="T_34eb6_row11_col5" class="data row11 col5" >■</td>
-      <td id="T_34eb6_row11_col6" class="data row11 col6" >■</td>
-      <td id="T_34eb6_row11_col7" class="data row11 col7" >■</td>
-      <td id="T_34eb6_row11_col8" class="data row11 col8" ></td>
-      <td id="T_34eb6_row11_col9" class="data row11 col9" ></td>
-      <td id="T_34eb6_row11_col10" class="data row11 col10" >■</td>
-      <td id="T_34eb6_row11_col11" class="data row11 col11" ></td>
+      <th id="T_2eb5a_level0_row11" class="row_heading level0 row11" >Dataman</th>
+      <td id="T_2eb5a_row11_col0" class="data row11 col0" >■</td>
+      <td id="T_2eb5a_row11_col1" class="data row11 col1" ></td>
+      <td id="T_2eb5a_row11_col2" class="data row11 col2" >■</td>
+      <td id="T_2eb5a_row11_col3" class="data row11 col3" ></td>
+      <td id="T_2eb5a_row11_col4" class="data row11 col4" >■</td>
+      <td id="T_2eb5a_row11_col5" class="data row11 col5" >■</td>
+      <td id="T_2eb5a_row11_col6" class="data row11 col6" >■</td>
+      <td id="T_2eb5a_row11_col7" class="data row11 col7" >■</td>
+      <td id="T_2eb5a_row11_col8" class="data row11 col8" ></td>
+      <td id="T_2eb5a_row11_col9" class="data row11 col9" ></td>
+      <td id="T_2eb5a_row11_col10" class="data row11 col10" >■</td>
+      <td id="T_2eb5a_row11_col11" class="data row11 col11" ></td>
     </tr>
     <tr>
-      <th id="T_34eb6_level0_row12" class="row_heading level0 row12" >Porter</th>
-      <td id="T_34eb6_row12_col0" class="data row12 col0" >■</td>
-      <td id="T_34eb6_row12_col1" class="data row12 col1" ></td>
-      <td id="T_34eb6_row12_col2" class="data row12 col2" >■</td>
-      <td id="T_34eb6_row12_col3" class="data row12 col3" >■</td>
-      <td id="T_34eb6_row12_col4" class="data row12 col4" >■</td>
-      <td id="T_34eb6_row12_col5" class="data row12 col5" ></td>
-      <td id="T_34eb6_row12_col6" class="data row12 col6" >■</td>
-      <td id="T_34eb6_row12_col7" class="data row12 col7" >■</td>
-      <td id="T_34eb6_row12_col8" class="data row12 col8" >■</td>
-      <td id="T_34eb6_row12_col9" class="data row12 col9" >■</td>
-      <td id="T_34eb6_row12_col10" class="data row12 col10" ></td>
-      <td id="T_34eb6_row12_col11" class="data row12 col11" >■</td>
+      <th id="T_2eb5a_level0_row12" class="row_heading level0 row12" >Porter</th>
+      <td id="T_2eb5a_row12_col0" class="data row12 col0" >■</td>
+      <td id="T_2eb5a_row12_col1" class="data row12 col1" ></td>
+      <td id="T_2eb5a_row12_col2" class="data row12 col2" >■</td>
+      <td id="T_2eb5a_row12_col3" class="data row12 col3" >■</td>
+      <td id="T_2eb5a_row12_col4" class="data row12 col4" >■</td>
+      <td id="T_2eb5a_row12_col5" class="data row12 col5" ></td>
+      <td id="T_2eb5a_row12_col6" class="data row12 col6" >■</td>
+      <td id="T_2eb5a_row12_col7" class="data row12 col7" >■</td>
+      <td id="T_2eb5a_row12_col8" class="data row12 col8" >■</td>
+      <td id="T_2eb5a_row12_col9" class="data row12 col9" >■</td>
+      <td id="T_2eb5a_row12_col10" class="data row12 col10" ></td>
+      <td id="T_2eb5a_row12_col11" class="data row12 col11" >■</td>
     </tr>
   </tbody>
 </table>
