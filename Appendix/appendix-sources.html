@@ -1,0 +1,868 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>About the Sources {.unnumbered} &#8212; Defining Data Science</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Appendix/appendix-sources';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Appendix" href="Appendix.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/domains.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/domains.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Defining-DS-4%2B1.html">The 4 + 1 Model of Data Science</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Design/Design.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Design/Design_SDS.html">Design SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Design/Design_Labs.html">Design Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Design/Design_External.html">Design External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Design/Design_Case.html">Design Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Value/Value.html">Value</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Value/Value_SDS.html">Value SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Value/Value_Labs.html">Value Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Value/Value_External.html">Value External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Value/Value_Case.html">Value Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Systems/Systems.html">Systems</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_SDS.html">Systems SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_Labs.html">Systems Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_External.html">Systems External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_Case.html">Systems Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Analytics/Analytics.html">Analytics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Analytics/Analytics_SDS.html">Analytics SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Analytics/Analytics_Labs.html">Analytics Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Analytics/Analytics_External.html">Analytics External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Analytics/Analytics_Case.html">Analytics Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Appendix.html">Appendix</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">About the Sources {.unnumbered}</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAppendix/appendix-sources.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Appendix/appendix-sources.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>About the Sources {.unnumbered}</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-of-sources">List of Sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tukey-on-data-analysis">Tukey on Data Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fayyad-on-kdd">Fayyad on KDD</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azevedo-on-semma">Azevedo on SEMMA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hayashi-on-data-science">Hayashi on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wirth-and-hipp-on-crisp-dm">Wirth and Hipp on CRISP-DM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mason-and-wiggins-on-osemi">Mason and Wiggins on OSEMI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ojeda-et-al-on-data-science">Ojeda, et al. on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caffo-et-al-on-data-science">Caffo, et al. on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donaho-on-data-science">Donaho on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geron-on-machine-learning">Géron on Machine Learning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#das-on-data-science">Das on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataman-on-data-science">Dataman on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porter-on-data-science">Porter on Data Science</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">Summary Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="about-the-sources-unnumbered">
+<h1>About the Sources {.unnumbered}<a class="headerlink" href="#about-the-sources-unnumbered" title="Permalink to this heading">#</a></h1>
+<p>The primary sources on which the conclusions of this essay are based comprise a variety of documents, from technical journals to blog posts to internal reports. They come from a range of viewpoints, from data analysis and statistics to data mining and data science <em>per se</em>. For the purposes of the essay, we select a more or less representative subset across these axes of variation. With respect to representativeness, in some cases a document was chosen for its influence, in others, such as the post by Dataman, because it is considered more or less typical of a common genre.</p>
+<p>The documents chosen are listed below in chronological order, beginning with Tukey’s seminal essay on data analysis and ending with contempory explainers. Included also are the definitions of the CRISP-DM and KDD processes which are the most developed pipeline models.</p>
+<p>Each source entry below contains a short description of the source and its context, and then a list of the phases cited by the authors as fundamental to data processing. These phases are also mapped onto the standard sequence described in the main part of this essay, listed here for convenience.</p>
+<ol class="arabic simple">
+<li><p>Understand</p></li>
+<li><p>Plan</p></li>
+<li><p>Collect</p></li>
+<li><p>Store</p></li>
+<li><p>Clean</p></li>
+<li><p>Explore</p></li>
+<li><p>Prepare</p></li>
+<li><p>Model</p></li>
+<li><p>Interpret</p></li>
+<li><p>Communicate</p></li>
+<li><p>Deploy</p></li>
+<li><p>Reflect</p></li>
+</ol>
+<p>Mappings are indicated by an arrow pointing to the subset of terms from the standard sequence, e.g. … <span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span> These mappings are also aggregated into a composite pipeline and displayed the table below; each model row is referenced by its key as defined in the entries.</p>
+<p>Note that in most cases these phases are explicitly described as a process and often as a pipeline. When they are not, the implication is strong. In some cases, the process is likened to a cycle, emphasizing the connection between the endpoints of the pipeline, which is also emphasized by the 4+1 model.</p>
+<p>A final feature added to each entry is a two-value indicator of bias — statistics and data mining. This is meant to capture the intellectual origin of the model, given that statistics and data mining define the poles of one of main axes of variance that defines the field of data science. This difference roughly corresponds to the “two cultures” described by Breiman &#64;breimanStatisticalModelingTwo2001.</p>
+<section id="list-of-sources">
+<h2>List of Sources<a class="headerlink" href="#list-of-sources" title="Permalink to this heading">#</a></h2>
+<section id="tukey-on-data-analysis">
+<h3>Tukey on Data Analysis<a class="headerlink" href="#tukey-on-data-analysis" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Tukey</span></code><br />
+Year: 1962 <br />
+Source: &#64;tukeyFutureDataAnalysis1962 <a class="reference external" href="https://www.jstor.org/stable/2237638#metadata_info_tab_contents">URL</a><br />
+Bias: Statistics</p>
+<p>In this classic essay, Tukey introduces the concept of data analysis, which he distinguishes from mathematical statistics and likens to an empirical science. He defines data analysis as an empirical process with phases including “… procedures for <strong>analyzing</strong> data, techniques for <strong>interpreting</strong> the results of such procedures, ways of <strong>planning</strong> the <strong>gathering</strong> of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data” (p. 2). Unpacking this statement yields a four phase model.</p>
+<ol class="arabic simple">
+<li><p><strong>Planning</strong>: This phase includes “ways of planning the the gather of data to make its analysis easier.” <span class="math notranslate nohighlight">\(\rightarrow [Plan]\)</span></p></li>
+<li><p><strong>Gathering</strong>: The gathering of data, either through creation or by acquisition of “data already obtained” (p. 40). Includes also the shaping of data “to make its analysis easier,” which corresponds to our concept of Preparation. <span class="math notranslate nohighlight">\(\rightarrow [Collect, Prepare]\)</span></p></li>
+<li><p><strong>Analyzing</strong>: This is where data are analyzed with “all the machinery and results of (mathematical) statistics.” <span class="math notranslate nohighlight">\(\rightarrow [Explore, Model]\)</span></p></li>
+<li><p><strong>Interpreting</strong>: “techniques for interpreting the results of” analysis. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
+</ol>
+</section>
+<section id="fayyad-on-kdd">
+<h3>Fayyad on KDD<a class="headerlink" href="#fayyad-on-kdd" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">KDD</span></code><br />
+Year: 1996 <br />
+Source: &#64;fayyadKnowledgeDiscoveryData1996 <a class="reference external" href="https://www.aaai.org/Papers/KDD/1996/KDD96-014.pdf?utm_campaign=ml4devs-newsletter&amp;utm_medium=email&amp;utm_source=Revue%20newsletter">URL→</a><br />
+Bias: Data Mining \</p>
+<p>KDD, or Knowledge Discovery in Databases, emerged in the late 1980s as both datasets and the computational resources to work with them became abundant. These resources included commercial databases and personal computers. In many ways the most adjacent field to contemoporary data science, this approach is unabashedly dedicated to finding patterns in data prior to developing a probabilistic model to justify their use. Fayyad’s essay identifies five steps [&#64;fayyadKnowledgeDiscoveryData1996: 84]. He emphasizes the highly iterative and cyclical nature of the process, arguing that it “may contain loops between any two steps.” Another significant aspect of this conception of the pipeline is the role of exploration in the analytical phase: “Data Mining is a step in the KDD process consisting of applying data analysis and discovery algorithms that, under acceptable computational efficiency limitations, produce a particular enumeration of patterns over the data ….” (p. 83)</p>
+<ol class="arabic simple">
+<li><p><strong>Selection</strong>: Creating a target data set, or focusing on a subset of variables or data samples, on which discovery is to be performed. <span class="math notranslate nohighlight">\(\rightarrow [Collect]\)</span></p></li>
+<li><p><strong>Pre-processing</strong>: Cleaning and pre processing the data in order to obtain consistent data. <span class="math notranslate nohighlight">\(\rightarrow [Clean]\)</span></p></li>
+<li><p><strong>Transformation</strong>: Transformation of the data using dimensionality reduction and other methods. <span class="math notranslate nohighlight">\(\rightarrow [Prepare]\)</span></p></li>
+<li><p><strong>Data Mining</strong>: Searching for patterns of interest in a particular representational form, depending on the DM objective (usually, prediction). <span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Interpretation/Evaluation</strong>: Interpretation and evaluation of the mined patterns. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
+</ol>
+</section>
+<section id="azevedo-on-semma">
+<h3>Azevedo on SEMMA<a class="headerlink" href="#azevedo-on-semma" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">SEMMA</span></code><br />
+Year: 1996 <br />
+Source: &#64;azevedoKDDSEMMACRISPDM2008 <br />
+Bias: Statistics</p>
+<p>The SEMMA model was developed the by SAS institute in 1996 as part of the documentation for their product, SAS Enterprise Miner. Even so, the model is referenced outside of this context, often as a comparison to KDD and CRISP-DM. Its bias towards statististics is evident in the first step.</p>
+<ol class="arabic simple">
+<li><p><strong>Sample</strong>: Sampling the data by extracting a portion of a large data set big enough to contain the significant information, yet small enough to manipulate quickly. <span class="math notranslate nohighlight">\(\rightarrow [Collect]\)</span></p></li>
+<li><p><strong>Explore</strong>: Exploration of the data by searching for unanticipated trends and anomalies in order to gain understanding and ideas <span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span></p></li>
+<li><p><strong>Modify</strong>: Modification of the data by creating, selecting, and transforming the variables to focus the model selection process <span class="math notranslate nohighlight">\(\rightarrow [Prepare]\)</span></p></li>
+<li><p><strong>Model</strong>: Modeling the data by allowing the software to search automatically for a combination of data that reliably predicts a desired outcome. <span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Assess</strong>: Assessing the data by evaluating the usefulness and reliability of the findings from the DM process and estimate how well it performs. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
+</ol>
+</section>
+<section id="hayashi-on-data-science">
+<h3>Hayashi on Data Science<a class="headerlink" href="#hayashi-on-data-science" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Hayashi</span></code><br />
+Year: 1998<br />
+Source: &#64;hayashiDataScienceClassification1998 <a class="reference external" href="https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3">URL→</a><br />
+Bias: Statistics</p>
+<p>The Japanese statistician Chikio Hayashi adopted the term “data science” in the early 1990s to define a field that did not succumb to what he saw to be the errors of both statistics and data analysis. He argued that mathematical statistics had become too attached to problems of inference and removed from reality, while data analysis had lost interest in understanding the meaning of the data it deals with. His definition of data science is decidely processual: “Data Science consists of three phases: design for data, collection of data and analysis on data. It is important that the three phases are treated with the concept of unification based on the fundamental philosophy of science …. In these phases the methods which are fitted for the object and are valid, must be studied with a good perspective.” (p. 41) Similar to KDD and CRISM-PM, Hayashi envisioned this process as a spiral, oscillating between poles if what he called “diversification” and “simplification.” Note also that each of these terms, as described, comprises more than on of the standard sequence phases.</p>
+<ol class="arabic simple">
+<li><p><strong>Design</strong>: Surveys and experiments are developed to capture data from “multifarious phenomena.” <span class="math notranslate nohighlight">\(\rightarrow [Understand, Plan]\)</span></p></li>
+<li><p><strong>Collection</strong>: Phenomena are expressed as multidimensional or time-series data; properties of the data are made clear. At this stage, data are too complicated to draw clear conclusions. (Representation) <span class="math notranslate nohighlight">\(\rightarrow [Collect, Explore, Prepare]\)</span></p></li>
+<li><p><strong>Analysis</strong>: By methods of classification, multidimensional data analysis, and statistics, data structure is revealed. Simplification and conceptualization. Also yields understanding of deviations of the model, which begins the cycle anew. (Revelation) <span class="math notranslate nohighlight">\(\rightarrow [Model, Interpet]\)</span></p></li>
+</ol>
+</section>
+<section id="wirth-and-hipp-on-crisp-dm">
+<h3>Wirth and Hipp on CRISP-DM<a class="headerlink" href="#wirth-and-hipp-on-crisp-dm" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">CRISPDM</span></code><br />
+Year: 1999<br />
+Source: &#64;wirthCRISPDMStandardProcess1999 <a class="reference external" href="http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf">URL→</a><br />
+Bias: Data Mining</p>
+<p>By the late 1990s, the practice of data mining had become widespread in industry and globally. In 1999 the Cross Industry Standard Process for Data Mining (CRISP-DM) was developed in Europe as a comprehensive and general model to support the use of data mining in a broad range of sectors in a principled manner. Designed to work within a project management framework, this model is by far the most developed, and it continues to influence the field of data science to this day. Like KDD before it, the model emphasizes the cyclic and recursive nature of the process, and this perspective is reflected in the circular diagram that often accompanies its presentation. The steps below are based on the summary presented in Wirth and Hipp’s essay.</p>
+<p><img alt="Process diagram showing the relationship between the different phases of CRISP-DM (Wikipedia)" src="Appendix/images/1024px-CRISP-DM_Process_Diagram.png" /></p>
+<ol class="arabic simple">
+<li><p><strong>Business Understanding</strong>: Understanding project objectives and requirements from a business perspective. Includes the development of a plan. <span class="math notranslate nohighlight">\(\rightarrow [Understand, Plan]\)</span></p></li>
+<li><p><strong>Data Understanding</strong>: The initial data collection and activities to get familiar with the data, e.g. to identify data quality problems, to discover first insights into the data, or to detect interesting subsets to form hypotheses for hidden information. This is really two phases — <strong>Collection</strong> and <strong>Exploration</strong> — which are combined because of their close, iterative relationship. <span class="math notranslate nohighlight">\(\rightarrow [Collect, Explore]\)</span></p></li>
+<li><p><strong>Data Preparation</strong>: Construction of the final dataset for analytical use. Tasks include table, record, an attribute selection, data cleaning, construction of new attributes, and transformation of data for modeling tools. <span class="math notranslate nohighlight">\(\rightarrow [Clean, Prepare]\)</span></p></li>
+<li><p><strong>Modeling</strong>: Modeling techniques are selected and applied, parameters calibrated. Modeling techniques include a broad range of unsupervised and supervised methods. As with KDD, there is an emphasis on pattern discovery, which has the effect of promoted methods that other models place squarely in the Explore phase of the standard sequence. <span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Evaluation</strong>: Evaluation of model performance by both intrinsic and extrinsic measures. Regarding the latter, a key objective is to determine if an important business issue has not been sufficiently considered. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
+<li><p><strong>Deployment</strong>: The knowledge gained by the model is presented in a way that the customer can use it. This may be something as simple as a report or as complex as a repeatable data mining process. In many cases the user, not the data analyst, will carry out the deployment. <span class="math notranslate nohighlight">\(\rightarrow [Deploy]\)</span></p></li>
+</ol>
+</section>
+<section id="mason-and-wiggins-on-osemi">
+<h3>Mason and Wiggins on OSEMI<a class="headerlink" href="#mason-and-wiggins-on-osemi" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">OSEMI</span></code><br />
+Year: 2010<br />
+Source: &#64;masonTaxonomyDataScience2010 <a class="reference external" href="https://sites.google.com/a/isim.net.in/datascience_isim/taxonomy">URL→</a><br />
+Bias: Data Mining</p>
+<p>After the phrase “data science” went viral (circa 2009), there were many efforts to make sense of the idea. In 2010 Drew Conway posted his Venn diagram of data science [&#64;conwayDataScienceVenn2010]. The same year, another influential model, based explicitly on the pipeline, came from Mason and Wiggins in a blog post hosted at O’Reilly’s Tech Radar site. In contrast to previous models rooted in statistics, this model assumes that data are abundant and available, such as data scrapable from the Web.</p>
+<ol class="arabic simple">
+<li><p><strong>Obtain</strong>: Gather data from relevant sources through APIs, web scraping, etc. <span class="math notranslate nohighlight">\(\rightarrow [Collect]\)</span></p></li>
+<li><p><strong>Scrub</strong>: Clean data and convert data to machine readable formats. Clearning includes handling missing data, inconsistent labels, or awkward formatting; stripping extraneous characters; normalizing values, etc. <span class="math notranslate nohighlight">\(\rightarrow [Clean, Prepare]\)</span></p></li>
+<li><p><strong>Explore</strong>: Find significant patterns and trends using statistical and data analytic methods, such as visualizing, clustering. Also includes transformations of the for more effective analysis, such as dimensionality reduction. <span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span></p></li>
+<li><p><strong>Model</strong>: Construct methods to predict and forecast. These methods include those of inferential statistics and predictive machine learning. <span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Interpret</strong>: Making sense of the results as well as evaluating the performance of models. May involve domain experts. Also includes methods such as regularization that make models interpretable to those who use them, e.g. scientists or business people. <span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
+</ol>
+</section>
+<section id="ojeda-et-al-on-data-science">
+<h3>Ojeda, et al. on Data Science<a class="headerlink" href="#ojeda-et-al-on-data-science" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Ojeda+</span></code> <br />
+Year: 2014 <br />
+Source: &#64;ojedaPracticalDataScience2014 <a class="reference external" href="https://www.packtpub.com/product/practical-data-science-cookbook-second-edition/9781787129627">URL→</a><br />
+Bias: Data Mining</p>
+<p>By 2014, data science had become a widespread practice in industry and the academic, and explanations of its nature became the subject of many books. This text is one of a genre that presents the field as a process, perhaps due to the influence of the CRISP-DM and OSEMI models, and uses the expression pipeline throughout. Note that the model defined in this book is not presented here as canonical. It suffers from various inconsistences, such as the labeling of steps in the text representation of the pipeline versus those on diagrams. It is included to demonstrate the pervasiveness of the model.</p>
+<ol class="arabic simple">
+<li><p><strong>Acquisition</strong>: Acquire the data from relational databases, NoSQL and document stores, web scraping, distributed databases (e.g. HDFS on a Hadoop platform), RESTful APIs, flat files, etc. Consistent with the other data mining models, the emphasis here is on working with available data, not generating it. <span class="math notranslate nohighlight">\(\rightarrow [Collect]\)</span></p></li>
+<li><p><strong>Exploration and understanding</strong>: Understand the data and how it was collected or produced; this often requires significant exploration. Note that this step does <em>not</em> correspond to exploration in the sense of exploratory data analysis (EDA). Rather, it reflects the position of the data scientist as the receiver of someone else’s data and the need to infer what would normally belong to the first step of the standard squence <span class="math notranslate nohighlight">\(Understand\)</span>. <span class="math notranslate nohighlight">\(\rightarrow [Understand]\)</span></p></li>
+<li><p><strong>Munging, wrangling, and manipulation</strong>: Convert the data into the form required for analysis. This includes a wide range of activities, such as those mentioned in previous models. However, it also conflates the standard phases <span class="math notranslate nohighlight">\(Clean\)</span> and <span class="math notranslate nohighlight">\(Prepare\)</span>. <span class="math notranslate nohighlight">\(\rightarrow [Clean, Prepare]\)</span></p></li>
+<li><p><strong>Analysis and modeling</strong>: Apply statistical and machine learning methods, including clustering, categorization, and classification. One presumes that the standard step of <span class="math notranslate nohighlight">\(Explore\)</span> is included here. <span class="math notranslate nohighlight">\(\rightarrow [Explore, Model]\)</span></p></li>
+<li><p><strong>Communicating and operationalizing</strong>: At the end of the pipeline, we need to give the data back in a compelling form and structure, sometimes to ourselves to inform the next iteration, and sometimes to a completely different audience. The data products produced can be a simple one-off report or a scalable web product that will be used interactively by millions. <span class="math notranslate nohighlight">\(\rightarrow [Communicate, Deploy]\)</span></p></li>
+</ol>
+</section>
+<section id="caffo-et-al-on-data-science">
+<h3>Caffo, et al. on Data Science<a class="headerlink" href="#caffo-et-al-on-data-science" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Caffo+</span></code> <br />
+Year: 2015 <br />
+Source: &#64;caffoExecutiveDataScience2015 <a class="reference external" href="https://leanpub.com/eds">URL→</a><br />
+Bias: Statistics</p>
+<p>By 2015, many universities had begun offering degrees in data science, typically at the masters’ level, with the intention of meeting the high demand for data scientists. Professors Caffo, Peng, and Leek’s book was written to accompany a course in Exectutive Data Science, offered by Johns Hopkins University through <em>Coursera</em>. Their model is relatively high level, consisting of five phases, given the target audience of those in charge of data science teams. As with other models, this model emphasizes the iterative nature of each phase, both internally and between phases. And as with many statistics-oriented conceptions of data science, this model emphasizes the Understand phase and skips over the technical issues of storing and modeling the data.</p>
+<ol class="arabic simple">
+<li><p><strong>Question</strong>.: Pose a research question and specify what is to be learned from data to answer it. The question determines the data to be obtained and the type of analysis to perform. Included determing the type of question, including descriptive, exploratory, inferential, causal, predictive, and mechanistic. An alternate approach here is <em>hypothesis generation</em>, which may be suitable when data already exist but a question is not well-developed. In this scenario, the data scientist may skip to the next step to determine the value of the data. Once a question is developed, then it may be necessary to acquire more data, and then go through the process.
+<span class="math notranslate nohighlight">\(\rightarrow [Question, Collect]\)</span></p></li>
+<li><p><strong>Exploratory data analysis</strong>: Explore the data to determine if the data are suitable for answering the question and if more data need to be collected. For example, determine if there are enough data and if it is missing key variables. In addition, develop a sketch of the solution. Include a freamework for challenging results and to develop robust evidence for answering your question.\
+<span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span></p></li>
+<li><p><strong>Formal modeling</strong>:  Identify the parameters to estimate based on the sketch. \
+<span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Interpretation</strong>: Determine if the modeling results align with the initial expections during the Question phase and before the acquisition of data. Consider the totality of the evidence developed after attempting to fit different models, weighing the different pieces of evidence. \
+<span class="math notranslate nohighlight">\(\rightarrow [Interpret]\)</span></p></li>
+<li><p><strong>Communication</strong>: Communicate findings to various audiences, either internal to the organization or external. Includes translating findings into action by virtue of effectively communicating results to decision-makers.
+<span class="math notranslate nohighlight">\(\rightarrow [Communicate]\)</span></p></li>
+</ol>
+</section>
+<section id="donaho-on-data-science">
+<h3>Donaho on Data Science<a class="headerlink" href="#donaho-on-data-science" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Donoho</span></code> <br />
+Year: 2017 <br />
+Source: &#64;donoho50YearsData2017 <a class="reference external" href="https://doi.org/10.1080/10618600.2017.1384734">URL→</a> <br />
+Bias: Statistics</p>
+<p>As data science became viral in the 2010s, academic statisticians frequently expressed concern that they were “disconnected from the new (and vaguely defined) community of data scientists, who are completely identified with Big Data in the eyes of the media and policymakers” [&#64;rodriguezBigDataBetter2012]. “Aren’t <em>We</em> Data Scientists?” asked Marie Davidian, then president of the American Statistical Association, in 2013 [&#64;davidianArenWeData2013]. In response to this growing sentiment, Donoho’s essay reads as a manifesto for the reclaiming of data science by academic statistics. In it, he defines six divisions of Greater Data Science, each containing a set of subactivities that roughly map to the pipeline model described here.</p>
+<p>It is important to note that Donoho’s model is more abstract than a pipeline description and therefore not all of the divisions and subactivities directly map onto the sequence. <strong>Data visualization and Presentation</strong> defines a general practice, although from the description it clearly maps onto two phases, Explore and Communicate. <strong>Computing with Data</strong> refers to knowledge of programming languages for data analysis and data processing as well as knowledge of how to use cluster and cloud computing resources at scale. It also includes how to develop workflows which organize work. Clearly, this area belongs to no phase in particular but instead characterizes the broader context in which the data science pipeline operates. The identification of workflows, which are the focus of the Science about Data Science division, also suggests that Donoho is working at a higher level of abstraction than the other models, which places it alongside the of the current essay. The following phases are inferred from Donoho’s descriptions.</p>
+<ol class="arabic simple">
+<li><p><strong>Gathering</strong>: This includes both experimental design, modern data gathering techniques, and identification of existing data resources, from signal data to websites.
+<span class="math notranslate nohighlight">\(\rightarrow [Plan, Collect]\)</span></p></li>
+<li><p><strong>Preparation</strong>: Identification of anomalies and artifacts in the data and handling them by reformatting, recoding, grouping, smoothing, subsetting, etc.
+<span class="math notranslate nohighlight">\(\rightarrow [Clean]\)</span></p></li>
+<li><p><strong>Exploration</strong>: Application of EDA to sanity-check data and expose unexpected features. Includes data visualization, which Donoho separates out into a separate division and combines with visualization activities involved in interpretation and communication.
+<span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span></p></li>
+<li><p><strong>Modern Databases</strong>: Transform and restructure data as found in source files, such as CSV files and spreadsheets, and databases, into a forms more suitable for analysis.
+<span class="math notranslate nohighlight">\(\rightarrow [Prepare]\)</span></p></li>
+<li><p><strong>Mathematical Representations</strong>: Application of mathematical structures for to extract features from special kinds of data, including acoustic, image, sensor, and network data. For example, the application of the Fourier transform to acousting data or the wavelet transform to image data.
+<span class="math notranslate nohighlight">\(\rightarrow [Prepare]\)</span></p></li>
+<li><p><strong>Data Modeling</strong>: Appliction of methods from both traditional statistics and contemporary machine learning.
+<span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Presentation</strong>: The creation of sophisticated graphics, dashboards, and visualizations to present conclusions to stakeholders.
+<span class="math notranslate nohighlight">\(\rightarrow [Communicate]\)</span></p></li>
+<li><p><strong>Science about Data Science</strong>: In the spirit of Tukey’s “science of data analysis,” this is the evaluation of what data scientists actually do and produce. Includes the identificatin and study of commonly occurring analytical and processing workflows.
+<span class="math notranslate nohighlight">\(\rightarrow [Reflect]\)</span></p></li>
+</ol>
+</section>
+<section id="geron-on-machine-learning">
+<h3>Géron on Machine Learning<a class="headerlink" href="#geron-on-machine-learning" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Géron</span></code> <br />
+Year: 2017 <br />
+Source: &#64;geronHandsOnMachineLearning2017
+<a class="reference external" href="https://www.investincotedor.fr/sites/default/files/webform/pdf-hands-on-machine-learning-with-scikit-learn-and-tensorflow-conce-aurlien-gron-pdf-download-free-book-21c7262.pdf">URL→</a><br />
+Bias: Data Mining</p>
+<p>Géron’s text is a classic among practicing data scientists interested in using machine learning in a business setting, covering everything from regression to deep learning from a practical, code-centric perspective. Written with “minimal theory,” the book demostrates the entrenched nature of the pipeline model, especially as it has been become a software development pattern hard-coded into both SciKit Learn and TensorFlow.  This usage reflects the fact that within machine learning, “pipeline” has taken on a more specific meaning — “a sequence of data processing components” — than we are using here. These components are units software within a system, not the phases of labor associated with the work of the data scientist. Nevertheless, Géron’s text describes a labor pipeline within which the software pipeline is embedded, the steps of an “end-to-end” classification project.</p>
+<ol class="arabic simple">
+<li><p><strong>Look at the big picture</strong>: Frame the problem by defining the business objective and the specific goals of the model. This may include defining a specific performance measure, such as a loss function. Consider that the model is a a means to an end.
+<span class="math notranslate nohighlight">\(\rightarrow [Understand]\)</span></p></li>
+<li><p><strong>Get the data</strong>: This consists of setting up a compute workspace and downloading the data. This step also includes getting to know the data and preparing a test set.
+<span class="math notranslate nohighlight">\(\rightarrow [Get, Prepare]\)</span></p></li>
+<li><p><strong>Discover and visualize the data</strong> to gain insights: Go into more depth exploring the data, using EDA methods to investigate correlations and experiment with attribute combinations.
+<span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span></p></li>
+<li><p><strong>Prepare the data</strong> for Machine Learning algorithms: This step involves transforming and structuring the data in forms suitable for the algorithms that with fit the data to a model. This includes imputing missing data, handling non-numeric data, feature scaling, etc. This step contains its own pipeline.
+<span class="math notranslate nohighlight">\(\rightarrow [Clean, Prepare]\)</span></p></li>
+<li><p><strong>Select a model and train it</strong>: Apply models deemed appropriate to the data and compare results. Apply evaluation methods such as cross-validation to compare model results.
+<span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Fine-tune your model</strong>: Once the list of candidate models is shortened, fine-tune their parameters by using various seach methods, e.g. grid, randomized, or ensemble. Also includes evaluating the models on test sets.
+<span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Present your solution</strong>: : This step includes presenting to stakeholders what was learned, what worked and what did not, what assumptions were made, and what the system’s limitations are. It also includes documenting everything, creating user-friendly presentations with clear visualizations and easy-to-remember statements. Géron refers to this as the “prelaunch phase,” presumably because the component must be approved to go on to the next phase.
+<span class="math notranslate nohighlight">\(\rightarrow [Communicate]\)</span></p></li>
+<li><p><strong>Launch, monitor, and maintain your system</strong>: This step includes converting your model into a production-ready component that can become a functioning piece of the overall pipeline. This may mean creating a web service.
+<span class="math notranslate nohighlight">\(\rightarrow [Deploy]\)</span></p></li>
+</ol>
+</section>
+<section id="das-on-data-science">
+<h3>Das on Data Science<a class="headerlink" href="#das-on-data-science" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Das</span></code> <br />
+Year: 2019 <br />
+Source: &#64;dasDataScienceLife2019 <a class="reference external" href="https://web.archive.org/web/20191113225625/https://towardsdatascience.com/data-science-life-cycle-101-for-dummies-like-me-e66b47ad8d8f?gi=261acdd4c903">URL→</a><br />
+Bias: Data Mining</p>
+<p>This essay belongs to a genre of self-publication that attempts to explain concepts in data science to the public. It is typical of platforms like <em>Medium</em> and what used to be called the blogosphere. It is included here to represent the commonplace nature of the pipeline as a rhetorical device for explaining data science. Here, the pipeline is called a “life-cycle,” although the term pipeline is used as well. The cyclical nature of the process is emphasized by including the first step as last step of the process. [Note that this essay was removed from the web by the author; a link to Internet Archive URL is included for completeness.]</p>
+<ol class="arabic simple">
+<li><p><strong>Business Understanding</strong>: Understand the problem you are trying to solve and how data can be used to support a solution or decision. Identify central objectives and variables that need to be predicted. (Here the author implies that methods such as regression and clustering are objectives.)
+<span class="math notranslate nohighlight">\(\rightarrow [Understand]\)</span></p></li>
+<li><p><strong>Data Mining</strong>: Gathering the data from various sources. This may invovle extracting data from a legacy database or webscraping. The author correctly notes that this step should not be lumped together with cleaning.
+<span class="math notranslate nohighlight">\(\rightarrow [Collect]\)</span></p></li>
+<li><p><strong>Data Cleaning</strong>: This step includes cleaning and preparing the data, also know as “data janitor work.” This step takes most of the data scientist’s time because there are so many reasons that data may need cleaning. Also includes handling missing data.<br />
+<span class="math notranslate nohighlight">\(\rightarrow [Clean]\)</span></p></li>
+<li><p><strong>Data Exploration</strong>: This is the brainstorming phase of data analysis, where one discovers patterns and biases in the data. Involves using the basic tools of EDA but also creating interactive visualizations to allow drilling down into specific points, e.g. to explore the story behind outliers. Here also one begins to form hypotheses about the data to be developed.
+<span class="math notranslate nohighlight">\(\rightarrow [Explore]\)</span></p></li>
+<li><p><strong>Feature Engineering</strong>: This is the process of using domain knowledge to transform the data into informative features that represent the business problem. This stage  directly influences the accuracy of the predictive model constructed in the next stage. Methods include feature selection (i.e. dimensionality reduction) and constructing new features that will aid in the modeling process.
+<span class="math notranslate nohighlight">\(\rightarrow [Prepare]\)</span></p></li>
+<li><p><strong>Predictive Modeling</strong>: The application of machine learning methods to the data. Includes training several models and evaluating their performance, as well as applying statistical methods and tests to ensure that the outcomes from the models make sense and are significant. Based on the questions developed in the business understanding stage, this is where a model is selected. Model selection will depend on the size, type and quality of the data, availability of computational resources, and the type of output required.
+<span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Data Visualization</strong>: This step combines expertise from the fields of communication, psychology, statistics, and art, with an ultimate goal of communicating the insightw from the model in a simple yet effective and visually pleasing way.
+<span class="math notranslate nohighlight">\(\rightarrow [Communicate]\)</span></p></li>
+</ol>
+</section>
+<section id="dataman-on-data-science">
+<h3>Dataman on Data Science<a class="headerlink" href="#dataman-on-data-science" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Dataman</span></code> <br />
+Year: 2020 <br />
+Source: &#64;datamanDataScienceModeling2020 <a class="reference external" href="https://towardsdatascience.com/data-science-modeling-process-fa6e8e45bf02">URL→</a><br />
+Bias: Data Mining</p>
+<p>Another example of a self-published explainer essay, this one describes the data science “modeling process” and aligns it with six consultative roles. The other defines eight steps to the process. Curiously, althhough this pipeline focuses on the details of training models, it does not include training the model itself as a step.</p>
+<ol class="arabic simple">
+<li><p><strong>Set the objectives</strong>: This step includes defining the goals of the model as well as its scope and risk factors. These will determine what data to collect, and whether the cost to collect the data can be justified by the impact of the model.
+<span class="math notranslate nohighlight">\(\rightarrow [Understand]\)</span></p></li>
+<li><p><strong>Communicate with key stakeholders</strong>: This step involves ongoing aligning expected outcomes with key stakeholders. This step is unique among the pipelines by being place so early in the process. We associate it with the <span class="math notranslate nohighlight">\(Understand\)</span> phase because it essentially broads the group for whom understanding matters.
+<span class="math notranslate nohighlight">\(\rightarrow [Plan]\)</span></p></li>
+<li><p><strong>Collect the necessary data for exploratory data analysis (EDA)</strong>: This step combines the <span class="math notranslate nohighlight">\(Collect\)</span>, <span class="math notranslate nohighlight">\(Clean\)</span>, and <span class="math notranslate nohighlight">\(Explore\)</span> phases. Involves the iterative “curation” of data need to conduct EDA.
+<span class="math notranslate nohighlight">\(\rightarrow [Collect, Clean, Explore]\)</span></p></li>
+<li><p><strong>Determine the functional form of the model</strong>: In this step, the specific from of the model is defined, including the definition and characterization of the target variable. This step involves model selection and would in practice be closely associated with the next.
+<span class="math notranslate nohighlight">\(\rightarrow [Prepare, Model]\)</span></p></li>
+<li><p><strong>Split the data into training and validation</strong> This step is concerned with model validation and avoiding overfitting. Data are divided into training and test datasets. It is assumed that test data were separated out prior to the preceding step. Presumably this step includes fitting the models, but this is not explicit.
+<span class="math notranslate nohighlight">\(\rightarrow [Prepare, Model]\)</span></p></li>
+<li><p><strong>Assess the model performance</strong>: This step includes determining the stability of a model over time (generalizability), focusing on the overall fit of the model, the significance of each predictor, and the relationship between the target variable and each predictor. Includes measures such as lift. Clearly this step follows the process of fitting and tuning models.
+<span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Deploy the model for real-time prediction</strong>: The deployment of machine learning models into production, e.g. via batch prediction as a webservice.
+<span class="math notranslate nohighlight">\(\rightarrow [Deploy]\)</span></p></li>
+<li><p><strong>Re-build the model</strong>: This step involves revisiting the pipeline as models lose their predictability due to a variety of causes. Effectively, this step asserts the cyclic and interative nature of the pipeline and therefore belongs to no step in particular.</p></li>
+</ol>
+</section>
+<section id="porter-on-data-science">
+<h3>Porter on Data Science<a class="headerlink" href="#porter-on-data-science" title="Permalink to this heading">#</a></h3>
+<p>Key: <code class="docutils literal notranslate"><span class="pre">Porter</span></code> <br />
+Year: 2020 <br />
+Source: &#64;porterFrameworkDataScience2020 <br />
+Bias: Statistics</p>
+<!--
+file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Outlook/Outlook%20Temp/data-science%5B44%5D.html#categories_of_data_science
+-->
+<p>Michael Porter is an Associate Professor of Data Science and Systems Engineering at the UVA. This essay is an internal report (available on request) on the field of data science from the perspective of curricular planning. Porter argues that Data Science includes seven areas, each of which can be viewed as a science, i.e. as requiring specific expertise. Like Donoho’s essay (and the current), the model presented is more abstract than a pipeline model and includes areas that cross-cut steps in the Primary Sequence. Nevertheless, it retains a sequential structure consistent with the general pattern.</p>
+<ol class="arabic simple">
+<li><p><strong>Data Collection and Acquisition</strong>: The science of “how” and “when” data is collected, and includes all methods of data acquisition from its production through designed experiments to its consumption from external sources, e.g. databases and APIs.
+<span class="math notranslate nohighlight">\(\rightarrow [Collect]\)</span></p></li>
+<li><p><strong>Data Storage and Representation</strong>: The science of “how” and “when” data is collected, including data modeling and storing data in databases and files of various formats. Also includes transforming data into “tidy” format.
+<span class="math notranslate nohighlight">\(\rightarrow [Store]\)</span></p></li>
+<li><p><strong>Data Manipulation and Transformation</strong>: The science of preparing data for analysis, including wrangling, cleaning, and importing data from databases (after they have been stored in the previous step).
+<span class="math notranslate nohighlight">\(\rightarrow [Clean, Prepare]\)</span></p></li>
+<li><p><strong>Computing with Data</strong>: The science of computing for data analysis with a focus on algorithm design and performance evaluation.
+<span class="math notranslate nohighlight">\(\rightarrow [Model]\)</span></p></li>
+<li><p><strong>Data Analytics</strong>: The science of machine learning, broadly conceived to include methods ranging from geneative modeling (either frequentist or Bayesian) and inference to predictive modeling and optimization. Notably, this step also includes EDA and feature engineering.
+<span class="math notranslate nohighlight">\(\rightarrow [Explore, Prepare, Model]\)</span></p></li>
+<li><p><strong>Summarizing and Communicating Data and Models</strong>: The science of extracting and summarizing the information in data for human understanding. This area includes visualization in the context of both EDA and presentation of results to external stakeholders. It also includes the communication of model and data properties (such as bias) to guide interpretation of results. Here we map it to the latter, but note that this area includes at least two steps. In addition, we may may the work of summarization to interpretation.
+<span class="math notranslate nohighlight">\(\rightarrow [Interpret, Communicate]\)</span></p></li>
+<li><p><strong>Practicing Data Science</strong>: The science of the overall system of data science, including improving the data science spipeline, replicability of results, openness and transparency, project management, etc.
+<span class="math notranslate nohighlight">\(\rightarrow [Reflect]\)</span></p></li>
+<li><p><strong>Disciplinary Data Science</strong>: The science of applying data science to specific disciplines. This involves a consideration of how the pipeline operates in different contexts, including how domain knowledge informs each of the steps of the pipeline, from mode of data acquisition to model selection and analytic appraoch, to the interpretation and communication of results. Although placed at the end of the list, it properly belongs to the initial <span class="math notranslate nohighlight">\(Understand\)</span> step.
+<span class="math notranslate nohighlight">\(\rightarrow [Understand]\)</span></p></li>
+</ol>
+<!--
+## Variations 
+
+**Shape**
+
+* Linear
+* Circular
+
+**Granularity**
+
+* Few
+* Many -- see CRISP-DM and levels of description.
+
+**Abstraction**
+
+* Pipeline stages only
+* Pipeline stages and cross-cutting, abstract principles
+
+## Other Comments
+
+* The place of "exploration"
+* Changes in order are bound
+* The explicit and the implicit. Sometimes unspecified steps are implied; other times their absence is telling.
+-->
+<!--
+## Comments
+-   Place of clustering
+-   Place of explorations
+-   Cycles and pipes
+-   Missing steps, implicit steps
+-   Differences in order mostly confined to groups
+-   Right even when wrong -- the end points $I$ and $V$, and the middle $III$, remain constant; the arms, as it were, are where it gets messy.
+-   Actually, two models -- pipeline and cycle ... Both are sequences, and both stress repetition . . .
+-->
+</section>
+</section>
+<section id="summary-table">
+<h2>Summary Table<a class="headerlink" href="#summary-table" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Appendix"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Appendix.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Appendix</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-of-sources">List of Sources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tukey-on-data-analysis">Tukey on Data Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fayyad-on-kdd">Fayyad on KDD</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azevedo-on-semma">Azevedo on SEMMA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hayashi-on-data-science">Hayashi on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wirth-and-hipp-on-crisp-dm">Wirth and Hipp on CRISP-DM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mason-and-wiggins-on-osemi">Mason and Wiggins on OSEMI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ojeda-et-al-on-data-science">Ojeda, et al. on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caffo-et-al-on-data-science">Caffo, et al. on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donaho-on-data-science">Donaho on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geron-on-machine-learning">Géron on Machine Learning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#das-on-data-science">Das on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataman-on-data-science">Dataman on Data Science</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porter-on-data-science">Porter on Data Science</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">Summary Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
