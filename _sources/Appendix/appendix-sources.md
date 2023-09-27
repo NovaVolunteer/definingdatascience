@@ -18,16 +18,7 @@ execute:
   echo: false
 ---
 
-```json
-{
-    "tags": [
-        "remove-cell"
-        "hide-input"
-    ]
-}
-```
-
-# About the Sources
+# About the Sources plz work
 
 The primary sources on which the conclusions of this essay are based comprise a variety of documents, from technical journals to blog posts to internal reports. They come from a range of viewpoints, from data analysis and statistics to data mining and data science *per se*. For the purposes of the essay, we select a more or less representative subset across these axes of variation. With respect to representativeness, in some cases a document was chosen for its influence, in others, such as the post by Dataman, because it is considered more or less typical of a common genre.
 
@@ -652,7 +643,7 @@ df.index.name = ''
 ```
 
 ```{code-cell} python3 
-:tags: [hide-input]
+:tags: [remove-input]
 
 #| output: true
 
