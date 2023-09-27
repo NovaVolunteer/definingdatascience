@@ -30,9 +30,9 @@ chapters:
   - file: Analytics/Analytics_Labs
   - file: Analytics/Analytics_External
   - file: Analytics/Analytics_Case
-# - file: Appendix
-#   sections:
-#   - file: Primary Sources
+- file: Appendix/Appendix
+  sections:
+  - file: Appendix/appendix-sources
 #   - file: Summary Table
 #   - file: References
 #     sections: List of Sources
