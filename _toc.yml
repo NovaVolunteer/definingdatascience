@@ -4,13 +4,13 @@
 format: jb-book
 root: intro
 parts:
-- caption: Part 1
+- caption:
   numbered: false
   chapters:
   # - file: Preface
   - file: Defining-DS-4+1
-- caption: Part 2
-  numbered: true
+- caption: The Four Pillars
+  numbered: 2
   chapters:
   - file: Design/Design
     sections:
@@ -36,7 +36,7 @@ parts:
     - file: Analytics/Analytics_Labs
     - file: Analytics/Analytics_External
     - file: Analytics/Analytics_Case
-- caption: Part 3
+- caption: Appendix
   numbered: false
   chapters:
   - file: Appendix/appendix-sources

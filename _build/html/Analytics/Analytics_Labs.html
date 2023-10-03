@@ -158,11 +158,10 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1</span></p>
-<ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Defining-DS-4%2B1.html">The 4 + 1 Model of Data Science</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The Four Pillars</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Design/Design.html">1. Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Design/Design_SDS.html">1.1. Design SDS</a></li>
@@ -193,7 +192,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Appendix/appendix-sources.html">About the Sources</a></li>
 </ul>
@@ -389,43 +388,43 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">4.2.1. Lab 1 - Mastermind entropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">4.2.2. Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">4.2.2.1. Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">4.2.2.2. Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">4.2.2.3. Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">4.2.2.4. Really a small change, let’s see what happens to model quality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">4.2.2.5. Now let’s take a look at that same scatter plot but with the new data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">4.2.2.6. Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">4.2.2.7. Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">4.2.2.8. Questions for submission:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">Lab 1 - Mastermind entropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">Really a small change, let’s see what happens to model quality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">Now let’s take a look at that same scatter plot but with the new data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">Questions for submission:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-3-knn">4.2.3. Lab 3 - kNN</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">4.2.3.1. Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">4.2.3.2. Dataset</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">4.2.3.3. Part 1: Data Preparation and Model Building</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">4.2.3.3.1. Load the Libraries</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">4.2.3.3.2. Load the Dataset</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">4.2.3.3.3. Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">4.2.3.3.4. Example of how to collapse categories</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">4.2.3.3.5. Normalizing the numeric values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">4.2.3.3.6. One-Hot Encoding the categorical values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">4.2.3.3.7. Creating a binary target variable so we can run this model as a classification problem.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">4.2.3.3.8. Dropping Variables and Partitioning (Train/Test)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">4.2.3.3.9. Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">4.2.3.3.10. Evaluation Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-3-knn">Lab 3 - kNN</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">4.2.3.4. Task 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">4.2.3.5. Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">4.2.3.5.1. Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">4.2.3.5.2. Graph the probabilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">4.2.3.6. Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">4.2.3.6.1. Second Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">4.2.3.6.2. Graph Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
 </li>
 </ul>
@@ -444,7 +443,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="analytics-labs">
 <h1><span class="section-number">4.2. </span>Analytics Labs<a class="headerlink" href="#analytics-labs" title="Permalink to this heading">#</a></h1>
 <section id="lab-1-mastermind-entropy">
-<h2><span class="section-number">4.2.1. </span>Lab 1 - Mastermind entropy<a class="headerlink" href="#lab-1-mastermind-entropy" title="Permalink to this heading">#</a></h2>
+<h2>Lab 1 - Mastermind entropy<a class="headerlink" href="#lab-1-mastermind-entropy" title="Permalink to this heading">#</a></h2>
 <p>DS 1001 - Spring 2023 - Professors Wright and Alonzi</p>
 <p>Due: End of lab period (or later that day)</p>
 <p>Submission format: Word doc or PDF summarizing your findings</p>
@@ -487,7 +486,7 @@ document.write(`
 <p>Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer &amp; Palmer (2020).</p>
 </section>
 <section id="lab-2-garbage-in-garbage-out">
-<h2><span class="section-number">4.2.2. </span>Lab 2 - Garbage In Garbage Out<a class="headerlink" href="#lab-2-garbage-in-garbage-out" title="Permalink to this heading">#</a></h2>
+<h2>Lab 2 - Garbage In Garbage Out<a class="headerlink" href="#lab-2-garbage-in-garbage-out" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-IIa.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -527,7 +526,7 @@ document.write(`
 </div>
 </div>
 <section id="let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">
-<h3><span class="section-number">4.2.2.1. </span>Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.<a class="headerlink" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Permalink to this heading">#</a></h3>
+<h3>Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.<a class="headerlink" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plt (matplotlib.pyplot) is the library we are using to create our scatter plot.  We are using the &quot;scatter&quot; function, </span>
@@ -550,7 +549,7 @@ document.write(`
 </div>
 </section>
 <section id="next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">
-<h3><span class="section-number">4.2.2.2. </span>Next lets build a linear regression model to predict Eruption Length based on Waiting Time<a class="headerlink" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time" title="Permalink to this heading">#</a></h3>
+<h3>Next lets build a linear regression model to predict Eruption Length based on Waiting Time<a class="headerlink" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Here we are using the statsmodels library to create a linear regression model. sm stands for statsmodels and OLS </span>
@@ -582,7 +581,7 @@ document.write(`
   <th>Date:</th>             <td>Tue, 03 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>17:30:29</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
+  <th>Time:</th>                 <td>17:35:19</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
@@ -622,7 +621,7 @@ document.write(`
 </div>
 </section>
 <section id="now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">
-<h3><span class="section-number">4.2.2.3. </span>Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.<a class="headerlink" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data" title="Permalink to this heading">#</a></h3>
+<h3>Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.<a class="headerlink" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mu= mean and sigma = standard deviation, these are the inputs you will be changing</span>
@@ -636,18 +635,18 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.5762923  -0.28683207]
- [ 0.07807264 -0.73519147]
- [-0.43324646  0.34562662]
- [ 0.48087598  0.37801132]
- [ 0.57106078  0.34938761]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 0.46124815 -0.77192763]
+ [-0.38223098  0.18001797]
+ [ 0.43641217 -0.64475421]
+ [ 0.2799561   0.20889542]
+ [ 0.11357418 -0.35288684]]
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="really-a-small-change-let-s-see-what-happens-to-model-quality">
-<h3><span class="section-number">4.2.2.4. </span>Really a small change, let’s see what happens to model quality<a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-model-quality" title="Permalink to this heading">#</a></h3>
+<h3>Really a small change, let’s see what happens to model quality<a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-model-quality" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are adding the noise to the dataset</span>
@@ -665,25 +664,25 @@ document.write(`
 <div class="output text_html"><table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.956</td> 
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.949</td> 
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.956</td> 
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.949</td> 
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5860.</td> 
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5093.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 03 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>1.42e-185</td>
+  <th>Date:</th>             <td>Tue, 03 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>1.05e-177</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>17:30:29</td>     <th>  Log-Likelihood:    </th>          <td> -1125.8</td> 
+  <th>Time:</th>                 <td>17:35:19</td>     <th>  Log-Likelihood:    </th>          <td> -1143.9</td> 
 </tr>
 <tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2254.</td> 
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2290.</td> 
 </tr>
 <tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2257.</td> 
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2293.</td> 
 </tr>
 <tr>
   <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
@@ -697,27 +696,27 @@ document.write(`
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>eruptions</th> <td>   18.9837</td> <td>    0.248</td> <td>   76.550</td> <td> 0.000</td> <td>   18.495</td> <td>   19.472</td>
+  <th>eruptions</th> <td>   19.1576</td> <td>    0.268</td> <td>   71.363</td> <td> 0.000</td> <td>   18.629</td> <td>   19.686</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td> 1.420</td> <th>  Durbin-Watson:     </th> <td>   2.186</td>
+  <th>Omnibus:</th>       <td> 0.588</td> <th>  Durbin-Watson:     </th> <td>   2.292</td>
 </tr>
 <tr>
-  <th>Prob(Omnibus):</th> <td> 0.492</td> <th>  Jarque-Bera (JB):  </th> <td>   1.348</td>
+  <th>Prob(Omnibus):</th> <td> 0.745</td> <th>  Jarque-Bera (JB):  </th> <td>   0.665</td>
 </tr>
 <tr>
-  <th>Skew:</th>          <td>-0.062</td> <th>  Prob(JB):          </th> <td>   0.510</td>
+  <th>Skew:</th>          <td> 0.107</td> <th>  Prob(JB):          </th> <td>   0.717</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>      <td> 2.678</td> <th>  Cond. No.          </th> <td>    1.00</td>
+  <th>Kurtosis:</th>      <td> 2.887</td> <th>  Cond. No.          </th> <td>    1.00</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
 </section>
 <section id="now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">
-<h3><span class="section-number">4.2.2.5. </span>Now let’s take a look at that same scatter plot but with the new data<a class="headerlink" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" title="Permalink to this heading">#</a></h3>
+<h3>Now let’s take a look at that same scatter plot but with the new data<a class="headerlink" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -729,18 +728,18 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/395f2a72ccfb192a5b0480abcac76de3a1a42ce73d13474df773075d20a8baf1.png" src="../_images/395f2a72ccfb192a5b0480abcac76de3a1a42ce73d13474df773075d20a8baf1.png" />
+<img alt="../_images/62031fad8c0ecd61e47ed1bd5271e3ac63c288ffcef78cbeffc72673a4508023.png" src="../_images/62031fad8c0ecd61e47ed1bd5271e3ac63c288ffcef78cbeffc72673a4508023.png" />
 </div>
 </div>
 </section>
 <section id="task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">
-<h3><span class="section-number">4.2.2.6. </span>Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).<a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down" title="Permalink to this heading">#</a></h3>
+<h3>Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).<a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">
-<h3><span class="section-number">4.2.2.7. </span>Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.<a class="headerlink" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit" title="Permalink to this heading">#</a></h3>
+<h3>Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.<a class="headerlink" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="questions-for-submission">
-<h3><span class="section-number">4.2.2.8. </span>Questions for submission:<a class="headerlink" href="#questions-for-submission" title="Permalink to this heading">#</a></h3>
+<h3>Questions for submission:<a class="headerlink" href="#questions-for-submission" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>What patterns do you see in the original data (from the scatter plot)?</p></li>
 <li><p>How well did the first model fit the original data (from the model output)?</p></li>
@@ -752,21 +751,21 @@ document.write(`
 </section>
 </section>
 <section id="lab-3-knn">
-<h2><span class="section-number">4.2.3. </span>Lab 3 - kNN<a class="headerlink" href="#lab-3-knn" title="Permalink to this heading">#</a></h2>
+<h2>Lab 3 - kNN<a class="headerlink" href="#lab-3-knn" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-III.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <section id="overview">
-<h3><span class="section-number">4.2.3.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h3>
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h3>
 <p><strong>The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.</strong></p>
 <p><strong>You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.</strong></p>
 </section>
 <section id="dataset">
-<h3><span class="section-number">4.2.3.2. </span>Dataset<a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h3>
+<h3>Dataset<a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h3>
 <p><strong>The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.</strong></p>
 </section>
 <section id="part-1-data-preparation-and-model-building">
-<h3><span class="section-number">4.2.3.3. </span>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Permalink to this heading">#</a></h3>
+<h3>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Permalink to this heading">#</a></h3>
 <section id="load-the-libraries">
-<h4><span class="section-number">4.2.3.3.1. </span>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Permalink to this heading">#</a></h4>
+<h4>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#First we import the libraries we need</span>
@@ -783,7 +782,7 @@ document.write(`
 </div>
 </section>
 <section id="load-the-dataset">
-<h4><span class="section-number">4.2.3.3.2. </span>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Permalink to this heading">#</a></h4>
+<h4>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read in the cereal dataset, we are reading the data in from a URL associated with the Foundations of </span>
@@ -826,7 +825,7 @@ memory usage: 9.8+ KB
 </div>
 </section>
 <section id="scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">
-<h4><span class="section-number">4.2.3.3.3. </span>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Permalink to this heading">#</a></h4>
+<h4>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Looks like columns 1,2,11 and 12 need to be converted to category</span>
@@ -885,7 +884,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="example-of-how-to-collapse-categories">
-<h4><span class="section-number">4.2.3.3.4. </span>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Permalink to this heading">#</a></h4>
+<h4>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Usually don&#39;t want more than 5ish groups, so we should collapse this factor  </span>
@@ -914,7 +913,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="normalizing-the-numeric-values">
-<h4><span class="section-number">4.2.3.3.5. </span>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Permalink to this heading">#</a></h4>
+<h4>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are normalizing the numeric values and creating a index based on numeric columns:</span>
@@ -1179,7 +1178,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="one-hot-encoding-the-categorical-values">
-<h4><span class="section-number">4.2.3.3.6. </span>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Permalink to this heading">#</a></h4>
+<h4>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Next let&#39;s one-hot encode those categorical variables</span>
@@ -1507,7 +1506,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">
-<h4><span class="section-number">4.2.3.3.7. </span>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Permalink to this heading">#</a></h4>
+<h4>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#add this as a predictor instead of replacing the numeric version, changing the target into a binary variable </span>
@@ -1833,7 +1832,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="dropping-variables-and-partitioning-train-test">
-<h4><span class="section-number">4.2.3.3.8. </span>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Permalink to this heading">#</a></h4>
+<h4>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Divide up our data into two parts, Training and Test but first we need to...</span>
@@ -2167,7 +2166,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="model-building-cell">
-<h4><span class="section-number">4.2.3.3.9. </span>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Permalink to this heading">#</a></h4>
+<h4>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -2186,7 +2185,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="evaluation-cell">
-<h4><span class="section-number">4.2.3.3.10. </span>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Permalink to this heading">#</a></h4>
+<h4>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">Test</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;rating_f&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
@@ -2197,7 +2196,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7727272727272727
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.6363636363636364
 </pre></div>
 </div>
 </div>
@@ -2205,7 +2204,7 @@ Name: count, dtype: int64
 </section>
 </section>
 <section id="task-1">
-<h3><span class="section-number">4.2.3.4. </span>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h3>
+<h3>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</p></li>
 <li><p>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</p></li>
@@ -2213,7 +2212,7 @@ Name: count, dtype: int64
 </ol>
 </section>
 <section id="part-2-probabilities-of-the-model">
-<h3><span class="section-number">4.2.3.5. </span>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h3>
+<h3>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h3>
 <p><strong>The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2269,8 +2268,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>2</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>3</th>
@@ -2279,8 +2278,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>4</th>
-      <td>0.000000</td>
       <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>5</th>
@@ -2299,18 +2298,18 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>8</th>
+      <td>0.666667</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>9</th>
       <td>1.000000</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
-    </tr>
-    <tr>
       <th>10</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>11</th>
@@ -2319,8 +2318,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>12</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>13</th>
@@ -2334,28 +2333,28 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>15</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>16</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>1.000000</td>
       <td>0.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>20</th>
@@ -2412,38 +2411,38 @@ Name: count, dtype: int64
       <th>0</th>
       <td>0</td>
       <td>0</td>
-      <td>1.0</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>1</th>
       <td>0</td>
       <td>0</td>
-      <td>1.0</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>2</th>
       <td>0</td>
       <td>0</td>
-      <td>1.0</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>3</th>
       <td>0</td>
       <td>0</td>
-      <td>1.0</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>4</th>
       <td>0</td>
-      <td>1</td>
-      <td>1.0</td>
+      <td>0</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
 </div></div></div>
 </div>
 <section id="now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">
-<h4><span class="section-number">4.2.3.5.1. </span>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Permalink to this heading">#</a></h4>
+<h4>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add a column about the probability the observation is in the positive class</span>
@@ -2497,8 +2496,8 @@ Name: count, dtype: int64
       <th>2</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>3</th>
@@ -2510,9 +2509,9 @@ Name: count, dtype: int64
     <tr>
       <th>4</th>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
       <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>5</th>
@@ -2537,28 +2536,28 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>9</th>
       <td>1</td>
       <td>0</td>
       <td>0.666667</td>
       <td>0.333333</td>
     </tr>
     <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
       <th>10</th>
-      <td>1</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>1</td>
+      <td>0</td>
       <td>0</td>
       <td>1.000000</td>
       <td>0.000000</td>
@@ -2566,9 +2565,9 @@ Name: count, dtype: int64
     <tr>
       <th>12</th>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>13</th>
@@ -2587,37 +2586,37 @@ Name: count, dtype: int64
     <tr>
       <th>15</th>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>16</th>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>18</th>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>19</th>
       <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>20</th>
@@ -2648,7 +2647,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="graph-the-probabilities">
-<h4><span class="section-number">4.2.3.5.2. </span>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Permalink to this heading">#</a></h4>
+<h4>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create probability distribution graph</span>
@@ -2662,20 +2661,20 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;pos_pred&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/b06d9536c43a6eea9d0f93b36a0ba8887225dd44529446d9e9b886b320d0bca7.png" src="../_images/b06d9536c43a6eea9d0f93b36a0ba8887225dd44529446d9e9b886b320d0bca7.png" />
+<img alt="../_images/bbfdf4e1a93f391cc43eb8e5bc4ab8fe9b2cfd46fe4f8319fed3efcbaa8b6020.png" src="../_images/bbfdf4e1a93f391cc43eb8e5bc4ab8fe9b2cfd46fe4f8319fed3efcbaa8b6020.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="task-2-determine-how-the-probabilities-are-calculated">
-<h3><span class="section-number">4.2.3.6. </span>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h3>
+<h3>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</p></li>
 <li><p>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</p></li>
 <li><p>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</p></li>
 </ol>
 <section id="second-model-building-cell">
-<h4><span class="section-number">4.2.3.6.1. </span>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h4>
+<h4>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>   <span class="c1"># kNN is a random algorithm, so we use `random.seed(x)` to make results repeatable</span>
@@ -2693,7 +2692,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="graph-cell">
-<h4><span class="section-number">4.2.3.6.2. </span>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h4>
+<h4>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_probs_1</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -2710,7 +2709,7 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;good_cereal_prob&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/7cd4e5a9283b0f4f59cbfffe29c89015f2eb08a61622941a92dfe2c557f4fe45.png" src="../_images/7cd4e5a9283b0f4f59cbfffe29c89015f2eb08a61622941a92dfe2c557f4fe45.png" />
+<img alt="../_images/2b55f3077abcb0369150bfbefc6159fde77362c67021316782ed20f8b9dfc6b8.png" src="../_images/2b55f3077abcb0369150bfbefc6159fde77362c67021316782ed20f8b9dfc6b8.png" />
 </div>
 </div>
 </section>
@@ -2785,43 +2784,43 @@ Name: count, dtype: int64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">4.2.1. Lab 1 - Mastermind entropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">4.2.2. Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">4.2.2.1. Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">4.2.2.2. Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">4.2.2.3. Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">4.2.2.4. Really a small change, let’s see what happens to model quality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">4.2.2.5. Now let’s take a look at that same scatter plot but with the new data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">4.2.2.6. Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">4.2.2.7. Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">4.2.2.8. Questions for submission:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">Lab 1 - Mastermind entropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">Really a small change, let’s see what happens to model quality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">Now let’s take a look at that same scatter plot but with the new data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">Questions for submission:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-3-knn">4.2.3. Lab 3 - kNN</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">4.2.3.1. Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">4.2.3.2. Dataset</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">4.2.3.3. Part 1: Data Preparation and Model Building</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">4.2.3.3.1. Load the Libraries</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">4.2.3.3.2. Load the Dataset</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">4.2.3.3.3. Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">4.2.3.3.4. Example of how to collapse categories</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">4.2.3.3.5. Normalizing the numeric values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">4.2.3.3.6. One-Hot Encoding the categorical values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">4.2.3.3.7. Creating a binary target variable so we can run this model as a classification problem.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">4.2.3.3.8. Dropping Variables and Partitioning (Train/Test)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">4.2.3.3.9. Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">4.2.3.3.10. Evaluation Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-3-knn">Lab 3 - kNN</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">4.2.3.4. Task 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">4.2.3.5. Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">4.2.3.5.1. Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">4.2.3.5.2. Graph the probabilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">4.2.3.6. Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">4.2.3.6.1. Second Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">4.2.3.6.2. Graph Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
 </li>
 </ul>
