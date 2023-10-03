@@ -198,7 +198,7 @@ Bias: Data Mining
 
 By the late 1990s, the practice of data mining had become widespread in industry and globally. In 1999 the Cross Industry Standard Process for Data Mining (CRISP-DM) was developed in Europe as a comprehensive and general model to support the use of data mining in a broad range of sectors in a principled manner. Designed to work within a project management framework, this model is by far the most developed, and it continues to influence the field of data science to this day. Like KDD before it, the model emphasizes the cyclic and recursive nature of the process, and this perspective is reflected in the circular diagram that often accompanies its presentation. The steps below are based on the summary presented in Wirth and Hipp's essay.
 
-```{figure} images/1024px-CRISP-DM_Process_Diagram.png
+```{figure} 1024px-CRISP-DM_Process_Diagram.png
 Process diagram showing the relationship between the different phases of CRISP-DM (Wikipedia)
 ```
 
