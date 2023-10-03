@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Analytics Labs &#8212; Defining Data Science</title>
+    <title>Overview &#8212; Defining Data Science</title>
   
   
   
@@ -61,13 +61,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Analytics/Analytics_Labs';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Analytics/analytics-lab-III';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Analytics External to the School" href="Analytics_External.html" />
-    <link rel="prev" title="Analytics SDS" href="Analytics_SDS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,7 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Defining-DS-4%2B1.html">The 4 + 1 Model of Data Science</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Design/Design.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Design/Design_SDS.html">Design SDS</a></li>
@@ -181,9 +177,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_Case.html">Systems Case Study</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Analytics.html">Analytics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Analytics.html">Analytics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="Analytics_SDS.html">Analytics SDS</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Analytics Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Analytics_Labs.html">Analytics Labs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Analytics_External.html">Analytics External to the School</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Analytics_Case.html">Analytics Case Study</a></li>
 </ul>
@@ -263,7 +259,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAnalytics/Analytics_Labs.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAnalytics/analytics-lab-III.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +289,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/Analytics/Analytics_Labs.ipynb" target="_blank"
+      <li><a href="../_sources/Analytics/analytics-lab-III.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -375,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Analytics Labs</h1>
+    <h1>Overview</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -385,48 +381,50 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">Lab 1 - Mastermind entropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">Really a small change, let’s see what happens to model quality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">Now let’s take a look at that same scatter plot but with the new data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">Questions for submission:</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overview</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell">The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates">You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-3-knn">Lab 3 - kNN</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables">The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k">Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model">Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value">Lastly recommend a value for k and explain why you recommend that value.</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view">The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification">First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated">Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value">Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -437,382 +435,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="analytics-labs">
-<h1>Analytics Labs<a class="headerlink" href="#analytics-labs" title="Permalink to this heading">#</a></h1>
-<nav class="contents local" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#lab-1-mastermind-entropy" id="id1">Lab 1 - Mastermind entropy</a></p></li>
-<li><p><a class="reference internal" href="#lab-2-garbage-in-garbage-out" id="id2">Lab 2 - Garbage In Garbage Out</a></p>
-<ul>
-<li><p><a class="reference internal" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data" id="id3">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></p></li>
-<li><p><a class="reference internal" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time" id="id4">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></p></li>
-<li><p><a class="reference internal" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data" id="id5">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></p></li>
-<li><p><a class="reference internal" href="#really-a-small-change-let-s-see-what-happens-to-model-quality" id="id6">Really a small change, let’s see what happens to model quality</a></p></li>
-<li><p><a class="reference internal" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" id="id7">Now let’s take a look at that same scatter plot but with the new data</a></p></li>
-<li><p><a class="reference internal" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down" id="id8">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></p></li>
-<li><p><a class="reference internal" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit" id="id9">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></p></li>
-<li><p><a class="reference internal" href="#questions-for-submission" id="id10">Questions for submission:</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#lab-3-knn" id="id11">Lab 3 - kNN</a></p>
-<ul>
-<li><p><a class="reference internal" href="#overview" id="id12">Overview</a></p></li>
-<li><p><a class="reference internal" href="#dataset" id="id13">Dataset</a></p></li>
-<li><p><a class="reference internal" href="#part-1-data-preparation-and-model-building" id="id14">Part 1: Data Preparation and Model Building</a></p>
-<ul>
-<li><p><a class="reference internal" href="#load-the-libraries" id="id15">Load the Libraries</a></p></li>
-<li><p><a class="reference internal" href="#load-the-dataset" id="id16">Load the Dataset</a></p></li>
-<li><p><a class="reference internal" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" id="id17">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></p></li>
-<li><p><a class="reference internal" href="#example-of-how-to-collapse-categories" id="id18">Example of how to collapse categories</a></p></li>
-<li><p><a class="reference internal" href="#normalizing-the-numeric-values" id="id19">Normalizing the numeric values</a></p></li>
-<li><p><a class="reference internal" href="#one-hot-encoding-the-categorical-values" id="id20">One-Hot Encoding the categorical values</a></p></li>
-<li><p><a class="reference internal" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" id="id21">Creating a binary target variable so we can run this model as a classification problem.</a></p></li>
-<li><p><a class="reference internal" href="#dropping-variables-and-partitioning-train-test" id="id22">Dropping Variables and Partitioning (Train/Test)</a></p></li>
-<li><p><a class="reference internal" href="#model-building-cell" id="id23">Model Building Cell</a></p></li>
-<li><p><a class="reference internal" href="#evaluation-cell" id="id24">Evaluation Cell</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#task-1" id="id25">Task 1</a></p></li>
-<li><p><a class="reference internal" href="#part-2-probabilities-of-the-model" id="id26">Part 2: Probabilities of the Model</a></p>
-<ul>
-<li><p><a class="reference internal" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" id="id27">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></p></li>
-<li><p><a class="reference internal" href="#graph-the-probabilities" id="id28">Graph the probabilities</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#task-2-determine-how-the-probabilities-are-calculated" id="id29">Task 2: Determine how the probabilities are calculated</a></p>
-<ul>
-<li><p><a class="reference internal" href="#second-model-building-cell" id="id30">Second Model Building Cell</a></p></li>
-<li><p><a class="reference internal" href="#graph-cell" id="id31">Graph Cell</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-<section id="lab-1-mastermind-entropy">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Lab 1 - Mastermind entropy</a><a class="headerlink" href="#lab-1-mastermind-entropy" title="Permalink to this heading">#</a></h2>
-<p>DS 1001 - Spring 2023 - Professors Wright and Alonzi</p>
-<p>Due: End of lab period (or later that day)</p>
-<p>Submission format: Word doc or PDF summarizing your findings</p>
-<p>Individual Assignment</p>
-<p><strong>General Descripition:</strong> This lab is designed to introduce the basic concepts behind information gain and entropy. Mastermind is a game were through a series of questions one player tries to determine a “code” created by another player. In doing so the value of asking questions that provide a high level of information will become paramount.</p>
-<p>Preparatory Assignments - None</p>
-<p><strong>Why am I doing this?</strong> In order to gain a better understanding of information gain and entropy through hands on experience.</p>
-<p><strong>What am I going to do?</strong> Work with a partner or group of three and alternate playing the game. At the onset of each game the code-maker should calculate the entropy of the chosen pegs for the “code”. The code-breaker should note the results of the game . This should include whether the code was broken or not and the number of rounds used. Try to be the code-maker and breaker at least 3 times. The code-maker should intentionally use very different types of “code”, this should impact how the game is played.</p>
-<ul class="simple">
-<li><p>Note the range of entropy for binary cases is 0 to 1 for more than 2 classes it is 0 to log~2~ <em>k</em>, where <em>k</em> is the number of classes.</p></li>
-</ul>
-<p><strong>Answer these questions:</strong></p>
-<ol class="arabic simple">
-<li><p>What combinations of pegs (code) seemed to be harder to break?</p></li>
-<li><p>Did your approach to asking questions change as you played?</p></li>
-<li><p>Describe where in the game information gain is being presented?</p></li>
-</ol>
-<p>Tips for success:</p>
-<ul class="simple">
-<li><p>Don’t worry about winning, instead think about what is happening during game play.</p></li>
-<li><p>Work as a team with your group.</p></li>
-<li><p>Try to document the process used right at the start of the lab, don’t wait till after you have played to start taking notes.</p></li>
-</ul>
-<p>How will I know I have succeeded:</p>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Specs Category</p></th>
-<th class="head"><p>Specs Details</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Formatting</p></td>
-<td><p>- Submit via Canvas a PDF or Word document</p></td>
-</tr>
-<tr class="row-odd"><td><p>Text</p></td>
-<td><p>- Answer the above questions <br/> - When you were the code-maker submit the Entropy <br/> - When you were the code breaker submit the results</p></td>
-</tr>
-</tbody>
-</table>
-<p>Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer &amp; Palmer (2020).</p>
-</section>
-<section id="lab-2-garbage-in-garbage-out">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Lab 2 - Garbage In Garbage Out</a><a class="headerlink" href="#lab-2-garbage-in-garbage-out" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-IIa.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pip install statsmodels</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
-<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>What we are going to do is create a linear model using old faithful data. Then we are going to add Gaussian noise iteratively to a dataset and pass the new noisy dataset to a the same linear regression model and track the ability of the model to learn the target as noise increases.</strong></p>
-<ol class="arabic simple">
-<li><p>Read this brief wiki on garbage in garbage out: <a class="reference external" href="https://en.wikipedia.org/wiki/Garbage_in,_garbage_out">article</a></p></li>
-<li><p>Work through the below notebook, paying close attention to the comments and the outputs of the code.</p></li>
-<li><p>Answer the questions at the end as they relate to the process of adding noise to a dataset and then passing it to a linear regression model.</p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The dataset we will be using is a well known measure of eruption and wait times for old faithful. </span>
-<span class="c1"># Take a look at the documentation </span>
-<span class="c1"># here: https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/faithful</span>
-
-
-<span class="c1"># This is our data source (.tsv == tab separated), here we are creating a variable that holds the url to the data.</span>
-<span class="c1"># If you click the {x} in the ribbon to the left you will see the variables you have created.</span>
-<span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://gist.githubusercontent.com/curran/4b59d1046d9e66f2787780ad51a1cd87/raw/9ec906b78a98cf300947a37b56cfe70d01183200/data.tsv&quot;</span>
-
-
-<span class="c1"># Here we are reading in the data, and use the &quot;tab&quot; as a separator so the data will be loaded </span>
-<span class="c1"># in correctly.  pd stands for pandas and &quot;pd.read_csv&quot; is the function we are </span>
-<span class="c1"># using to read in the data from the url.</span>
-<span class="n">old_faith</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section id="let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">
-<h3><a class="toc-backref" href="#id3" role="doc-backlink">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a><a class="headerlink" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plt (matplotlib.pyplot) is the library we are using to create our scatter plot.  We are using the &quot;scatter&quot; function, </span>
-<span class="c1"># and the alpha is the transparency of the dots.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span><span class="n">old_faith</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="c1"># here we are adding the labels to the x and y axis</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eruption Seconds&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Waiting Minutes&quot;</span><span class="p">)</span>
-
-<span class="c1">#this is the function that renders the plot</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-<span class="c1"># Note the patterns that you see, (you&#39;ll need this for your submission) </span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/2f2cbe6833754ede9f22dc785ccf59a29daee4db167f77b780917fbf4a0ddeab.png" src="../_images/2f2cbe6833754ede9f22dc785ccf59a29daee4db167f77b780917fbf4a0ddeab.png" />
-</div>
-</div>
-</section>
-<section id="next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a><a class="headerlink" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Here we are using the statsmodels library to create a linear regression model. sm stands for statsmodels and OLS </span>
-<span class="c1"># stands for Ordinary Least Squares.  We are using the &quot;fit&quot; function to fit the model to the data.</span>
-<span class="n">lm</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;waiting&#39;</span><span class="p">],</span><span class="n">old_faith</span><span class="p">[</span><span class="s1">&#39;eruptions&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-
-<span class="c1"># Now we are printing out the summary of the model (lm). The summary function will give you the R2 measure, along with </span>
-<span class="c1"># other measures of model fit. </span>
-<span class="n">lm</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-
-<span class="c1">#Using the R2 measure, how well does the model predict eruption length (scale of 0 to 1,</span>
-<span class="c1">#  where 1 is perfect, again needed for your submission)?</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><table class="simpletable">
-<caption>OLS Regression Results</caption>
-<tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.973</td> 
-</tr>
-<tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.973</td> 
-</tr>
-<tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   9621.</td> 
-</tr>
-<tr>
-  <th>Date:</th>             <td>Tue, 03 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
-</tr>
-<tr>
-  <th>Time:</th>                 <td>16:38:58</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
-</tr>
-<tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
-</tr>
-<tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2127.</td> 
-</tr>
-<tr>
-  <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
-</tr>
-<tr>
-  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>    
-</tr>
-</table>
-<table class="simpletable">
-<tr>
-      <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
-</tr>
-<tr>
-  <th>eruptions</th> <td>   19.4019</td> <td>    0.198</td> <td>   98.086</td> <td> 0.000</td> <td>   19.013</td> <td>   19.791</td>
-</tr>
-</table>
-<table class="simpletable">
-<tr>
-  <th>Omnibus:</th>       <td>31.065</td> <th>  Durbin-Watson:     </th> <td>   2.646</td>
-</tr>
-<tr>
-  <th>Prob(Omnibus):</th> <td> 0.000</td> <th>  Jarque-Bera (JB):  </th> <td>  10.019</td>
-</tr>
-<tr>
-  <th>Skew:</th>          <td> 0.148</td> <th>  Prob(JB):          </th> <td> 0.00667</td>
-</tr>
-<tr>
-  <th>Kurtosis:</th>      <td> 2.108</td> <th>  Cond. No.          </th> <td>    1.00</td>
-</tr>
-</table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
-</div>
-</section>
-<section id="now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a><a class="headerlink" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mu= mean and sigma = standard deviation, these are the inputs you will be changing</span>
-<span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">.5</span> 
-<span class="c1"># We need to create noise with the same dimensions as the dataset (272,2), this will allow us </span>
-<span class="c1"># to combine them easily</span>
-<span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="p">[</span><span class="mi">272</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
-<span class="c1"># The print function will print the first 5 rows of the noise array </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">noise</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.49647263 -0.39260882]
- [-0.15250109  0.8880271 ]
- [ 0.04618679  0.05771819]
- [-0.33435787  0.03018416]
- [-0.16510998  0.81327781]]
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="really-a-small-change-let-s-see-what-happens-to-model-quality">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Really a small change, let’s see what happens to model quality</a><a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-model-quality" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are adding the noise to the dataset</span>
-<span class="n">old_faith_1</span><span class="o">=</span><span class="n">old_faith</span> <span class="o">+</span> <span class="n">noise</span>
-
-<span class="c1">#Create a new model with the noise added to the data</span>
-<span class="n">lm_1</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">old_faith_1</span><span class="p">[</span><span class="s1">&#39;waiting&#39;</span><span class="p">],</span><span class="n">old_faith_1</span><span class="p">[</span><span class="s1">&#39;eruptions&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-
-<span class="c1">#Checking the R2 number, note what happens.</span>
-<span class="n">lm_1</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><table class="simpletable">
-<caption>OLS Regression Results</caption>
-<tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.954</td> 
-</tr>
-<tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.954</td> 
-</tr>
-<tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5656.</td> 
-</tr>
-<tr>
-  <th>Date:</th>             <td>Tue, 03 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>1.38e-183</td>
-</tr>
-<tr>
-  <th>Time:</th>                 <td>16:38:58</td>     <th>  Log-Likelihood:    </th>          <td> -1130.0</td> 
-</tr>
-<tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2262.</td> 
-</tr>
-<tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2266.</td> 
-</tr>
-<tr>
-  <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
-</tr>
-<tr>
-  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>    
-</tr>
-</table>
-<table class="simpletable">
-<tr>
-      <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
-</tr>
-<tr>
-  <th>eruptions</th> <td>   19.0212</td> <td>    0.253</td> <td>   75.208</td> <td> 0.000</td> <td>   18.523</td> <td>   19.519</td>
-</tr>
-</table>
-<table class="simpletable">
-<tr>
-  <th>Omnibus:</th>       <td> 0.739</td> <th>  Durbin-Watson:     </th> <td>   2.299</td>
-</tr>
-<tr>
-  <th>Prob(Omnibus):</th> <td> 0.691</td> <th>  Jarque-Bera (JB):  </th> <td>   0.850</td>
-</tr>
-<tr>
-  <th>Skew:</th>          <td> 0.070</td> <th>  Prob(JB):          </th> <td>   0.654</td>
-</tr>
-<tr>
-  <th>Kurtosis:</th>      <td> 2.765</td> <th>  Cond. No.          </th> <td>    1.00</td>
-</tr>
-</table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
-</div>
-</section>
-<section id="now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Now let’s take a look at that same scatter plot but with the new data</a><a class="headerlink" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Eruption Seconds&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Waiting Minutes&quot;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/1bc92fddda6c6d6ccfc00e2e0bbd926310db6963712edb3331a643e54acd877e.png" src="../_images/1bc92fddda6c6d6ccfc00e2e0bbd926310db6963712edb3331a643e54acd877e.png" />
-</div>
-</div>
-</section>
-<section id="task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a><a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a><a class="headerlink" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="questions-for-submission">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">Questions for submission:</a><a class="headerlink" href="#questions-for-submission" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>What patterns do you see in the original data (from the scatter plot)?</p></li>
-<li><p>How well did the first model fit the original data (from the model output)?</p></li>
-<li><p>What happens when you add the standard deviation oriented noise to the data, at what level does the model appear to degrade significantly?</p></li>
-<li><p>What happens when you add the mean noise to the data while holding the standard dev constant, does the model degrade at the same level as the standard deviation noise? Why or why not?</p></li>
-<li><p>Explain the concept behind noise versus signal as it relates to the old faithful dataset, how does this relate to garbage in garbage out?</p></li>
-<li><p>Explain what the linear regression model is doing.</p></li>
-</ol>
-</section>
-</section>
-<section id="lab-3-knn">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Lab 3 - kNN</a><a class="headerlink" href="#lab-3-knn" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-III.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+  <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-III.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <section id="overview">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Overview</a><a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h3>
-<p><strong>The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.</strong></p>
-<p><strong>You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.</strong></p>
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
+<section id="the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell">
+<h2>The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.<a class="headerlink" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates">
+<h2>You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.<a class="headerlink" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates" title="Permalink to this heading">#</a></h2>
+</section>
 </section>
 <section id="dataset">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Dataset</a><a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h3>
-<p><strong>The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.</strong></p>
+<h1>Dataset<a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h1>
+<section id="the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables">
+<h2>The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.<a class="headerlink" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables" title="Permalink to this heading">#</a></h2>
 </section>
-<section id="part-1-data-preparation-and-model-building">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Part 1: Data Preparation and Model Building</a><a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Permalink to this heading">#</a></h3>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="part-1-data-preparation-and-model-building">
+<h1>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Permalink to this heading">#</a></h1>
 <section id="load-the-libraries">
-<h4><a class="toc-backref" href="#id15" role="doc-backlink">Load the Libraries</a><a class="headerlink" href="#load-the-libraries" title="Permalink to this heading">#</a></h4>
+<h2>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#First we import the libraries we need</span>
@@ -829,7 +471,7 @@ document.write(`
 </div>
 </section>
 <section id="load-the-dataset">
-<h4><a class="toc-backref" href="#id16" role="doc-backlink">Load the Dataset</a><a class="headerlink" href="#load-the-dataset" title="Permalink to this heading">#</a></h4>
+<h2>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read in the cereal dataset, we are reading the data in from a URL associated with the Foundations of </span>
@@ -872,14 +514,13 @@ memory usage: 9.8+ KB
 </div>
 </section>
 <section id="scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">
-<h4><a class="toc-backref" href="#id17" role="doc-backlink">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a><a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Permalink to this heading">#</a></h4>
+<h2>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Looks like columns 1,2,11 and 12 need to be converted to category</span>
 
 <span class="n">Column_index_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
 <span class="n">cereal</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="n">Column_index_list</span><span class="p">]</span><span class="o">=</span> <span class="n">cereal</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="n">Column_index_list</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span> 
-<span class="n">cereal</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="n">cereal</span><span class="o">.</span><span class="n">type</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
 <span class="c1">#iloc accesses the index of a dataframe, bypassing having to manually type in the names of each column</span>
 
 <span class="n">cereal</span><span class="o">.</span><span class="n">dtypes</span> <span class="c1">#another way of checking the structure of the dataset. Simpler, but does not give an index</span>
@@ -889,7 +530,7 @@ memory usage: 9.8+ KB
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>name          object
 mfr           object
-type        category
+type          object
 calories       int64
 protein        int64
 fat            int64
@@ -931,7 +572,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="example-of-how-to-collapse-categories">
-<h4><a class="toc-backref" href="#id18" role="doc-backlink">Example of how to collapse categories</a><a class="headerlink" href="#example-of-how-to-collapse-categories" title="Permalink to this heading">#</a></h4>
+<h2>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Usually don&#39;t want more than 5ish groups, so we should collapse this factor  </span>
@@ -960,7 +601,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="normalizing-the-numeric-values">
-<h4><a class="toc-backref" href="#id19" role="doc-backlink">Normalizing the numeric values</a><a class="headerlink" href="#normalizing-the-numeric-values" title="Permalink to this heading">#</a></h4>
+<h2>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are normalizing the numeric values and creating a index based on numeric columns:</span>
@@ -1225,7 +866,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="one-hot-encoding-the-categorical-values">
-<h4><a class="toc-backref" href="#id20" role="doc-backlink">One-Hot Encoding the categorical values</a><a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Permalink to this heading">#</a></h4>
+<h2>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Next let&#39;s one-hot encode those categorical variables</span>
@@ -1259,6 +900,7 @@ Name: count, dtype: int64
     <tr style="text-align: right;">
       <th></th>
       <th>name</th>
+      <th>type</th>
       <th>calories</th>
       <th>protein</th>
       <th>fat</th>
@@ -1267,12 +909,11 @@ Name: count, dtype: int64
       <th>carbo</th>
       <th>sugars</th>
       <th>potass</th>
-      <th>weight</th>
       <th>...</th>
+      <th>rating</th>
+      <th>mfr_G</th>
       <th>mfr_K</th>
       <th>mfr_Other</th>
-      <th>type_C</th>
-      <th>type_H</th>
       <th>vitamins_0</th>
       <th>vitamins_25</th>
       <th>vitamins_100</th>
@@ -1285,6 +926,7 @@ Name: count, dtype: int64
     <tr>
       <th>0</th>
       <td>100% Bran</td>
+      <td>C</td>
       <td>0.181818</td>
       <td>0.6</td>
       <td>0.2</td>
@@ -1293,12 +935,11 @@ Name: count, dtype: int64
       <td>0.250000</td>
       <td>0.4375</td>
       <td>0.848943</td>
-      <td>0.5</td>
       <td>...</td>
+      <td>0.665593</td>
+      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1309,6 +950,7 @@ Name: count, dtype: int64
     <tr>
       <th>1</th>
       <td>100% Natural Bran</td>
+      <td>C</td>
       <td>0.636364</td>
       <td>0.4</td>
       <td>1.0</td>
@@ -1317,12 +959,11 @@ Name: count, dtype: int64
       <td>0.375000</td>
       <td>0.5625</td>
       <td>0.410876</td>
-      <td>0.5</td>
       <td>...</td>
+      <td>0.210685</td>
+      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
       <td>True</td>
       <td>False</td>
       <td>False</td>
@@ -1333,6 +974,7 @@ Name: count, dtype: int64
     <tr>
       <th>2</th>
       <td>All-Bran</td>
+      <td>C</td>
       <td>0.181818</td>
       <td>0.6</td>
       <td>0.2</td>
@@ -1341,9 +983,8 @@ Name: count, dtype: int64
       <td>0.333333</td>
       <td>0.3750</td>
       <td>0.969789</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>True</td>
+      <td>0.546941</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1357,6 +998,7 @@ Name: count, dtype: int64
     <tr>
       <th>3</th>
       <td>All-Bran with Extra Fiber</td>
+      <td>C</td>
       <td>0.000000</td>
       <td>0.6</td>
       <td>0.0</td>
@@ -1365,9 +1007,8 @@ Name: count, dtype: int64
       <td>0.375000</td>
       <td>0.0625</td>
       <td>1.000000</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>True</td>
+      <td>1.000000</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1381,6 +1022,7 @@ Name: count, dtype: int64
     <tr>
       <th>4</th>
       <td>Almond Delight</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.4</td>
@@ -1389,12 +1031,11 @@ Name: count, dtype: int64
       <td>0.625000</td>
       <td>0.5625</td>
       <td>0.000000</td>
-      <td>0.5</td>
       <td>...</td>
+      <td>0.215987</td>
+      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1429,6 +1070,7 @@ Name: count, dtype: int64
     <tr>
       <th>72</th>
       <td>Triples</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.2</td>
@@ -1437,11 +1079,10 @@ Name: count, dtype: int64
       <td>0.916667</td>
       <td>0.2500</td>
       <td>0.184290</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
-      <td>False</td>
+      <td>0.278387</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1453,6 +1094,7 @@ Name: count, dtype: int64
     <tr>
       <th>73</th>
       <td>Trix</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.0</td>
       <td>0.2</td>
@@ -1461,11 +1103,10 @@ Name: count, dtype: int64
       <td>0.583333</td>
       <td>0.8125</td>
       <td>0.078550</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
-      <td>False</td>
+      <td>0.128340</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1477,6 +1118,7 @@ Name: count, dtype: int64
     <tr>
       <th>74</th>
       <td>Wheat Chex</td>
+      <td>C</td>
       <td>0.454545</td>
       <td>0.4</td>
       <td>0.2</td>
@@ -1485,12 +1127,11 @@ Name: count, dtype: int64
       <td>0.750000</td>
       <td>0.2500</td>
       <td>0.350453</td>
-      <td>0.5</td>
       <td>...</td>
+      <td>0.419558</td>
+      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1501,6 +1142,7 @@ Name: count, dtype: int64
     <tr>
       <th>75</th>
       <td>Wheaties</td>
+      <td>C</td>
       <td>0.454545</td>
       <td>0.4</td>
       <td>0.2</td>
@@ -1509,11 +1151,10 @@ Name: count, dtype: int64
       <td>0.750000</td>
       <td>0.2500</td>
       <td>0.335347</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
-      <td>False</td>
+      <td>0.443410</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1525,6 +1166,7 @@ Name: count, dtype: int64
     <tr>
       <th>76</th>
       <td>Wheaties Honey Gold</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.2</td>
@@ -1533,11 +1175,10 @@ Name: count, dtype: int64
       <td>0.708333</td>
       <td>0.5625</td>
       <td>0.184290</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
-      <td>False</td>
+      <td>0.239812</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1548,12 +1189,12 @@ Name: count, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>77 rows × 23 columns</p>
+<p>77 rows × 22 columns</p>
 </div></div></div>
 </div>
 </section>
 <section id="creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">
-<h4><a class="toc-backref" href="#id21" role="doc-backlink">Creating a binary target variable so we can run this model as a classification problem.</a><a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Permalink to this heading">#</a></h4>
+<h2>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#add this as a predictor instead of replacing the numeric version, changing the target into a binary variable </span>
@@ -1585,6 +1226,7 @@ Name: count, dtype: int64
     <tr style="text-align: right;">
       <th></th>
       <th>name</th>
+      <th>type</th>
       <th>calories</th>
       <th>protein</th>
       <th>fat</th>
@@ -1593,11 +1235,10 @@ Name: count, dtype: int64
       <th>carbo</th>
       <th>sugars</th>
       <th>potass</th>
-      <th>weight</th>
       <th>...</th>
+      <th>mfr_G</th>
+      <th>mfr_K</th>
       <th>mfr_Other</th>
-      <th>type_C</th>
-      <th>type_H</th>
       <th>vitamins_0</th>
       <th>vitamins_25</th>
       <th>vitamins_100</th>
@@ -1611,6 +1252,7 @@ Name: count, dtype: int64
     <tr>
       <th>0</th>
       <td>100% Bran</td>
+      <td>C</td>
       <td>0.181818</td>
       <td>0.6</td>
       <td>0.2</td>
@@ -1619,11 +1261,10 @@ Name: count, dtype: int64
       <td>0.250000</td>
       <td>0.4375</td>
       <td>0.848943</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1635,6 +1276,7 @@ Name: count, dtype: int64
     <tr>
       <th>1</th>
       <td>100% Natural Bran</td>
+      <td>C</td>
       <td>0.636364</td>
       <td>0.4</td>
       <td>1.0</td>
@@ -1643,11 +1285,10 @@ Name: count, dtype: int64
       <td>0.375000</td>
       <td>0.5625</td>
       <td>0.410876</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>True</td>
       <td>False</td>
       <td>False</td>
@@ -1659,6 +1300,7 @@ Name: count, dtype: int64
     <tr>
       <th>2</th>
       <td>All-Bran</td>
+      <td>C</td>
       <td>0.181818</td>
       <td>0.6</td>
       <td>0.2</td>
@@ -1667,7 +1309,6 @@ Name: count, dtype: int64
       <td>0.333333</td>
       <td>0.3750</td>
       <td>0.969789</td>
-      <td>0.5</td>
       <td>...</td>
       <td>False</td>
       <td>True</td>
@@ -1683,6 +1324,7 @@ Name: count, dtype: int64
     <tr>
       <th>3</th>
       <td>All-Bran with Extra Fiber</td>
+      <td>C</td>
       <td>0.000000</td>
       <td>0.6</td>
       <td>0.0</td>
@@ -1691,7 +1333,6 @@ Name: count, dtype: int64
       <td>0.375000</td>
       <td>0.0625</td>
       <td>1.000000</td>
-      <td>0.5</td>
       <td>...</td>
       <td>False</td>
       <td>True</td>
@@ -1707,6 +1348,7 @@ Name: count, dtype: int64
     <tr>
       <th>4</th>
       <td>Almond Delight</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.4</td>
@@ -1715,11 +1357,10 @@ Name: count, dtype: int64
       <td>0.625000</td>
       <td>0.5625</td>
       <td>0.000000</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1755,6 +1396,7 @@ Name: count, dtype: int64
     <tr>
       <th>72</th>
       <td>Triples</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.2</td>
@@ -1763,10 +1405,9 @@ Name: count, dtype: int64
       <td>0.916667</td>
       <td>0.2500</td>
       <td>0.184290</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1779,6 +1420,7 @@ Name: count, dtype: int64
     <tr>
       <th>73</th>
       <td>Trix</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.0</td>
       <td>0.2</td>
@@ -1787,10 +1429,9 @@ Name: count, dtype: int64
       <td>0.583333</td>
       <td>0.8125</td>
       <td>0.078550</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1803,6 +1444,7 @@ Name: count, dtype: int64
     <tr>
       <th>74</th>
       <td>Wheat Chex</td>
+      <td>C</td>
       <td>0.454545</td>
       <td>0.4</td>
       <td>0.2</td>
@@ -1811,11 +1453,10 @@ Name: count, dtype: int64
       <td>0.750000</td>
       <td>0.2500</td>
       <td>0.350453</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1827,6 +1468,7 @@ Name: count, dtype: int64
     <tr>
       <th>75</th>
       <td>Wheaties</td>
+      <td>C</td>
       <td>0.454545</td>
       <td>0.4</td>
       <td>0.2</td>
@@ -1835,10 +1477,9 @@ Name: count, dtype: int64
       <td>0.750000</td>
       <td>0.2500</td>
       <td>0.335347</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1851,6 +1492,7 @@ Name: count, dtype: int64
     <tr>
       <th>76</th>
       <td>Wheaties Honey Gold</td>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.2</td>
@@ -1859,10 +1501,9 @@ Name: count, dtype: int64
       <td>0.708333</td>
       <td>0.5625</td>
       <td>0.184290</td>
-      <td>0.5</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -1874,12 +1515,12 @@ Name: count, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>77 rows × 24 columns</p>
+<p>77 rows × 23 columns</p>
 </div></div></div>
 </div>
 </section>
 <section id="dropping-variables-and-partitioning-train-test">
-<h4><a class="toc-backref" href="#id22" role="doc-backlink">Dropping Variables and Partitioning (Train/Test)</a><a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Permalink to this heading">#</a></h4>
+<h2>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Divide up our data into two parts, Training and Test but first we need to...</span>
@@ -1909,6 +1550,7 @@ Name: count, dtype: int64
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>type</th>
       <th>calories</th>
       <th>protein</th>
       <th>fat</th>
@@ -1918,11 +1560,10 @@ Name: count, dtype: int64
       <th>sugars</th>
       <th>potass</th>
       <th>weight</th>
-      <th>cups</th>
       <th>...</th>
+      <th>mfr_G</th>
+      <th>mfr_K</th>
       <th>mfr_Other</th>
-      <th>type_C</th>
-      <th>type_H</th>
       <th>vitamins_0</th>
       <th>vitamins_25</th>
       <th>vitamins_100</th>
@@ -1935,6 +1576,7 @@ Name: count, dtype: int64
   <tbody>
     <tr>
       <th>0</th>
+      <td>C</td>
       <td>0.181818</td>
       <td>0.6</td>
       <td>0.2</td>
@@ -1944,11 +1586,10 @@ Name: count, dtype: int64
       <td>0.4375</td>
       <td>0.848943</td>
       <td>0.5</td>
-      <td>0.064</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -1959,6 +1600,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>1</th>
+      <td>C</td>
       <td>0.636364</td>
       <td>0.4</td>
       <td>1.0</td>
@@ -1968,11 +1610,10 @@ Name: count, dtype: int64
       <td>0.5625</td>
       <td>0.410876</td>
       <td>0.5</td>
-      <td>0.600</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>True</td>
       <td>False</td>
       <td>False</td>
@@ -1983,6 +1624,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>2</th>
+      <td>C</td>
       <td>0.181818</td>
       <td>0.6</td>
       <td>0.2</td>
@@ -1992,7 +1634,6 @@ Name: count, dtype: int64
       <td>0.3750</td>
       <td>0.969789</td>
       <td>0.5</td>
-      <td>0.064</td>
       <td>...</td>
       <td>False</td>
       <td>True</td>
@@ -2007,6 +1648,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>3</th>
+      <td>C</td>
       <td>0.000000</td>
       <td>0.6</td>
       <td>0.0</td>
@@ -2016,7 +1658,6 @@ Name: count, dtype: int64
       <td>0.0625</td>
       <td>1.000000</td>
       <td>0.5</td>
-      <td>0.200</td>
       <td>...</td>
       <td>False</td>
       <td>True</td>
@@ -2031,6 +1672,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>4</th>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.4</td>
@@ -2040,11 +1682,10 @@ Name: count, dtype: int64
       <td>0.5625</td>
       <td>0.000000</td>
       <td>0.5</td>
-      <td>0.400</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -2079,6 +1720,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>72</th>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.2</td>
@@ -2088,10 +1730,9 @@ Name: count, dtype: int64
       <td>0.2500</td>
       <td>0.184290</td>
       <td>0.5</td>
-      <td>0.400</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -2103,6 +1744,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>73</th>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.0</td>
       <td>0.2</td>
@@ -2112,10 +1754,9 @@ Name: count, dtype: int64
       <td>0.8125</td>
       <td>0.078550</td>
       <td>0.5</td>
-      <td>0.600</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -2127,6 +1768,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>74</th>
+      <td>C</td>
       <td>0.454545</td>
       <td>0.4</td>
       <td>0.2</td>
@@ -2136,11 +1778,10 @@ Name: count, dtype: int64
       <td>0.2500</td>
       <td>0.350453</td>
       <td>0.5</td>
-      <td>0.336</td>
       <td>...</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
@@ -2151,6 +1792,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>75</th>
+      <td>C</td>
       <td>0.454545</td>
       <td>0.4</td>
       <td>0.2</td>
@@ -2160,10 +1802,9 @@ Name: count, dtype: int64
       <td>0.2500</td>
       <td>0.335347</td>
       <td>0.5</td>
-      <td>0.600</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -2175,6 +1816,7 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>76</th>
+      <td>C</td>
       <td>0.545455</td>
       <td>0.2</td>
       <td>0.2</td>
@@ -2184,10 +1826,9 @@ Name: count, dtype: int64
       <td>0.5625</td>
       <td>0.184290</td>
       <td>0.5</td>
-      <td>0.400</td>
       <td>...</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
@@ -2199,7 +1840,7 @@ Name: count, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>77 rows × 22 columns</p>
+<p>77 rows × 21 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -2213,7 +1854,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="model-building-cell">
-<h4><a class="toc-backref" href="#id23" role="doc-backlink">Model Building Cell</a><a class="headerlink" href="#model-building-cell" title="Permalink to this heading">#</a></h4>
+<h2>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -2228,11 +1869,88 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>KNeighborsClassifier(n_neighbors=3)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">KNeighborsClassifier</label><div class="sk-toggleable__content"><pre>KNeighborsClassifier(n_neighbors=3)</pre></div></div></div></div></div></div></div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">y_train</span> <span class="o">=</span> <span class="n">Train</span><span class="p">[</span><span class="s1">&#39;rating_f&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="c1">#target</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">neigh</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="c1">#this is the value to change</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">neigh</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\neighbors\_classification.py:215,</span> in <span class="ni">KNeighborsClassifier.fit</span><span class="nt">(self, X, y)</span>
+<span class="g g-Whitespace">    </span><span class="mi">196</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Fit the k-nearest neighbors classifier from the training dataset.</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">198</span><span class="sd"> Parameters</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">211</span><span class="sd">     The fitted k-nearest neighbors classifier.</span>
+<span class="g g-Whitespace">    </span><span class="mi">212</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">213</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_params</span><span class="p">()</span>
+<span class="ne">--&gt; </span><span class="mi">215</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\neighbors\_base.py:454,</span> in <span class="ni">NeighborsBase._fit</span><span class="nt">(self, X, y)</span>
+<span class="g g-Whitespace">    </span><span class="mi">452</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_tags</span><span class="p">()[</span><span class="s2">&quot;requires_y&quot;</span><span class="p">]:</span>
+<span class="g g-Whitespace">    </span><span class="mi">453</span>     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="p">(</span><span class="n">KDTree</span><span class="p">,</span> <span class="n">BallTree</span><span class="p">,</span> <span class="n">NeighborsBase</span><span class="p">)):</span>
+<span class="ne">--&gt; </span><span class="mi">454</span>         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_data</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">455</span>             <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s2">&quot;csr&quot;</span><span class="p">,</span> <span class="n">multi_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s2">&quot;C&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">456</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">458</span>     <span class="k">if</span> <span class="n">is_classifier</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">459</span>         <span class="c1"># Classification targets require a specific format</span>
+<span class="g g-Whitespace">    </span><span class="mi">460</span>         <span class="k">if</span> <span class="n">y</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">y</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\base.py:584,</span> in <span class="ni">BaseEstimator._validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">582</span>         <span class="n">y</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">check_y_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">583</span>     <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">584</span>         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">**</span><span class="n">check_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">585</span>     <span class="n">out</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
+<span class="g g-Whitespace">    </span><span class="mi">587</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">no_val_X</span> <span class="ow">and</span> <span class="n">check_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ensure_2d&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">):</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\utils\validation.py:1106,</span> in <span class="ni">check_X_y</span><span class="nt">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1101</span>         <span class="n">estimator_name</span> <span class="o">=</span> <span class="n">_check_estimator_name</span><span class="p">(</span><span class="n">estimator</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1102</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1103</span>         <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">estimator_name</span><span class="si">}</span><span class="s2"> requires y to be passed, but the target y is None&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1104</span>     <span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1106</span> <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1107</span>     <span class="n">X</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1108</span>     <span class="n">accept_sparse</span><span class="o">=</span><span class="n">accept_sparse</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1109</span>     <span class="n">accept_large_sparse</span><span class="o">=</span><span class="n">accept_large_sparse</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1110</span>     <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1111</span>     <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1112</span>     <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1113</span>     <span class="n">force_all_finite</span><span class="o">=</span><span class="n">force_all_finite</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1114</span>     <span class="n">ensure_2d</span><span class="o">=</span><span class="n">ensure_2d</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1115</span>     <span class="n">allow_nd</span><span class="o">=</span><span class="n">allow_nd</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1116</span>     <span class="n">ensure_min_samples</span><span class="o">=</span><span class="n">ensure_min_samples</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1117</span>     <span class="n">ensure_min_features</span><span class="o">=</span><span class="n">ensure_min_features</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1118</span>     <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1119</span>     <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;X&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1120</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1122</span> <span class="n">y</span> <span class="o">=</span> <span class="n">_check_y</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">multi_output</span><span class="o">=</span><span class="n">multi_output</span><span class="p">,</span> <span class="n">y_numeric</span><span class="o">=</span><span class="n">y_numeric</span><span class="p">,</span> <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1124</span> <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\utils\validation.py:879,</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>     <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">879</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">_asarray_with_order</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span> <span class="k">except</span> <span class="n">ComplexWarning</span> <span class="k">as</span> <span class="n">complex_warning</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="s2">&quot;Complex data not supported</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">883</span>     <span class="p">)</span> <span class="kn">from</span> <span class="nn">complex_warning</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\utils\_array_api.py:185,</span> in <span class="ni">_asarray_with_order</span><span class="nt">(array, dtype, order, copy, xp)</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span>     <span class="n">xp</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_namespace</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span> <span class="k">if</span> <span class="n">xp</span><span class="o">.</span><span class="vm">__name__</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;numpy&quot;</span><span class="p">,</span> <span class="s2">&quot;numpy.array_api&quot;</span><span class="p">}:</span>
+<span class="g g-Whitespace">    </span><span class="mi">184</span>     <span class="c1"># Use NumPy API to support order</span>
+<span class="ne">--&gt; </span><span class="mi">185</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">return</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">187</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="ne">ValueError</span>: could not convert string to float: &#39;C&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="evaluation-cell">
-<h4><a class="toc-backref" href="#id24" role="doc-backlink">Evaluation Cell</a><a class="headerlink" href="#evaluation-cell" title="Permalink to this heading">#</a></h4>
+<h2>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">Test</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;rating_f&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
@@ -2243,24 +1961,29 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7727272727272727
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8636363636363636
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-</section>
 <section id="task-1">
-<h3><a class="toc-backref" href="#id25" role="doc-backlink">Task 1</a><a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</p></li>
-<li><p>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</p></li>
-<li><p>Lastly recommend a value for k and explain why you recommend that value.</p></li>
-</ol>
+<h2>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h2>
+<section id="go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k">
+<h3>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.<a class="headerlink" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="part-2-probabilities-of-the-model">
-<h3><a class="toc-backref" href="#id26" role="doc-backlink">Part 2: Probabilities of the Model</a><a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h3>
-<p><strong>The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.</strong></p>
+<section id="using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model">
+<h3>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.<a class="headerlink" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value">
+<h3>Lastly recommend a value for k and explain why you recommend that value.<a class="headerlink" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="part-2-probabilities-of-the-model">
+<h1>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h1>
+<section id="the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view">
+<h2>The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.<a class="headerlink" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we want to make a table containing: probability, expected, and actual values</span>
@@ -2305,113 +2028,113 @@ Name: count, dtype: int64
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.4</td>
+      <td>0.6</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>16</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.4</td>
+      <td>0.6</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.2</td>
+      <td>0.8</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
   </tbody>
 </table>
@@ -2456,40 +2179,41 @@ Name: count, dtype: int64
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
-      <td>1</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
     </tr>
     <tr>
       <th>1</th>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
+      <td>0.6</td>
     </tr>
     <tr>
       <th>2</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
+      <td>0.8</td>
     </tr>
     <tr>
       <th>3</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1</td>
       <td>0</td>
-      <td>1.000000</td>
+      <td>0</td>
+      <td>0.8</td>
     </tr>
   </tbody>
 </table>
 </div></div></div>
 </div>
+</section>
 <section id="now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">
-<h4><a class="toc-backref" href="#id27" role="doc-backlink">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a><a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Permalink to this heading">#</a></h4>
+<h2>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add a column about the probability the observation is in the positive class</span>
@@ -2527,157 +2251,157 @@ Name: count, dtype: int64
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>1</th>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>2</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>3</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>5</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>7</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>8</th>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>1</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>10</th>
       <td>1</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>0.6</td>
+      <td>0.6</td>
     </tr>
     <tr>
       <th>11</th>
       <td>1</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>12</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>13</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>14</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>15</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.4</td>
     </tr>
     <tr>
       <th>16</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>17</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.6</td>
+      <td>0.6</td>
     </tr>
     <tr>
       <th>19</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.8</td>
+      <td>0.8</td>
     </tr>
     <tr>
       <th>21</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.8</td>
+      <td>0.2</td>
     </tr>
   </tbody>
 </table>
@@ -2694,7 +2418,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="graph-the-probabilities">
-<h4><a class="toc-backref" href="#id28" role="doc-backlink">Graph the probabilities</a><a class="headerlink" href="#graph-the-probabilities" title="Permalink to this heading">#</a></h4>
+<h2>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create probability distribution graph</span>
@@ -2705,23 +2429,26 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;pos_pred&#39;, ylabel=&#39;Count&#39;&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;pos_pred&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/0664e04ecbca08b94688f4d1f1702bbd2d71c9df93027a64abcabd9606c8d950.png" src="../_images/0664e04ecbca08b94688f4d1f1702bbd2d71c9df93027a64abcabd9606c8d950.png" />
+<img alt="../_images/ef09d49c6262bb424b29dfbb7ad3731c112d6ecb81ddc8613a41bd3aed5300c2.png" src="../_images/ef09d49c6262bb424b29dfbb7ad3731c112d6ecb81ddc8613a41bd3aed5300c2.png" />
 </div>
 </div>
-</section>
 </section>
 <section id="task-2-determine-how-the-probabilities-are-calculated">
-<h3><a class="toc-backref" href="#id29" role="doc-backlink">Task 2: Determine how the probabilities are calculated</a><a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</p></li>
-<li><p>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</p></li>
-<li><p>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</p></li>
-</ol>
+<h2>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h2>
+<section id="first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification">
+<h3>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.<a class="headerlink" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated">
+<h3>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.<a class="headerlink" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value">
+<h3>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?<a class="headerlink" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value" title="Permalink to this heading">#</a></h3>
+</section>
 <section id="second-model-building-cell">
-<h4><a class="toc-backref" href="#id30" role="doc-backlink">Second Model Building Cell</a><a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h4>
+<h3>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>   <span class="c1"># kNN is a random algorithm, so we use `random.seed(x)` to make results repeatable</span>
@@ -2735,11 +2462,11 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>KNeighborsClassifier()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">KNeighborsClassifier</label><div class="sk-toggleable__content"><pre>KNeighborsClassifier()</pre></div></div></div></div></div></div></div>
+<div class="output text_html"><style>#sk-container-id-13 {color: black;background-color: white;}#sk-container-id-13 pre{padding: 0;}#sk-container-id-13 div.sk-toggleable {background-color: white;}#sk-container-id-13 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-13 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-13 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-13 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-13 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-13 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-13 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-13 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-13 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-13 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-13 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-13 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-13 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-13 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-13 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-13 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-13 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-13 div.sk-item {position: relative;z-index: 1;}#sk-container-id-13 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-13 div.sk-item::before, #sk-container-id-13 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-13 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-13 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-13 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-13 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-13 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-13 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-13 div.sk-label-container {text-align: center;}#sk-container-id-13 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-13 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-13" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>KNeighborsClassifier()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" checked><label for="sk-estimator-id-13" class="sk-toggleable__label sk-toggleable__label-arrow">KNeighborsClassifier</label><div class="sk-toggleable__content"><pre>KNeighborsClassifier()</pre></div></div></div></div></div></div></div>
 </div>
 </section>
 <section id="graph-cell">
-<h4><a class="toc-backref" href="#id31" role="doc-backlink">Graph Cell</a><a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h4>
+<h3>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_probs_1</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -2753,13 +2480,12 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;good_cereal_prob&#39;, ylabel=&#39;Count&#39;&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;good_cereal_prob&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/6ba61b1f70c164db4406db4909d44bffe1cd16e757f82fbbc86dd5869640c2f3.png" src="../_images/6ba61b1f70c164db4406db4909d44bffe1cd16e757f82fbbc86dd5869640c2f3.png" />
+<img alt="../_images/5686506ed1877cd43e889efae9d87060bbaa9bf15aa6f6f095f740c6dbbd1941.png" src="../_images/5686506ed1877cd43e889efae9d87060bbaa9bf15aa6f6f095f740c6dbbd1941.png" />
 </div>
 </div>
-</section>
 </section>
 </section>
 </section>
@@ -2795,24 +2521,6 @@ Name: count, dtype: int64
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Analytics_SDS.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Analytics SDS</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Analytics_External.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analytics External to the School</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -2831,48 +2539,50 @@ Name: count, dtype: int64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-1-mastermind-entropy">Lab 1 - Mastermind entropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-2-garbage-in-garbage-out">Lab 2 - Garbage In Garbage Out</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">Next lets build a linear regression model to predict Eruption Length based on Waiting Time</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#really-a-small-change-let-s-see-what-happens-to-model-quality">Really a small change, let’s see what happens to model quality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">Now let’s take a look at that same scatter plot but with the new data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-for-submission">Questions for submission:</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overview</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell">The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates">You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-3-knn">Lab 3 - kNN</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables">The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k">Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model">Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value">Lastly recommend a value for k and explain why you recommend that value.</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view">The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification">First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated">Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value">Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
