@@ -3,37 +3,41 @@
 
 format: jb-book
 root: intro
-options:
+parts:
+- caption: Defining-DS-4+1
+  chapters:
+  # - file: Preface
+  - file: Defining-DS-4+1
+-caption: The Four Pillars
   numbered: true
-chapters:
-# - file: Preface
-- file: Defining-DS-4+1
-- file: Design/Design
-  sections:
-  - file: Design/Design_SDS
-  - file: Design/Design_Labs
-  - file: Design/Design_External
-  - file: Design/Design_Case
-- file: Value/Value
-  sections:
-  - file: Value/Value_SDS
-  - file: Value/Value_Labs
-  - file: Value/Value_External
-  - file: Value/Value_Case
-- file: Systems/Systems
-  sections:
-  - file: Systems/Systems_SDS
-  - file: Systems/Systems_Labs
-  - file: Systems/Systems_External
-  - file: Systems/Systems_Case
-- file: Analytics/Analytics
-  sections:
-  - file: Analytics/Analytics_SDS
-  - file: Analytics/Analytics_Labs
-  - file: Analytics/Analytics_External
-  - file: Analytics/Analytics_Case
-- file: Appendix/Appendix
-  sections:
+  chapters:
+  - file: Design/Design
+    sections:
+    - file: Design/Design_SDS
+    - file: Design/Design_Labs
+    - file: Design/Design_External
+    - file: Design/Design_Case
+  - file: Value/Value
+    sections:
+    - file: Value/Value_SDS
+    - file: Value/Value_Labs
+    - file: Value/Value_External
+    - file: Value/Value_Case
+  - file: Systems/Systems
+    sections:
+    - file: Systems/Systems_SDS
+    - file: Systems/Systems_Labs
+    - file: Systems/Systems_External
+    - file: Systems/Systems_Case
+  - file: Analytics/Analytics
+    sections:
+    - file: Analytics/Analytics_SDS
+    - file: Analytics/Analytics_Labs
+    - file: Analytics/Analytics_External
+    - file: Analytics/Analytics_Case
+parts:
+- caption: Appendix
+  chapters:
   - file: Appendix/appendix-sources
 #   - file: Summary Table
 #   - file: References
