@@ -5,6 +5,7 @@ format: jb-book
 root: intro
 parts:
 - caption: Defining-DS-4+1
+numbered: false
   chapters:
   # - file: Preface
   - file: Defining-DS-4+1
@@ -37,6 +38,7 @@ parts:
     - file: Analytics/Analytics_Case
 parts:
 - caption: Appendix
+  numbered: false
   chapters:
   - file: Appendix/appendix-sources
 #   - file: Summary Table
