@@ -1,4 +1,4 @@
-# Defining Data Science
+# Defining Data Science 1.0
 
 
 ```{tableofcontents}
