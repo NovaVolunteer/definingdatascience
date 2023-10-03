@@ -14,9 +14,9 @@ Data Science is a complex and evolving field, but most agree that it can be defi
 
 This essay proposes a model of data science that is intended to go beyond the laundry-list definitions that dominate the discourse in the field today. Although these are not inaccurate, they do not get at the specific nature of data science or help distinguish it from adjacent fields such as computer science and statistics --- fields whose members sometimes claim to already be doing data science. Without a clear understanding of its specific and unique nature, the field is subject to counterproductive turf battles in the academy as well as confusion in the workplace.
 
-::: {.callout-note}
+``` {note}
 It is increasingly the case that hiring managers in industry understand the role of data scientist differently than the academic programs that produce data scientists. One result of this is the proliferation of terms such as data engineer, machine learning engineer, and applied AI to define areas of work that have historically belonged to data science. Another result is the confusion of data scientist with the roles of data analyst and statistician.
-:::
+```
 
 We define data science in terms of a multi-part model that represents core areas of expertise in the field and how they are related to each other. These are the areas of **value**, **design**, **systems**, and **analytics**. A fifth area, **practice**, integrates the other four in specific contexts. Together, these areas belong to every data science project, even if they are often unconnected and siloed in the academy.
 
@@ -28,7 +28,7 @@ The following describes how this model is derived and provides clues about how t
 
 A review of the literature on data science definitions, including sources from the adjacent fields data analysis and data mining, reveals that most invoke the image of a data processing *pipeline* --- a sequence of events through which data flows as it moves from the consumption of so-called raw data to production of useful results. In this view, consumed data may come from a variety of sources, such as databases or intentional experiments or sensors, and results may be equally various, from the visual communication of analytical results to stake-holders to the development of an interactive data product for use on the web.[^the-four-plus-one-model-1]
 
-[^the-four-plus-one-model-1]: For a detailed review of these sources, see the [Appendix](appendix-sources.qmd).
+[^the-four-plus-one-model-1]: For a detailed review of these sources, see the [Appendix](Appendix/appendix-sources.md).
 
 For analytic purposes, it is helpful to view the pipeline image as a kind of story, a micronarrative that encodes and socializes an understanding about the practice of data science. All forms of work involve the sharing of stories in one form or another, both formally in the context of education and informally through the countless acts of training, mentorship, and imitation that go on everyday in the academy and the workplace. When we want to explain to a trainee, a peer, or a supervisor how something is done, we often resort to a story that is general enough to apply to a variety of contexts yet specific enough to be translatable into action. The data processing pipeline is like that, and the essays in which it appears are part of the ongoing discourse by which a community of practice grows and learns.
 
@@ -67,7 +67,7 @@ As the CRISP-DM model shows, in some cases the pipeline is described as a circul
 
 A close look at the twelve phases listed above shows that a given phase may be more closely related to some phases than to others --- in other words, the phases can be grouped thematically. For example, it seems clear that the Understand and Plan phases go together, just as Clean, Explore, and Prepare do. They belong together because we can imagine performing their associated activities together, and separately from the other phases. Also, in some cases the order of the phases within the group may change --- for example, explore might precede cleaning in the event, as the two are often performed simultaneously --- while the sequential order of the groups is less likely to vary. Finally, we can imagine assigning different teams to perform the labor in each thematic grouping, by virtue of the expertise required to carry them out.
 
-Given this, the twelve-part composite pipeline can be reduced to seven groups:<br>
+Given this, the twelve-part composite pipeline can be reduced to seven groups:<br />
 
     $A$ understand and plan\
     $B$ collect and store\

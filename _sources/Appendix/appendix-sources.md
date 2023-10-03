@@ -198,7 +198,9 @@ Bias: Data Mining
 
 By the late 1990s, the practice of data mining had become widespread in industry and globally. In 1999 the Cross Industry Standard Process for Data Mining (CRISP-DM) was developed in Europe as a comprehensive and general model to support the use of data mining in a broad range of sectors in a principled manner. Designed to work within a project management framework, this model is by far the most developed, and it continues to influence the field of data science to this day. Like KDD before it, the model emphasizes the cyclic and recursive nature of the process, and this perspective is reflected in the circular diagram that often accompanies its presentation. The steps below are based on the summary presented in Wirth and Hipp's essay.
 
-![Process diagram showing the relationship between the different phases of CRISP-DM (Wikipedia)](images/1024px-CRISP-DM_Process_Diagram.png)
+```{figure} images/1024px-CRISP-DM_Process_Diagram.png
+Process diagram showing the relationship between the different phases of CRISP-DM (Wikipedia)
+```
 
 1.  **Business Understanding**: Understanding project objectives and requirements from a business perspective. Includes the development of a plan. $\rightarrow [Understand, Plan]$
 2.  **Data Understanding**: The initial data collection and activities to get familiar with the data, e.g. to identify data quality problems, to discover first insights into the data, or to detect interesting subsets to form hypotheses for hidden information. This is really two phases --- **Collection** and **Exploration** --- which are combined because of their close, iterative relationship. $\rightarrow [Collect, Explore]$
