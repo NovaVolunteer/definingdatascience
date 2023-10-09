@@ -38,24 +38,11 @@ Reminder: This is a research paper. Citations are required
 
 **How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric. 
 
-| Specs Category | Specs Details                                                                                                                                |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Formatting     |  - 6-10 pages <br /> 
-                    - PDF format <br /> 
-                    - Order <br /> 
-                        - Header  <br /> 
-                        - Introduction <br /> 
-                        - Main matter <br /> 
-                            - Deep dive on projection 1 <br /> 
-                            - Deep dive on projection 2 <br />
-                            - Compare and contrast the projections <br />
-                            - Summarize in Design context  <br />
-                    - Conclusion <br />
-                    - Citations  <br />                                                                                         |
-| Header         |  - Upper Corner: Name, Course, Date, and Assignment <br />
-                    - Title and Subtitle <br />
-                    - Use current word processing document formatting (what Microsoft calls ‘styles’ [link](https://support.microsoft.com/en-gb/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563))<br />  |
-|Introduction    |  - Goal: Introduce and motivate your topic, summarize the contents <br />
+| Specs Category | Specs Details                                                                                                                                                                                                                                            |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Formatting     | - 6-10 pages <br /> - PDF Format <br /> - Order <br /> \t - Header <br /> \t - Introduction <br /> \t - Main matter <br /> \t\t - Deep dive on projection 1 <br /> \t\t - Deep dive on projection 2 <br /> \t - Conclusions <br /> \t - Citations <br /> |
+| Header         | - Upper Corner: Name, Course, Date, and Assignment - Title and Subtitle - Use current word processing document formatting (what Microsoft calls 'styles' [link](https://support.microsoft.com/en-gb/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563) |
+<!-- |Introduction    |  - Goal: Introduce and motivate your topic, summarize the contents <br />
                     - One paragraph (and not too long) <br />
                     - Lead with something to hook your audience into the “story” you are going to tell. Help them understand why this topic matters. <br />
                     - The summary is meant to set the expectations for the audience. Tell them what you are going to tell them. <br />
@@ -89,6 +76,6 @@ Reminder: This is a research paper. Citations are required
                 - One or two paragraphs <br />
                 - Tie back to the initial motivation. <br />
                 - Highlight the key information you brought to light with the work. <br />
-                - Tell them what you told them. <br /> |
+                - Tell them what you told them. <br /> | -->
 
 **Acknowledgements:** Special thanks to Jess Taggart from UVA CTE for coaching us. This structure is pulled directly from [Streifer & Palmer (2020)](https://cte.virginia.edu/blog/2020/12/04/alternative-grading-practices-support-both-equity-and-learning). 
