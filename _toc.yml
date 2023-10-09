@@ -7,7 +7,8 @@ parts:
 - caption:
   numbered: false
   chapters:
-  # - file: Preface
+  - file: foreword
+  - file: how-to
   - file: Defining-DS-4+1
 - caption: The Four Pillars
   numbered: 2
@@ -17,31 +18,37 @@ parts:
     - file: Design/Design_SDS
     - file: Design/Design_Labs
     - file: Design/Design_External
+    - file: Design/Lectures
     - file: Design/Design_Case
   - file: Value/Value
     sections:
     - file: Value/Value_SDS
     - file: Value/Value_Labs
     - file: Value/Value_External
+    - file: Value/Lectures
     - file: Value/Value_Case
   - file: Systems/Systems
     sections:
     - file: Systems/Systems_SDS
     - file: Systems/Systems_Labs
     - file: Systems/Systems_External
+    - file: Systems/Lectures
     - file: Systems/Systems_Case
   - file: Analytics/Analytics
     sections:
     - file: Analytics/Analytics_SDS
     - file: Analytics/Analytics_Labs
     - file: Analytics/Analytics_External
+    - file: Analytics/Lectures
     - file: Analytics/Analytics_Case
+- caption:
+  numbered: false
+  chapters:
+  - file: final-thoughts
 - caption: Appendix
   numbered: false
   chapters:
   - file: Appendix/appendix-sources
-#   - file: Summary Table
-#   - file: References
 #     sections: List of Sources
 # - file: BSDS Course Info
 # - file: Refernces #diff than sources?
