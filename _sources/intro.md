@@ -1,4 +1,4 @@
-# Defining Data Science
+# Introduction
 
 
 ```{tableofcontents}
