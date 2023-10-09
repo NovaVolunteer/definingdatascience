@@ -25,7 +25,7 @@ Design space of Data Science.
 
  
 
-```{figure} Design\LOOK_img.png
+```{figure} LOOK_img.png
 ```
 It’s like this scene. Don’t bring your phone, it is only full of distractions. 
 
