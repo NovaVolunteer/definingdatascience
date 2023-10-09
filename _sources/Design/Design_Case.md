@@ -40,8 +40,8 @@ Reminder: This is a research paper. Citations are required
 
 | Specs Category | Specs Details                                                                                                                                                                                                                                            |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Formatting     | - 6-10 pages <br /> - PDF Format <br /> - Order <br /> \t - Header <br /> \t - Introduction <br /> \t - Main matter <br /> \t\t - Deep dive on projection 1 <br /> \t\t - Deep dive on projection 2 <br /> \t - Conclusions <br /> \t - Citations <br /> |
-| Header         | - Upper Corner: Name, Course, Date, and Assignment - Title and Subtitle - Use current word processing document formatting (what Microsoft calls 'styles' [link](https://support.microsoft.com/en-gb/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563) |
+| Formatting     | - 6-10 pages <br /> - PDF Format <br /> - Order <br /> &emsp; - Header <br /> &emsp; - Introduction <br /> &emsp; - Main matter <br /> &emsp;&emsp; - Deep dive on projection 1 <br /> &emsp;&emsp; - Deep dive on projection 2 <br /> &emsp; - Conclusions <br /> &emsp; - Citations <br /> |
+| Header         | - Upper Corner: Name, Course, Date, and Assignment - Title and Subtitle - Use current word processing document formatting (what Microsoft calls 'styles' [link](https://support.microsoft.com/en-gb/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563)) |
 <!-- |Introduction    |  - Goal: Introduce and motivate your topic, summarize the contents <br />
                     - One paragraph (and not too long) <br />
                     - Lead with something to hook your audience into the “story” you are going to tell. Help them understand why this topic matters. <br />
