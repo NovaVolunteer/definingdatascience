@@ -41,7 +41,7 @@ parts:
     - file: Analytics/Analytics_External
     - file: Analytics/Lectures
     - file: Analytics/Analytics_Case
-- caption:
+- caption: ~Heading for this section?~
   numbered: false
   chapters:
   - file: final-thoughts

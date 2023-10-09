@@ -35,7 +35,7 @@ Then observe for 3 consecutive hours. Note what you see; note what you think. Li
 
  
 
-**Tips for success: **
+**Tips for success:**
 
 Believe in yourself. Don’t be cynical. Go for it. 
 
