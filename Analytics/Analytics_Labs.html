@@ -198,6 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">~Heading for this section?~</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../final-thoughts.html">Final Thoughts</a></li>
 </ul>
@@ -590,7 +591,7 @@ document.write(`
   <th>Date:</th>             <td>Mon, 09 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>13:37:51</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
+  <th>Time:</th>                 <td>13:44:03</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
@@ -644,11 +645,11 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.23508282 -0.36118467]
- [ 0.12663741 -0.15977063]
- [-0.35160208  0.81141812]
- [-0.14333978 -0.44278009]
- [-0.11078141 -0.05301668]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.3361619   0.36977909]
+ [-0.0350099   0.28959213]
+ [-0.92466304  0.38260148]
+ [ 1.1644611  -1.02709332]
+ [-0.01756967  0.23792968]]
 </pre></div>
 </div>
 </div>
@@ -673,25 +674,25 @@ document.write(`
 <div class="output text_html"><table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.955</td> 
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.953</td> 
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.955</td> 
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.953</td> 
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5793.</td> 
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5495.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Mon, 09 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>6.32e-185</td>
+  <th>Date:</th>             <td>Mon, 09 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>5.76e-182</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>13:37:51</td>     <th>  Log-Likelihood:    </th>          <td> -1127.4</td> 
+  <th>Time:</th>                 <td>13:44:03</td>     <th>  Log-Likelihood:    </th>          <td> -1133.9</td> 
 </tr>
 <tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2257.</td> 
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2270.</td> 
 </tr>
 <tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2260.</td> 
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2273.</td> 
 </tr>
 <tr>
   <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
@@ -705,21 +706,21 @@ document.write(`
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>eruptions</th> <td>   18.9520</td> <td>    0.249</td> <td>   76.110</td> <td> 0.000</td> <td>   18.462</td> <td>   19.442</td>
+  <th>eruptions</th> <td>   18.9916</td> <td>    0.256</td> <td>   74.131</td> <td> 0.000</td> <td>   18.487</td> <td>   19.496</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td> 1.364</td> <th>  Durbin-Watson:     </th> <td>   2.247</td>
+  <th>Omnibus:</th>       <td> 2.946</td> <th>  Durbin-Watson:     </th> <td>   2.440</td>
 </tr>
 <tr>
-  <th>Prob(Omnibus):</th> <td> 0.506</td> <th>  Jarque-Bera (JB):  </th> <td>   1.330</td>
+  <th>Prob(Omnibus):</th> <td> 0.229</td> <th>  Jarque-Bera (JB):  </th> <td>   2.861</td>
 </tr>
 <tr>
-  <th>Skew:</th>          <td>-0.170</td> <th>  Prob(JB):          </th> <td>   0.514</td>
+  <th>Skew:</th>          <td> 0.198</td> <th>  Prob(JB):          </th> <td>   0.239</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>      <td> 2.957</td> <th>  Cond. No.          </th> <td>    1.00</td>
+  <th>Kurtosis:</th>      <td> 2.690</td> <th>  Cond. No.          </th> <td>    1.00</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
@@ -737,7 +738,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/61615e461ed5707433d74fd2dfe695aac3c16a0c1a691739e3be1399badd7271.png" src="../_images/61615e461ed5707433d74fd2dfe695aac3c16a0c1a691739e3be1399badd7271.png" />
+<img alt="../_images/fa7525e7d700d25987a36350b64c4fba290862b7d2392197e2c4432596aca26d.png" src="../_images/fa7525e7d700d25987a36350b64c4fba290862b7d2392197e2c4432596aca26d.png" />
 </div>
 </div>
 </section>
@@ -2205,7 +2206,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8181818181818182
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7272727272727273
 </pre></div>
 </div>
 </div>
@@ -2282,8 +2283,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>3</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2292,23 +2293,23 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>5</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>9</th>
@@ -2322,28 +2323,28 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>11</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>0.000000</td>
       <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>0.000000</td>
       <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>16</th>
@@ -2352,28 +2353,28 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>17</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>0.666667</td>
       <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
   </tbody>
 </table>
@@ -2438,7 +2439,7 @@ Name: count, dtype: int64
       <th>3</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2512,8 +2513,8 @@ Name: count, dtype: int64
       <th>3</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2526,29 +2527,29 @@ Name: count, dtype: int64
       <th>5</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>7</th>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>8</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>9</th>
@@ -2566,38 +2567,38 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>11</th>
+      <td>1</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
+    </tr>
+    <tr>
+      <th>12</th>
       <td>0</td>
       <td>0</td>
       <td>1.000000</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>12</th>
-      <td>1</td>
-      <td>1</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
       <th>13</th>
       <td>1</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>14</th>
       <td>0</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>16</th>
@@ -2610,36 +2611,36 @@ Name: count, dtype: int64
       <th>17</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>18</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>1</td>
       <td>0</td>
+      <td>1</td>
       <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>21</th>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>1</td>
+      <td>0.666667</td>
+      <td>0.666667</td>
     </tr>
   </tbody>
 </table>
@@ -2670,7 +2671,7 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;pos_pred&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/bd046326dd014efeffcb049b3a92461ca107f835922d3aaccbf34e78758e4714.png" src="../_images/bd046326dd014efeffcb049b3a92461ca107f835922d3aaccbf34e78758e4714.png" />
+<img alt="../_images/bbfdf4e1a93f391cc43eb8e5bc4ab8fe9b2cfd46fe4f8319fed3efcbaa8b6020.png" src="../_images/bbfdf4e1a93f391cc43eb8e5bc4ab8fe9b2cfd46fe4f8319fed3efcbaa8b6020.png" />
 </div>
 </div>
 </section>
@@ -2718,7 +2719,7 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;good_cereal_prob&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/7ade22df98c61820d1014fc978581c810f02f3029b3d8f5d1d3bfff8a983029c.png" src="../_images/7ade22df98c61820d1014fc978581c810f02f3029b3d8f5d1d3bfff8a983029c.png" />
+<img alt="../_images/abaac852855fd3d5beefe0565005686299479058dadca724e3697dd288a0a805.png" src="../_images/abaac852855fd3d5beefe0565005686299479058dadca724e3697dd288a0a805.png" />
 </div>
 </div>
 </section>
