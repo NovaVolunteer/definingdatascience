@@ -19,28 +19,24 @@ parts:
     - file: Design/Design_Labs
     - file: Design/Design_External
     - file: Design/Lectures
-    - file: Design/Design_Case
   - file: Value/Value
     sections:
     - file: Value/Value_SDS
     - file: Value/Value_Labs
     - file: Value/Value_External
     - file: Value/Lectures
-    - file: Value/Value_Case
   - file: Systems/Systems
     sections:
     - file: Systems/Systems_SDS
     - file: Systems/Systems_Labs
     - file: Systems/Systems_External
     - file: Systems/Lectures
-    - file: Systems/Systems_Case
   - file: Analytics/Analytics
     sections:
     - file: Analytics/Analytics_SDS
     - file: Analytics/Analytics_Labs
     - file: Analytics/Analytics_External
     - file: Analytics/Lectures
-    - file: Analytics/Analytics_Case
 - caption: ~Heading for this section?~
   numbered: false
   chapters:
@@ -49,6 +45,8 @@ parts:
   numbered: false
   chapters:
   - file: Appendix/appendix-sources
+  - file: Appendix/CASE
+  - file: Appendix/LOOK
 #     sections: List of Sources
 # - file: BSDS Course Info
 # - file: Refernces #diff than sources?

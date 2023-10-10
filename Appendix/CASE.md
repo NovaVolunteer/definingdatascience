@@ -1,0 +1,94 @@
+# Case Study Assignments
+
+## Design
+
+**General Description:** This assignment is an extension of the Google maps case study discussed during class and your experience in our “LABS 3: Projection!” assignment. For this assignment you will select two map projections and explore their history and properties. Ultimately you will produce a pdf describing what you learned and synthesizing it in the context of our Design module. 
+
+**Preparatory Assignments:** In class case study and LABS 3: Projection! 
+
+**Why am I doing this?** This assignment is designed to give you the opportunity to explore design choices in more depth. The creation of a map projection is non-trivial and by its nature requires some distortion of the data being presented. In our Design module we practiced understanding the design decisions that go into collecting and presenting data. This assignment allows you to practice those skills as you evaluate design choices made in the production of map projections. 
+
+**Course Learning Objective Alignment:** Observe the world around you, recording your observations in a systematic way. 
+
+**Course Learning Objective Alignment:** Reflect on your data and transform it into a medium for efficient communication to other humans. 
+
+**What am I going to do?** First you will select two map projections. You have freedom to choose projections that interest you, but you cannot choose the Mercator Projection because we already studied that in class. Once you have selected those projections you will research their history, why they were created, what problem did they solve, when were they used, are they still used today, etc. Then you will explore the properties of the projection, for example looking at the Tissot’s Indicatrix to understand the nature of the distortions. Then you will discuss the pros and cons of the projection and how that connects to the design choice and the problem the creators were facing. Finally, you will reflect on these map projections from the Design module perspective and present your insights as well as compare and contrast the projections. 
+
+**Tips for success:**
+
+Pre think and pre read. Do not just dive in. Spend some time exploring. 
+
+Choose map projections that interest you, you do not need an esoteric reason, just that for some reason you are interested in learning more. 
+
+Look for projections that were created to solve problems you are interested in. 
+
+Try to put yourself in the shoes of the creator of the map projection and think through the challenges they faced. 
+
+Reminder: This is a research paper. Citations are required 
+
+**How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric. 
+
+| Specs Category | Specs Details                                                                                                                                                                                                                                            |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Formatting     | - 6-10 pages <br /> - PDF Format <br /> - Order <br /> &emsp; - Header <br /> &emsp; - Introduction <br /> &emsp; - Main matter <br /> &emsp;&emsp; - Deep dive on projection 1 <br /> &emsp;&emsp; - Deep dive on projection 2 <br /> &emsp; - Conclusions <br /> &emsp; - Citations <br /> |
+| Header         | - Upper Corner: Name, Course, Date, and Assignment <br /> - Title and Subtitle <br /> - Use current word processing document formatting (what Microsoft calls 'styles' [link](https://support.microsoft.com/en-gb/office/customize-or-create-new-styles-d38d6e47-f6fc-48eb-a607-1eb120dec563)) |
+|Introduction    |  - Goal: Introduce and motivate your topic, summarize the contents <br /> - One paragraph (and not too long) <br /> - Lead with something to hook your audience into the “story” you are going to tell. Help them understand why this topic matters. <br /> - The summary is meant to set the expectations for the audience. Tell them what you are going to tell them. <br />  - State your two projections clearly along with why you chose them (remember no Mercator) <br /> |
+|Deep Drive on Projection 1 |   - Goal: This is a main part of the work. Give a full breakdown of a map projection <br />  - About 2 pages <br />  - Use the example from class to guide your work. <br /> - Start by stating the problem that the map projection was designed to solve. Elaborate on the historical context around it. <br />  - Describe the history of use and if it is still relevant today. <br />  - Discuss any technological ramifications. <br />  - Discuss any ethical ramifications of the projection. <br />  - Include an image of the projection. <br /> - Include an image of the Tissot’s indicatrix of the projection (n.b. or another metric image as appropriate) <br />  - Describe the distortions/compromises the projection makes. <br />  - Include any relevant equations for the projection. <br />  - Describe the strengths and weaknesses of this projection. <br />  - Make sure to also define key terms for this projection – e.g. for the Mercator projection “conformal” <br /> |
+|Deep Drive on Projection 2 | - Same as above but for the second projection |
+|Compare and contrast the projections | - Goal: This is a main part of the work. This section is about evaluating the projections as they relate to one another. <br /> - About 1 page <br />   - This section is looser than the prior two. Use the points below to guide you but take the section where it needs to go. <br />   - Use your findings from putting together the strengths and weaknesses and not put them against each other <br />  - Describe how the projections would either fail to achieve each other's goal or could achieve each other’s goal <br />  - Take a wide-angle view into account including things like technological requirements, ethical ramifications <br /> |
+|Summarize in Design Context |  - Goal: This is a main part of the work. Connect the work to what we have been studying in class. <br /> - About 1 page <br /> - This section is also looser. Take the work where it needs to go. <br /> - Review the Design study sheet from class and highlight your work in this paper as it relates to those principles.  <br /> - Connect this to what you learned from the LABS in the Design portion of the class. <br /> |
+|Conclusion |   - Goal: Recapitulate the themes and bring the work to a satisfying conclusion <br /> - One or two paragraphs <br /> - Tie back to the initial motivation. <br /> - Highlight the key information you brought to light with the work. <br /> - Tell them what you told them. <br /> |
+
+**Acknowledgements:** Special thanks to Jess Taggart from UVA CTE for coaching us. This structure is pulled directly from [Streifer & Palmer (2020)](https://cte.virginia.edu/blog/2020/12/04/alternative-grading-practices-support-both-equity-and-learning). 
+
+
+
+## Value
+
+This case study will have you review the evolution of Open AI as an organization and the conditions that led to the company modifying its status as a non-profit entity to a company that allows for-profit generation and shareholder growth but on a limited basis.
+
+Below is Open AI’s original charter as a nonprofit organization, review and note the key takeaways from this original organizational ideal.
+
+December 11, 2015: Open AI mission: https://openai.com/blog/introducing-openai
+
+Answer the following questions:
+- What did they state as organizational goals?
+- Why do you think Open AI organized as a nonprofit company?
+- Why might this decision be important for the field of AI/Data Science?
+- How did they generate their original funding for the organization?
+
+Contrast that with the statement and the article below.
+
+March 11th, 2019: Open AI goes private: https://openai.com/blog/openai-lp
+
+Example article of them going private: https://techcrunch.com/2019/03/11/openai-shifts-from-nonprofit-to-capped-profit-to-attract-capital/
+
+Answer the following questions:
+- Why do you think they made this decision?
+- Does it still align with the company's original charter?
+- Was this an ethical decision?
+- Given this decision, what do you believe the future of the organization will look like?
+- Is it important for AI technologies to be developed in the “Open”, why or why not?
+
+Finally, in a paragraph or two summarize your key takeaways.
+
+In writing your answers and reviewing the materials consider the following overview of non-profits rules.
+
+Rules generally governing a non-profit: https://www.boardeffect.com/blog/common-501c3-rules-regulations/
+
+Submission: A pdf document of your answers to the questions in paragraph form. Limit your responses to no more than three double spaced pages.
+
+**How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric.
+| Specs Category | Specs Details                                                                                                                                                                                                                                            |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Formatting     | - 3-5 pages <br /> - PDF Format <br /> - Order <br /> &emsp; - Title - your choice <br /> &emsp; - Assignment: CASE - value <br /> &emsp; - Name, course, date <br /> &emsp; - Open AI Organization Review <br /> &emsp; - Detailed answers to set of first questions <br /> &emsp; - Detailed answers to set of second questions <br /> &emsp; - Final Takeaways <br /> |
+| Review of Materials   | - Review the materials provided and take notes as needed <br /> - You might also consider reviewing Open AI as a business and the products they have to offer. |
+|Answering the questions    |  - Goal: Provide details to the questions as presented. <br /> - About 2 to 4 pages for each set of questions. |
+|Takeaways  |   - Goal: Reflect on your experience during the Value portion of the program as you work through the case study and see how the various topics mentioned manifest in this example. |
+|References | - This section lists the references <br /> - Use IEEE style ([link](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf)) <br /> - *.wikipedia.org is not permissible but *.wikimedia.org is (if you are not familiar with the distinction please ask for assistance) |
+
+**Acknowledgements:** Special thanks to Jess Taggart from UVA CTE for coaching us. This structure is pulled directly from [Streifer & Palmer (2020)](https://cte.virginia.edu/blog/2020/12/04/alternative-grading-practices-support-both-equity-and-learning). 
+
+## Systems
+
+## Analytics
