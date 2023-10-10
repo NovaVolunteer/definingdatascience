@@ -103,5 +103,5 @@ File [1;32m~\AppData\Local\miniconda3\Lib\site-packages\sklearn\utils\_array_ap
 [0;32m    186[0m     [38;5;28;01mreturn[39;00m xp[38;5;241m.[39masarray(array, copy[38;5;241m=[39mcopy)
 [0;32m    187[0m [38;5;28;01melse[39;00m:
 
-[1;31mValueError[0m: could not convert string to float: 'C'
+[1;31mValueError[0m: could not convert string to float: 'H'
 
