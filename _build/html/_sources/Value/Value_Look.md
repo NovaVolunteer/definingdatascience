@@ -1,4 +1,4 @@
-# Value LOOK Assignment
+# Value LOOK
 
 **General Description:** This assignment is focused on thinking through how algorithms and data are present in your everyday life. Your goal is to document all the points of interaction over the course of a single day that you suspect are, at least in part, driven by algorithmic decision making and/or when your data is being collected. You will then reflect on the level of trust and personal data usage of each interaction by answering a series of questions for each instance.
 

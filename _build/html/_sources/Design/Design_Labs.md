@@ -1,4 +1,4 @@
-# Design Labs
+# Design LABS
 
 ## Lab 1- Lupi
 

@@ -1,4 +1,4 @@
-# Design Case Study
+# Design CASE
 **General Description:** This assignment is an extension of the Google maps case study discussed during class and your experience in our “LABS 3: Projection!” assignment. For this assignment you will select two map projections and explore their history and properties. Ultimately you will produce a pdf describing what you learned and synthesizing it in the context of our Design module. 
 
  

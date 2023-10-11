@@ -62,8 +62,5 @@ parts:
   numbered: false
   chapters:
   - file: Appendix/appendix-sources
-  - file: Appendix/CASE
-  - file: Appendix/LOOK
-#     sections: List of Sources
 # - file: BSDS Course Info
 # - file: Refernces #diff than sources?
