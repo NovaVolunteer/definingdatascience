@@ -15,8 +15,7 @@
 
 ### Lab Exercise Details
 #### Part I - Hardware
-1. Find and record the following information for your laptop
-
+1. Find and record the following information for your laptop<br />
 - CPU Cycle rate (GHz) <br />
 - CPU Number of Cores (Int) <br />
 - RAM (GB) <br />
@@ -24,20 +23,14 @@
 - Operating System <br />
 
 2. Repeat step 1. but for your cell phone.
-
 3. Using the colored pencils provided or your own supplies create a visualization showing the similarities and differences between your laptop and cell phone specs.
-
 4. Fill out this survey - https://forms.gle/EY1cRzu1DFxzCW4ZALinks to an external site.
 
 #### Part II - Software
 1. Open the Task Manager (WIN) or Activity Monitor (MAC)
-
 2. Sort by CPU usage and note the top 5 processes
-
 3. Sort by Memory usage and note the top 5 processes
-
 4. Take a moment and reflect on these two lists, are the processes the same? different? What do you notice?
-
 5. Create another visualization showing these apps and their utilization of the computer resources.
 
  
@@ -46,11 +39,8 @@
 Create a single slide for presentation and upload it in pdf format. The slide must contain
 
 1. Name, class, date, assignment
-
 2. Your hardware visualization
-
 3. Your software visualization
-
 4. Your takeaway (same format and spec as the READ rubric takeaway)
 
 ## Lab 2 - Battleship
@@ -73,16 +63,12 @@ Create a single slide for presentation and upload it in pdf format. The slide mu
 The goal of part I is to understand the rules of the game. Once you understand the rules advance to part II. Don't worry about finishing a game, just play till you get it.
 
 #### Part II - Create a search algorithm and test it - 35 minutes
-** we will now play battleship with two rules modifications. Use a 4x4 grid (A-D,1-4), and use two ships, one ship of length three and one ship of length 2. **
+**we will now play battleship with two rules modifications. Use a 4x4 grid (A-D,1-4), and use two ships, one ship of length three and one ship of length 2.**
 
 1. Take a moment and think about a strategy for playing battleship. 
-
 2. Write down a set of instructions for deciding which grid square to target next.
-
 3. Play another game and follow your instructions exactly when deciding which square to target. And I mean exactly. Don't change them, just play them.
-
 4. Note where the algorithm works well and where it does not.
-
 5. Refine your algorithm and play again. (repeat as many times as you can given the time allowed)
 
 #### Part III - Reflect - 10 minutes
