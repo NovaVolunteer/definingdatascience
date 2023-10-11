@@ -1,2 +1,1 @@
-# Systems LOOK Assignment
-
+# Systems LOOK

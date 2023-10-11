@@ -1,4 +1,4 @@
-# Value Case Study
+# Value CASE
 
 This case study will have you review the evolution of Open AI as an organization and the conditions that led to the company modifying its status as a non-profit entity to a company that allows for-profit generation and shareholder growth but on a limited basis.
 

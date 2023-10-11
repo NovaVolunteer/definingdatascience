@@ -1,1 +1,1 @@
-# Analytics Case Study
+# Analytics CASE Study

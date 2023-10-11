@@ -1,4 +1,4 @@
-# Design LOOK Assignment
+# Design LOOK
 
 **General Description:** This assignment is all about observation and contemplation without digital interference. It is a bit off the norm for college today. Your task is to observe and record, no more, no less … for three consecutive hours, no more, no less. Your handwritten/drawn notes are all you must submit when the observation is complete along with some brief analysis about the experience. The subject of the observation is “an iconic UVA landmark,” e.g., the lawn. 
 

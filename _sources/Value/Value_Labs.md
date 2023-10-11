@@ -1,4 +1,4 @@
-# Value Labs
+# Value LABS
 
 Overview of the Value labs for the current semester for Foundations of Data Science Course
 at UVA.
