@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Design LOOK Assignment &#8212; Defining Data Science</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Design/Design_Look';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Value SDS" href="../Value/Value_SDS.html" />
+    <link rel="prev" title="Design Case Study" href="Design_Case.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/image5.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/image5.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../foreword.html">Foreword</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to.html">How to use this book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Defining-DS-4%2B1.html">The 4 + 1 Model of Data Science</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Design</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Design_SDS.html">Design SDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Design_External.html">Design External to the School</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lectures.html">Design Lectures</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Instructional-Intro.html">Instructional Materials</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Design_Labs.html">Design Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design_Case.html">Design Case Study</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Design LOOK Assignment</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Value</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Value/Value_SDS.html">Value SDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Value/Value_External.html">Value External to the School</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Value/Lectures.html">Value Lectures</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Value/Instructional-Intro.html">Instructional Materials</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Value/Value_Labs.html">Value Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Value/Value_Case.html">Value Case Study</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Value/Value_Look.html">Value LOOK Assignment</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Systems</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Systems/Systems_SDS.html">Systems SDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Systems/Systems_External.html">Systems External to the School</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Systems/Lectures.html">Systems Lectures</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Systems/Instructional-Intro.html">Instructional Materials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_Labs.html">Systems Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_Case.html">Systems Case Study</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Systems/Systems_Look.html">Systems LOOK Assignment</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Analytics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Analytics/Analytics_SDS.html">Analytics SDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Analytics/Analytics_External.html">Analytics External to the School</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Analytics/Lectures.html">Analytics Lectures</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Analytics/Instructional-Intro.html">Instructional Materials</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Analytics/Analytics_Labs.html">Analytics Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Analytics/Analytics_Case.html">Analytics Case Study</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Analytics/Analytics_Look.html">Analytics LOOK Assignment</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">~Heading for this section?~</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../final-thoughts.html">Final Thoughts</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Appendix/appendix-sources.html">About the Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendix/CASE.html">Case Study Assignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendix/LOOK.html">LOOK Assignments</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/NovaVolunteer/definingdatascience" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/NovaVolunteer/definingdatascience/issues/new?title=Issue%20on%20page%20%2FDesign/Design_Look.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Design/Design_Look.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Design LOOK Assignment</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="design-look-assignment">
+<h1>Design LOOK Assignment<a class="headerlink" href="#design-look-assignment" title="Permalink to this heading">#</a></h1>
+<p><strong>General Description:</strong> This assignment is all about observation and contemplation without digital interference. It is a bit off the norm for college today. Your task is to observe and record, no more, no less … for three consecutive hours, no more, no less. Your handwritten/drawn notes are all you must submit when the observation is complete along with some brief analysis about the experience. The subject of the observation is “an iconic UVA landmark,” e.g., the lawn.</p>
+<p><strong>Preparatory Assignments:</strong> Lab #1 – Georgia Lupi “My Phone”, in-class activities, READ assignments.</p>
+<p><strong>Why am I doing this?</strong> The goal of this assignment is to push past the quick and superficial observations we make all the time. You will have the opportunity to really study and observe. That takes time. That is why this assignment has a duration of 3 consecutive hours. Many of the struggles faced by students in Data Science are caused by external pressures for quick solutions, or by jumping quickly between thoughts and foci. You may initially squirm and fidget, and check the time, but eventually you will break through and transcend. Then the deep observation begins. For some people it only takes 30 minutes to transcend, others longer, fortunately the observation duration is 3 consecutive hours, so there is plenty of time. This may sound strange or odd so to quote Harvard professor Jennifer Roberts who has a similar assignment, “They needed someone to give them permission to spend this kind of time on anything,” she said. “Somebody had to give them a different set of rules and constraints than the ones that were dominating their lives.” The key is to understand your goal and be aware of when you have truly studied the matter at hand (aka observed for 3 consecutive hours) as opposed to having just scratched the surface (aka Wikipedia depth).</p>
+<p><strong>Course Learning Objective Alignment:</strong> Observe the world around you, recording your observations in a systematic way.</p>
+<p><strong>Course Learning Objective Alignment:</strong> Reflect on your data and transform it into a medium for efficient communication to other humans.</p>
+<p><strong>What am I going to do?</strong> After selecting an iconic UVA landmark, find a time in your schedule where you can spend 3 consecutive hours observing it. Pack some paper and something to write with (e.g.: colored pencils). Don’t pack anything digital, you won’t need it. Also pack water.</p>
+<figure class="align-default">
+<img alt="../_images/LOOK_img.png" src="../_images/LOOK_img.png" />
+</figure>
+<p>It’s like this scene. Don’t bring your phone, it is only full of distractions.</p>
+<p>Then observe for 3 consecutive hours. Note what you see; note what you think. Likely you will become impatient and distracted, that’s ok, that’s part of it. You may even fight it, that’s ok, that’s part of it. But eventually you will break through the barrier, you will notice things you never noticed before and the impatience will dissipate. Take care to note this transition. After that transition, survey the notes you have taken and think about structuring your notes going forward. Finally finish your observation by making two selections. The first is the most important thing you have noticed and the second is a question you have that emerged from this observation. When you are done you will take time to package your results for submission to canvas (yes, I do see the irony).</p>
+<p><strong>Tips for success:</strong></p>
+<p>Believe in yourself. Don’t be cynical. Go for it.</p>
+<p>Tell a friend to meet you at your landmark three hours after you plan to arrive.</p>
+<p>Bring several pencils/pens/etc. and sheets of paper.</p>
+<p>Don’t worry about notes being legible or even using words and numbers. Note in whatever way you prefer.</p>
+<p>When deciding what is important, live in the moment, don’t overthink it. Let it be an expression of yourself.</p>
+<p>Find a comfy chair or bring something to make the observation more comfortable.</p>
+<p>It is completely fine to stand and stretch and sit and change position or observation point (e.g.: move around and observe your landmark from multiple directions).</p>
+<p>If you “cheated” and brought your phone, it’s ok. Just turn off the notifications and put it away.</p>
+<p>If you really must use your phone, one activity is excusable. Call someone you really should call more often and talk for five minutes (e.g. I would call my mother), BUT you have to ask about them and listen and care, and if they ask about you all you can do is tell them the assignment you are working on and how you are breaking the rules and that you will call them back when it is over.</p>
+<p><strong>How will I know I have succeeded?</strong> I will meet spec when I follow the criteria in this rubric.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Specs Category</p></th>
+<th class="head"><p>Specs Details</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Formatting</p></td>
+<td><p>- Combine everything into one pdf for submission <br /> - Field Notes <br /> - Most important observation <br /> - Most burning question <br /></p></td>
+</tr>
+<tr class="row-odd"><td><p>Field notes</p></td>
+<td><p>- Goal: These are your notes taken in the field. Typically, about 4 pages <br /> - There are almost no rules, be bold <br /> - Label each page: <br />   - Name, course, date <br />   -“Look Ahead assignment – Design” <br />   - Page number x of y (e.g., 3 of 6) <br /> - Use the freedom from digital constraints to your advantage <br /> - Take inspiration for notetaking from Lupi <br /> - Be experimental in your notation, try things out <br /> - Don’t put constraints on yourself, just go for it. <br />   - Words are ok <br />   - Drawings are ok <br />   - Numbers are ok <br />   - Tic marks are ok <br />   - Etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>Most important observation</p></td>
+<td><p>- Goal: State the observation you found most compelling and why <br /> - One paragraph <br /> - This is reflective in nature <br /> - State the observation <br /> -State why this observation is important</p></td>
+</tr>
+<tr class="row-odd"><td><p>Most burning question</p></td>
+<td><p>- Goal: State the question you must find out the answer to and why <br /> - One paragraph <br /> -State your question <br /> - Pick something that you are now motivated to learn the answer to <br /> -Explain why this is a question you are going to find the answer to</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Acknowledgements:</strong> Special thanks to Jess Taggart from UVA CTE for coaching us. This structure is pulled directly from <a class="reference external" href="https://cte.virginia.edu/blog/2020/12/04/alternative-grading-practices-support-both-equity-and-learning">Streifer &amp; Palmer (2020)</a>.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Design"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Design_Case.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Design Case Study</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Value/Value_SDS.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Value SDS</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Brian Wright and Peter Alonzi
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
