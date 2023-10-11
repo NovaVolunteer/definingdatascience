@@ -24,7 +24,7 @@
 
 2. Repeat step 1. but for your cell phone.
 3. Using the colored pencils provided or your own supplies create a visualization showing the similarities and differences between your laptop and cell phone specs.
-4. Fill out this survey - https://forms.gle/EY1cRzu1DFxzCW4ZALinks to an external site.
+4. Fill out this survey - https://forms.gle/EY1cRzu1DFxzCW4ZA.
 
 #### Part II - Software
 1. Open the Task Manager (WIN) or Activity Monitor (MAC)
