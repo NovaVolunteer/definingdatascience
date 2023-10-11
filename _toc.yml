@@ -10,33 +10,50 @@ parts:
   - file: foreword
   - file: how-to
   - file: Defining-DS-4+1
-- caption: The Four Pillars
-  numbered: 2
+- caption: Design
+  numbered: False
   chapters:
-  - file: Design/Design
+  - file: Design/Design_SDS
+  - file: Design/Design_External
+  - file: Design/Lectures
+  - file: Design/Instructional-Intro
     sections:
-    - file: Design/Design_SDS
     - file: Design/Design_Labs
-    - file: Design/Design_External
-    - file: Design/Lectures
-  - file: Value/Value
+    - file: Design/Design_Case
+    - file: Design/Design_Look
+- caption: Value
+  numbered: False
+  chapters:
+  - file: Value/Value_SDS
+  - file: Value/Value_External
+  - file: Value/Lectures
+  - file: Value/Instructional-Intro
     sections:
-    - file: Value/Value_SDS
     - file: Value/Value_Labs
-    - file: Value/Value_External
-    - file: Value/Lectures
-  - file: Systems/Systems
+    - file: Value/Value_Case
+    - file: Value/Value_Look
+- caption: Systems
+  numbered: False
+  chapters:
+  - file: Systems/Systems_SDS
+  - file: Systems/Systems_External
+  - file: Systems/Lectures
+  - file: Systems/Instructional-Intro
     sections:
-    - file: Systems/Systems_SDS
     - file: Systems/Systems_Labs
-    - file: Systems/Systems_External
-    - file: Systems/Lectures
-  - file: Analytics/Analytics
+    - file: Systems/Systems_Case
+    - file: Systems/Systems_Look
+- caption: Analytics
+  numbered: False
+  chapters:
+  - file: Analytics/Analytics_SDS
+  - file: Analytics/Analytics_External
+  - file: Analytics/Lectures
+  - file: Analytics/Instructional-Intro
     sections:
-    - file: Analytics/Analytics_SDS
     - file: Analytics/Analytics_Labs
-    - file: Analytics/Analytics_External
-    - file: Analytics/Lectures
+    - file: Analytics/Analytics_Case
+    - file: Analytics/Analytics_Look
 - caption: ~Heading for this section?~
   numbered: false
   chapters:
