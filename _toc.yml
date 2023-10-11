@@ -16,7 +16,7 @@ parts:
   - file: Design/Design_SDS
   - file: Design/Design_External
   - file: Design/Lectures
-  - file: Design/Instructional-Intro
+    title: Instructional Materials
     sections:
     - file: Design/Design_Labs
     - file: Design/Design_Case
