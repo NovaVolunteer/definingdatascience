@@ -27,6 +27,9 @@
 4. Fill out this survey - https://forms.gle/EY1cRzu1DFxzCW4ZA.
 
 #### Part II - Software
+
+**This part is for your laptop.**
+
 1. Open the Task Manager (WIN) or Activity Monitor (MAC)
 2. Sort by CPU usage and note the top 5 processes
 3. Sort by Memory usage and note the top 5 processes
