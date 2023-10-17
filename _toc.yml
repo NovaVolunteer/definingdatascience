@@ -16,8 +16,8 @@ parts:
   - file: Design/Design_SDS
   - file: Design/Lectures
     sections:
-    - file: Design/Design_External
     - file: Design/Design_Internal
+    - file: Design/Design_External
   - file: Design/Instructional-Intro
     sections:
     - file: Design/Design_Labs
@@ -29,8 +29,8 @@ parts:
   - file: Value/Value_SDS
   - file: Value/Lectures
     sections:
-    - file: Value/Value_External
     - file: Value/Value_Internal
+    - file: Value/Value_External
   - file: Value/Instructional-Intro
     sections:
     - file: Value/Value_Labs
@@ -42,8 +42,8 @@ parts:
   - file: Systems/Systems_SDS
   - file: Systems/Lectures
     sections:
-    - file: Systems/Systems_External
     - file: Systems/Systems_Internal
+    - file: Systems/Systems_External
   - file: Systems/Instructional-Intro
     sections:
     - file: Systems/Systems_Labs
@@ -55,14 +55,14 @@ parts:
   - file: Analytics/Analytics_SDS
   - file: Analytics/Lectures
     sections:
-    - file: Analytics/Analytics_External
     - file: Analytics/Analytics_Internal
+    - file: Analytics/Analytics_External
   - file: Analytics/Instructional-Intro
     sections:
     - file: Analytics/Analytics_Labs
     - file: Analytics/Analytics_Case
     - file: Analytics/Analytics_Look
-- caption: ~Heading for this section?~
+- caption: 
   numbered: false
   chapters:
   - file: final-thoughts

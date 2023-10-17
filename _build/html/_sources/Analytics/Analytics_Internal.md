@@ -1,1 +1,1 @@
-# Analytics Internal
+# Internal Analytics Lectures

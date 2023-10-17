@@ -1,1 +1,1 @@
-# Design Internal
+# Internal Design Lectures
