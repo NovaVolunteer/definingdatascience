@@ -62,7 +62,7 @@ parts:
     - file: Analytics/Analytics_Labs
     - file: Analytics/Analytics_Case
     - file: Analytics/Analytics_Look
-- caption: 
+- caption: Final Thoughts
   numbered: false
   chapters:
   - file: final-thoughts
