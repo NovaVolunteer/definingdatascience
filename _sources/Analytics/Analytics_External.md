@@ -1,1 +1,1 @@
-# Analytics External to the School
+# External Analytics Lectures

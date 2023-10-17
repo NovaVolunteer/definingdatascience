@@ -1,1 +1,1 @@
-# Value External to the School
+# External Value Lectures
