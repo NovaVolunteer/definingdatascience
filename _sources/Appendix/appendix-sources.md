@@ -13,7 +13,7 @@ title: "Primary Sources"
 format: html
 editor: visual
 link-citations: true
-bibliography: Appendix/HistoryDataScience.bib
+bibliography: HistoryDataScience.bib
 execute:
   echo: false
 ---
