@@ -43,7 +43,7 @@ Mappings are indicated by an arrow pointing to the subset of terms from the stan
 
 Note that in most cases these phases are explicitly described as a process and often as a pipeline. When they are not, the implication is strong. In some cases, the process is likened to a cycle, emphasizing the connection between the endpoints of the pipeline, which is also emphasized by the 4+1 model.
 
-A final feature added to each entry is a two-value indicator of bias --- statistics and data mining. This is meant to capture the intellectual origin of the model, given that statistics and data mining define the poles of one of main axes of variance that defines the field of data science. This difference roughly corresponds to the "two cultures" described by Breiman @breimanStatisticalModelingTwo2001. 
+A final feature added to each entry is a two-value indicator of bias --- statistics and data mining. This is meant to capture the intellectual origin of the model, given that statistics and data mining define the poles of one of main axes of variance that defines the field of data science. This difference roughly corresponds to the "two cultures" described by Breiman {cite}`breimanStatisticalModelingTwo2001`. 
 
 
 ## List of Sources
@@ -59,7 +59,7 @@ pipes = {source:'' for source in sources}
 
 Key: `Tukey`\
 Year: 1962 \
-Source: @tukeyFutureDataAnalysis1962 [URL](https://www.jstor.org/stable/2237638#metadata_info_tab_contents)\
+Source: {cite}`tukeyFutureDataAnalysis1962` [URL](https://www.jstor.org/stable/2237638#metadata_info_tab_contents)\
 Bias: Statistics
 
 In this classic essay, Tukey introduces the concept of data analysis, which he distinguishes from mathematical statistics and likens to an empirical science. He defines data analysis as an empirical process with phases including "... procedures for **analyzing** data, techniques for **interpreting** the results of such procedures, ways of **planning** the **gathering** of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data" (p. 2). Unpacking this statement yields a four phase model.
@@ -92,10 +92,10 @@ Reflect |
 
 Key: `KDD`\
 Year: 1996 \
-Source: @fayyadKnowledgeDiscoveryData1996 [URL→](https://www.aaai.org/Papers/KDD/1996/KDD96-014.pdf?utm_campaign=ml4devs-newsletter&utm_medium=email&utm_source=Revue%20newsletter)\
+Source: {cite}`fayyadKnowledgeDiscoveryData1996` [URL→](https://www.aaai.org/Papers/KDD/1996/KDD96-014.pdf?utm_campaign=ml4devs-newsletter&utm_medium=email&utm_source=Revue%20newsletter)\
 Bias: Data Mining \
 
-KDD, or Knowledge Discovery in Databases, emerged in the late 1980s as both datasets and the computational resources to work with them became abundant. These resources included commercial databases and personal computers. In many ways the most adjacent field to contemoporary data science, this approach is unabashedly dedicated to finding patterns in data prior to developing a probabilistic model to justify their use. Fayyad's essay identifies five steps [@fayyadKnowledgeDiscoveryData1996: 84]. He emphasizes the highly iterative and cyclical nature of the process, arguing that it "may contain loops between any two steps." Another significant aspect of this conception of the pipeline is the role of exploration in the analytical phase: "Data Mining is a step in the KDD process consisting of applying data analysis and discovery algorithms that, under acceptable computational efficiency limitations, produce a particular enumeration of patterns over the data ...." (p. 83)
+KDD, or Knowledge Discovery in Databases, emerged in the late 1980s as both datasets and the computational resources to work with them became abundant. These resources included commercial databases and personal computers. In many ways the most adjacent field to contemoporary data science, this approach is unabashedly dedicated to finding patterns in data prior to developing a probabilistic model to justify their use. Fayyad's essay identifies five steps [{cite}fayyadKnowledgeDiscoveryData1996: 84]. He emphasizes the highly iterative and cyclical nature of the process, arguing that it "may contain loops between any two steps." Another significant aspect of this conception of the pipeline is the role of exploration in the analytical phase: "Data Mining is a step in the KDD process consisting of applying data analysis and discovery algorithms that, under acceptable computational efficiency limitations, produce a particular enumeration of patterns over the data ...." (p. 83)
 
 1.  **Selection**: Creating a target data set, or focusing on a subset of variables or data samples, on which discovery is to be performed. $\rightarrow [Collect]$
 2.  **Pre-processing**: Cleaning and pre processing the data in order to obtain consistent data. $\rightarrow [Clean]$
@@ -126,7 +126,7 @@ Reflect |
 
 Key: `SEMMA`\
 Year: 1996 \
-Source: @azevedoKDDSEMMACRISPDM2008 \
+Source: {cite}azevedoKDDSEMMACRISPDM2008 \
 Bias: Statistics
 
 The SEMMA model was developed the by SAS institute in 1996 as part of the documentation for their product, SAS Enterprise Miner. Even so, the model is referenced outside of this context, often as a comparison to KDD and CRISP-DM. Its bias towards statististics is evident in the first step.
@@ -160,7 +160,7 @@ Reflect |
 
 Key: `Hayashi`\
 Year: 1998\
-Source: @hayashiDataScienceClassification1998 [URL→](https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3)\
+Source: {cite}hayashiDataScienceClassification1998 [URL→](https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3)\
 Bias: Statistics
 
 The Japanese statistician Chikio Hayashi adopted the term "data science" in the early 1990s to define a field that did not succumb to what he saw to be the errors of both statistics and data analysis. He argued that mathematical statistics had become too attached to problems of inference and removed from reality, while data analysis had lost interest in understanding the meaning of the data it deals with. His definition of data science is decidely processual: "Data Science consists of three phases: design for data, collection of data and analysis on data. It is important that the three phases are treated with the concept of unification based on the fundamental philosophy of science .... In these phases the methods which are fitted for the object and are valid, must be studied with a good perspective." (p. 41) Similar to KDD and CRISM-PM, Hayashi envisioned this process as a spiral, oscillating between poles if what he called "diversification" and "simplification." Note also that each of these terms, as described, comprises more than on of the standard sequence phases.
@@ -193,7 +193,7 @@ Reflect |
 
 Key: `CRISPDM`\
 Year: 1999\
-Source: @wirthCRISPDMStandardProcess1999 [URL→](http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf)\
+Source: {cite}wirthCRISPDMStandardProcess1999 [URL→](http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf)\
 Bias: Data Mining
 
 By the late 1990s, the practice of data mining had become widespread in industry and globally. In 1999 the Cross Industry Standard Process for Data Mining (CRISP-DM) was developed in Europe as a comprehensive and general model to support the use of data mining in a broad range of sectors in a principled manner. Designed to work within a project management framework, this model is by far the most developed, and it continues to influence the field of data science to this day. Like KDD before it, the model emphasizes the cyclic and recursive nature of the process, and this perspective is reflected in the circular diagram that often accompanies its presentation. The steps below are based on the summary presented in Wirth and Hipp's essay.
@@ -232,10 +232,10 @@ Reflect |
 
 Key: `OSEMI`\
 Year: 2010\
-Source: @masonTaxonomyDataScience2010 [URL→](https://sites.google.com/a/isim.net.in/datascience_isim/taxonomy)\
+Source: {cite}masonTaxonomyDataScience2010 [URL→](https://sites.google.com/a/isim.net.in/datascience_isim/taxonomy)\
 Bias: Data Mining
 
-After the phrase "data science" went viral (circa 2009), there were many efforts to make sense of the idea. In 2010 Drew Conway posted his Venn diagram of data science [@conwayDataScienceVenn2010]. The same year, another influential model, based explicitly on the pipeline, came from Mason and Wiggins in a blog post hosted at O'Reilly's Tech Radar site. In contrast to previous models rooted in statistics, this model assumes that data are abundant and available, such as data scrapable from the Web.
+After the phrase "data science" went viral (circa 2009), there were many efforts to make sense of the idea. In 2010 Drew Conway posted his Venn diagram of data science [{cite}conwayDataScienceVenn2010]. The same year, another influential model, based explicitly on the pipeline, came from Mason and Wiggins in a blog post hosted at O'Reilly's Tech Radar site. In contrast to previous models rooted in statistics, this model assumes that data are abundant and available, such as data scrapable from the Web.
 
 1.  **Obtain**: Gather data from relevant sources through APIs, web scraping, etc. $\rightarrow [Collect]$
 2.  **Scrub**: Clean data and convert data to machine readable formats. Clearning includes handling missing data, inconsistent labels, or awkward formatting; stripping extraneous characters; normalizing values, etc. $\rightarrow [Clean, Prepare]$
@@ -266,7 +266,7 @@ Reflect |
 
 Key: `Ojeda+` \
 Year: 2014 \
-Source: @ojedaPracticalDataScience2014 [URL→](https://www.packtpub.com/product/practical-data-science-cookbook-second-edition/9781787129627)\
+Source: {cite}ojedaPracticalDataScience2014 [URL→](https://www.packtpub.com/product/practical-data-science-cookbook-second-edition/9781787129627)\
 Bias: Data Mining
 
 By 2014, data science had become a widespread practice in industry and the academic, and explanations of its nature became the subject of many books. This text is one of a genre that presents the field as a process, perhaps due to the influence of the CRISP-DM and OSEMI models, and uses the expression pipeline throughout. Note that the model defined in this book is not presented here as canonical. It suffers from various inconsistences, such as the labeling of steps in the text representation of the pipeline versus those on diagrams. It is included to demonstrate the pervasiveness of the model.
@@ -300,7 +300,7 @@ Reflect |
 
 Key: `Caffo+` \
 Year: 2015 \
-Source: @caffoExecutiveDataScience2015 [URL→](https://leanpub.com/eds)\
+Source: {cite}caffoExecutiveDataScience2015 [URL→](https://leanpub.com/eds)\
 Bias: Statistics
 
 By 2015, many universities had begun offering degrees in data science, typically at the masters' level, with the intention of meeting the high demand for data scientists. Professors Caffo, Peng, and Leek's book was written to accompany a course in Exectutive Data Science, offered by Johns Hopkins University through _Coursera_. Their model is relatively high level, consisting of five phases, given the target audience of those in charge of data science teams. As with other models, this model emphasizes the iterative nature of each phase, both internally and between phases. And as with many statistics-oriented conceptions of data science, this model emphasizes the Understand phase and skips over the technical issues of storing and modeling the data. 
@@ -339,10 +339,10 @@ Reflect |
 
 Key: `Donoho` \
 Year: 2017 \
-Source: @donoho50YearsData2017 [URL→](https://doi.org/10.1080/10618600.2017.1384734) \
+Source: {cite}donoho50YearsData2017 [URL→](https://doi.org/10.1080/10618600.2017.1384734) \
 Bias: Statistics
 
-As data science became viral in the 2010s, academic statisticians frequently expressed concern that they were "disconnected from the new (and vaguely defined) community of data scientists, who are completely identified with Big Data in the eyes of the media and policymakers" [@rodriguezBigDataBetter2012]. "Aren't _We_ Data Scientists?" asked Marie Davidian, then president of the American Statistical Association, in 2013 [@davidianArenWeData2013]. In response to this growing sentiment, Donoho's essay reads as a manifesto for the reclaiming of data science by academic statistics. In it, he defines six divisions of Greater Data Science, each containing a set of subactivities that roughly map to the pipeline model described here. 
+As data science became viral in the 2010s, academic statisticians frequently expressed concern that they were "disconnected from the new (and vaguely defined) community of data scientists, who are completely identified with Big Data in the eyes of the media and policymakers" [{cite}rodriguezBigDataBetter2012]. "Aren't _We_ Data Scientists?" asked Marie Davidian, then president of the American Statistical Association, in 2013 [{cite}davidianArenWeData2013]. In response to this growing sentiment, Donoho's essay reads as a manifesto for the reclaiming of data science by academic statistics. In it, he defines six divisions of Greater Data Science, each containing a set of subactivities that roughly map to the pipeline model described here. 
 
 It is important to note that Donoho's model is more abstract than a pipeline description and therefore not all of the divisions and subactivities directly map onto the sequence. **Data visualization and Presentation** defines a general practice, although from the description it clearly maps onto two phases, Explore and Communicate. **Computing with Data** refers to knowledge of programming languages for data analysis and data processing as well as knowledge of how to use cluster and cloud computing resources at scale. It also includes how to develop workflows which organize work. Clearly, this area belongs to no phase in particular but instead characterizes the broader context in which the data science pipeline operates. The identification of workflows, which are the focus of the Science about Data Science division, also suggests that Donoho is working at a higher level of abstraction than the other models, which places it alongside the of the current essay. The following phases are inferred from Donoho's descriptions.
 
@@ -386,7 +386,7 @@ Reflect | Science about Data Science
 
 Key: `Géron` \
 Year: 2017 \
-Source: @geronHandsOnMachineLearning2017 
+Source: {cite}geronHandsOnMachineLearning2017 
 [URL→](https://www.investincotedor.fr/sites/default/files/webform/pdf-hands-on-machine-learning-with-scikit-learn-and-tensorflow-conce-aurlien-gron-pdf-download-free-book-21c7262.pdf)\
 Bias: Data Mining
 
@@ -432,7 +432,7 @@ Reflect |
 
 Key: `Das` \
 Year: 2019 \
-Source: @dasDataScienceLife2019 [URL→](
+Source: {cite}dasDataScienceLife2019 [URL→](
   https://web.archive.org/web/20191113225625/https://towardsdatascience.com/data-science-life-cycle-101-for-dummies-like-me-e66b47ad8d8f?gi=261acdd4c903)\
 Bias: Data Mining
 
@@ -476,7 +476,7 @@ Reflect |
 
 Key: `Dataman` \
 Year: 2020 \
-Source: @datamanDataScienceModeling2020 [URL→](https://towardsdatascience.com/data-science-modeling-process-fa6e8e45bf02)\
+Source: {cite}datamanDataScienceModeling2020 [URL→](https://towardsdatascience.com/data-science-modeling-process-fa6e8e45bf02)\
 Bias: Data Mining
 
 Another example of a self-published explainer essay, this one describes the data science "modeling process" and aligns it with six consultative roles. The other defines eight steps to the process. Curiously, althhough this pipeline focuses on the details of training models, it does not include training the model itself as a step.
@@ -520,7 +520,7 @@ Reflect |
 
 Key: `Porter` \
 Year: 2020 \
-Source: @porterFrameworkDataScience2020 \
+Source: {cite}porterFrameworkDataScience2020 \
 Bias: Statistics 
 <!--
 file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Outlook/Outlook%20Temp/data-science%5B44%5D.html#categories_of_data_science
