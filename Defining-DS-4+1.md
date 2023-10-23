@@ -197,14 +197,11 @@ The point of the 4 + 1 model, abstract as it is, is to provide a practical templ
 
 **At the center of this model and each area is people**. Even in the area classified as "abstract machine," people and human thinking is at the center.
 
-```{bibliography}
-```
+
 
 
 ## References
 
-::: {#refs}
-
-:::
+.. bibliography::
 
 
