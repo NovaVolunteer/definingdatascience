@@ -60,7 +60,7 @@ pipes = {source:'' for source in sources}
 
 Key: `Tukey`\
 Year: 1962 \
-Source: ~\cite{tukeyFutureDataAnalysis1962} [URL](https://www.jstor.org/stable/2237638#metadata_info_tab_contents)\
+Source: @`tukeyFutureDataAnalysis1962` [URL](https://www.jstor.org/stable/2237638#metadata_info_tab_contents)\
 Bias: Statistics
 
 In this classic essay, Tukey introduces the concept of data analysis, which he distinguishes from mathematical statistics and likens to an empirical science. He defines data analysis as an empirical process with phases including "... procedures for **analyzing** data, techniques for **interpreting** the results of such procedures, ways of **planning** the **gathering** of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data" (p. 2). Unpacking this statement yields a four phase model.
