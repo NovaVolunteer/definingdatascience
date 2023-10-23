@@ -194,7 +194,7 @@ Reflect |
 
 Key: `CRISPDM`\
 Year: 1999\
-Source: @`wirthCRISPDMStandardProcess1999` [URL→](http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf)\
+Source: {cite}`wirthCRISPDMStandardProcess1999` [URL→](http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf)\
 Bias: Data Mining
 
 By the late 1990s, the practice of data mining had become widespread in industry and globally. In 1999 the Cross Industry Standard Process for Data Mining (CRISP-DM) was developed in Europe as a comprehensive and general model to support the use of data mining in a broad range of sectors in a principled manner. Designed to work within a project management framework, this model is by far the most developed, and it continues to influence the field of data science to this day. Like KDD before it, the model emphasizes the cyclic and recursive nature of the process, and this perspective is reflected in the circular diagram that often accompanies its presentation. The steps below are based on the summary presented in Wirth and Hipp's essay.
@@ -233,7 +233,7 @@ Reflect |
 
 Key: `OSEMI`\
 Year: 2010\
-Source: {cite}masonTaxonomyDataScience2010 [URL→](https://sites.google.com/a/isim.net.in/datascience_isim/taxonomy)\
+Source: {cite}`masonTaxonomyDataScience2010` [URL→](https://sites.google.com/a/isim.net.in/datascience_isim/taxonomy)\
 Bias: Data Mining
 
 After the phrase "data science" went viral (circa 2009), there were many efforts to make sense of the idea. In 2010 Drew Conway posted his Venn diagram of data science [{cite}conwayDataScienceVenn2010]. The same year, another influential model, based explicitly on the pipeline, came from Mason and Wiggins in a blog post hosted at O'Reilly's Tech Radar site. In contrast to previous models rooted in statistics, this model assumes that data are abundant and available, such as data scrapable from the Web.
@@ -267,7 +267,7 @@ Reflect |
 
 Key: `Ojeda+` \
 Year: 2014 \
-Source: {cite}ojedaPracticalDataScience2014 [URL→](https://www.packtpub.com/product/practical-data-science-cookbook-second-edition/9781787129627)\
+Source: {cite}`ojedaPracticalDataScience2014` [URL→](https://www.packtpub.com/product/practical-data-science-cookbook-second-edition/9781787129627)\
 Bias: Data Mining
 
 By 2014, data science had become a widespread practice in industry and the academic, and explanations of its nature became the subject of many books. This text is one of a genre that presents the field as a process, perhaps due to the influence of the CRISP-DM and OSEMI models, and uses the expression pipeline throughout. Note that the model defined in this book is not presented here as canonical. It suffers from various inconsistences, such as the labeling of steps in the text representation of the pipeline versus those on diagrams. It is included to demonstrate the pervasiveness of the model.
@@ -301,7 +301,7 @@ Reflect |
 
 Key: `Caffo+` \
 Year: 2015 \
-Source: {cite}caffoExecutiveDataScience2015 [URL→](https://leanpub.com/eds)\
+Source: {cite}`caffoExecutiveDataScience2015` [URL→](https://leanpub.com/eds)\
 Bias: Statistics
 
 By 2015, many universities had begun offering degrees in data science, typically at the masters' level, with the intention of meeting the high demand for data scientists. Professors Caffo, Peng, and Leek's book was written to accompany a course in Exectutive Data Science, offered by Johns Hopkins University through _Coursera_. Their model is relatively high level, consisting of five phases, given the target audience of those in charge of data science teams. As with other models, this model emphasizes the iterative nature of each phase, both internally and between phases. And as with many statistics-oriented conceptions of data science, this model emphasizes the Understand phase and skips over the technical issues of storing and modeling the data. 
@@ -340,7 +340,7 @@ Reflect |
 
 Key: `Donoho` \
 Year: 2017 \
-Source: {cite}donoho50YearsData2017 [URL→](https://doi.org/10.1080/10618600.2017.1384734) \
+Source: {cite}`donoho50YearsData2017` [URL→](https://doi.org/10.1080/10618600.2017.1384734) \
 Bias: Statistics
 
 As data science became viral in the 2010s, academic statisticians frequently expressed concern that they were "disconnected from the new (and vaguely defined) community of data scientists, who are completely identified with Big Data in the eyes of the media and policymakers" [{cite}rodriguezBigDataBetter2012]. "Aren't _We_ Data Scientists?" asked Marie Davidian, then president of the American Statistical Association, in 2013 [{cite}davidianArenWeData2013]. In response to this growing sentiment, Donoho's essay reads as a manifesto for the reclaiming of data science by academic statistics. In it, he defines six divisions of Greater Data Science, each containing a set of subactivities that roughly map to the pipeline model described here. 
@@ -387,7 +387,7 @@ Reflect | Science about Data Science
 
 Key: `Géron` \
 Year: 2017 \
-Source: {cite}geronHandsOnMachineLearning2017 
+Source: {cite}`geronHandsOnMachineLearning2017` 
 [URL→](https://www.investincotedor.fr/sites/default/files/webform/pdf-hands-on-machine-learning-with-scikit-learn-and-tensorflow-conce-aurlien-gron-pdf-download-free-book-21c7262.pdf)\
 Bias: Data Mining
 
@@ -433,7 +433,7 @@ Reflect |
 
 Key: `Das` \
 Year: 2019 \
-Source: {cite}dasDataScienceLife2019 [URL→](
+Source: {cite}`dasDataScienceLife2019` [URL→](
   https://web.archive.org/web/20191113225625/https://towardsdatascience.com/data-science-life-cycle-101-for-dummies-like-me-e66b47ad8d8f?gi=261acdd4c903)\
 Bias: Data Mining
 
@@ -477,7 +477,7 @@ Reflect |
 
 Key: `Dataman` \
 Year: 2020 \
-Source: {cite}datamanDataScienceModeling2020 [URL→](https://towardsdatascience.com/data-science-modeling-process-fa6e8e45bf02)\
+Source: {cite}`datamanDataScienceModeling2020` [URL→](https://towardsdatascience.com/data-science-modeling-process-fa6e8e45bf02)\
 Bias: Data Mining
 
 Another example of a self-published explainer essay, this one describes the data science "modeling process" and aligns it with six consultative roles. The other defines eight steps to the process. Curiously, althhough this pipeline focuses on the details of training models, it does not include training the model itself as a step.
@@ -521,7 +521,7 @@ Reflect |
 
 Key: `Porter` \
 Year: 2020 \
-Source: {cite}porterFrameworkDataScience2020 \
+Source: {cite}`porterFrameworkDataScience2020` \
 Bias: Statistics 
 <!--
 file:///private/var/folders/14/rnyfspnx2q131jp_752t9fc80000gn/T/com.microsoft.Outlook/Outlook%20Temp/data-science%5B44%5D.html#categories_of_data_science
@@ -686,10 +686,15 @@ df.style.set_table_styles(styles)
 
 ```
 
+
+
+## References
 ```{bibliography}
 ```
 
-## References
+:::{bibliography}
+:::
+
 
 ::: {#refs}
 :::
