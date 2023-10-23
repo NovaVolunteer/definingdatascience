@@ -2,7 +2,7 @@
 jupytext:
   formats: md:myst
   text_representation:
-    extension: .qmd
+    extension: .md
     format_name: myst
 kernelspec:
   display_name: Python 3
@@ -194,7 +194,7 @@ Reflect |
 
 Key: `CRISPDM`\
 Year: 1999\
-Source: {cite}wirthCRISPDMStandardProcess1999 [URL→](http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf)\
+Source: @`wirthCRISPDMStandardProcess1999` [URL→](http://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf)\
 Bias: Data Mining
 
 By the late 1990s, the practice of data mining had become widespread in industry and globally. In 1999 the Cross Industry Standard Process for Data Mining (CRISP-DM) was developed in Europe as a comprehensive and general model to support the use of data mining in a broad range of sectors in a principled manner. Designed to work within a project management framework, this model is by far the most developed, and it continues to influence the field of data science to this day. Like KDD before it, the model emphasizes the cyclic and recursive nature of the process, and this perspective is reflected in the circular diagram that often accompanies its presentation. The steps below are based on the summary presented in Wirth and Hipp's essay.
