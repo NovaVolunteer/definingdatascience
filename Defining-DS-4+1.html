@@ -460,7 +460,7 @@ document.write(`
 <h2>A Common Theme: The Image of the Pipeline<a class="headerlink" href="#a-common-theme-the-image-of-the-pipeline" title="Permalink to this heading">#</a></h2>
 <p>A review of the literature on data science definitions, including sources from the adjacent fields data analysis and data mining, reveals that most invoke the image of a data processing <em>pipeline</em> — a sequence of events through which data flows as it moves from the consumption of so-called raw data to production of useful results. In this view, consumed data may come from a variety of sources, such as databases or intentional experiments or sensors, and results may be equally various, from the visual communication of analytical results to stake-holders to the development of an interactive data product for use on the web.<a class="footnote-reference brackets" href="#the-four-plus-one-model-1" id="id1">1</a></p>
 <p>For analytic purposes, it is helpful to view the pipeline image as a kind of story, a micronarrative that encodes and socializes an understanding about the practice of data science. All forms of work involve the sharing of stories in one form or another, both formally in the context of education and informally through the countless acts of training, mentorship, and imitation that go on everyday in the academy and the workplace. When we want to explain to a trainee, a peer, or a supervisor how something is done, we often resort to a story that is general enough to apply to a variety of contexts yet specific enough to be translatable into action. The data processing pipeline is like that, and the essays in which it appears are part of the ongoing discourse by which a community of practice grows and learns.</p>
-<p>By thinking of the pipeline as a story we can analyze it with techniques developed by sociolinguists, folklorists, and students of literature to study how stories are structured and how they function socially and cognitively. One idea from this field is that stories can be broken down into elementary units, or “event functions,” and that these functions tend to have an invariant order within specific traditions [&#64;propp1977]. In addition, a given sequence of functions may exhibit overall patterns, such as a chiasmus structure, in which the functions at the beginning of a story mirror those a the end [&#64;lévi-strauss1955]. The following analysis applies these ideas.</p>
+<p>By thinking of the pipeline as a story we can analyze it with techniques developed by sociolinguists, folklorists, and students of literature to study how stories are structured and how they function socially and cognitively. One idea from this field is that stories can be broken down into elementary units, or “event functions,” and that these functions tend to have an invariant order within specific traditions <span id="id2">[<a class="reference internal" href="#id14" title="V. I.A Propp and A. Dundes. Morphology of the Folktale. University of Texas Press, 1977.">PD77</a>]</span>. In addition, a given sequence of functions may exhibit overall patterns, such as a chiasmus structure, in which the functions at the beginning of a story mirror those a the end [&#64;lévi-strauss1955]. The following analysis applies these ideas.</p>
 </section>
 <section id="the-primary-standard-sequence">
 <h2>The Primary Standard Sequence<a class="headerlink" href="#the-primary-standard-sequence" title="Permalink to this heading">#</a></h2>
@@ -501,17 +501,17 @@ document.write(`
 </section>
 <section id="an-arc-with-four-zones">
 <h2>An Arc with Four Zones<a class="headerlink" href="#an-arc-with-four-zones" title="Permalink to this heading">#</a></h2>
-<figure class="align-default" id="id701">
+<figure class="align-default" id="id702">
 <img alt="_images/image1.png" src="_images/image1.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Standard Sequence as a Narrative Arc</span><a class="headerlink" href="#id701" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Standard Sequence as a Narrative Arc</span><a class="headerlink" href="#id702" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To be sure, the middle chapter plays a central role in our story. If we think of the story as following a classical “there and back again” structure — a chiasmus pattern like <span class="math notranslate nohighlight">\(X_1, Y_1, Z, Y_2, X_2\)</span> — then chapter <span class="math notranslate nohighlight">\(D\)</span> is the pivot, while chapters <span class="math notranslate nohighlight">\(A,\)</span> <span class="math notranslate nohighlight">\(B,\)</span> and <span class="math notranslate nohighlight">\(C\)</span> mirror <span class="math notranslate nohighlight">\(E,\)</span> <span class="math notranslate nohighlight">\(F,\)</span> and <span class="math notranslate nohighlight">\(G\)</span>. Thinking of the story in this way allows us to identify a parallel structure in the pipeline, connecting phases that are usually seen as separate. Specifically, we may visualize the pipeline as an arc, a <strong>U</strong>-shaped process in which chapters in the first half of the pipeline mirror the those of the second half. We may then group chapters by the pairs formed in this way, yielding four zones — <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(G\)</span> belong to zone <span class="math notranslate nohighlight">\(I\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(F\)</span> to <span class="math notranslate nohighlight">\(II\)</span>, <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(E\)</span> to <span class="math notranslate nohighlight">\(III\)</span>, and <span class="math notranslate nohighlight">\(D\)</span> to <span class="math notranslate nohighlight">\(IV\)</span> — as in the following diagram:</p>
-<figure class="align-default" id="id702">
+<figure class="align-default" id="id703">
 <img alt="_images/image2.png" src="_images/image2.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The Arc Transposed</span><a class="headerlink" href="#id702" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The Arc Transposed</span><a class="headerlink" href="#id703" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>With this visualization, we can discern some interesting properties about the data science pipeline that are not obvious in the original sequential image. For one, the arc structure suggests that the two ends of the pipe are not separate; both make direct contact with the external world (relative to the internal world of the pipeline considered as a system). The external world — natural or social — from which data are pulled is the same world into which data products are inserted. This insight echoes the CRISP-DM model, which connects <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(G\)</span> (actually <span class="math notranslate nohighlight">\(F\)</span>), except that the two ends of the arc model are not directly connected. Instead, they come into contact with — and are separated by — the world in all of its complexity and unpredictability. The relationship between the effects caused by our data products <span class="math notranslate nohighlight">\(G\)</span> and the data we pull from the world <span class="math notranslate nohighlight">\(A\)</span> is not given but a matter of discovery — and often surprise. This is an important distinction between the model being proposed here and the simple idea that the pipeline forms a closed circle.</p>
@@ -541,10 +541,10 @@ document.write(`
 <p>The area of analytics is defined by the practice of mathematical modeling based on data. This area includes what many consider to be the essence of data science, the combination of statistical methods with machine learning, along with information theory, optimization, network analysis, complexity theory, simulations, and other rigorous quantitative methods from a variety of fields. Although unified by a broad commitment to advanced mathematical models and computational algorithms, in reality this is a heterogeneous collection of competing schools and methods. Tensions include inference vs prediction, parametric vs non-parametric (kernel-based) methods, frequentist vs Bayesian statistics, analytic vs algorithmic solutions (including simulations), etc. Key activities include clustering, pattern recognition, regression, rule mining, feature engineering, model selection, performance evaluation, and a host of other activities. Although currently dominated by statistical methods, this area also includes the rule-based methods that dominated the field of artificial intelligence before the more recent successes of statistical learning and deep learning.</p>
 <p><strong>Area V: Practice</strong></p>
 <p>The preceding four areas each represent areas of foundational knowledge, forms of expertise that can be taught as more or less separate subjects. In practice, however, these areas represent the interlocking parts of a division of labor that are integrated in the pipeline. This area consists of actual activities that brings people together to combine expertise from each of the four areas. It is characterized by data science teams working together and with external parties to develop solutions and projects that are responsible, authentic, efficient, and effective. Practice is also where the core areas of data science come into contact with a broad spectrum of domain knowledge and real world problems. The following diagram shows the central, integrative role played by practice:</p>
-<figure class="align-default" id="id703">
+<figure class="align-default" id="id704">
 <img alt="_images/image3.png" src="_images/image3.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The Integrative Role of Practice</span><a class="headerlink" href="#id703" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The Integrative Role of Practice</span><a class="headerlink" href="#id704" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -585,10 +585,10 @@ document.write(`
 <section id="final-representation">
 <h2>Final Representation<a class="headerlink" href="#final-representation" title="Permalink to this heading">#</a></h2>
 <p>The result of the preceding may be represented by the following graphic.</p>
-<figure class="align-default" id="id704">
+<figure class="align-default" id="id705">
 <img alt="_images/image5.png" src="_images/image5.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The 4+1 Model of Data Science</span><a class="headerlink" href="#id704" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The 4+1 Model of Data Science</span><a class="headerlink" href="#id705" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This visualization represents data science as composed of specific and complementary forms of knowledge. The vertical axis defines the dominant polarity between analysis — the <em>how</em> of data science, often identified entirely with it, contrasted with the <em>why</em> of data science, from which data science derives its meaning and value as a profession. The horizontal access defines the polarity of methods that are often obscured in academic definitions of data science — the supporting practices that make the Analytics component work in the first place.</p>
@@ -600,48 +600,51 @@ document.write(`
 <p><strong>Each area in the model contains a collection of subfields that need to be teased out</strong>. Some areas will have more subfields than others. Although some areas may be smaller than others in terms of number of experts (faculty) and courses, each area has a major impact on the overall practice of data science and the quality of an academic program’s activities. In addition, these subfields are in an important sense “more real” than the categories. We can imagine them forming a dense network in which the areas define communities with centroids, and which are more interconnected than the clean-cut image of the model implies.</p>
 <p><strong>The principal components abstract/concrete and human/machine are meant to help imagine the kinds of activities that belong in each area</strong>, through their connotations when combined to form the four bigrams — concrete human, abstract human, concrete machine, and abstract machine. For example, the area of value as the realm of the “concrete human” (or perhaps “concrete humanity”) is meant to connote what the Spanish philosopher Unamuno called the world of “flesh and bone” within which we live and die, that is, where things matter. On the other hand, analytics as the realm of the “abstract machine” is meant to connote the platonic world of mathematical reasoning which, since Euclid, has been characterized by rigorous, abstract, deductive reasoning that has literally been described as an abstract machine (see Alan Turing).</p>
 <p><strong>At the center of this model and each area is people</strong>. Even in the area classified as “abstract machine,” people and human thinking is at the center.</p>
-<div class="docutils container" id="id2">
+<div class="docutils container" id="id3">
 <dl class="citation">
-<dt class="label" id="id58"><span class="brackets">AS08</span></dt>
+<dt class="label" id="id59"><span class="brackets">AS08</span></dt>
 <dd><p>Ana Isabel Rojão Lourenço Azevedo and Manuel Filipe Santos. KDD, SEMMA and CRISP-DM: a parallel overview. <em>IADS-DM</em>, 2008.</p>
 </dd>
-<dt class="label" id="id110"><span class="brackets">Bre01</span></dt>
+<dt class="label" id="id111"><span class="brackets">Bre01</span></dt>
 <dd><p>Leo Breiman. Statistical Modeling: The Two Cultures. <em>Statistical Science</em>, 16(3):199–231, August 2001. <a class="reference external" href="https://doi.org/10.1214/ss/1009213726">doi:10.1214/ss/1009213726</a>.</p>
 </dd>
-<dt class="label" id="id127"><span class="brackets">CPL15</span></dt>
+<dt class="label" id="id128"><span class="brackets">CPL15</span></dt>
 <dd><p>Brian Caffo, Roger D. Peng, and Jeffrey Leek. <em>Executive Data Science</em>. Leanpub, June 2015.</p>
 </dd>
-<dt class="label" id="id162"><span class="brackets">Das19</span></dt>
+<dt class="label" id="id163"><span class="brackets">Das19</span></dt>
 <dd><p>Sangeet Moy Das. Data Science Life Cycle 101 for Dummies like Me. https://web.archive.org/web/20191113225625/https://towardsdatascience.com/data-science-life-cycle-101-for-dummies-like-me-e66b47ad8d8f?gi=261acdd4c903, September 2019.</p>
 </dd>
-<dt class="label" id="id165"><span class="brackets">Dat20</span></dt>
+<dt class="label" id="id166"><span class="brackets">Dat20</span></dt>
 <dd><p>Dr Dataman. Data Science Modeling Process &amp; Six Consultative Roles. https://towardsdatascience.com/data-science-modeling-process-fa6e8e45bf02, February 2020.</p>
 </dd>
-<dt class="label" id="id204"><span class="brackets">Don17</span></dt>
+<dt class="label" id="id205"><span class="brackets">Don17</span></dt>
 <dd><p>David Donoho. 50 Years of Data Science. <em>Journal of Computational and Graphical Statistics</em>, 26(4):745–766, October 2017. <a class="reference external" href="https://doi.org/10.1080/10618600.2017.1384734">doi:10.1080/10618600.2017.1384734</a>.</p>
 </dd>
-<dt class="label" id="id231"><span class="brackets">FPiatetskyShapiroS+96</span></dt>
+<dt class="label" id="id232"><span class="brackets">FPiatetskyShapiroS+96</span></dt>
 <dd><p>Usama M Fayyad, Gregory Piatetsky-Shapiro, Padhraic Smyth, and others. Knowledge Discovery and Data Mining: Towards a Unifying Framework. In <em>KDD</em>, volume 96, 82–88. 1996.</p>
 </dd>
-<dt class="label" id="id252"><span class="brackets">Geron17</span></dt>
+<dt class="label" id="id253"><span class="brackets">Geron17</span></dt>
 <dd><p>Aurélien Géron. <em>Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems</em>. O'Reilly Media, Beijing ; Boston, 1 edition edition, April 2017. ISBN 978-1-4919-6229-9.</p>
 </dd>
-<dt class="label" id="id288"><span class="brackets">HYB+98</span></dt>
+<dt class="label" id="id289"><span class="brackets">HYB+98</span></dt>
 <dd><p>Chikio Hayashi, Keiji Yajima, Hans H. Bock, Noboru Ohsumi, Yutaka Tanaka, and Yasumasa Baba, editors. <em>Data Science, Classification, and Related Methods: Proceedings of the Fifth Conference of the International Federation of Classification Societies (IFCS-96), Kobe, Japan, March 27–30, 1996</em>. Studies in Classification, Data Analysis, and Knowledge Organization. Springer Japan, 1998. ISBN 978-4-431-70208-5. <a class="reference external" href="https://doi.org/10.1007/978-4-431-65950-1">doi:10.1007/978-4-431-65950-1</a>.</p>
 </dd>
-<dt class="label" id="id403"><span class="brackets">MW10</span></dt>
+<dt class="label" id="id404"><span class="brackets">MW10</span></dt>
 <dd><p>Hilary Mason and Christopher Wiggins. A Taxonomy of Data Science. September 2010.</p>
 </dd>
-<dt class="label" id="id486"><span class="brackets">OMBD14</span></dt>
+<dt class="label" id="id487"><span class="brackets">OMBD14</span></dt>
 <dd><p>Tony Ojeda, Sean Patrick Murphy, Benjamin Bengfort, and Abhijit Dasgupta. <em>Practical Data Science Cookbook</em>. Packt Publishing Ltd, 2014.</p>
 </dd>
-<dt class="label" id="id514"><span class="brackets">Por20</span></dt>
+<dt class="label" id="id515"><span class="brackets">Por20</span></dt>
 <dd><p>Michael D. Porter. A Framework for Data Science. May 2020.</p>
 </dd>
-<dt class="label" id="id611"><span class="brackets">Tuk62</span></dt>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id2">PD77</a></span></dt>
+<dd><p>V. I.A Propp and A. Dundes. <em>Morphology of the Folktale</em>. University of Texas Press, 1977.</p>
+</dd>
+<dt class="label" id="id612"><span class="brackets">Tuk62</span></dt>
 <dd><p>John W. Tukey. The Future of Data Analysis. <em>The Annals of Mathematical Statistics</em>, 33(1):1–67, 1962.</p>
 </dd>
-<dt class="label" id="id666"><span class="brackets">WH99</span></dt>
+<dt class="label" id="id667"><span class="brackets">WH99</span></dt>
 <dd><p><strong>missing journal in wirthCRISPDMStandardProcess1999</strong></p>
 </dd>
 </dl>
