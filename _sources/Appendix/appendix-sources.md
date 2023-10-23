@@ -60,7 +60,7 @@ pipes = {source:'' for source in sources}
 
 Key: `Tukey`\
 Year: 1962 \
-Source: @tukeyFutureDataAnalysis1962 [URL](https://www.jstor.org/stable/2237638#metadata_info_tab_contents)\
+Source: {cite}`tukeyFutureDataAnalysis1962` [URL](https://www.jstor.org/stable/2237638#metadata_info_tab_contents)\
 Bias: Statistics
 
 In this classic essay, Tukey introduces the concept of data analysis, which he distinguishes from mathematical statistics and likens to an empirical science. He defines data analysis as an empirical process with phases including "... procedures for **analyzing** data, techniques for **interpreting** the results of such procedures, ways of **planning** the **gathering** of data to make its analysis easier, more precise or more accurate, and all the machinery and results of (mathematical) statistics which apply to analyzing data" (p. 2). Unpacking this statement yields a four phase model.
@@ -127,7 +127,7 @@ Reflect |
 
 Key: `SEMMA`\
 Year: 1996 \
-Source: {cite}azevedoKDDSEMMACRISPDM2008 \
+Source: {cite}`azevedoKDDSEMMACRISPDM2008` \
 Bias: Statistics
 
 The SEMMA model was developed the by SAS institute in 1996 as part of the documentation for their product, SAS Enterprise Miner. Even so, the model is referenced outside of this context, often as a comparison to KDD and CRISP-DM. Its bias towards statististics is evident in the first step.
@@ -161,7 +161,7 @@ Reflect |
 
 Key: `Hayashi`\
 Year: 1998\
-Source: {cite}hayashiDataScienceClassification1998 [URL→](https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3)\
+Source: {cite}`hayashiDataScienceClassification1998` [URL→](https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3)\
 Bias: Statistics
 
 The Japanese statistician Chikio Hayashi adopted the term "data science" in the early 1990s to define a field that did not succumb to what he saw to be the errors of both statistics and data analysis. He argued that mathematical statistics had become too attached to problems of inference and removed from reality, while data analysis had lost interest in understanding the meaning of the data it deals with. His definition of data science is decidely processual: "Data Science consists of three phases: design for data, collection of data and analysis on data. It is important that the three phases are treated with the concept of unification based on the fundamental philosophy of science .... In these phases the methods which are fitted for the object and are valid, must be studied with a good perspective." (p. 41) Similar to KDD and CRISM-PM, Hayashi envisioned this process as a spiral, oscillating between poles if what he called "diversification" and "simplification." Note also that each of these terms, as described, comprises more than on of the standard sequence phases.
