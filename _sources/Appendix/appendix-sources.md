@@ -692,4 +692,6 @@ df.style.set_table_styles(styles)
 
 
 ```{bibliography}
+:style: plain
+:filter: docname in docnames
 ```
