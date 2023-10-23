@@ -202,6 +202,8 @@ The point of the 4 + 1 model, abstract as it is, is to provide a practical templ
 
 ## References
 
-.. bibliography::
+
+```{bibliography}
+```
 
 
