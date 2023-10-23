@@ -689,12 +689,7 @@ df.style.set_table_styles(styles)
 
 
 ## References
+
+
 ```{bibliography}
 ```
-
-:::{bibliography}
-:::
-
-
-::: {#refs}
-:::
