@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Systems LABS &#8212; Defining Data Science</title>
   
@@ -19,48 +18,45 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Systems/Systems_Labs';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,7 +71,15 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -110,11 +114,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -129,9 +136,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -141,12 +150,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/image5.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/image5.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/image5.png" class="logo__image only-light" alt="Defining Data Science - Home"/>
+    <script>document.write(`<img src="../_static/image5.png" class="logo__image only-dark" alt="Defining Data Science - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -381,20 +401,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -451,14 +473,14 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="systems-labs">
-<h1>Systems LABS<a class="headerlink" href="#systems-labs" title="Permalink to this heading">#</a></h1>
+<h1>Systems LABS<a class="headerlink" href="#systems-labs" title="Link to this heading">#</a></h1>
 <section id="lab-1-hardware-and-software">
-<h2>Lab 1 - Hardware and Software<a class="headerlink" href="#lab-1-hardware-and-software" title="Permalink to this heading">#</a></h2>
+<h2>Lab 1 - Hardware and Software<a class="headerlink" href="#lab-1-hardware-and-software" title="Link to this heading">#</a></h2>
 <section id="purpose-and-task">
-<h3>Purpose and Task<a class="headerlink" href="#purpose-and-task" title="Permalink to this heading">#</a></h3>
+<h3>Purpose and Task<a class="headerlink" href="#purpose-and-task" title="Link to this heading">#</a></h3>
 <p><strong>General Description:</strong> In this lab you will explore our most commonly used devices, the laptop and the cell phone. Over the course of the lab we will dig into the hardware and the software of these devices. (Recall the first lab where we explored the app layer, now we are going to dig deeper and compare the cell phone with the laptop).</p>
 <p><strong>Why am I doing this?</strong>  The goal is for your laptop to fit you like a glove. By that we mean that you know how to use it in and out and in a sense it becomes and extension of you. For most first year students you are at that level with your cell phone but not your laptop. The needs of Data Science with regards to your laptop are much greater than running apps and browsing the web. This lab is our first foray into that larger world.</p>
 <p><strong>Course Learning Objective Alignment:</strong>  Identify the hardware and software components of a computer and describe their function</p>
@@ -466,9 +488,9 @@ document.write(`
 <p><strong>What am I going to do?</strong> This lab will guide you through exploring your devices and recording different technical specifications. Some of them may surprise you when comparing your laptop to your cell phone. Then you will analyze the data you collected and make a visualization for presentation. You will then repeat this process for the software. Finally you will compose a takeaway, something to focus on going forward that you want to improve.</p>
 </section>
 <section id="lab-exercise-details">
-<h3>Lab Exercise Details<a class="headerlink" href="#lab-exercise-details" title="Permalink to this heading">#</a></h3>
+<h3>Lab Exercise Details<a class="headerlink" href="#lab-exercise-details" title="Link to this heading">#</a></h3>
 <section id="part-i-hardware">
-<h4>Part I - Hardware<a class="headerlink" href="#part-i-hardware" title="Permalink to this heading">#</a></h4>
+<h4>Part I - Hardware<a class="headerlink" href="#part-i-hardware" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Find and record the following information for your laptop<br /></p></li>
 </ol>
@@ -486,7 +508,7 @@ document.write(`
 </ol>
 </section>
 <section id="part-ii-software">
-<h4>Part II - Software<a class="headerlink" href="#part-ii-software" title="Permalink to this heading">#</a></h4>
+<h4>Part II - Software<a class="headerlink" href="#part-ii-software" title="Link to this heading">#</a></h4>
 <p><strong>This part is for your laptop.</strong></p>
 <ol class="arabic simple">
 <li><p>Open the Task Manager (WIN) or Activity Monitor (MAC)</p></li>
@@ -497,7 +519,7 @@ document.write(`
 </ol>
 </section>
 <section id="part-iii-submission-details">
-<h4>Part III - Submission Details<a class="headerlink" href="#part-iii-submission-details" title="Permalink to this heading">#</a></h4>
+<h4>Part III - Submission Details<a class="headerlink" href="#part-iii-submission-details" title="Link to this heading">#</a></h4>
 <p>Create a single slide for presentation and upload it in pdf format. The slide must contain</p>
 <ol class="arabic simple">
 <li><p>Name, class, date, assignment</p></li>
@@ -509,9 +531,9 @@ document.write(`
 </section>
 </section>
 <section id="lab-2-battleship">
-<h2>Lab 2 - Battleship<a class="headerlink" href="#lab-2-battleship" title="Permalink to this heading">#</a></h2>
+<h2>Lab 2 - Battleship<a class="headerlink" href="#lab-2-battleship" title="Link to this heading">#</a></h2>
 <section id="id1">
-<h3>Purpose and Task<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<h3>Purpose and Task<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p><strong>General Description:</strong> In this lab we will play the game Battleship. As you play and try to win you will create a series of algorithms and practice following them exatly.</p>
 <p><strong>Why am I doing this?</strong>  Computer hardware executes the instructions you give it. The hardware cannot make judgement calls and do “what you want it to do”, it does “what you tell it to do”. There is a big difference. In this lab you will get to experience that challenge directly. By creating an algorithm and then implementing it without the ability to correct errors you will gain an appreciation for the challenges of hardware and software work.</p>
 <p><strong>Course Learning Objective Alignment:</strong>  Identify the hardware and software components of a computer and describe their function</p>
@@ -519,13 +541,13 @@ document.write(`
 <p><strong>What am I going to do?</strong> You will play Battleship, a lot. In doing so you will develop a strategy to win. Then you will encode that strategy into a set of instructions. Then you will have to implement those instructions to try and win. You will iterate and improve as you learn. Finally you will produce a pdf with the results from the lab for submission.</p>
 </section>
 <section id="id2">
-<h3>Lab Exercise Details<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3>Lab Exercise Details<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <section id="part-i-learn-the-game-5-minutes">
-<h4>Part I - Learn the Game - 5 minutes<a class="headerlink" href="#part-i-learn-the-game-5-minutes" title="Permalink to this heading">#</a></h4>
+<h4>Part I - Learn the Game - 5 minutes<a class="headerlink" href="#part-i-learn-the-game-5-minutes" title="Link to this heading">#</a></h4>
 <p>The goal of part I is to understand the rules of the game. Once you understand the rules advance to part II. Don’t worry about finishing a game, just play till you get it.</p>
 </section>
 <section id="part-ii-create-a-search-algorithm-and-test-it-35-minutes">
-<h4>Part II - Create a search algorithm and test it - 35 minutes<a class="headerlink" href="#part-ii-create-a-search-algorithm-and-test-it-35-minutes" title="Permalink to this heading">#</a></h4>
+<h4>Part II - Create a search algorithm and test it - 35 minutes<a class="headerlink" href="#part-ii-create-a-search-algorithm-and-test-it-35-minutes" title="Link to this heading">#</a></h4>
 <p><strong>we will now play battleship with two rules modifications. Use a 4x4 grid (A-D,1-4), and use two ships, one ship of length three and one ship of length 2.</strong></p>
 <ol class="arabic simple">
 <li><p>Take a moment and think about a strategy for playing battleship.</p></li>
@@ -536,7 +558,7 @@ document.write(`
 </ol>
 </section>
 <section id="part-iii-reflect-10-minutes">
-<h4>Part III - Reflect - 10 minutes<a class="headerlink" href="#part-iii-reflect-10-minutes" title="Permalink to this heading">#</a></h4>
+<h4>Part III - Reflect - 10 minutes<a class="headerlink" href="#part-iii-reflect-10-minutes" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Describe your initial algorithm. State the goal and the strategy behind it. Then give a detailed description of the steps.</p></li>
 <li><p>Describe where your initial algorithm failed and explain why.</p></li>
@@ -548,7 +570,7 @@ document.write(`
 </section>
 </section>
 <section id="lab-3-gpu">
-<h2>Lab 3 - GPU<a class="headerlink" href="#lab-3-gpu" title="Permalink to this heading">#</a></h2>
+<h2>Lab 3 - GPU<a class="headerlink" href="#lab-3-gpu" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -577,11 +599,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Instructional-Intro.html"
@@ -601,10 +622,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -612,6 +630,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -661,9 +680,10 @@ By Brian Wright and Peter Alonzi
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -687,8 +707,8 @@ By Brian Wright and Peter Alonzi
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

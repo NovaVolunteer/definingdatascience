@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The 4 + 1 Model of Data Science &#8212; Defining Data Science</title>
   
@@ -19,48 +18,45 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Defining-DS-4+1';</script>
@@ -77,7 +73,15 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -112,11 +116,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -131,9 +138,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -143,12 +152,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/image5.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/image5.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/image5.png" class="logo__image only-light" alt="Defining Data Science - Home"/>
+    <script>document.write(`<img src="_static/image5.png" class="logo__image only-dark" alt="Defining Data Science - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -383,20 +403,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -442,10 +464,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-4-1-model-of-data-science">
-<h1>The 4 + 1 Model of Data Science<a class="headerlink" href="#the-4-1-model-of-data-science" title="Permalink to this heading">#</a></h1>
+<h1>The 4 + 1 Model of Data Science<a class="headerlink" href="#the-4-1-model-of-data-science" title="Link to this heading">#</a></h1>
 <p>R.C. Alvarado, UVA School of Data Science</p>
 <p>Data Science is a complex and evolving field, but most agree that it can be defined as a combination of expertise drawn from three broad areas — computer science and technology, math and statistics, and domain knowledge — with the purpose of extracting knowledge and value from data. Many also associate it with a series of practical activities ranging from the cleaning and “wrangling” of data, to its analysis and use to infer models, to the visual and rhetorical representation of results to stakeholders and decision-makers.</p>
 <p>This essay proposes a model of data science that is intended to go beyond the laundry-list definitions that dominate the discourse in the field today. Although these are not inaccurate, they do not get at the specific nature of data science or help distinguish it from adjacent fields such as computer science and statistics — fields whose members sometimes claim to already be doing data science. Without a clear understanding of its specific and unique nature, the field is subject to counterproductive turf battles in the academy as well as confusion in the workplace.</p>
@@ -457,13 +479,13 @@ document.write(`
 <p>Unlike traditional academic disciplines, each area of the proposed model is inherently interdisciplinary, bringing together diverse and sometimes contrary perspectives under a common heading. The inherently interdisciplinary and pluralist nature of these areas is a distinctive feature of data science and a key differentiator between it and traditional disciplines.</p>
 <p>The following describes how this model is derived and provides clues about how to interpret and apply the model to your own situation.</p>
 <section id="a-common-theme-the-image-of-the-pipeline">
-<h2>A Common Theme: The Image of the Pipeline<a class="headerlink" href="#a-common-theme-the-image-of-the-pipeline" title="Permalink to this heading">#</a></h2>
-<p>A review of the literature on data science definitions, including sources from the adjacent fields data analysis and data mining, reveals that most invoke the image of a data processing <em>pipeline</em> — a sequence of events through which data flows as it moves from the consumption of so-called raw data to production of useful results. In this view, consumed data may come from a variety of sources, such as databases or intentional experiments or sensors, and results may be equally various, from the visual communication of analytical results to stake-holders to the development of an interactive data product for use on the web.<a class="footnote-reference brackets" href="#the-four-plus-one-model-1" id="id1">1</a></p>
+<h2>A Common Theme: The Image of the Pipeline<a class="headerlink" href="#a-common-theme-the-image-of-the-pipeline" title="Link to this heading">#</a></h2>
+<p>A review of the literature on data science definitions, including sources from the adjacent fields data analysis and data mining, reveals that most invoke the image of a data processing <em>pipeline</em> — a sequence of events through which data flows as it moves from the consumption of so-called raw data to production of useful results. In this view, consumed data may come from a variety of sources, such as databases or intentional experiments or sensors, and results may be equally various, from the visual communication of analytical results to stake-holders to the development of an interactive data product for use on the web.<a class="footnote-reference brackets" href="#the-four-plus-one-model-1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 <p>For analytic purposes, it is helpful to view the pipeline image as a kind of story, a micronarrative that encodes and socializes an understanding about the practice of data science. All forms of work involve the sharing of stories in one form or another, both formally in the context of education and informally through the countless acts of training, mentorship, and imitation that go on everyday in the academy and the workplace. When we want to explain to a trainee, a peer, or a supervisor how something is done, we often resort to a story that is general enough to apply to a variety of contexts yet specific enough to be translatable into action. The data processing pipeline is like that, and the essays in which it appears are part of the ongoing discourse by which a community of practice grows and learns.</p>
 <p>By thinking of the pipeline as a story we can analyze it with techniques developed by sociolinguists, folklorists, and students of literature to study how stories are structured and how they function socially and cognitively. One idea from this field is that stories can be broken down into elementary units, or “event functions,” and that these functions tend to have an invariant order within specific traditions <span id="id2">[<a class="reference internal" href="#id23" title="V. I.A Propp and A. Dundes. Morphology of the Folktale. University of Texas Press, 1977.">Propp and Dundes, 1977</a>]</span>. In addition, a given sequence of functions may exhibit overall patterns, such as a chiasmus structure, in which the functions at the beginning of a story mirror those a the end <span id="id3">[<a class="reference internal" href="#id24" title="Claude Lévi-Strauss. The structural study of myth. The Journal of American Folklore, 68(270):428–444, 10 1955. ArticleType: research-article / Issue Title: Myth: A Symposium / Full publication date: Oct. - Dec., 1955 / Copyright © 1955 American Folklore Society. URL: http://www.jstor.org/stable/536768, doi:10.2307/536768.">Lévi-Strauss, 1955</a>]</span>. The following analysis applies these ideas.</p>
 </section>
 <section id="the-primary-standard-sequence">
-<h2>The Primary Standard Sequence<a class="headerlink" href="#the-primary-standard-sequence" title="Permalink to this heading">#</a></h2>
+<h2>The Primary Standard Sequence<a class="headerlink" href="#the-primary-standard-sequence" title="Link to this heading">#</a></h2>
 <p>An analysis of a representative sample of essays that define a data processing pipeline shows that the various pipeline stories consist of elements drawn from a primary standard sequence of about twelve elements, give or take a few depending on how one might expand or contract terms. These are listed and defined below by a core set of event types, with the understanding that many synonyms are employed in the examples.</p>
 <ol class="arabic simple">
 <li><p><u>Understand</u>. The work of developing a question that the acquisition and analysis of data can answer. Questions may range from the status of a scientific hypothesis the merit of a business value proposition. More broadly, this is the stage of framing and scoping the work that follows.</p></li>
@@ -487,7 +509,7 @@ document.write(`
 <p>As the CRISP-DM model shows, in some cases the pipeline is described as a circular process, where the output of one cycle serves as input to the next. Nevertheless, in these cases the sequential order of processing stages is maintained. Moreover, the image of the circle makes explicit what is implicit in the non-circular models, namely that the pipeline is never a one-off operation but repeated many times in the life-cycle of a project. What the circular models uniquely introduce is the idea that data processing is often a cybernetic process, a feedback loop where the results of one cycle inform the next. However, it should be noted that the idea of feedback foregrounded by circular models is not well developed. We shall see that the relationship between the endpoints is an area deserving of further research and theoretical development.</p>
 </section>
 <section id="seven-chapters">
-<h2>Seven Chapters<a class="headerlink" href="#seven-chapters" title="Permalink to this heading">#</a></h2>
+<h2>Seven Chapters<a class="headerlink" href="#seven-chapters" title="Link to this heading">#</a></h2>
 <p>A close look at the twelve phases listed above shows that a given phase may be more closely related to some phases than to others — in other words, the phases can be grouped thematically. For example, it seems clear that the Understand and Plan phases go together, just as Clean, Explore, and Prepare do. They belong together because we can imagine performing their associated activities together, and separately from the other phases. Also, in some cases the order of the phases within the group may change — for example, explore might precede cleaning in the event, as the two are often performed simultaneously — while the sequential order of the groups is less likely to vary. Finally, we can imagine assigning different teams to perform the labor in each thematic grouping, by virtue of the expertise required to carry them out.</p>
 <p>Given this, the twelve-part composite pipeline can be reduced to seven groups:<br /></p>
 <p><span class="math notranslate nohighlight">\(A\)</span> understand and plan<br />
@@ -500,24 +522,24 @@ document.write(`
 <p>Each of these thematic groups may be considered a “chapter” in the story. Note that the number of verbs in each chapter title does not necessarily predict the length of its content. For example, the chapter on “model and interpret” covers a wide range of activities from a variety of perspectives, including classical statistics, machine learning, and computational simulation. It’s a big and complicated chapter with its own pipeline, but it is just one chapter among seven.</p>
 </section>
 <section id="an-arc-with-four-zones">
-<h2>An Arc with Four Zones<a class="headerlink" href="#an-arc-with-four-zones" title="Permalink to this heading">#</a></h2>
+<h2>An Arc with Four Zones<a class="headerlink" href="#an-arc-with-four-zones" title="Link to this heading">#</a></h2>
 <figure class="align-default" id="id711">
 <img alt="_images/image1.png" src="_images/image1.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Standard Sequence as a Narrative Arc</span><a class="headerlink" href="#id711" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Standard Sequence as a Narrative Arc</span><a class="headerlink" href="#id711" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>To be sure, the middle chapter plays a central role in our story. If we think of the story as following a classical “there and back again” structure — a chiasmus pattern like <span class="math notranslate nohighlight">\(X_1, Y_1, Z, Y_2, X_2\)</span> — then chapter <span class="math notranslate nohighlight">\(D\)</span> is the pivot, while chapters <span class="math notranslate nohighlight">\(A,\)</span> <span class="math notranslate nohighlight">\(B,\)</span> and <span class="math notranslate nohighlight">\(C\)</span> mirror <span class="math notranslate nohighlight">\(E,\)</span> <span class="math notranslate nohighlight">\(F,\)</span> and <span class="math notranslate nohighlight">\(G\)</span>. Thinking of the story in this way allows us to identify a parallel structure in the pipeline, connecting phases that are usually seen as separate. Specifically, we may visualize the pipeline as an arc, a <strong>U</strong>-shaped process in which chapters in the first half of the pipeline mirror the those of the second half. We may then group chapters by the pairs formed in this way, yielding four zones — <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(G\)</span> belong to zone <span class="math notranslate nohighlight">\(I\)</span>, <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(F\)</span> to <span class="math notranslate nohighlight">\(II\)</span>, <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(E\)</span> to <span class="math notranslate nohighlight">\(III\)</span>, and <span class="math notranslate nohighlight">\(D\)</span> to <span class="math notranslate nohighlight">\(IV\)</span> — as in the following diagram:</p>
 <figure class="align-default" id="id712">
 <img alt="_images/image2.png" src="_images/image2.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The Arc Transposed</span><a class="headerlink" href="#id712" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The Arc Transposed</span><a class="headerlink" href="#id712" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>With this visualization, we can discern some interesting properties about the data science pipeline that are not obvious in the original sequential image. For one, the arc structure suggests that the two ends of the pipe are not separate; both make direct contact with the external world (relative to the internal world of the pipeline considered as a system). The external world — natural or social — from which data are pulled is the same world into which data products are inserted. This insight echoes the CRISP-DM model, which connects <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(G\)</span> (actually <span class="math notranslate nohighlight">\(F\)</span>), except that the two ends of the arc model are not directly connected. Instead, they come into contact with — and are separated by — the world in all of its complexity and unpredictability. The relationship between the effects caused by our data products <span class="math notranslate nohighlight">\(G\)</span> and the data we pull from the world <span class="math notranslate nohighlight">\(A\)</span> is not given but a matter of discovery — and often surprise. This is an important distinction between the model being proposed here and the simple idea that the pipeline forms a closed circle.</p>
 </section>
 <section id="interpreting-the-themes">
-<h2>Interpreting the Themes<a class="headerlink" href="#interpreting-the-themes" title="Permalink to this heading">#</a></h2>
+<h2>Interpreting the Themes<a class="headerlink" href="#interpreting-the-themes" title="Link to this heading">#</a></h2>
 <p>At this point, we can explore the unifying themes associated with the four zones in our arc model by transposing the preceding visualization, which draws attention to what is common to each pairing. This generates four candidate areas of data science expertise — activities that, although they appear on opposite ends of the pipeline, nevertheless share basic knowledge, know-how, and areas of concern.</p>
 <p>Zone <span class="math notranslate nohighlight">\(IV\)</span> is the easiest to interpret in this way because as the pivot of the arc it is not paired. It represents the work of modeling a problem mathematically, as well as evaluating and interpreting the results of mathematical modeling. This work requires data to be available in a particular form — clean and organized, usually as “tidy” analytical tables — and it produces results that need to be prepared for consumption by non-specialists. As stated above, it is the pivot of the arc, the core process, where the prior phases constitute pre-processing and following phases post-processing.</p>
 <p>Zone <span class="math notranslate nohighlight">\(I\)</span> is also relatively easy to interpret: the functions in this group each involve understanding the relationship between the pipeline and the external world, the messy interface between the enterprise of data science and the variety of real world situations in which it operates and impacts. Again, this relationship has a dual character, based on the difference between input and output, reading from and writing to the world. Note also that there is an open-ended quality to the this relationship that is elided by circular representations — there is always a knowledge gap between one’s understanding of a data product and its real effects on the world, effects which may in turn influence source data.</p>
@@ -529,7 +551,7 @@ document.write(`
 <p>Abstract representation <span class="math notranslate nohighlight">\(III´\)</span>, on the other hand, involves expertise in areas ranging from how data are to be modeled for capture and analysis to how the results of analyses are to be presented to non-expert decision-makers. These areas of knowledge strive for formal generality over the long run; they are often expressed as grammars or design languages, frequently with visual modes (such as entity-relationship models and unified modeling language UML). They also include other forms of visualization, such as the plots developed for exploratory data analysis, such as box plots, and those used to represent statistical facts and analytical results in dashboards and infographics.</p>
 </section>
 <section id="the-four-areas-plus-one">
-<h2>The Four Areas, Plus One<a class="headerlink" href="#the-four-areas-plus-one" title="Permalink to this heading">#</a></h2>
+<h2>The Four Areas, Plus One<a class="headerlink" href="#the-four-areas-plus-one" title="Link to this heading">#</a></h2>
 <p>We are now ready to define and name the areas of data science expertise that emerge from an analysis of the pipeline considered as an arc. In each case, we want to identify the common context shared by the paired activities in each zone as well as the tension that exists between them by virtue of their occupying opposite sides of the pipeline. In many cases, although we can identify a shared theme in each zone’s work, the reality is that practitioners do not always interact or share disciplinary homes. One of the benefits of this model will be to identify these points of synergy and to identify new disciplinary boundaries.</p>
 <p><strong>Area I: Value</strong></p>
 <p>The area of value is defined by the relationship of data science to the world from which it draws data and into which it inserts data products. More broadly, it concerns the primary motivations of data science — why do we practice data science in the first place? It combines the traditional discipline of ethics with the professional activities of business planning, policy making, developing motivations for scientific research, and other activities that have a direct impact on people and the planet. This is the area where we determine what we do versus what we do not do, in order to maximize societal and environmental benefit and minimize harm. It is also the area that looks inward to the other data science areas and provides guidance on such issues as algorithmic bias or open science. Common activities include the forming of value propositions that initiate data science projects, research into how data is created and used “in the wild,” understanding the ethics of data acquisition, manipulation, communication, and sharing, and the application of data products in the world.</p>
@@ -544,15 +566,15 @@ document.write(`
 <figure class="align-default" id="id713">
 <img alt="_images/image3.png" src="_images/image3.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The Integrative Role of Practice</span><a class="headerlink" href="#id713" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The Integrative Role of Practice</span><a class="headerlink" href="#id713" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="two-principal-components">
-<h2>Two Principal Components<a class="headerlink" href="#two-principal-components" title="Permalink to this heading">#</a></h2>
+<h2>Two Principal Components<a class="headerlink" href="#two-principal-components" title="Link to this heading">#</a></h2>
 <p>Is there a way to understand how the four primary areas are related to each other, beyond their being composed of functions from the same pipeline? Put another way, does the pipeline-as-arc model exhibit any structural features that will help us conceptualize the broader space of data science? Two such features stand out: (1) the opposition between concrete and abstract forms of representation, and (2) between human and machine processing.</p>
 <p>Regarding the concrete and the abstract, it’s clear that the arc model has a metric quality to it: as one moves toward the pivot point of analysis, one moves away from the concrete messiness of reality as experienced to the “tidy” and abstract world of mathematics; similarly, as one moves from the pivot back to the world, there is a requirement to convert esoteric results into more humanly intelligible forms, often through a process of concretization; visualizations succeed by employing concrete metaphors that flesh out mathematical ideas that are notoriously detached from the imagination — no one can imagine, for example, n-dimensional spaces beyond a handful of dimensions. The arc describes a dialectic of abstraction and concretization that defines the ebb and flow and data science work.</p>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p>Concrete</p></th>
@@ -583,18 +605,18 @@ document.write(`
 <p>The abstract-concrete axis accounts for the difference between two forms of knowledge, roughly between direct experience and the indirect representation of that experience enabled through data. Both the realm of Value and Systems involve immersion in the messy details of lived experience — and direct acquaintance with the devils in those details. This is the messy world of hacks and ironies. The realms of Design and Analysis, on the other hand, are founded on abstract representations that strive for clear and distinct purity, and which allow for deductive reasoning to succeed at the cost of simplifying assumptions and reduced representations. This is the orderly world of models. The concrete pole refers to situated knowledge, knowledge as understood by hackers and makers, but also ethnographers who seek to maximize thick description in their work. It represents <em>concrete materiality</em>. The abstract pole refers to formal knowledge, knowledge in the form of mathematical symbolism, deductive proofs, and algorithmic patterns. It is <em>abstract form</em>. Given these poles, the concrete-abstract axis is roughly the opposition between applied and pure forms of knowledge, between those that embrace materiality and those that seek purity of form.</p>
 </section>
 <section id="final-representation">
-<h2>Final Representation<a class="headerlink" href="#final-representation" title="Permalink to this heading">#</a></h2>
+<h2>Final Representation<a class="headerlink" href="#final-representation" title="Link to this heading">#</a></h2>
 <p>The result of the preceding may be represented by the following graphic.</p>
 <figure class="align-default" id="id714">
 <img alt="_images/image5.png" src="_images/image5.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The 4+1 Model of Data Science</span><a class="headerlink" href="#id714" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The 4+1 Model of Data Science</span><a class="headerlink" href="#id714" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This visualization represents data science as composed of specific and complementary forms of knowledge. The vertical axis defines the dominant polarity between analysis — the <em>how</em> of data science, often identified entirely with it, contrasted with the <em>why</em> of data science, from which data science derives its meaning and value as a profession. The horizontal access defines the polarity of methods that are often obscured in academic definitions of data science — the supporting practices that make the Analytics component work in the first place.</p>
 </section>
 <section id="concluding-remarks">
-<h2>Concluding Remarks<a class="headerlink" href="#concluding-remarks" title="Permalink to this heading">#</a></h2>
+<h2>Concluding Remarks<a class="headerlink" href="#concluding-remarks" title="Link to this heading">#</a></h2>
 <p>The point of the 4 + 1 model, abstract as it is, is to provide a practical template for strategically planning the various elements of a school of data science. To serve as an effective template, a model must be general. But generality if often purchased at the cost of intuitive understanding. The following caveats may help make sense of the model when considering its usefulness when applied to various concrete activities.</p>
 <p><strong>The model describes areas of academic expertise, not objective reality</strong>. It is a map of a division of labor writ large. Although each of the areas has clear connections to the others, the question to ask when deciding where an activity belongs is: <em>who would be an expert at doing it</em>? The realms help refine this question: the analytics area, for example, contains people who are good at working with abstract machinery. The four areas have the virtue of isolating intuitively correct communities of expertise. For example, people who are great at data product design may not know the esoteric depths of machine learning, and that adepts at machine learning are not usually experts in understanding human society and normative culture.</p>
 <p><strong>Each area in the model contains a collection of subfields that need to be teased out</strong>. Some areas will have more subfields than others. Although some areas may be smaller than others in terms of number of experts (faculty) and courses, each area has a major impact on the overall practice of data science and the quality of an academic program’s activities. In addition, these subfields are in an important sense “more real” than the categories. We can imagine them forming a dense network in which the areas define communities with centroids, and which are more interconnected than the clean-cut image of the model implies.</p>
@@ -602,44 +624,55 @@ document.write(`
 <p><strong>At the center of this model and each area is people</strong>. Even in the area classified as “abstract machine,” people and human thinking is at the center.</p>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
 <div class="docutils container" id="id12">
-<dl class="citation">
-<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id11">1</a></span></dt>
-<dd><p>Drew Conway. The data science venn diagram. 09 2010. Library Catalog: drewconway.com. URL: <a class="reference external" href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a>.</p>
-</dd>
-<dt class="label" id="id16"><span class="brackets">2</span><span class="fn-backref">(<a href="#id7">1</a>,<a href="#id8">2</a>)</span></dt>
-<dd><p>David Donoho. 50 years of data science. <em>Journal of Computational and Graphical Statistics</em>, 26(4):745–766, 10 2017. URL: <a class="reference external" href="https://doi.org/10.1080/10618600.2017.1384734">https://doi.org/10.1080/10618600.2017.1384734</a>, <a class="reference external" href="https://doi.org/10.1080/10618600.2017.1384734">doi:10.1080/10618600.2017.1384734</a>.</p>
-</dd>
-<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id4">3</a></span></dt>
-<dd><p>Chikio Hayashi. <em>Data science, Classification, and Related Methods: Proceedings of the Fifth Conference of the International Federation of Classification Societies (IFCS-96), Kobe, Japan, March 27-30, 1996</em>. Springer, Kobe, Japan, 1998. 00008.</p>
-</dd>
-<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id5">4</a></span></dt>
-<dd><p>Hilary Mason and Christopher Wiggins. A taxonomy of data science. 09 2010. Library Catalog: www.dataists.com. URL: <a class="reference external" href="http://www.dataists.com/2010/09/a-taxonomy-of-data-science/">http://www.dataists.com/2010/09/a-taxonomy-of-data-science/</a>.</p>
-</dd>
-<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id10">5</a></span></dt>
-<dd><p>Sean Owen. What \textquotedblleft 50 years of data science\textquotedblright  leaves out. 11 2015. URL: <a class="reference external" href="https://medium.com/&#64;srowen/what-50-years-of-data-science-leaves-out-2366c9b61d3d">https://medium.com/&#64;srowen/what-50-years-of-data-science-leaves-out-2366c9b61d3d</a>.</p>
-</dd>
-<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id2">6</a></span></dt>
-<dd><p>V. I.A Propp and A. Dundes. <em>Morphology of the Folktale</em>. University of Texas Press, 1977.</p>
-</dd>
-<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id6">7</a></span></dt>
-<dd><p><strong>missing journal in wirth1999</strong></p>
-</dd>
-<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id9">8</a></span></dt>
-<dd><p>Shoshana Zuboff. <em>In the Age of the Smart Machine: The Future of Work and Power</em>. Basic Books, [repr.] edition, 1995. URL: <a class="reference external" href="http://gen.lib.rus.ec/book/index.php?md5=76dd1180c201eed5973bf83d45489b37">http://gen.lib.rus.ec/book/index.php?md5=76dd1180c201eed5973bf83d45489b37</a>.</p>
-</dd>
-<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id3">9</a></span></dt>
-<dd><p>Claude Lévi-Strauss. The structural study of myth. <em>The Journal of American Folklore</em>, 68(270):428–444, 10 1955. ArticleType: research-article / Issue Title: Myth: A Symposium / Full publication date: Oct. - Dec., 1955 / Copyright © 1955 American Folklore Society. URL: <a class="reference external" href="http://www.jstor.org/stable/536768">http://www.jstor.org/stable/536768</a>, <a class="reference external" href="https://doi.org/10.2307/536768">doi:10.2307/536768</a>.</p>
-</dd>
-</dl>
+<div role="list" class="citation-list">
+<div class="citation" id="id20" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">1</a><span class="fn-bracket">]</span></span>
+<p>Drew Conway. The data science venn diagram. 09 2010. Library Catalog: drewconway.com. URL: <a class="reference external" href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a>.</p>
+</div>
+<div class="citation" id="id16" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id7">1</a>,<a role="doc-backlink" href="#id8">2</a>)</span>
+<p>David Donoho. 50 years of data science. <em>Journal of Computational and Graphical Statistics</em>, 26(4):745–766, 10 2017. URL: <a class="reference external" href="https://doi.org/10.1080/10618600.2017.1384734">https://doi.org/10.1080/10618600.2017.1384734</a>, <a class="reference external" href="https://doi.org/10.1080/10618600.2017.1384734">doi:10.1080/10618600.2017.1384734</a>.</p>
+</div>
+<div class="citation" id="id13" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p>Chikio Hayashi. <em>Data science, Classification, and Related Methods: Proceedings of the Fifth Conference of the International Federation of Classification Societies (IFCS-96), Kobe, Japan, March 27-30, 1996</em>. Springer, Kobe, Japan, 1998. 00008.</p>
+</div>
+<div class="citation" id="id14" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">4</a><span class="fn-bracket">]</span></span>
+<p>Hilary Mason and Christopher Wiggins. A taxonomy of data science. 09 2010. Library Catalog: www.dataists.com. URL: <a class="reference external" href="http://www.dataists.com/2010/09/a-taxonomy-of-data-science/">http://www.dataists.com/2010/09/a-taxonomy-of-data-science/</a>.</p>
+</div>
+<div class="citation" id="id18" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">5</a><span class="fn-bracket">]</span></span>
+<p>Sean Owen. What \textquotedblleft 50 years of data science\textquotedblright  leaves out. 11 2015. URL: <a class="reference external" href="https://medium.com/&#64;srowen/what-50-years-of-data-science-leaves-out-2366c9b61d3d">https://medium.com/&#64;srowen/what-50-years-of-data-science-leaves-out-2366c9b61d3d</a>.</p>
+</div>
+<div class="citation" id="id23" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">6</a><span class="fn-bracket">]</span></span>
+<p>V. I.A Propp and A. Dundes. <em>Morphology of the Folktale</em>. University of Texas Press, 1977.</p>
+</div>
+<div class="citation" id="id15" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">7</a><span class="fn-bracket">]</span></span>
+<p><strong>missing journal in wirth1999</strong></p>
+</div>
+<div class="citation" id="id17" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">8</a><span class="fn-bracket">]</span></span>
+<p>Shoshana Zuboff. <em>In the Age of the Smart Machine: The Future of Work and Power</em>. Basic Books, [repr.] edition, 1995. URL: <a class="reference external" href="http://gen.lib.rus.ec/book/index.php?md5=76dd1180c201eed5973bf83d45489b37">http://gen.lib.rus.ec/book/index.php?md5=76dd1180c201eed5973bf83d45489b37</a>.</p>
+</div>
+<div class="citation" id="id24" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">9</a><span class="fn-bracket">]</span></span>
+<p>Claude Lévi-Strauss. The structural study of myth. <em>The Journal of American Folklore</em>, 68(270):428–444, 10 1955. ArticleType: research-article / Issue Title: Myth: A Symposium / Full publication date: Oct. - Dec., 1955 / Copyright © 1955 American Folklore Society. URL: <a class="reference external" href="http://www.jstor.org/stable/536768">http://www.jstor.org/stable/536768</a>, <a class="reference external" href="https://doi.org/10.2307/536768">doi:10.2307/536768</a>.</p>
+</div>
+</div>
 </div>
 <hr class="footnotes docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="the-four-plus-one-model-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>For a detailed review of these sources, see the <a class="reference internal" href="Appendix/appendix-sources.html"><span class="doc std std-doc">Appendix</span></a>.</p>
-</dd>
-</dl>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="the-four-plus-one-model-1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>For a detailed review of these sources, see the <a class="reference internal" href="Appendix/appendix-sources.html"><span class="std std-doc">Appendix</span></a>.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -668,11 +701,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="how-to.html"
@@ -692,10 +724,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -703,6 +732,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -741,9 +771,10 @@ By Brian Wright and Peter Alonzi
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -767,8 +798,8 @@ By Brian Wright and Peter Alonzi
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

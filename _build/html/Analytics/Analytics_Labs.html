@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Analytics LABS &#8212; Defining Data Science</title>
   
@@ -19,48 +18,45 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Analytics/Analytics_Labs';</script>
@@ -77,7 +73,15 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -112,11 +116,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -131,9 +138,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -143,12 +152,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/image5.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/image5.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/image5.png" class="logo__image only-light" alt="Defining Data Science - Home"/>
+    <script>document.write(`<img src="../_static/image5.png" class="logo__image only-dark" alt="Defining Data Science - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -383,20 +403,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -473,12 +495,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="analytics-labs">
-<h1>Analytics LABS<a class="headerlink" href="#analytics-labs" title="Permalink to this heading">#</a></h1>
+<h1>Analytics LABS<a class="headerlink" href="#analytics-labs" title="Link to this heading">#</a></h1>
 <section id="lab-1-mastermind-entropy">
-<h2>Lab 1 - Mastermind entropy<a class="headerlink" href="#lab-1-mastermind-entropy" title="Permalink to this heading">#</a></h2>
+<h2>Lab 1 - Mastermind entropy<a class="headerlink" href="#lab-1-mastermind-entropy" title="Link to this heading">#</a></h2>
 <p>DS 1001 - Spring 2023 - Professors Wright and Alonzi</p>
 <p>Due: End of lab period (or later that day)</p>
 <p>Submission format: Word doc or PDF summarizing your findings</p>
@@ -503,7 +525,7 @@ document.write(`
 <li><p>Try to document the process used right at the start of the lab, don’t wait till after you have played to start taking notes.</p></li>
 </ul>
 <p>How will I know I have succeeded:</p>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Specs Category</p></th>
 <th class="head"><p>Specs Details</p></th>
@@ -521,7 +543,7 @@ document.write(`
 <p>Acknowledgements: Special thanks for Jess Taggart from UVA CTE for coaching us. This structure is pulled directory from Steifer &amp; Palmer (2020).</p>
 </section>
 <section id="lab-2-garbage-in-garbage-out">
-<h2>Lab 2 - Garbage In Garbage Out<a class="headerlink" href="#lab-2-garbage-in-garbage-out" title="Permalink to this heading">#</a></h2>
+<h2>Lab 2 - Garbage In Garbage Out<a class="headerlink" href="#lab-2-garbage-in-garbage-out" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-IIa.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -561,7 +583,7 @@ document.write(`
 </div>
 </div>
 <section id="let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data">
-<h3>Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.<a class="headerlink" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Permalink to this heading">#</a></h3>
+<h3>Let’s take a quick look at a scatter plot to get an idea of the distribution of the data.<a class="headerlink" href="#let-s-take-a-quick-look-at-a-scatter-plot-to-get-an-idea-of-the-distribution-of-the-data" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plt (matplotlib.pyplot) is the library we are using to create our scatter plot.  We are using the &quot;scatter&quot; function, </span>
@@ -584,7 +606,7 @@ document.write(`
 </div>
 </section>
 <section id="next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time">
-<h3>Next lets build a linear regression model to predict Eruption Length based on Waiting Time<a class="headerlink" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time" title="Permalink to this heading">#</a></h3>
+<h3>Next lets build a linear regression model to predict Eruption Length based on Waiting Time<a class="headerlink" href="#next-lets-build-a-linear-regression-model-to-predict-eruption-length-based-on-waiting-time" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Here we are using the statsmodels library to create a linear regression model. sm stands for statsmodels and OLS </span>
@@ -613,10 +635,10 @@ document.write(`
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   9621.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Mon, 23 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
+  <th>Date:</th>             <td>Wed, 29 May 2024</td> <th>  Prob (F-statistic):</th>          <td>9.97e-214</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>15:39:14</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
+  <th>Time:</th>                 <td>15:57:00</td>     <th>  Log-Likelihood:    </th>          <td> -1060.7</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2123.</td> 
@@ -656,7 +678,7 @@ document.write(`
 </div>
 </section>
 <section id="now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data">
-<h3>Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.<a class="headerlink" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data" title="Permalink to this heading">#</a></h3>
+<h3>Now we are creating “noise” that aligns to a normal or gaussian distribution, thus gaussian noise, to add to the data.<a class="headerlink" href="#now-we-are-creating-noise-that-aligns-to-a-normal-or-gaussian-distribution-thus-gaussian-noise-to-add-to-the-data" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mu= mean and sigma = standard deviation, these are the inputs you will be changing</span>
@@ -670,18 +692,18 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 0.70706326 -0.16484789]
- [-0.13400121 -0.0876661 ]
- [-0.59596482  0.63012058]
- [-0.26084028 -0.35222923]
- [ 0.0239354   0.55379766]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.58928318 -0.36481661]
+ [ 0.15340892  0.85892013]
+ [-0.62353485  0.4068341 ]
+ [ 0.45665361  1.06629622]
+ [ 0.8168138  -0.09737737]]
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="really-a-small-change-let-s-see-what-happens-to-model-quality">
-<h3>Really a small change, let’s see what happens to model quality<a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-model-quality" title="Permalink to this heading">#</a></h3>
+<h3>Really a small change, let’s see what happens to model quality<a class="headerlink" href="#really-a-small-change-let-s-see-what-happens-to-model-quality" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are adding the noise to the dataset</span>
@@ -699,25 +721,25 @@ document.write(`
 <div class="output text_html"><table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.953</td> 
+  <th>Dep. Variable:</th>         <td>waiting</td>     <th>  R-squared (uncentered):</th>      <td>   0.955</td> 
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.953</td> 
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.955</td> 
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5512.</td> 
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   5772.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Mon, 23 Oct 2023</td> <th>  Prob (F-statistic):</th>          <td>3.86e-182</td>
+  <th>Date:</th>             <td>Wed, 29 May 2024</td> <th>  Prob (F-statistic):</th>          <td>1.00e-184</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>15:39:14</td>     <th>  Log-Likelihood:    </th>          <td> -1133.6</td> 
+  <th>Time:</th>                 <td>15:57:00</td>     <th>  Log-Likelihood:    </th>          <td> -1127.9</td> 
 </tr>
 <tr>
-  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2269.</td> 
+  <th>No. Observations:</th>      <td>   272</td>      <th>  AIC:               </th>          <td>   2258.</td> 
 </tr>
 <tr>
-  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2273.</td> 
+  <th>Df Residuals:</th>          <td>   271</td>      <th>  BIC:               </th>          <td>   2261.</td> 
 </tr>
 <tr>
   <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
@@ -731,27 +753,27 @@ document.write(`
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>eruptions</th> <td>   18.7997</td> <td>    0.253</td> <td>   74.246</td> <td> 0.000</td> <td>   18.301</td> <td>   19.298</td>
+  <th>eruptions</th> <td>   18.9312</td> <td>    0.249</td> <td>   75.975</td> <td> 0.000</td> <td>   18.441</td> <td>   19.422</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td> 1.058</td> <th>  Durbin-Watson:     </th> <td>   2.111</td>
+  <th>Omnibus:</th>       <td> 3.207</td> <th>  Durbin-Watson:     </th> <td>   2.184</td>
 </tr>
 <tr>
-  <th>Prob(Omnibus):</th> <td> 0.589</td> <th>  Jarque-Bera (JB):  </th> <td>   1.036</td>
+  <th>Prob(Omnibus):</th> <td> 0.201</td> <th>  Jarque-Bera (JB):  </th> <td>   2.435</td>
 </tr>
 <tr>
-  <th>Skew:</th>          <td> 0.150</td> <th>  Prob(JB):          </th> <td>   0.596</td>
+  <th>Skew:</th>          <td> 0.080</td> <th>  Prob(JB):          </th> <td>   0.296</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>      <td> 2.955</td> <th>  Cond. No.          </th> <td>    1.00</td>
+  <th>Kurtosis:</th>      <td> 2.565</td> <th>  Cond. No.          </th> <td>    1.00</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.</div></div>
 </div>
 </section>
 <section id="now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data">
-<h3>Now let’s take a look at that same scatter plot but with the new data<a class="headerlink" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" title="Permalink to this heading">#</a></h3>
+<h3>Now let’s take a look at that same scatter plot but with the new data<a class="headerlink" href="#now-let-s-take-a-look-at-that-same-scatter-plot-but-with-the-new-data" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">waiting</span><span class="p">,</span><span class="n">old_faith_1</span><span class="o">.</span><span class="n">eruptions</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -763,18 +785,18 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0ba3465dd515f91ead1921e565bb2caeaec65da327f4abb414d660ae9bd5672d.png" src="../_images/0ba3465dd515f91ead1921e565bb2caeaec65da327f4abb414d660ae9bd5672d.png" />
+<img alt="../_images/ce3e8a32878695fca0ec92d4d7b616fcf52f7333f1995b521e04b4b5dff27c6e.png" src="../_images/ce3e8a32878695fca0ec92d4d7b616fcf52f7333f1995b521e04b4b5dff27c6e.png" />
 </div>
 </div>
 </section>
 <section id="task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down">
-<h3>Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).<a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down" title="Permalink to this heading">#</a></h3>
+<h3>Task 1: Slowly change the standard deviation (increments of .25, stopping at 3.5), add the noise array to the dataset with each increase, re-run the model and see what happens with the R2 number, note the pace of change of the model (write it down).<a class="headerlink" href="#task-1-slowly-change-the-standard-deviation-increments-of-25-stopping-at-3-5-add-the-noise-array-to-the-dataset-with-each-increase-re-run-the-model-and-see-what-happens-with-the-r2-number-note-the-pace-of-change-of-the-model-write-it-down" title="Link to this heading">#</a></h3>
 </section>
 <section id="task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit">
-<h3>Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.<a class="headerlink" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit" title="Permalink to this heading">#</a></h3>
+<h3>Task 2: Following the same process above but instead adjust the mean to three different increasing increments but leave the standard dev at .05, note how this changes the model fit.<a class="headerlink" href="#task-2-following-the-same-process-above-but-instead-adjust-the-mean-to-three-different-increasing-increments-but-leave-the-standard-dev-at-05-note-how-this-changes-the-model-fit" title="Link to this heading">#</a></h3>
 </section>
 <section id="questions-for-submission">
-<h3>Questions for submission:<a class="headerlink" href="#questions-for-submission" title="Permalink to this heading">#</a></h3>
+<h3>Questions for submission:<a class="headerlink" href="#questions-for-submission" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>What patterns do you see in the original data (from the scatter plot)?</p></li>
 <li><p>How well did the first model fit the original data (from the model output)?</p></li>
@@ -786,21 +808,21 @@ document.write(`
 </section>
 </section>
 <section id="lab-3-knn">
-<h2>Lab 3 - kNN<a class="headerlink" href="#lab-3-knn" title="Permalink to this heading">#</a></h2>
+<h2>Lab 3 - kNN<a class="headerlink" href="#lab-3-knn" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-III.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <section id="overview">
-<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h3>
+<h3>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h3>
 <p><strong>The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.</strong></p>
 <p><strong>You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.</strong></p>
 </section>
 <section id="dataset">
-<h3>Dataset<a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h3>
+<h3>Dataset<a class="headerlink" href="#dataset" title="Link to this heading">#</a></h3>
 <p><strong>The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.</strong></p>
 </section>
 <section id="part-1-data-preparation-and-model-building">
-<h3>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Permalink to this heading">#</a></h3>
+<h3>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Link to this heading">#</a></h3>
 <section id="load-the-libraries">
-<h4>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Permalink to this heading">#</a></h4>
+<h4>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#First we import the libraries we need</span>
@@ -817,7 +839,7 @@ document.write(`
 </div>
 </section>
 <section id="load-the-dataset">
-<h4>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Permalink to this heading">#</a></h4>
+<h4>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read in the cereal dataset, we are reading the data in from a URL associated with the Foundations of </span>
@@ -860,7 +882,7 @@ memory usage: 9.8+ KB
 </div>
 </section>
 <section id="scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">
-<h4>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Permalink to this heading">#</a></h4>
+<h4>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Looks like columns 1,2,11 and 12 need to be converted to category</span>
@@ -919,7 +941,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="example-of-how-to-collapse-categories">
-<h4>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Permalink to this heading">#</a></h4>
+<h4>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Usually don&#39;t want more than 5ish groups, so we should collapse this factor  </span>
@@ -948,7 +970,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="normalizing-the-numeric-values">
-<h4>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Permalink to this heading">#</a></h4>
+<h4>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are normalizing the numeric values and creating a index based on numeric columns:</span>
@@ -1213,7 +1235,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="one-hot-encoding-the-categorical-values">
-<h4>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Permalink to this heading">#</a></h4>
+<h4>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Next let&#39;s one-hot encode those categorical variables</span>
@@ -1541,7 +1563,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">
-<h4>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Permalink to this heading">#</a></h4>
+<h4>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#add this as a predictor instead of replacing the numeric version, changing the target into a binary variable </span>
@@ -1867,7 +1889,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="dropping-variables-and-partitioning-train-test">
-<h4>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Permalink to this heading">#</a></h4>
+<h4>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Divide up our data into two parts, Training and Test but first we need to...</span>
@@ -2201,7 +2223,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="model-building-cell">
-<h4>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Permalink to this heading">#</a></h4>
+<h4>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -2220,7 +2242,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="evaluation-cell">
-<h4>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Permalink to this heading">#</a></h4>
+<h4>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">Test</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;rating_f&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
@@ -2231,7 +2253,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8636363636363636
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8181818181818182
 </pre></div>
 </div>
 </div>
@@ -2239,7 +2261,7 @@ Name: count, dtype: int64
 </section>
 </section>
 <section id="task-1">
-<h3>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h3>
+<h3>Task 1<a class="headerlink" href="#task-1" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</p></li>
 <li><p>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</p></li>
@@ -2247,7 +2269,7 @@ Name: count, dtype: int64
 </ol>
 </section>
 <section id="part-2-probabilities-of-the-model">
-<h3>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h3>
+<h3>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Link to this heading">#</a></h3>
 <p><strong>The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2303,13 +2325,13 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>2</th>
-      <td>0.000000</td>
       <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.666667</td>
       <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2318,18 +2340,18 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>5</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>8</th>
@@ -2343,13 +2365,13 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>10</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>12</th>
@@ -2358,8 +2380,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>13</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>14</th>
@@ -2368,8 +2390,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>15</th>
-      <td>0.000000</td>
-      <td>1.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>16</th>
@@ -2378,13 +2400,13 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>17</th>
-      <td>0.333333</td>
-      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>19</th>
@@ -2393,8 +2415,8 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>20</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>21</th>
@@ -2450,20 +2472,20 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>1</th>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0.666667</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>1.000000</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
       <td>0.666667</td>
     </tr>
     <tr>
@@ -2477,7 +2499,7 @@ Name: count, dtype: int64
 </div></div></div>
 </div>
 <section id="now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">
-<h4>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Permalink to this heading">#</a></h4>
+<h4>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add a column about the probability the observation is in the positive class</span>
@@ -2522,24 +2544,24 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>1</th>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0.666667</td>
       <td>0.333333</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>1</td>
-      <td>1</td>
+      <td>0</td>
+      <td>0</td>
       <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
+      <td>1</td>
       <td>0.666667</td>
-      <td>0.333333</td>
+      <td>0.666667</td>
     </tr>
     <tr>
       <th>4</th>
@@ -2552,22 +2574,22 @@ Name: count, dtype: int64
       <th>5</th>
       <td>0</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>6</th>
       <td>1</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>7</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>8</th>
@@ -2585,17 +2607,17 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>10</th>
-      <td>1</td>
       <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>11</th>
       <td>0</td>
       <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>12</th>
@@ -2607,9 +2629,9 @@ Name: count, dtype: int64
     <tr>
       <th>13</th>
       <td>0</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>14</th>
@@ -2620,10 +2642,10 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>15</th>
-      <td>1</td>
-      <td>1</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>16</th>
@@ -2634,17 +2656,17 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>17</th>
-      <td>1</td>
-      <td>1</td>
-      <td>0.666667</td>
-      <td>0.666667</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>18</th>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>0.666667</td>
-      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>19</th>
@@ -2655,10 +2677,10 @@ Name: count, dtype: int64
     </tr>
     <tr>
       <th>20</th>
+      <td>1</td>
       <td>0</td>
-      <td>0</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
+      <td>0.666667</td>
+      <td>0.333333</td>
     </tr>
     <tr>
       <th>21</th>
@@ -2682,7 +2704,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="graph-the-probabilities">
-<h4>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Permalink to this heading">#</a></h4>
+<h4>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create probability distribution graph</span>
@@ -2696,20 +2718,20 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;pos_pred&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/a1ebd04dea91a5674c47606a663f767f6a49475d1713e46382329be8315c26cb.png" src="../_images/a1ebd04dea91a5674c47606a663f767f6a49475d1713e46382329be8315c26cb.png" />
+<img alt="../_images/ac7a21f1f702e61b3ff875e403b6edf8d77b170604f4a446a450804c5f205364.png" src="../_images/ac7a21f1f702e61b3ff875e403b6edf8d77b170604f4a446a450804c5f205364.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="task-2-determine-how-the-probabilities-are-calculated">
-<h3>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h3>
+<h3>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</p></li>
 <li><p>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</p></li>
 <li><p>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</p></li>
 </ol>
 <section id="second-model-building-cell">
-<h4>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h4>
+<h4>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>   <span class="c1"># kNN is a random algorithm, so we use `random.seed(x)` to make results repeatable</span>
@@ -2727,7 +2749,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="graph-cell">
-<h4>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h4>
+<h4>Graph Cell<a class="headerlink" href="#graph-cell" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_probs_1</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -2744,7 +2766,7 @@ Name: count, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;good_cereal_prob&#39;, ylabel=&#39;Count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/6d036670cc8c9e7f801354a33196aaafa01d9aaa458ad64b51eb822a2cb7afff.png" src="../_images/6d036670cc8c9e7f801354a33196aaafa01d9aaa458ad64b51eb822a2cb7afff.png" />
+<img alt="../_images/c000426a40080206ace7ff839b271d28409023833b6f05b7ccf7902dc26a0db0.png" src="../_images/c000426a40080206ace7ff839b271d28409023833b6f05b7ccf7902dc26a0db0.png" />
 </div>
 </div>
 </section>
@@ -2777,11 +2799,10 @@ Name: count, dtype: int64
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Instructional-Intro.html"
@@ -2801,10 +2822,7 @@ Name: count, dtype: int64
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -2812,6 +2830,7 @@ Name: count, dtype: int64
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2881,9 +2900,10 @@ By Brian Wright and Peter Alonzi
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -2907,8 +2927,8 @@ By Brian Wright and Peter Alonzi
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

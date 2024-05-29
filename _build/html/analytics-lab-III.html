@@ -1,0 +1,2638 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Overview &#8212; Defining Data Science</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'analytics-lab-III';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/domains.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/domains.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Defining-DS-4%2B1.html">The 4 + 1 Model of Data Science</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Design/Design.html">Design</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Design/Design_SDS.html">Design SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design/Design_Labs.html">Design Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design/Design_External.html">Design External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Design/Design_Case.html">Design Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Value/Value.html">Value</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Value/Value_SDS.html">Value SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Value/Value_Labs.html">Value Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Value/Value_External.html">Value External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Value/Value_Case.html">Value Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Systems/Systems.html">Systems</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Systems/Systems_SDS.html">Systems SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Systems/Systems_Labs.html">Systems Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Systems/Systems_External.html">Systems External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Systems/Systems_Case.html">Systems Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Analytics/Analytics.html">Analytics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Analytics/Analytics_SDS.html">Analytics SDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Analytics/Analytics_Labs.html">Analytics Labs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Analytics/Analytics_External.html">Analytics External to the School</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Analytics/Analytics_Case.html">Analytics Case Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Appendix/Appendix.html">Appendix</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Appendix/appendix-sources.html">About the Sources</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fanalytics-lab-III.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/analytics-lab-III.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Overview</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overview</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell">The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates">You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables">The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k">Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model">Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value">Lastly recommend a value for k and explain why you recommend that value.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view">The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification">First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated">Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value">Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-III.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
+<section id="the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell">
+<h2>The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.<a class="headerlink" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates">
+<h2>You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.<a class="headerlink" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section id="dataset">
+<h1>Dataset<a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h1>
+<section id="the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables">
+<h2>The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.<a class="headerlink" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="part-1-data-preparation-and-model-building">
+<h1>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Permalink to this heading">#</a></h1>
+<section id="load-the-libraries">
+<h2>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#First we import the libraries we need</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span> 
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span><span class="p">,</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="load-the-dataset">
+<h2>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read in the cereal dataset, we are reading the data in from a URL associated with the Foundations of </span>
+<span class="c1">#machine learning class</span>
+
+<span class="n">cereal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/UVADS/DS-3001/main/data/cereal.csv&quot;</span><span class="p">)</span>
+
+<span class="n">cereal</span><span class="o">.</span><span class="n">info</span><span class="p">()</span> <span class="c1"># Let&#39;s check the structure of the dataset and see if we have any issues with variable classes</span>
+<span class="c1">#usually it&#39;s converting things to category</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 77 entries, 0 to 76
+Data columns (total 16 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   name      77 non-null     object 
+ 1   mfr       77 non-null     object 
+ 2   type      77 non-null     object 
+ 3   calories  77 non-null     int64  
+ 4   protein   77 non-null     int64  
+ 5   fat       77 non-null     int64  
+ 6   sodium    77 non-null     int64  
+ 7   fiber     77 non-null     float64
+ 8   carbo     77 non-null     float64
+ 9   sugars    77 non-null     int64  
+ 10  potass    77 non-null     int64  
+ 11  vitamins  77 non-null     int64  
+ 12  shelf     77 non-null     int64  
+ 13  weight    77 non-null     float64
+ 14  cups      77 non-null     float64
+ 15  rating    77 non-null     float64
+dtypes: float64(5), int64(8), object(3)
+memory usage: 9.8+ KB
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">
+<h2>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Looks like columns 1,2,11 and 12 need to be converted to category</span>
+
+<span class="n">Column_index_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
+<span class="n">cereal</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="n">Column_index_list</span><span class="p">]</span><span class="o">=</span> <span class="n">cereal</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="n">Column_index_list</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span> 
+<span class="c1">#iloc accesses the index of a dataframe, bypassing having to manually type in the names of each column</span>
+
+<span class="n">cereal</span><span class="o">.</span><span class="n">dtypes</span> <span class="c1">#another way of checking the structure of the dataset. Simpler, but does not give an index</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>name          object
+mfr           object
+type          object
+calories       int64
+protein        int64
+fat            int64
+sodium         int64
+fiber        float64
+carbo        float64
+sugars         int64
+potass         int64
+vitamins    category
+shelf       category
+weight       float64
+cups         float64
+rating       float64
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Let&#39;s take a closer look at mfr</span>
+<span class="n">cereal</span><span class="o">.</span><span class="n">mfr</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="c1">#value_counts() simply displays variable counts as a vertical table.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mfr
+K    23
+G    22
+P     9
+Q     8
+R     8
+N     6
+A     1
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="example-of-how-to-collapse-categories">
+<h2>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Usually don&#39;t want more than 5ish groups, so we should collapse this factor  </span>
+<span class="c1">#Keep the large groups (G, K) and group all the smaller categories as &quot;Other&quot;</span>
+
+<span class="n">top</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;K&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">]</span>
+<span class="n">cereal</span><span class="o">.</span><span class="n">mfr</span> <span class="o">=</span> <span class="p">(</span><span class="n">cereal</span><span class="o">.</span><span class="n">mfr</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">top</span> <span class="k">else</span> <span class="s2">&quot;Other&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="c1">#lambda is a small anonymous function that can take any number of arguments but can only have one expression</span>
+<span class="c1">#a example lambda function is lambda a: a+10, if we passed 5 to this we would get back 15</span>
+<span class="c1">#lambda functions are best used inside of another function, like in this example when it is used inside the apply function</span>
+<span class="c1">#to use an if function in a lambda statement, the True return value comes first (x), then the if statement, then else, and then the False return</span>
+
+<span class="n">cereal</span><span class="o">.</span><span class="n">mfr</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="c1">#This is a lot better</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mfr
+Other    32
+K        23
+G        22
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="normalizing-the-numeric-values">
+<h2>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are normalizing the numeric values and creating a index based on numeric columns:</span>
+<span class="n">abc</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">cereal</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="s1">&#39;number&#39;</span><span class="p">))</span> <span class="c1">#select function to find the numeric variables and create a list  </span>
+
+<span class="n">cereal</span><span class="p">[</span><span class="n">abc</span><span class="p">]</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">cereal</span><span class="p">[</span><span class="n">abc</span><span class="p">])</span>
+<span class="n">cereal</span> <span class="c1">#notice the difference in the range of values for the numeric variables</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>mfr</th>
+      <th>type</th>
+      <th>calories</th>
+      <th>protein</th>
+      <th>fat</th>
+      <th>sodium</th>
+      <th>fiber</th>
+      <th>carbo</th>
+      <th>sugars</th>
+      <th>potass</th>
+      <th>vitamins</th>
+      <th>shelf</th>
+      <th>weight</th>
+      <th>cups</th>
+      <th>rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>100% Bran</td>
+      <td>Other</td>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.406250</td>
+      <td>0.714286</td>
+      <td>0.250000</td>
+      <td>0.4375</td>
+      <td>0.848943</td>
+      <td>25</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0.064</td>
+      <td>0.665593</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>100% Natural Bran</td>
+      <td>Other</td>
+      <td>C</td>
+      <td>0.636364</td>
+      <td>0.4</td>
+      <td>1.0</td>
+      <td>0.046875</td>
+      <td>0.142857</td>
+      <td>0.375000</td>
+      <td>0.5625</td>
+      <td>0.410876</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0.600</td>
+      <td>0.210685</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>All-Bran</td>
+      <td>K</td>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.812500</td>
+      <td>0.642857</td>
+      <td>0.333333</td>
+      <td>0.3750</td>
+      <td>0.969789</td>
+      <td>25</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0.064</td>
+      <td>0.546941</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>All-Bran with Extra Fiber</td>
+      <td>K</td>
+      <td>C</td>
+      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>0.437500</td>
+      <td>1.000000</td>
+      <td>0.375000</td>
+      <td>0.0625</td>
+      <td>1.000000</td>
+      <td>25</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0.200</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Almond Delight</td>
+      <td>Other</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.625000</td>
+      <td>0.5625</td>
+      <td>0.000000</td>
+      <td>25</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0.400</td>
+      <td>0.215987</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Triples</td>
+      <td>G</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.781250</td>
+      <td>0.000000</td>
+      <td>0.916667</td>
+      <td>0.2500</td>
+      <td>0.184290</td>
+      <td>25</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0.400</td>
+      <td>0.278387</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Trix</td>
+      <td>G</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.437500</td>
+      <td>0.000000</td>
+      <td>0.583333</td>
+      <td>0.8125</td>
+      <td>0.078550</td>
+      <td>25</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>0.600</td>
+      <td>0.128340</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Wheat Chex</td>
+      <td>Other</td>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.718750</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.350453</td>
+      <td>25</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>0.336</td>
+      <td>0.419558</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>Wheaties</td>
+      <td>G</td>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.335347</td>
+      <td>25</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>0.600</td>
+      <td>0.443410</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>Wheaties Honey Gold</td>
+      <td>G</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.708333</td>
+      <td>0.5625</td>
+      <td>0.184290</td>
+      <td>25</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>0.400</td>
+      <td>0.239812</td>
+    </tr>
+  </tbody>
+</table>
+<p>77 rows × 16 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="one-hot-encoding-the-categorical-values">
+<h2>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Next let&#39;s one-hot encode those categorical variables</span>
+
+<span class="n">category_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">cereal</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">))</span> <span class="c1">#select function to find the categorical variables and create a list  </span>
+
+<span class="n">cereal_1h</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">cereal</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">category_list</span><span class="p">)</span> 
+<span class="c1">#get_dummies encodes categorical variables into binary by adding in indicator column for each group of a category </span>
+<span class="c1">#and assigning it 0 if false or 1 if true</span>
+<span class="n">cereal_1h</span> <span class="c1">#see the difference? This is one-hot encoding!</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>type</th>
+      <th>calories</th>
+      <th>protein</th>
+      <th>fat</th>
+      <th>sodium</th>
+      <th>fiber</th>
+      <th>carbo</th>
+      <th>sugars</th>
+      <th>potass</th>
+      <th>...</th>
+      <th>rating</th>
+      <th>mfr_G</th>
+      <th>mfr_K</th>
+      <th>mfr_Other</th>
+      <th>vitamins_0</th>
+      <th>vitamins_25</th>
+      <th>vitamins_100</th>
+      <th>shelf_1</th>
+      <th>shelf_2</th>
+      <th>shelf_3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>100% Bran</td>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.406250</td>
+      <td>0.714286</td>
+      <td>0.250000</td>
+      <td>0.4375</td>
+      <td>0.848943</td>
+      <td>...</td>
+      <td>0.665593</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>100% Natural Bran</td>
+      <td>C</td>
+      <td>0.636364</td>
+      <td>0.4</td>
+      <td>1.0</td>
+      <td>0.046875</td>
+      <td>0.142857</td>
+      <td>0.375000</td>
+      <td>0.5625</td>
+      <td>0.410876</td>
+      <td>...</td>
+      <td>0.210685</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>All-Bran</td>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.812500</td>
+      <td>0.642857</td>
+      <td>0.333333</td>
+      <td>0.3750</td>
+      <td>0.969789</td>
+      <td>...</td>
+      <td>0.546941</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>All-Bran with Extra Fiber</td>
+      <td>C</td>
+      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>0.437500</td>
+      <td>1.000000</td>
+      <td>0.375000</td>
+      <td>0.0625</td>
+      <td>1.000000</td>
+      <td>...</td>
+      <td>1.000000</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Almond Delight</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.625000</td>
+      <td>0.5625</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.215987</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Triples</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.781250</td>
+      <td>0.000000</td>
+      <td>0.916667</td>
+      <td>0.2500</td>
+      <td>0.184290</td>
+      <td>...</td>
+      <td>0.278387</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Trix</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.437500</td>
+      <td>0.000000</td>
+      <td>0.583333</td>
+      <td>0.8125</td>
+      <td>0.078550</td>
+      <td>...</td>
+      <td>0.128340</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Wheat Chex</td>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.718750</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.350453</td>
+      <td>...</td>
+      <td>0.419558</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>Wheaties</td>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.335347</td>
+      <td>...</td>
+      <td>0.443410</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>Wheaties Honey Gold</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.708333</td>
+      <td>0.5625</td>
+      <td>0.184290</td>
+      <td>...</td>
+      <td>0.239812</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>77 rows × 22 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">
+<h2>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#add this as a predictor instead of replacing the numeric version, changing the target into a binary variable </span>
+<span class="c1">#to allow for classification </span>
+<span class="n">cereal_1h</span><span class="p">[</span><span class="s1">&#39;rating_f&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">cereal_1h</span><span class="o">.</span><span class="n">rating</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.43</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">labels</span> <span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="c1">#If we want two segments we input three numbers, start, cut and stop values</span>
+
+<span class="n">cereal_1h</span> <span class="c1">#notice the new column rating_f, it is now binary based on if the continuous value is above 0.43 or not</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>type</th>
+      <th>calories</th>
+      <th>protein</th>
+      <th>fat</th>
+      <th>sodium</th>
+      <th>fiber</th>
+      <th>carbo</th>
+      <th>sugars</th>
+      <th>potass</th>
+      <th>...</th>
+      <th>mfr_G</th>
+      <th>mfr_K</th>
+      <th>mfr_Other</th>
+      <th>vitamins_0</th>
+      <th>vitamins_25</th>
+      <th>vitamins_100</th>
+      <th>shelf_1</th>
+      <th>shelf_2</th>
+      <th>shelf_3</th>
+      <th>rating_f</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>100% Bran</td>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.406250</td>
+      <td>0.714286</td>
+      <td>0.250000</td>
+      <td>0.4375</td>
+      <td>0.848943</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>100% Natural Bran</td>
+      <td>C</td>
+      <td>0.636364</td>
+      <td>0.4</td>
+      <td>1.0</td>
+      <td>0.046875</td>
+      <td>0.142857</td>
+      <td>0.375000</td>
+      <td>0.5625</td>
+      <td>0.410876</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>All-Bran</td>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.812500</td>
+      <td>0.642857</td>
+      <td>0.333333</td>
+      <td>0.3750</td>
+      <td>0.969789</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>All-Bran with Extra Fiber</td>
+      <td>C</td>
+      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>0.437500</td>
+      <td>1.000000</td>
+      <td>0.375000</td>
+      <td>0.0625</td>
+      <td>1.000000</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Almond Delight</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.625000</td>
+      <td>0.5625</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Triples</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.781250</td>
+      <td>0.000000</td>
+      <td>0.916667</td>
+      <td>0.2500</td>
+      <td>0.184290</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Trix</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.437500</td>
+      <td>0.000000</td>
+      <td>0.583333</td>
+      <td>0.8125</td>
+      <td>0.078550</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Wheat Chex</td>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.718750</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.350453</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>Wheaties</td>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.335347</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>Wheaties Honey Gold</td>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.708333</td>
+      <td>0.5625</td>
+      <td>0.184290</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>77 rows × 23 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="dropping-variables-and-partitioning-train-test">
+<h2>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Divide up our data into two parts, Training and Test but first we need to...</span>
+<span class="c1">#clean up our dataset a bit by dropping the original rating variable and the cereal name since we can&#39;t really use them</span>
+
+<span class="n">cereal_dt</span> <span class="o">=</span> <span class="n">cereal_1h</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="s1">&#39;rating&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#creating a new dataframe so we don&#39;t delete these columns from our working environment. </span>
+<span class="n">cereal_dt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>type</th>
+      <th>calories</th>
+      <th>protein</th>
+      <th>fat</th>
+      <th>sodium</th>
+      <th>fiber</th>
+      <th>carbo</th>
+      <th>sugars</th>
+      <th>potass</th>
+      <th>weight</th>
+      <th>...</th>
+      <th>mfr_G</th>
+      <th>mfr_K</th>
+      <th>mfr_Other</th>
+      <th>vitamins_0</th>
+      <th>vitamins_25</th>
+      <th>vitamins_100</th>
+      <th>shelf_1</th>
+      <th>shelf_2</th>
+      <th>shelf_3</th>
+      <th>rating_f</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.406250</td>
+      <td>0.714286</td>
+      <td>0.250000</td>
+      <td>0.4375</td>
+      <td>0.848943</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>C</td>
+      <td>0.636364</td>
+      <td>0.4</td>
+      <td>1.0</td>
+      <td>0.046875</td>
+      <td>0.142857</td>
+      <td>0.375000</td>
+      <td>0.5625</td>
+      <td>0.410876</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>C</td>
+      <td>0.181818</td>
+      <td>0.6</td>
+      <td>0.2</td>
+      <td>0.812500</td>
+      <td>0.642857</td>
+      <td>0.333333</td>
+      <td>0.3750</td>
+      <td>0.969789</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>C</td>
+      <td>0.000000</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>0.437500</td>
+      <td>1.000000</td>
+      <td>0.375000</td>
+      <td>0.0625</td>
+      <td>1.000000</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.625000</td>
+      <td>0.5625</td>
+      <td>0.000000</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.781250</td>
+      <td>0.000000</td>
+      <td>0.916667</td>
+      <td>0.2500</td>
+      <td>0.184290</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.437500</td>
+      <td>0.000000</td>
+      <td>0.583333</td>
+      <td>0.8125</td>
+      <td>0.078550</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.718750</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.350453</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>C</td>
+      <td>0.454545</td>
+      <td>0.4</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.214286</td>
+      <td>0.750000</td>
+      <td>0.2500</td>
+      <td>0.335347</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>C</td>
+      <td>0.545455</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.625000</td>
+      <td>0.071429</td>
+      <td>0.708333</td>
+      <td>0.5625</td>
+      <td>0.184290</td>
+      <td>0.5</td>
+      <td>...</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>77 rows × 21 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now we partition</span>
+<span class="n">Train</span><span class="p">,</span> <span class="n">Test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">cereal_dt</span><span class="p">,</span>  <span class="n">train_size</span> <span class="o">=</span> <span class="mi">55</span><span class="p">,</span> <span class="n">stratify</span> <span class="o">=</span> <span class="n">cereal_dt</span><span class="o">.</span><span class="n">rating_f</span><span class="p">)</span> 
+<span class="c1">#stratify perserves class proportions when splitting, reducing sampling error </span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="model-building-cell">
+<h2>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>   <span class="c1"># kNN is a random algorithm, so we use `random.seed(x)` to make results repeatable</span>
+
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">Train</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;rating_f&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#features</span>
+<span class="n">y_train</span> <span class="o">=</span> <span class="n">Train</span><span class="p">[</span><span class="s1">&#39;rating_f&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="c1">#target</span>
+
+<span class="n">neigh</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="c1">#this is the value to change</span>
+<span class="n">neigh</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">y_train</span> <span class="o">=</span> <span class="n">Train</span><span class="p">[</span><span class="s1">&#39;rating_f&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="c1">#target</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">neigh</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="c1">#this is the value to change</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">neigh</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\neighbors\_classification.py:215,</span> in <span class="ni">KNeighborsClassifier.fit</span><span class="nt">(self, X, y)</span>
+<span class="g g-Whitespace">    </span><span class="mi">196</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Fit the k-nearest neighbors classifier from the training dataset.</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">198</span><span class="sd"> Parameters</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">211</span><span class="sd">     The fitted k-nearest neighbors classifier.</span>
+<span class="g g-Whitespace">    </span><span class="mi">212</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">213</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_params</span><span class="p">()</span>
+<span class="ne">--&gt; </span><span class="mi">215</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\neighbors\_base.py:454,</span> in <span class="ni">NeighborsBase._fit</span><span class="nt">(self, X, y)</span>
+<span class="g g-Whitespace">    </span><span class="mi">452</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_tags</span><span class="p">()[</span><span class="s2">&quot;requires_y&quot;</span><span class="p">]:</span>
+<span class="g g-Whitespace">    </span><span class="mi">453</span>     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="p">(</span><span class="n">KDTree</span><span class="p">,</span> <span class="n">BallTree</span><span class="p">,</span> <span class="n">NeighborsBase</span><span class="p">)):</span>
+<span class="ne">--&gt; </span><span class="mi">454</span>         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_data</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">455</span>             <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s2">&quot;csr&quot;</span><span class="p">,</span> <span class="n">multi_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s2">&quot;C&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">456</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">458</span>     <span class="k">if</span> <span class="n">is_classifier</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">459</span>         <span class="c1"># Classification targets require a specific format</span>
+<span class="g g-Whitespace">    </span><span class="mi">460</span>         <span class="k">if</span> <span class="n">y</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">y</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\base.py:584,</span> in <span class="ni">BaseEstimator._validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">582</span>         <span class="n">y</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">check_y_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">583</span>     <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">584</span>         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">**</span><span class="n">check_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">585</span>     <span class="n">out</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
+<span class="g g-Whitespace">    </span><span class="mi">587</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">no_val_X</span> <span class="ow">and</span> <span class="n">check_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ensure_2d&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">):</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\utils\validation.py:1106,</span> in <span class="ni">check_X_y</span><span class="nt">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1101</span>         <span class="n">estimator_name</span> <span class="o">=</span> <span class="n">_check_estimator_name</span><span class="p">(</span><span class="n">estimator</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1102</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1103</span>         <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">estimator_name</span><span class="si">}</span><span class="s2"> requires y to be passed, but the target y is None&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1104</span>     <span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1106</span> <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1107</span>     <span class="n">X</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1108</span>     <span class="n">accept_sparse</span><span class="o">=</span><span class="n">accept_sparse</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1109</span>     <span class="n">accept_large_sparse</span><span class="o">=</span><span class="n">accept_large_sparse</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1110</span>     <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1111</span>     <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1112</span>     <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1113</span>     <span class="n">force_all_finite</span><span class="o">=</span><span class="n">force_all_finite</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1114</span>     <span class="n">ensure_2d</span><span class="o">=</span><span class="n">ensure_2d</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1115</span>     <span class="n">allow_nd</span><span class="o">=</span><span class="n">allow_nd</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1116</span>     <span class="n">ensure_min_samples</span><span class="o">=</span><span class="n">ensure_min_samples</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1117</span>     <span class="n">ensure_min_features</span><span class="o">=</span><span class="n">ensure_min_features</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1118</span>     <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1119</span>     <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;X&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1120</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1122</span> <span class="n">y</span> <span class="o">=</span> <span class="n">_check_y</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">multi_output</span><span class="o">=</span><span class="n">multi_output</span><span class="p">,</span> <span class="n">y_numeric</span><span class="o">=</span><span class="n">y_numeric</span><span class="p">,</span> <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1124</span> <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\utils\validation.py:879,</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>     <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">879</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">_asarray_with_order</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span> <span class="k">except</span> <span class="n">ComplexWarning</span> <span class="k">as</span> <span class="n">complex_warning</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="s2">&quot;Complex data not supported</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">883</span>     <span class="p">)</span> <span class="kn">from</span> <span class="nn">complex_warning</span>
+
+<span class="nn">File ~\AppData\Local\miniconda3\Lib\site-packages\sklearn\utils\_array_api.py:185,</span> in <span class="ni">_asarray_with_order</span><span class="nt">(array, dtype, order, copy, xp)</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span>     <span class="n">xp</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_namespace</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span> <span class="k">if</span> <span class="n">xp</span><span class="o">.</span><span class="vm">__name__</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;numpy&quot;</span><span class="p">,</span> <span class="s2">&quot;numpy.array_api&quot;</span><span class="p">}:</span>
+<span class="g g-Whitespace">    </span><span class="mi">184</span>     <span class="c1"># Use NumPy API to support order</span>
+<span class="ne">--&gt; </span><span class="mi">185</span>     <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">return</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">187</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="ne">ValueError</span>: could not convert string to float: &#39;C&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="evaluation-cell">
+<h2>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">Test</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;rating_f&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y_test</span> <span class="o">=</span> <span class="n">Test</span><span class="p">[</span><span class="s1">&#39;rating_f&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+<span class="n">neigh</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8636363636363636
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="task-1">
+<h2>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h2>
+<section id="go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k">
+<h3>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.<a class="headerlink" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model">
+<h3>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.<a class="headerlink" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value">
+<h3>Lastly recommend a value for k and explain why you recommend that value.<a class="headerlink" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="part-2-probabilities-of-the-model">
+<h1>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h1>
+<section id="the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view">
+<h2>The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.<a class="headerlink" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we want to make a table containing: probability, expected, and actual values</span>
+
+<span class="n">test_probs</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">test_preds</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert probabilities to pd df</span>
+<span class="n">test_probabilities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_probs</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bad_cereal_prob&#39;</span><span class="p">,</span> <span class="s1">&#39;good_cereal_prob&#39;</span><span class="p">])</span>
+<span class="n">test_probabilities</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>bad_cereal_prob</th>
+      <th>good_cereal_prob</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0.4</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0.4</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0.2</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">final_model</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;actual_class&#39;</span><span class="p">:</span> <span class="n">y_test</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+                           <span class="s1">&#39;pred_class&#39;</span><span class="p">:</span> <span class="n">test_preds</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+                           <span class="s1">&#39;pred_prob&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">test_probabilities</span><span class="p">[</span><span class="s1">&#39;good_cereal_prob&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">if</span> <span class="n">test_preds</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="n">test_probabilities</span><span class="p">[</span><span class="s1">&#39;bad_cereal_prob&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">test_preds</span><span class="p">))]})</span>
+<span class="c1"># that last line is some list comprehension -- to understand that here in particular click the following link:</span>
+<span class="c1"># https://stackoverflow.com/questions/4260280/if-else-in-a-list-comprehension</span>
+
+<span class="n">final_model</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>actual_class</th>
+      <th>pred_class</th>
+      <th>pred_prob</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">
+<h2>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add a column about the probability the observation is in the positive class</span>
+<span class="n">final_model</span><span class="p">[</span><span class="s1">&#39;pos_pred&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">final_model</span><span class="o">.</span><span class="n">pred_prob</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">if</span> <span class="n">final_model</span><span class="o">.</span><span class="n">pred_class</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">1</span><span class="o">-</span><span class="n">final_model</span><span class="o">.</span><span class="n">pred_prob</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">final_model</span><span class="o">.</span><span class="n">pred_class</span><span class="p">))]</span>
+
+<span class="n">final_model</span> <span class="c1">#look at this dataframe for the first question in Task 2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>actual_class</th>
+      <th>pred_class</th>
+      <th>pred_prob</th>
+      <th>pos_pred</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1</td>
+      <td>1</td>
+      <td>0.6</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1</td>
+      <td>1</td>
+      <td>0.6</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1</td>
+      <td>1</td>
+      <td>0.8</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert classes to categories</span>
+<span class="n">final_model</span><span class="o">.</span><span class="n">actual_class</span> <span class="o">=</span> <span class="n">final_model</span><span class="o">.</span><span class="n">actual_class</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="n">final_model</span><span class="o">.</span><span class="n">pred_class</span> <span class="o">=</span> <span class="n">final_model</span><span class="o">.</span><span class="n">pred_class</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="graph-the-probabilities">
+<h2>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create probability distribution graph</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">final_model</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;pos_pred&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;pos_pred&#39;, ylabel=&#39;Count&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/ef09d49c6262bb424b29dfbb7ad3731c112d6ecb81ddc8613a41bd3aed5300c2.png" src="_images/ef09d49c6262bb424b29dfbb7ad3731c112d6ecb81ddc8613a41bd3aed5300c2.png" />
+</div>
+</div>
+</section>
+<section id="task-2-determine-how-the-probabilities-are-calculated">
+<h2>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h2>
+<section id="first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification">
+<h3>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.<a class="headerlink" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated">
+<h3>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.<a class="headerlink" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value">
+<h3>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?<a class="headerlink" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="second-model-building-cell">
+<h3>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>   <span class="c1"># kNN is a random algorithm, so we use `random.seed(x)` to make results repeatable</span>
+
+<span class="n">X_train</span> <span class="o">=</span> <span class="n">Train</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;rating_f&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#features</span>
+<span class="n">y_train</span> <span class="o">=</span> <span class="n">Train</span><span class="p">[</span><span class="s1">&#39;rating_f&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="c1">#target</span>
+
+<span class="n">neigh</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> <span class="c1">#this is the value to change</span>
+<span class="n">neigh</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-13 {color: black;background-color: white;}#sk-container-id-13 pre{padding: 0;}#sk-container-id-13 div.sk-toggleable {background-color: white;}#sk-container-id-13 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-13 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-13 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-13 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-13 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-13 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-13 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-13 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-13 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-13 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-13 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-13 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-13 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-13 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-13 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-13 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-13 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-13 div.sk-item {position: relative;z-index: 1;}#sk-container-id-13 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-13 div.sk-item::before, #sk-container-id-13 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-13 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-13 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-13 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-13 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-13 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-13 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-13 div.sk-label-container {text-align: center;}#sk-container-id-13 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-13 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-13" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>KNeighborsClassifier()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" checked><label for="sk-estimator-id-13" class="sk-toggleable__label sk-toggleable__label-arrow">KNeighborsClassifier</label><div class="sk-toggleable__content"><pre>KNeighborsClassifier()</pre></div></div></div></div></div></div></div>
+</div>
+</section>
+<section id="graph-cell">
+<h3>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_probs_1</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1">#converting to a dataframe to make seaborn happy</span>
+<span class="n">test_probs_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_probs_1</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bad_cereal_prob&#39;</span><span class="p">,</span> <span class="s1">&#39;good_cereal_prob&#39;</span><span class="p">])</span>
+
+<span class="c1">#gnerates the plot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">test_probs_1</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span> <span class="s2">&quot;good_cereal_prob&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;good_cereal_prob&#39;, ylabel=&#39;Count&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/5686506ed1877cd43e889efae9d87060bbaa9bf15aa6f6f095f740c6dbbd1941.png" src="_images/5686506ed1877cd43e889efae9d87060bbaa9bf15aa6f6f095f740c6dbbd1941.png" />
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overview</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell">The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates">You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables">The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-data-preparation-and-model-building">Part 1: Data Preparation and Model Building</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-libraries">Load the Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-dataset">Load the Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-how-to-collapse-categories">Example of how to collapse categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizing-the-numeric-values">Normalizing the numeric values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-hot-encoding-the-categorical-values">One-Hot Encoding the categorical values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">Creating a binary target variable so we can run this model as a classification problem.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-variables-and-partitioning-train-test">Dropping Variables and Partitioning (Train/Test)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-building-cell">Model Building Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-cell">Evaluation Cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1">Task 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k">Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model">Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value">Lastly recommend a value for k and explain why you recommend that value.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-probabilities-of-the-model">Part 2: Probabilities of the Model</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view">The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-the-probabilities">Graph the probabilities</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-determine-how-the-probabilities-are-calculated">Task 2: Determine how the probabilities are calculated</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification">First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated">Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value">Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#second-model-building-cell">Second Model Building Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-cell">Graph Cell</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

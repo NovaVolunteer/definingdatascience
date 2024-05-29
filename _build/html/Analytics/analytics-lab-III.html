@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Overview &#8212; Defining Data Science</title>
   
@@ -19,48 +18,45 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Analytics/analytics-lab-III';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -73,7 +69,15 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -108,11 +112,16 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -127,9 +136,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -139,12 +150,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/image5.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/image5.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/image5.png" class="logo__image only-light" alt="Defining Data Science - Home"/>
+    <script>document.write(`<img src="../_static/image5.png" class="logo__image only-dark" alt="Defining Data Science - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -379,20 +401,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -471,28 +495,28 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <p><a class="reference external" href="https://colab.research.google.com/github/UVADS/DS1001/blob/master/ddsbook/analytics-lab-III.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <section id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
 <section id="the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell">
-<h2>The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.<a class="headerlink" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell" title="Permalink to this heading">#</a></h2>
+<h2>The goal of this lab is provide you with a better understand of how machine learning models work. The model you will be building is a supervised classification model, k nearest neighbor (kNN). This notebook will walk you through a shorten series of steps necessary to prepare the data, build the model, evaluated the output and visualize the predictions. You’ll need to run all the cells to make the model work correctly. Do so one at a time, in order, by pressing the play button in the top left corner of each cell.<a class="headerlink" href="#the-goal-of-this-lab-is-provide-you-with-a-better-understand-of-how-machine-learning-models-work-the-model-you-will-be-building-is-a-supervised-classification-model-k-nearest-neighbor-knn-this-notebook-will-walk-you-through-a-shorten-series-of-steps-necessary-to-prepare-the-data-build-the-model-evaluated-the-output-and-visualize-the-predictions-you-ll-need-to-run-all-the-cells-to-make-the-model-work-correctly-do-so-one-at-a-time-in-order-by-pressing-the-play-button-in-the-top-left-corner-of-each-cell" title="Link to this heading">#</a></h2>
 </section>
 <section id="you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates">
-<h2>You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.<a class="headerlink" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates" title="Permalink to this heading">#</a></h2>
+<h2>You will then be asked to interpret and manipulate the model features with the goal of better understanding how kNN generates it’s predictions. The lab will focus on the concepts of over/under fitting and how kNN generates probability estimates.<a class="headerlink" href="#you-will-then-be-asked-to-interpret-and-manipulate-the-model-features-with-the-goal-of-better-understanding-how-knn-generates-it-s-predictions-the-lab-will-focus-on-the-concepts-of-over-under-fitting-and-how-knn-generates-probability-estimates" title="Link to this heading">#</a></h2>
 </section>
 </section>
 <section id="dataset">
-<h1>Dataset<a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h1>
+<h1>Dataset<a class="headerlink" href="#dataset" title="Link to this heading">#</a></h1>
 <section id="the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables">
-<h2>The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.<a class="headerlink" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables" title="Permalink to this heading">#</a></h2>
+<h2>The data we will be using is the cereal dataset from the UCI Machine Learning Repository. The dataset contains 77 observations of 16 variables. The goal of this lab is to build a kNN model that can predict the target variable based on the 15 predictor variables.<a class="headerlink" href="#the-data-we-will-be-using-is-the-cereal-dataset-from-the-uci-machine-learning-repository-the-dataset-contains-77-observations-of-16-variables-the-goal-of-this-lab-is-to-build-a-knn-model-that-can-predict-the-target-variable-based-on-the-15-predictor-variables" title="Link to this heading">#</a></h2>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="part-1-data-preparation-and-model-building">
-<h1>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Permalink to this heading">#</a></h1>
+<h1>Part 1: Data Preparation and Model Building<a class="headerlink" href="#part-1-data-preparation-and-model-building" title="Link to this heading">#</a></h1>
 <section id="load-the-libraries">
-<h2>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Permalink to this heading">#</a></h2>
+<h2>Load the Libraries<a class="headerlink" href="#load-the-libraries" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#First we import the libraries we need</span>
@@ -509,7 +533,7 @@ document.write(`
 </div>
 </section>
 <section id="load-the-dataset">
-<h2>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Permalink to this heading">#</a></h2>
+<h2>Load the Dataset<a class="headerlink" href="#load-the-dataset" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read in the cereal dataset, we are reading the data in from a URL associated with the Foundations of </span>
@@ -552,7 +576,7 @@ memory usage: 9.8+ KB
 </div>
 </section>
 <section id="scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab">
-<h2>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Permalink to this heading">#</a></h2>
+<h2>Scale/Normalizing/Variable Classes (lots more but these are the focus of this lab)<a class="headerlink" href="#scale-normalizing-variable-classes-lots-more-but-these-are-the-focus-of-this-lab" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Looks like columns 1,2,11 and 12 need to be converted to category</span>
@@ -610,7 +634,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="example-of-how-to-collapse-categories">
-<h2>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Permalink to this heading">#</a></h2>
+<h2>Example of how to collapse categories<a class="headerlink" href="#example-of-how-to-collapse-categories" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Usually don&#39;t want more than 5ish groups, so we should collapse this factor  </span>
@@ -639,7 +663,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="normalizing-the-numeric-values">
-<h2>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Permalink to this heading">#</a></h2>
+<h2>Normalizing the numeric values<a class="headerlink" href="#normalizing-the-numeric-values" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Here we are normalizing the numeric values and creating a index based on numeric columns:</span>
@@ -904,7 +928,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="one-hot-encoding-the-categorical-values">
-<h2>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Permalink to this heading">#</a></h2>
+<h2>One-Hot Encoding the categorical values<a class="headerlink" href="#one-hot-encoding-the-categorical-values" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Next let&#39;s one-hot encode those categorical variables</span>
@@ -1232,7 +1256,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem">
-<h2>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Permalink to this heading">#</a></h2>
+<h2>Creating a binary target variable so we can run this model as a classification problem.<a class="headerlink" href="#creating-a-binary-target-variable-so-we-can-run-this-model-as-a-classification-problem" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#add this as a predictor instead of replacing the numeric version, changing the target into a binary variable </span>
@@ -1558,7 +1582,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="dropping-variables-and-partitioning-train-test">
-<h2>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Permalink to this heading">#</a></h2>
+<h2>Dropping Variables and Partitioning (Train/Test)<a class="headerlink" href="#dropping-variables-and-partitioning-train-test" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Divide up our data into two parts, Training and Test but first we need to...</span>
@@ -1892,7 +1916,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="model-building-cell">
-<h2>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Permalink to this heading">#</a></h2>
+<h2>Model Building Cell<a class="headerlink" href="#model-building-cell" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -1988,7 +2012,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="evaluation-cell">
-<h2>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Permalink to this heading">#</a></h2>
+<h2>Evaluation Cell<a class="headerlink" href="#evaluation-cell" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">Test</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;rating_f&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
@@ -2006,22 +2030,22 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="task-1">
-<h2>Task 1<a class="headerlink" href="#task-1" title="Permalink to this heading">#</a></h2>
+<h2>Task 1<a class="headerlink" href="#task-1" title="Link to this heading">#</a></h2>
 <section id="go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k">
-<h3>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.<a class="headerlink" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k" title="Permalink to this heading">#</a></h3>
+<h3>Go back two cells to the “Model Building Cell” and change the value of k. Then rerun the “Evaluation cell”. What happens to the accuracy of the model? Track the output of the model for odd values between 3 and 21. Note the changes by drawing a graph, by hand, of the <em>accuracy</em> versus k.<a class="headerlink" href="#go-back-two-cells-to-the-model-building-cell-and-change-the-value-of-k-then-rerun-the-evaluation-cell-what-happens-to-the-accuracy-of-the-model-track-the-output-of-the-model-for-odd-values-between-3-and-21-note-the-changes-by-drawing-a-graph-by-hand-of-the-accuracy-versus-k" title="Link to this heading">#</a></h3>
 </section>
 <section id="using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model">
-<h3>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.<a class="headerlink" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model" title="Permalink to this heading">#</a></h3>
+<h3>Using what we learning in class about over and under fitting explain what is happening to the model as we change the value of k, keeping in mind that the range of evaluation is between 0 and 1, with 1 being a perfect classification model.<a class="headerlink" href="#using-what-we-learning-in-class-about-over-and-under-fitting-explain-what-is-happening-to-the-model-as-we-change-the-value-of-k-keeping-in-mind-that-the-range-of-evaluation-is-between-0-and-1-with-1-being-a-perfect-classification-model" title="Link to this heading">#</a></h3>
 </section>
 <section id="lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value">
-<h3>Lastly recommend a value for k and explain why you recommend that value.<a class="headerlink" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value" title="Permalink to this heading">#</a></h3>
+<h3>Lastly recommend a value for k and explain why you recommend that value.<a class="headerlink" href="#lastly-recommend-a-value-for-k-and-explain-why-you-recommend-that-value" title="Link to this heading">#</a></h3>
 </section>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="part-2-probabilities-of-the-model">
-<h1>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Permalink to this heading">#</a></h1>
+<h1>Part 2: Probabilities of the Model<a class="headerlink" href="#part-2-probabilities-of-the-model" title="Link to this heading">#</a></h1>
 <section id="the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view">
-<h2>The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.<a class="headerlink" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view" title="Permalink to this heading">#</a></h2>
+<h2>The model is predicting the probability of each observation belonging to each class. So for every row in the test dataset a probability is calculated for each class [0,1]. The class with the highest probability is the predicted class. So let’s take a closer look at the probabilities. The next five cells are just getting the data organized so the results are easier to view.<a class="headerlink" href="#the-model-is-predicting-the-probability-of-each-observation-belonging-to-each-class-so-for-every-row-in-the-test-dataset-a-probability-is-calculated-for-each-class-0-1-the-class-with-the-highest-probability-is-the-predicted-class-so-let-s-take-a-closer-look-at-the-probabilities-the-next-five-cells-are-just-getting-the-data-organized-so-the-results-are-easier-to-view" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we want to make a table containing: probability, expected, and actual values</span>
@@ -2251,7 +2275,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe">
-<h2>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Permalink to this heading">#</a></h2>
+<h2>Now we are going to add the percentage of the probability for the positive class (good cereal) to the dataframe.<a class="headerlink" href="#now-we-are-going-to-add-the-percentage-of-the-probability-for-the-positive-class-good-cereal-to-the-dataframe" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># add a column about the probability the observation is in the positive class</span>
@@ -2456,7 +2480,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="graph-the-probabilities">
-<h2>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Permalink to this heading">#</a></h2>
+<h2>Graph the probabilities<a class="headerlink" href="#graph-the-probabilities" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create probability distribution graph</span>
@@ -2475,18 +2499,18 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="task-2-determine-how-the-probabilities-are-calculated">
-<h2>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Permalink to this heading">#</a></h2>
+<h2>Task 2: Determine how the probabilities are calculated<a class="headerlink" href="#task-2-determine-how-the-probabilities-are-calculated" title="Link to this heading">#</a></h2>
 <section id="first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification">
-<h3>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.<a class="headerlink" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification" title="Permalink to this heading">#</a></h3>
+<h3>First, looking at the “final model” dataframe from three cells above, list the rows that have errors in the classification.<a class="headerlink" href="#first-looking-at-the-final-model-dataframe-from-three-cells-above-list-the-rows-that-have-errors-in-the-classification" title="Link to this heading">#</a></h3>
 </section>
 <section id="use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated">
-<h3>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.<a class="headerlink" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated" title="Permalink to this heading">#</a></h3>
+<h3>Use the code below to again adjust the k value in the “Second Model Building Cell” and the run the “Graph Cell”. Use the same range of values as you did in Task 1. This time look at the graph and note the changes. Then based on what you are seeing determine how the probabilities are being generated.<a class="headerlink" href="#use-the-code-below-to-again-adjust-the-k-value-in-the-second-model-building-cell-and-the-run-the-graph-cell-use-the-same-range-of-values-as-you-did-in-task-1-this-time-look-at-the-graph-and-note-the-changes-then-based-on-what-you-are-seeing-determine-how-the-probabilities-are-being-generated" title="Link to this heading">#</a></h3>
 </section>
 <section id="lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value">
-<h3>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?<a class="headerlink" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value" title="Permalink to this heading">#</a></h3>
+<h3>Lastly, the model will predict anything above 50% as the positive class (good cereal). Given this information what are the risks of having too small of a k value?<a class="headerlink" href="#lastly-the-model-will-predict-anything-above-50-as-the-positive-class-good-cereal-given-this-information-what-are-the-risks-of-having-too-small-of-a-k-value" title="Link to this heading">#</a></h3>
 </section>
 <section id="second-model-building-cell">
-<h3>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Permalink to this heading">#</a></h3>
+<h3>Second Model Building Cell<a class="headerlink" href="#second-model-building-cell" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>   <span class="c1"># kNN is a random algorithm, so we use `random.seed(x)` to make results repeatable</span>
@@ -2504,7 +2528,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="graph-cell">
-<h3>Graph Cell<a class="headerlink" href="#graph-cell" title="Permalink to this heading">#</a></h3>
+<h3>Graph Cell<a class="headerlink" href="#graph-cell" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_probs_1</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -2553,16 +2577,12 @@ Name: count, dtype: int64
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -2570,6 +2590,7 @@ Name: count, dtype: int64
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2641,9 +2662,10 @@ By Brian Wright and Peter Alonzi
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -2667,8 +2689,8 @@ By Brian Wright and Peter Alonzi
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
