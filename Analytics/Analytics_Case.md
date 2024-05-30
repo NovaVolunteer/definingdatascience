@@ -22,7 +22,7 @@ to no more than five double spaced pages.
 
 | **Spec Category** | **Spec Details** |
 |---------------|--------------|
-| **Formatting** | - 3-5 pages <br /> - PDF format <br /> - Order <br /> \t - Title – your choice <br /> \t - Assignment: CASE – analytics <br /> \t - Name, course, date <br /> \t - Bookings.com Lesson Learned <br /> \t - Detailed answers to the questions <br /> \t - Final Takeaways |
+| **Formatting** | - 3-5 pages <br /> - PDF format <br /> - Order <br /> &ensp; - Title – your choice <br /> &ensp; - Assignment: CASE – analytics <br /> &ensp; - Name, course, date <br /> &ensp; - Bookings.com Lesson Learned <br /> &ensp; - Detailed answers to the questions <br /> &ensp; - Final Takeaways |
 | **Review of Materials** | - Review the materials provided and take notes as needed <br /> - You might consider visiting Bookings.com to get a feel for the site. |
 | **Answering the questions** | - Goal: Provide detailed answers to the questions as presented. |
 | **Takeaways** | - Goal: Reflect on your experience during the Analytics portion of the course as you work through the case study and see how the various topics mentioned manifest in this example. |
