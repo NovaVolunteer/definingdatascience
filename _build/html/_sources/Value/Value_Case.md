@@ -34,13 +34,13 @@ Rules generally governing a non-profit: https://www.boardeffect.com/blog/common-
 Submission: A pdf document of your answers to the questions in paragraph form. Limit your responses to no more than three double spaced pages.
 
 **How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric.
-| Specs Category | Specs Details                                                                                                                                                                                                                                            |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Formatting     | - 3-5 pages <br /> - PDF Format <br /> - Order <br /> &emsp; - Title - your choice <br /> &emsp; - Assignment: CASE - value <br /> &emsp; - Name, course, date <br /> &emsp; - Open AI Organization Review <br /> &emsp; - Detailed answers to set of first questions <br /> &emsp; - Detailed answers to set of second questions <br /> &emsp; - Final Takeaways <br /> |
-| Review of Materials   | - Review the materials provided and take notes as needed <br /> - You might also consider reviewing Open AI as a business and the products they have to offer. |
-|Answering the questions    |  - Goal: Provide details to the questions as presented. <br /> - About 2 to 4 pages for each set of questions. |
-|Takeaways  |   - Goal: Reflect on your experience during the Value portion of the program as you work through the case study and see how the various topics mentioned manifest in this example. |
-|References | - This section lists the references <br /> - Use IEEE style ([link](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf)) <br /> - *.wikipedia.org is not permissible but *.wikimedia.org is (if you are not familiar with the distinction please ask for assistance) |
+| **Specs Category** | **Specs Details**  |
+|----------------|----------------|
+| **Formatting**     | - 3-5 pages <br /> - PDF Format <br /> - Order <br /> &emsp; - Title - your choice <br /> &emsp; - Assignment: CASE - value <br /> &emsp; - Name, course, date <br /> &emsp; - Open AI Organization Review <br /> &emsp; - Detailed answers to set of first questions <br /> &emsp; - Detailed answers to set of second questions <br /> &emsp; - Final Takeaways <br /> |
+| **Review of Materials**   | - Review the materials provided and take notes as needed <br /> - You might also consider reviewing Open AI as a business and the products they have to offer. |
+| **Answering the questions**    |  - Goal: Provide details to the questions as presented. <br /> - About 2 to 4 pages for each set of questions. |
+| **Takeaways**  |   - Goal: Reflect on your experience during the Value portion of the program as you work through the case study and see how the various topics mentioned manifest in this example. |
+| **References** | - This section lists the references <br /> - Use IEEE style ([link](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf)) <br /> - *.wikipedia.org is not permissible but *.wikimedia.org is (if you are not familiar with the distinction please ask for assistance) |
 
 **Acknowledgements:** Special thanks to Jess Taggart from UVA CTE for coaching us. This structure is pulled directly from [Streifer & Palmer (2020)](https://cte.virginia.edu/blog/2020/12/04/alternative-grading-practices-support-both-equity-and-learning). 
 

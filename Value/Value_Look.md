@@ -43,11 +43,11 @@ Once you’ve completed the day of observations reflect on the outcome and the a
 
 **How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric.
 
-| Specs Category | Specs Details                                                                                                                                                                                                                                            |
-|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Formatting | - Your observation results and refection in a pdf document. |
-|Observations by Category | - Note each interaction by category with associated question responses. (2 to 3 pages) |
-|Reflection | - Goal: Synthesize your observations in the same document (1/2 to 1 page) <br /> - Given your observations answer the proposed questions |
+| **Specs Category** | **Specs Details** |
+|----------------|---------------|
+| **Formatting** | - Your observation results and refection in a pdf document. |
+| **Observations by Category** | - Note each interaction by category with associated question responses. (2 to 3 pages) |
+| **Reflection** | - Goal: Synthesize your observations in the same document (1/2 to 1 page) <br /> - Given your observations answer the proposed questions |
 
 
 **Acknowledgements:** Special thanks to Jess Taggart from UVA CTE for coaching us. This structure is pulled directly from [Streifer & Palmer (2020)](https://cte.virginia.edu/blog/2020/12/04/alternative-grading-practices-support-both-equity-and-learning). 
