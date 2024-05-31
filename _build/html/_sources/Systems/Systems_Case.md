@@ -20,12 +20,9 @@
  
 
 **Tips for success:**
-
-Start early, this project involves a little research, a little writing, a little visualization, and recording your presentation. 
-
-Don’t worry about the production value of the presentation. Recording it via zoom or on your cell phone camera is completely acceptable. The key is that you speak clearly and can be heard and that any visualizations you show are clearly viewable. [but if you want to, go for nice value, we can introduce you to some people in the media studies space] 
-
-Pick the time window that interests you. If you pick 2019-2023 you will be digging into the supply chain and economics of the pandemic. If you are tired of that, then pick the last three months. 
+- Start early, this project involves a little research, a little writing, a little visualization, and recording your presentation. 
+- Don’t worry about the production value of the presentation. Recording it via zoom or on your cell phone camera is completely acceptable. The key is that you speak clearly and can be heard and that any visualizations you show are clearly viewable. [but if you want to, go for nice value, we can introduce you to some people in the media studies space] 
+- Pick the time window that interests you. If you pick 2019-2023 you will be digging into the supply chain and economics of the pandemic. If you are tired of that, then pick the last three months. 
 
   
 
@@ -33,7 +30,7 @@ Pick the time window that interests you. If you pick 2019-2023 you will be diggi
 
 | **Spec Category** | **Spec Details** |
 |---------------|--------------|
-| **Formatting **   | - 5 minutes <br /> - Video format (typically mp4 or other appropriate similar format) <br /> -Submit a link to your video which is stored in the cloud, (YouTube is acceptable or zoom / one drive / google drive / etc.) <br /> -Submit your script via canvas <br /> |
+| **Formatting**   | - 5 minutes <br /> - Video format (typically mp4 or other appropriate similar format) <br /> -Submit a link to your video which is stored in the cloud, (YouTube is acceptable or zoom / one drive / google drive / etc.) <br /> -Submit your script via canvas <br /> |
 | **Script**        | - Goal: Your script is the guide for your presentation. This document should contain all the points you want to make and be sequenced to tell a story. <br /> - The submission format is pdf, you may create it using the program of your choice <br /> - You do not have to read the script verbatim, it is a guide. <br /> - You can research guides on how to create a script for a short video if this is new for you. <br /> - Make sure you do your research first and make an outline. <br /> - The goal is a 5 minute presentation, take note of your speaking cadence and information to present and determine an appropriate length that will correspond to 5 recorded minutes. <br /> |
 | **Visualization** | - Goal: Your visualizations should support your script. When you are telling your story this element provides support to your ideas and should help the viewer to understand. <br /> - You have the freedom to use whatever mechanism you want. <br /> - A slide deck is a great tool to use. <br /> - Cite the sources you use. (details below in the references section.) <br /> |
 | **Video**         | - Goal: This will be a short (5min) video with your explanation of the GPU market demand and the NVIDIA stock price during your time window. <br /> - You will upload a link to canvas <br /> - Submit a link to your video which is stored in the cloud, (YouTube is acceptable or zoom / one drive / google drive / etc.)  <br /> - Include a link in the description to your script  <br /> |

@@ -28,3 +28,5 @@ to no more than five double spaced pages.
 | **Takeaways** | - Goal: Reflect on your experience during the Analytics portion of the course as you work through the case study and see how the various topics mentioned manifest in this example. |
 | **References** | - This section lists the references <br /> - Use [IEEE Documentation style](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf) <br /> - *.wikipedia.org is not permissible but *.wikimedia.org is (if you are
 not familiar with the distinction please ask for assistance)
+
+**Acknowledgements:** Special thanks to Jess Taggart from UVA CTE for coaching us. This structure is pulled directly from [Streifer & Palmer (2020)](https://cte.virginia.edu/blog/2020/12/04/alternative-grading-practices-support-both-equity-and-learning). 
