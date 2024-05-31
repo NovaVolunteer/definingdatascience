@@ -19,24 +19,15 @@ It’s like this scene. Don’t bring your phone, it is only full of distraction
 Then observe for 3 consecutive hours. Note what you see; note what you think. Likely you will become impatient and distracted, that’s ok, that’s part of it. You may even fight it, that’s ok, that’s part of it. But eventually you will break through the barrier, you will notice things you never noticed before and the impatience will dissipate. Take care to note this transition. After that transition, survey the notes you have taken and think about structuring your notes going forward. Finally finish your observation by making two selections. The first is the most important thing you have noticed and the second is a question you have that emerged from this observation. When you are done you will take time to package your results for submission to canvas (yes, I do see the irony).  
 
 **Tips for success:**
-
-Believe in yourself. Don’t be cynical. Go for it. 
-
-Tell a friend to meet you at your landmark three hours after you plan to arrive. 
-
-Bring several pencils/pens/etc. and sheets of paper. 
-
-Don’t worry about notes being legible or even using words and numbers. Note in whatever way you prefer. 
-
-When deciding what is important, live in the moment, don’t overthink it. Let it be an expression of yourself. 
-
-Find a comfy chair or bring something to make the observation more comfortable. 
-
-It is completely fine to stand and stretch and sit and change position or observation point (e.g.: move around and observe your landmark from multiple directions). 
-
-If you “cheated” and brought your phone, it’s ok. Just turn off the notifications and put it away. 
-
-If you really must use your phone, one activity is excusable. Call someone you really should call more often and talk for five minutes (e.g. I would call my mother), BUT you have to ask about them and listen and care, and if they ask about you all you can do is tell them the assignment you are working on and how you are breaking the rules and that you will call them back when it is over.  
+- Believe in yourself. Don’t be cynical. Go for it. 
+- Tell a friend to meet you at your landmark three hours after you plan to arrive. 
+- Bring several pencils/pens/etc. and sheets of paper. 
+- Don’t worry about notes being legible or even using words and numbers. Note in whatever way you prefer. 
+- When deciding what is important, live in the moment, don’t overthink it. Let it be an expression of yourself. 
+- Find a comfy chair or bring something to make the observation more comfortable. 
+- It is completely fine to stand and stretch and sit and change position or observation point (e.g.: move around and observe your landmark from multiple directions). 
+- If you “cheated” and brought your phone, it’s ok. Just turn off the notifications and put it away. 
+- If you really must use your phone, one activity is excusable. Call someone you really should call more often and talk for five minutes (e.g. I would call my mother), BUT you have to ask about them and listen and care, and if they ask about you all you can do is tell them the assignment you are working on and how you are breaking the rules and that you will call them back when it is over.  
 
 **How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric. 
 

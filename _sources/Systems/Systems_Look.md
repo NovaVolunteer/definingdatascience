@@ -2,43 +2,21 @@
 
 **General Description:** This assignment is all about understanding the systems behind popular social media and content apps. You will select a popular app, like Instagram or Netflix, and do a deep dive on the systems behind it that keep it running. Then you will produce a short report detailing the goal of the app, the software needed to make it work, and the hardware required to make it so. Imagine you are the Chief Data and Technical officer for the company and producing a report for the Chief Executive and Operations officers. 
 
- 
-
 **Preparatory Assignments:** READ #7-9 and Labs #7-9. 
 
- 
-
 **Why am I doing this?** In the systems portion of this course, we have been studying hardware and software as well as understanding the scale involved. This assignment puts you in the position of a company that delivers a product at scale through an app. You will need to understand the goal of the company and then the necessary software and hardware to make that happen. This process of studying a company and thinking through their needs will reinforce the learning about hardware, software, and scale. 
-
- 
 
 **Course Learning Objective Alignment:** Identify the hardware and software components of a computer and describe their function 
 
 **Course Learning Objective Alignment:** Describe the different scales of computer operation 
 
- 
-
 **What am I going to do?** First you will select a company to study, choosing from the list of Instagram, Facebook, Twitter, or Netflix (if there is another you would like to do get clearance from your instructor first). Once you have chosen you will figure out what it takes to make that app work. Put another way you will determine the goal, not the business goal of “make more money”, but the technical goal. For example, Netflix streams video content. Then you will research the software and hardware needs of the company to achieve that goal. Finally, once you have done that research you will produce a short report detailing the various components. 
 
- 
-
- 
-
- 
-
 **Tips for success:** 
-
 - Pick an app that you use. 
-
 - Take this opportunity to learn more about something you use, be curious. 
-
 - Often apps are very different in different locations, for this assignment you can simplify and stick to the US market.  
-
 - Think about yourself and the goal of college. What software do you need to use? What hardware does that software require? Taking a few minutes to think that out can help focus you for the assignment. 
-
- 
-
- 
 
 **How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric. 
 

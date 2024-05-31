@@ -1,40 +1,22 @@
 # Design CASE
 **General Description:** This assignment is an extension of the Google maps case study discussed during class and your experience in our “LABS 3: Projection!” assignment. For this assignment you will select two map projections and explore their history and properties. Ultimately you will produce a pdf describing what you learned and synthesizing it in the context of our Design module. 
 
- 
 **Preparatory Assignments:** In class case study and LABS 3: Projection! 
 
 **Why am I doing this?** This assignment is designed to give you the opportunity to explore design choices in more depth. The creation of a map projection is non-trivial and by its nature requires some distortion of the data being presented. In our Design module we practiced understanding the design decisions that go into collecting and presenting data. This assignment allows you to practice those skills as you evaluate design choices made in the production of map projections. 
 
- 
-
 **Course Learning Objective Alignment:** Observe the world around you, recording your observations in a systematic way. 
 
-**Course Learning Objective Alignment:** Reflect on your data and transform it into a medium for efficient communication to other humans. 
-
- 
-
- 
+**Course Learning Objective Alignment:** Reflect on your data and transform it into a medium for efficient communication to other humans.  
 
 **What am I going to do?** First you will select two map projections. You have freedom to choose projections that interest you, but you cannot choose the Mercator Projection because we already studied that in class. Once you have selected those projections you will research their history, why they were created, what problem did they solve, when were they used, are they still used today, etc. Then you will explore the properties of the projection, for example looking at the Tissot’s Indicatrix to understand the nature of the distortions. Then you will discuss the pros and cons of the projection and how that connects to the design choice and the problem the creators were facing. Finally, you will reflect on these map projections from the Design module perspective and present your insights as well as compare and contrast the projections. 
 
- 
-
- 
-
 **Tips for success:**
-
-Pre think and pre read. Do not just dive in. Spend some time exploring. 
-
-Choose map projections that interest you, you do not need an esoteric reason, just that for some reason you are interested in learning more. 
-
-Look for projections that were created to solve problems you are interested in. 
-
-Try to put yourself in the shoes of the creator of the map projection and think through the challenges they faced. 
-
-Reminder: This is a research paper. Citations are required 
-
-  
+- Pre think and pre read. Do not just dive in. Spend some time exploring. 
+- Choose map projections that interest you, you do not need an esoteric reason, just that for some reason you are interested in learning more. 
+- Look for projections that were created to solve problems you are interested in. 
+- Try to put yourself in the shoes of the creator of the map projection and think through the challenges they faced. 
+- Reminder: This is a research paper. Citations are required 
 
 **How will I know I have succeeded?** I will meet spec when I follow the criteria in this rubric. 
 
